@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureMatch", "PureMatch\PureMatch.csproj", "{7EF6C40C-3333-40B6-B483-D25E10AFBA14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureLib", "PureLib\PureLib.csproj", "{C553BEF9-9934-4640-B82A-F7E1E60296EA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{7EF6C40C-3333-40B6-B483-D25E10AFBA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EF6C40C-3333-40B6-B483-D25E10AFBA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EF6C40C-3333-40B6-B483-D25E10AFBA14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C553BEF9-9934-4640-B82A-F7E1E60296EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C553BEF9-9934-4640-B82A-F7E1E60296EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C553BEF9-9934-4640-B82A-F7E1E60296EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C553BEF9-9934-4640-B82A-F7E1E60296EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
