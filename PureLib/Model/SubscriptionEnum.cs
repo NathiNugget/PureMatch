@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PureLib.Model
 {
-    public enum SubcriptionEnum
+    public enum SubscriptionEnum
     {
         Core, 
         Plus,
