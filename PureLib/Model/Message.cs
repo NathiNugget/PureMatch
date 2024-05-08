@@ -14,7 +14,7 @@ namespace PureLib.Model
         private DateTime _timesent; 
         private string _messagevalue;
 
-        public Message(int messageid, int senderid, int recipientid, DateTime timesent, string messagevalue)
+        public Message(int messageid, int senderid, int recipientid, string messagevalue, DateTime timesent)
         {
             Messageid = messageid;
             Senderid = senderid;
