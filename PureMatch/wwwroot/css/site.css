@@ -20,3 +20,47 @@ html {
 body {
   margin-bottom: 60px;
 }
+h1{
+    text-align:center;
+}
+
+.slogan {
+    
+    font-style: italic;
+    color: #00999D
+}
+
+.emphersize {
+    font-size: 28px;
+}
+
+.centertext{
+    text-align: center 
+}
+
+.backgroundcolor {
+    background-color: #E9E9E9;
+}
+
+.backgroundcolorbutton {
+    background-color: #FF6129;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+}
+
+
+.frontimage {
+    width: 80vw;
+    display: block;
+   
+}
+
+
