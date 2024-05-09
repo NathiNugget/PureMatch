@@ -17,48 +17,48 @@ namespace PureLib.Model
         private string _cardnumber;
         private string _cardcvc;
         private string _cardexpmonth;
-        private string _expyear;
+        private string _cardexpyear;
         private int _level;
         private List<MuscleGroupEnum> _musclegroups;
         private List<DaysEnum> _days;
         private int _subscription;
 
-        public User(int userid, string name, string username, string password, string phonenumber, string email, LevelsEnum level, string cardnumber, string cardcvc, string cardexpmonth, string expyear, SubcriptionEnum subcription)
+        public User(int userid, string name, string username, string password, string phonenumber, string email, string cardnumber, string cardcvc, string cardexpmonth, string expyear, SubscriptionEnum subscription, LevelsEnum level)
         {
-            Userid = userid;
+            UserID = userid;
             Name = name;
-            Username = username;
+            UserName = username;
             Password = password;
-            Phonenumber = phonenumber;
+            PhoneNumber = phonenumber;
             Email = email;
-            Cardnumber = cardnumber;
-            Cardcvc = cardcvc;
-            Cardexpmonth = cardexpmonth;
-            Expyear = expyear;
-            Subscription = (int) subcription;
+            CardNumber = cardnumber;
+            CardCVC = cardcvc;
+            CardExpMonth = cardexpmonth;
+            CardExpYear = expyear;
+            Subscription = (int) subscription;
             Level = (int) level;
         }
 
         
 
-        public int Userid { get => _userid; set => _userid = value; }
+        public int UserID { get => _userid; set => _userid = value; }
         public string Name { get => _name; set => _name = value; }
-        public string Username { get => _username; set => _username = value; }
+        public string UserName { get => _username; set => _username = value; }
         public string Password { get => _password; set => _password = value; }
-        public string Phonenumber { get => _phonenumber; set => _phonenumber = value; }
+        public string PhoneNumber { get => _phonenumber; set => _phonenumber = value; }
         public string Email { get => _email; set => _email = value; }
-        public string Cardnumber { get => _cardnumber; set => _cardnumber = value; }
-        public string Cardcvc { get => _cardcvc; set => _cardcvc = value; }
-        public string Cardexpmonth { get => _cardexpmonth; set => _cardexpmonth = value; }
-        public string Expyear { get => _expyear; set => _expyear = value; }
+        public string CardNumber { get => _cardnumber; set => _cardnumber = value; }
+        public string CardCVC { get => _cardcvc; set => _cardcvc = value; }
+        public string CardExpMonth { get => _cardexpmonth; set => _cardexpmonth = value; }
+        public string CardExpYear { get => _cardexpyear; set => _cardexpyear = value; }
         public int Level { get => _level; set => _level = value; }
-        public List<MuscleGroupEnum> Musclegroups { get => _musclegroups; set => _musclegroups = value; }
+        public List<MuscleGroupEnum> MuscleGroups { get => _musclegroups; set => _musclegroups = value; }
         public List<DaysEnum> Days { get => _days; set => _days = value; }
         public int Subscription { get => _subscription; set => _subscription = value; }
 
         public override string ToString()
         {
-            return $"{{{nameof(Userid)}={Userid.ToString()}, {nameof(Name)}={Name}, {nameof(Username)}={Username}, {nameof(Password)}={Password}, {nameof(Phonenumber)}={Phonenumber}, {nameof(Email)}={Email}, {nameof(Cardnumber)}={Cardnumber}, {nameof(Cardcvc)}={Cardcvc}, {nameof(Cardexpmonth)}={Cardexpmonth}, {nameof(Expyear)}={Expyear}, {nameof(Level)}={Level.ToString()}, {nameof(Musclegroups)}={Musclegroups}, {nameof(Days)}={Days}, {nameof(Subscription)}={Subscription.ToString()}}}";
+            return $"{{{nameof(UserID)}={UserID.ToString()}, {nameof(Name)}={Name}, {nameof(UserName)}={UserName}, {nameof(Password)}={Password}, {nameof(PhoneNumber)}={PhoneNumber}, {nameof(Email)}={Email}, {nameof(CardNumber)}={CardNumber}, {nameof(CardCVC)}={CardCVC}, {nameof(CardExpMonth)}={CardExpMonth}, {nameof(CardExpYear)}={CardExpYear}, {nameof(Level)}={Level.ToString()}, {nameof(MuscleGroups)}={MuscleGroups}, {nameof(Days)}={Days}, {nameof(Subscription)}={Subscription.ToString()}}}";
         }
     }
 }
