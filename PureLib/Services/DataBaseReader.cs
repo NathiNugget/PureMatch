@@ -13,13 +13,51 @@ namespace PureLib.Services
     {
         private List<Message> _messages = new List<Message>();
         public DataBaseReader() {
-            
-            List<User> users = GetChatUsers(1);
+
+            List<User> matches = GetMatches(2);
             foreach (var item in users)
             {
                 Console.WriteLine(item);
             }
 
+        }
+
+        private List<User> GetMatches(int userid)
+        {
+            List<User> users = new List<User>();
+            string query = "create view Matches as " +
+                "(select pu.UserID, pu.[Name], pu.[Password], PhoneNumber, Email, CardNumber, CardCVC, CardExpMonth, CardExpYear, Subscription, [Level] from PureUser AS pu " +
+                "join PureDays pd on pd.UserID = pu.UserID " +
+                "join PureMuscleGroups pmg on pu.UserID = pmg.UserID " +
+                "where (pd.Monday = (select pd.Monday from PureDays where UserID = @PID) OR " +
+                "pd.Tuesday = (select pd.Tuesday from PureDays where UserID = @PID) OR " +
+                "pd.Wednesday = (select pd.Wednesday from PureDays where UserID = @PID) OR " +
+                "pd.Thursday = (select pd.Thursday from PureDays where UserID = @PID) OR " +
+                "pd.Friday = (select pd.Friday from PureDays where UserID = @PID) OR " +
+                "pd.Saturday = (select pd.Saturday from PureDays where UserID = @PID) OR " +
+                "pd.Sunday = (select pd.Sunday from PureDays where UserID = @PID)) " +
+                "and (pmg.Back = (select pmg.Back from PureMuscleGroups where UserID = @PID) OR " +
+                "pmg.Biceps = (select pmg.Biceps from PureMuscleGroups where UserID = @PID) OR " +
+                "pmg.Chest = (select pmg.Chest from PureMuscleGroups where UserID = @PID) OR " +
+                "pmg.Core = (select pmg.Core from PureMuscleGroups where UserID = @PID) OR " +
+                "pmg.Legs = (select pmg.Legs from PureMuscleGroups where UserID = @PID) OR " +
+                "pmg.Shoulders = (select pmg.Shoulders from PureMuscleGroups where UserID = @PID) OR " +
+                "pmg.Triceps = (select pmg.Triceps from PureMuscleGroups where UserID = @PID)) " +
+                "and pu.UserID not in (select UserID from PureUser " +
+                "where UserID in (select distinct UserID from (PureUser pu join PureMessage pm ON pu.UserID = pm.SenderID) " +
+                "where RecipientID = @PID)) and pu.UserID != @PID)";
+                
+            using (SqlConnection connection = new SqlConnection(ConnectionString)) { 
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PID", userid); 
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    users.Add(ReadUser(reader));
+                }
+            }
+            return users;
         }
 
         private string ConnectionString = Secret.ConnectionString;
@@ -45,7 +83,7 @@ namespace PureLib.Services
         public List<User> GetChatUsers(int userid)
         {
             List<User> users = new List<User>();
-            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID ) where RecipientID = 2)";
+            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID ) where RecipientID = @PID)";
             
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -62,6 +100,7 @@ namespace PureLib.Services
             return users;
         }
 
+        
         public List<User> GetChatUsers()
         {
             List<User> users = new List<User>();
