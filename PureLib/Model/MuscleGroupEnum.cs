@@ -10,7 +10,7 @@ namespace PureLib.Model
     {
         Bryst,
         Ryg,
-        skulder,
+        Skulder,
         Ben,
         Biceps,
         Triceps,
