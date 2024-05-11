@@ -1,0 +1,47 @@
+﻿@page
+@model PureMatch.Pages.pm.PureMatchModel;
+@using PureLib.Model;
+@inject PureLib.Services.DataBaseReader db;
+@{
+    User user = db.ReadUser(2);
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            @* This div is for chats with other prior matches who the user wrote messages with  *@
+        </div>
+        <div class="col-8"></div>
+        @* This div is for chat-content*@
+        <div class="col-2 border border-secondary">
+            @* This div is for Matches *@
+            
+            <h1 class="text-center border-bottom">Matches</h1>
+            <form method="post">
+
+
+                @if (Model.Matches.Any(u => u.Level == user.Level))
+                {
+                    @foreach (User u in Model.Matches)
+                    {
+                        
+                        <div class="border-top">
+                            <button class="btn" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
+                        </div>
+                    }
+                }
+                @if (Model.Matches.Any(u => u.Level != user.Level))
+                {
+                    @foreach (User u in Model.Matches.Where(u => u.Level != user.Level))
+                    {
+
+                        <div class="border-top">
+                            <button class="btn-warning" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
+                        </div>
+                    }
+                    
+                }
+            </form>
+        </div>
+    </div>
+</div>

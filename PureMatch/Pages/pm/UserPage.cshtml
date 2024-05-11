@@ -1,0 +1,56 @@
+﻿@page
+@using PureLib.Model
+@model PureMatch.Pages.pm.UserPageModel
+@{
+    MuscleGroupEnum level = (MuscleGroupEnum)Model.MatchUser.Level;
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<div class="align-self-center border">
+    <div class="margin40">
+        <blockquote>@Model.MatchUser.Name</blockquote>
+        <br />
+        @* @if (Model.MatchUser.MuscleGroups.Count == 1)
+        {
+            <span>Muskelgruppe</span>
+        }
+        else
+        {
+            <span>Muskelgrupper</span>
+        }
+        @foreach (MuscleGroupEnum msgroup in Model.MatchUser.MuscleGroups)
+        {
+            <p>-> @msgroup</p>
+            <br />
+        }
+        <br />
+        <span>Niveau</span>
+        <p>-> @level</p>
+        <br />
+        @if (Model.MatchUser.Days.Count == 1)
+        {
+            <span>Dag</span>
+        }
+        else
+        {
+            <span>Dage</span>
+        }
+        @foreach (DaysEnum days in Model.MatchUser.Days)
+        {
+            <p>-> @days </p>
+            <br />
+        } *@
+
+        <br />
+        <br />
+        <form method="post">
+            <input type="text" asp-for="Message" placeholder="Skriv besked her"/>
+            <button type="submit" asp-route-ownid="@Model.OUser.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
+            <span asp-validation-for="Message"></span>
+        </form>
+
+
+    </div>
+</div>
