@@ -39,6 +39,8 @@ namespace PureLib.Model
             Level = (int) level;
         }
 
+        public User() :this(0, "dummy", "dummy", "dummy", "11111111", "dummy@dummymail.com", "1111222233334444", "123", "12", "99", SubscriptionEnum.Core, LevelsEnum.Begynder){ } 
+
         
 
         public int UserID { get => _userid; set => _userid = value; }
