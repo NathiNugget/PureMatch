@@ -23,12 +23,17 @@ namespace PureLib.Model
         private List<MuscleGroupEnum> _musclegroups;
         private List<DaysEnum> _days;
         private int _subscription;
-        private string phonefilter = "^\\d{8}$";
-        private string mailfilter = "^[A-Za-z.0-9]+\\@[A-Za-z0-9]+\\.[A-Za-z]+$";
-        private string cardnumberfilter = "^\\d{16}$";
-        private string cardcvcfilter = "^\\d{3}$";
-        private string cardexpmonthfilter = "^\\d{2}$";
-        private string cardexpyearfilter = "^\\d{2}$";
+
+        #region validation related variables
+        private static DateTime CURRENTTIME = DateTime.Now;
+        private static int YEARDIGITS =  int.Parse(CURRENTTIME.ToString("yy"));
+        private const string PHONEFILTER = "^\\d{8}$";
+        private const string MAILFILTER = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        private const string CARDNUMBERFILTER = "^\\d{16}$";
+        private const string CARDCVCFILTER = "^\\d{3}$";
+        private const string CARDEXPMONTHFILTER = "^\\d{2}$";
+        private const string CARDEXPYEARFILTER = "^\\d{2}$";
+        #endregion
 
         public User(int userid, string name, string username, string password, string phonenumber, string email, string cardnumber, string cardcvc, string cardexpmonth, string expyear, SubscriptionEnum subscription, LevelsEnum level)
         {
@@ -143,11 +148,7 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Du skal skrive et 8-cifret telefonnummer");
                 }
-                if (value.Length != 8)
-                {
-                    throw new ArgumentException($"Du skal skrive 8 cifre. Du skrev: {value.Length}");
-                }
-                if (!new Regex(phonefilter).IsMatch(value))
+                if (!new Regex(PHONEFILTER).IsMatch(value))
                 {
                     throw new ArgumentException($"Specified value is not of format ########. You inputted: {value}");
                 }
@@ -163,11 +164,11 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Du skal skrive en email");
                 }
-                if (!new Regex(mailfilter).IsMatch(value))
+                if (!new Regex(MAILFILTER).IsMatch(value.ToLower()))
                 {
                     throw new ArgumentException($"Mail skal være på formatet teksther@domæne.tld\nDu skrev: {value}.");
                 }
-                _email = value;
+                _email = value.ToLower();
             }
         }
         public string CardNumber
@@ -179,11 +180,8 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException($"Kort-nummer skal være på formen: 16 cifre eller 16#");
                 }
-                if (value.Length != 16)
-                {
-                    throw new ArgumentException($"Kort-nummer skal være på formen: 16 cifre eller 16#\nDu skrev {value}");
-                }
-                if (!new Regex(cardnumberfilter).IsMatch(value))
+                
+                if (!new Regex(CARDNUMBERFILTER).IsMatch(value))
                 {
                     throw new ArgumentException($"Kort-nummer skal være 16 cifre. Du skrev: {value}");
                 }
@@ -199,10 +197,11 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Du skal skrive et CVC for kort, som er 3 cifre.");
                 }
-                if (!new Regex(cardcvcfilter).IsMatch(value))
+                if (!new Regex(CARDCVCFILTER).IsMatch(value))
                 {
                     throw new ArgumentException($"CVC skal skrives på formen ### eller 3 cifre. Du skrev: {value}");
                 }
+                _cardcvc = value;
             }
         }
         public string CardExpMonth
@@ -213,13 +212,13 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Du skal skrive en udløbsmåned på formen ##, f.eks. 05 hvis dit kort løber i maj måned");
                 }
-                if (value.Length != 2)
-                {
-                    throw new ArgumentException($"Du skal skrive 2 cifre, f.eks. 02 for februar");
-                }
-                if (!new Regex(cardexpmonthfilter).IsMatch(value))
+                if (!new Regex(CARDEXPMONTHFILTER).IsMatch(value))
                 {
                     throw new ArgumentException("Du skal skrive 2 cifre på mønstret ##");
+                }
+                if (int.Parse(value) < 1 || int.Parse(value) > 12)
+                {
+                    throw new ArgumentException("Du skal skrive en måned mellem 01 og 12");
                 }
                 _cardexpmonth = value;
             }
@@ -232,25 +231,28 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Du skal angive to cifre for udløbsår på formen ##");
                 }
-                if (value.Length != 2)
-                {
-                    throw new ArgumentException("Du skal skrive 2 cifre på formen ##");
-                }
-                if (!new Regex(cardexpyearfilter).IsMatch(value))
+                if (!new Regex(CARDEXPYEARFILTER).IsMatch(value))
                 {
                     throw new ArgumentException("Du skal skrive 2 cifre på formen ## - f.eks. 25 for år 2025");
                 }
+                
+                if (int.Parse(value) < YEARDIGITS+1 || int.Parse(value) > YEARDIGITS+5)
+                {
+                    throw new ArgumentException($"Du skal skrive et år mellem {YEARDIGITS+1} og {YEARDIGITS+5}");
+                }
+                _cardexpyear = value;
             }
         }
         public int Level
         {
-            get => _level; set
+            get => _level; 
+            set
             {
                 if (string.IsNullOrEmpty(value.ToString()))
                 {
                     throw new ArgumentNullException("Du skal angive et niveau for din konto");
                 }
-                if (value > (int)Enum.GetValues(typeof(LevelsEnum)).Length)
+                if (value > Enum.GetValues(typeof(LevelsEnum)).Length)
                 {
                     throw new ArgumentException("Der er 3 niveauer i PureMatch, du kan max angive 0, 1 eller 2. 3 er reserveret værdi til når brugeren nulstiller level");
                 }
@@ -267,7 +269,7 @@ namespace PureLib.Model
             {
                 if (value == null)
                 {
-                    throw new NullReferenceException("Null angive hvor List<MuscleGroupsEnum> var forventet");
+                    throw new ArgumentNullException("Null angive hvor List<MuscleGroupsEnum> var forventet");
                 }
                 if (value.GetType() != typeof(List<MuscleGroupEnum>))
                 {
@@ -282,7 +284,7 @@ namespace PureLib.Model
             {
                 if (value == null)
                 {
-                    throw new NullReferenceException("Null angivet hvor List<DaysEnum> var forventet");
+                    throw new ArgumentNullException("Null angivet hvor List<DaysEnum> var forventet");
                 }
                 if (value.GetType() != typeof(List<DaysEnum>))
                 {
@@ -293,11 +295,12 @@ namespace PureLib.Model
         }
         public int Subscription
         {
-            get => _subscription; set
+            get => _subscription; 
+            set
             {
                 if (string.IsNullOrEmpty(value.ToString()))
                 {
-                    throw new NullReferenceException("Null angivet hvor heltalsværdi var forventet");
+                    throw new ArgumentNullException("Null angivet hvor heltalsværdi var forventet");
                 }
                 if (value < 0)
                 {
