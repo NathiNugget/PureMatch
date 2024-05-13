@@ -21,6 +21,49 @@ body {
     margin-bottom: 60px;
 }
 
+.margin40 {
+    margin: 40px;
+}
+
+.margin5top {
+    margin-top: 5px;
+}
+
+.margin5bot {
+    margin-bottom: 5px;
+}
+
+.padding5bot {
+    padding-bottom: 5px;
+}
+.margin50topbot {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
 h1 {
     text-align: center;
 }
@@ -28,6 +71,10 @@ h1 {
 .slogan {
     font-style: italic;
     color: #00999D
+}
+
+.headers {
+    color: #00999D;
 }
 
 .emphersize {
@@ -55,16 +102,64 @@ h1 {
     border-radius: 5px;
 }
 
+.backgroundcolorbuttonblue {
+    background-color: #00999D;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
 }
+
 
 
 .frontimage {
     width: 80vw;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.margin40 {
-    margin: 40px;
+.headers {
+    text-align: center;
 }
 
+.subscription-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
+.subscription {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-secondary {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-main {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.vline {
+    border-top: solid;
+    width: 100%;
+    padding-bottom: 5px; 
+}
+
+.text-blue {
+    color: #00999D;
+}

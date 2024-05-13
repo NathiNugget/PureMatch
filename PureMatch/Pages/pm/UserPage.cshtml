@@ -8,9 +8,9 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<div class="align-self-center border container">
-    <div class="margin40 backgroundcolor emphersize">
-        <blockquote class="text-center ">@Model.MatchUser.Name</blockquote>
+<div class="align-self-center">
+    <div class="margin40 backgroundcolor emphersize container-secondary">
+        <h1 class="text-center text-blue">@Model.MatchUser.Name</h1>
         <br />
         @if (Model.MatchUser.MuscleGroups.Count == 1)
         {
@@ -22,12 +22,12 @@
         }
         @foreach (MuscleGroupEnum msgroup in Model.MatchUser.MuscleGroups)
         {
-            <p>-> @msgroup</p>
+            <p>→ @msgroup</p>
             
         }
         <br />
         <span>Niveau</span>
-        <p>-> @level</p>
+        <p>→ @level</p>
         <br />
         @if (Model.MatchUser.Days.Count == 1)
         {
@@ -39,18 +39,27 @@
         }
         @foreach (DaysEnum days in Model.MatchUser.Days)
         {
-            <p>-> @days </p>
+            <p>→ @days </p>
           
         }
 
         <br />
         <br />
         <form method="post">
-            
-                <input type="text" class="" asp-for="Message" placeholder="Skriv besked her" />
-            
-            <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@Model.OUser.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
-            <span asp-validation-for="Message"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" class="form-control margin5top" asp-for="Message" placeholder="Skriv besked her" />
+                    </div>
+                    <div class="col-2">
+                        <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@Model.OUser.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
+                        
+                    </div>
+                    <span asp-validation-for="Message" class="text-danger"></span>
+                </div>
+                
+            </div>
+                
         </form>
 
 
