@@ -372,7 +372,7 @@ namespace PureLibTest
         {
             if (o == null)
             {
-                u.MuscleGroups = null;
+                u.MuscleGroups = null!;
             }
 
         }
