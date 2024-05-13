@@ -4,8 +4,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
-builder.Services.AddSingleton(new DataBaseReader());
+/*
+ * builder.Services.AddSingleton(new DataBaseReader());
+ * Kan udkommenteres igen så databasereader aktiveres. 
+ */
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
