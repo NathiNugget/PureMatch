@@ -46,8 +46,10 @@
         <br />
         <br />
         <form method="post">
-            <input type="text" asp-for="Message" placeholder="Skriv besked her"/>
-            <button type="submit" asp-route-ownid="@Model.OUser.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
+            
+                <input type="text" class="" asp-for="Message" placeholder="Skriv besked her" />
+            
+            <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@Model.OUser.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
             <span asp-validation-for="Message"></span>
         </form>
 
