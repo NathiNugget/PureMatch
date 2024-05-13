@@ -13,11 +13,11 @@ namespace PureLib.Model
     {
         private static DateTime CURRENTTIME = DateTime.Now;
         public static int YEARDIGITS = int.Parse(CURRENTTIME.ToString("yy"));
-        public static string PHONEFILTER = "^\\d{8}$";
-        public static string MAILFILTER = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
-        public static string CARDNUMBERFILTER = "^\\d{16}$";
-        public static string CARDCVCFILTER = "^\\d{3}$";
-        public static string CARDEXPMONTHFILTER = "^\\d{2}$";
-        public static string CARDEXPYEARFILTER = "^\\d{2}$";
+        public const string PHONEFILTER = "^\\d{8}$";
+        public const string MAILFILTER = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        public const string CARDNUMBERFILTER = "^\\d{16}$";
+        public const string CARDCVCFILTER = "^\\d{3}$";
+        public const string CARDEXPMONTHFILTER = "^\\d{2}$";
+        public const string CARDEXPYEARFILTER = "^\\d{2}$";
     }
 }
