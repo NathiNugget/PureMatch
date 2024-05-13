@@ -2,65 +2,69 @@
 @model PureMatch.Pages.pm.CreateAccount
 
 <h1 style="color: #00999D;"> INDTAST DINE OPLYSNINGER</h1>
+<div class="margin40">
+    <form method="post" class="form-group">
 
-<form method="post" class="form-group">
-    
-    <div>
-        <label for="Name">Navn:</label>
-        <input type="text" class="form-control">
-    </div>
-    
-
-
-    <div>
-        <label for="Username">Brugernavn:</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
-
-    <div>
-        <label for="Password">Adgangskode:</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
-
-    <div>
-        <label for="PhoneNumber">Telefonnummer:</label>
-        <input type="Phonenumber" class="form-control" >
-    </div>
-    
-
-    <div>
-        <label for="Email">Email:</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
-
-    <div>
-        <label for="CardNumber">Kortnummer:</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
-
-    <div>
-        <label for="Card-CVC">CVC nummer:</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
+        <div>
+            <label for="Name">Navn:</label>
+            <input type="text" class="form-control">
+        </div>
 
 
-    <div>
-        <label for="CardexpMonth">KortUdløbsmåned (maks 2 cifre):</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
+
+        <div>
+            <label for="Username">Brugernavn:</label>
+            <input type="text"  class="form-control" >
+        </div>
 
 
-    <div>
-        <label for="CardExpYear">KortUdløbsår (maks 2 cifre):</label>
-        <input type="text"  class="form-control" >
-    </div>
-    
-    <strong class="backgroundcolorbutton" type="submit">OPRET</strong>
-    
-</form>
+        <div>
+            <label for="Password">Adgangskode:</label>
+            <input type="text"  class="form-control" >
+        </div>
+
+
+        <div>
+            <label for="PhoneNumber">Telefonnummer:</label>
+            <input type="Phonenumber" class="form-control" >
+        </div>
+
+
+        <div>
+            <label for="Email">Email:</label>
+            <input type="text"  class="form-control" >
+        </div>
+
+
+        <div>
+            <label for="CardNumber">Kortnummer:</label>
+            <input type="text"  class="form-control" >
+        </div>
+
+
+        <div>
+            <label for="Card-CVC">CVC nummer:</label>
+            <input type="text"  class="form-control" >
+        </div>
+
+
+
+        <div>
+            <label for="CardexpMonth">KortUdløbsmåned (maks 2 cifre):</label>
+            <input type="text"  class="form-control" >
+        </div>
+
+
+
+        <div>
+            <label for="CardExpYear">KortUdløbsår (maks 2 cifre):</label>
+            <input type="text"  class="form-control" >
+        </div>
+
+        <div class="margin5top">
+            <button class="backgroundcolorbutton" type="submit">OPRET</button>
+        </div>
+        
+
+    </form>
+</div>
