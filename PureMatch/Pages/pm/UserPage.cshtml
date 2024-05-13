@@ -8,9 +8,9 @@
 <head>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<div class="align-self-center border">
-    <div class="margin40">
-        <blockquote>@Model.MatchUser.Name</blockquote>
+<div class="align-self-center border container">
+    <div class="margin40 backgroundcolor emphersize">
+        <blockquote class="text-center ">@Model.MatchUser.Name</blockquote>
         <br />
         @if (Model.MatchUser.MuscleGroups.Count == 1)
         {
@@ -23,7 +23,7 @@
         @foreach (MuscleGroupEnum msgroup in Model.MatchUser.MuscleGroups)
         {
             <p>-> @msgroup</p>
-            <br />
+            
         }
         <br />
         <span>Niveau</span>
@@ -40,7 +40,7 @@
         @foreach (DaysEnum days in Model.MatchUser.Days)
         {
             <p>-> @days </p>
-            <br />
+          
         }
 
         <br />
