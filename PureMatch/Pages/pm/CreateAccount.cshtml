@@ -6,59 +6,59 @@
     <form method="post" class="form-group">
 
         <div>
-            <label for="Name">Navn:</label>
-            <input type="text" class="form-control">
+            <label  asp-for="Name">Navn:</label>
+            <input type="text" asp-for="Name" class="form-control">
         </div>
 
 
 
         <div>
-            <label for="Username">Brugernavn:</label>
-            <input type="text"  class="form-control" >
+            <label asp-for="UserName" for="Username">Brugernavn:</label>
+            <input type="text" asp-for="UserName" class="form-control" >
         </div>
 
 
         <div>
-            <label for="Password">Adgangskode:</label>
-            <input type="text"  class="form-control" >
+            <label asp-for="Password" for="Password">Adgangskode:</label>
+            <input type="text" asp-for="Password" class="form-control" >
         </div>
 
 
         <div>
-            <label for="PhoneNumber">Telefonnummer:</label>
-            <input type="Phonenumber" class="form-control" >
+            <label asp-for="Phonenumber" for="PhoneNumber">Telefonnummer:</label>
+            <input type="Phonenumber"asp-for="Phonenumber" class="form-control" >
         </div>
 
 
         <div>
-            <label for="Email">Email:</label>
-            <input type="text"  class="form-control" >
+            <label asp-for="Email" for="Email">Email:</label>
+            <input type="text" asp-for="Email" class="form-control" >
         </div>
 
 
         <div>
-            <label for="CardNumber">Kortnummer:</label>
-            <input type="text"  class="form-control" >
+            <label asp-for="CardNumber">Kortnummer:</label>
+            <input type="text" asp-for="CardNumber" class="form-control" >
         </div>
 
 
         <div>
-            <label for="Card-CVC">CVC nummer:</label>
-            <input type="text"  class="form-control" >
-        </div>
-
-
-
-        <div>
-            <label for="CardexpMonth">KortUdløbsmåned (maks 2 cifre):</label>
-            <input type="text"  class="form-control" >
+            <label asp-for="CVC">CVC nummer:</label>
+            <input type="text" asp-for="CVC" class="form-control" >
         </div>
 
 
 
         <div>
-            <label for="CardExpYear">KortUdløbsår (maks 2 cifre):</label>
-            <input type="text"  class="form-control" >
+            <label asp-for="CardExpMonth">KortUdløbsmåned (maks 2 cifre):</label>
+            <input type="text" asp-for="CardExpMonth" class="form-control" >
+        </div>
+
+
+
+        <div>
+            <label asp-for="CardExpMonth">KortUdløbsår (maks 2 cifre):</label>
+            <input type="text" asp-for="CardExpYear" class="form-control" >
         </div>
 
         <div class="margin5top">

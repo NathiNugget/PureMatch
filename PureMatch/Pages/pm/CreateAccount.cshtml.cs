@@ -21,14 +21,14 @@ public class CreateAccount : PageModel
     }
     
     public int SubNumber { get; set; }
-    public string _Name { get; set; }
-    public string _UserName { get; set; }
-    public string _password { get; set; }
-    public string _phonenumber { get; set; }
-    public string _Email { get; set; }
-    public string _cardnumber { get; set; }
-    public string _cvc { get; set; }
-    public string _cardexpmonth { get; set; }
-    public string _cardexpyear { get; set; }
+    public string Name { get; set; }
+    public string UserName { get; set; }
+    public string Password { get; set; }
+    public string Phonenumber { get; set; }
+    public string Email { get; set; }
+    public string CardNumber { get; set; }
+    public string CVC { get; set; }
+    public string CardExpMonth { get; set; }
+    public string CardExpYear { get; set; }
     
 }
