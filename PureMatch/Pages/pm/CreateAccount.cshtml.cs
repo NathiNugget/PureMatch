@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace PureMatch.Pages.pm;
 [BindProperties]
@@ -21,6 +22,7 @@ public class CreateAccount : PageModel
     }
     
     public int SubNumber { get; set; }
+    [RegularExpression()]
     public string Name { get; set; }
     public string UserName { get; set; }
     public string Password { get; set; }
