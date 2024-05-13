@@ -145,8 +145,8 @@ namespace PureLib.Services
         public List<User> GetChatUsers(int userid)
         {
             List<User> users = new List<User>();
-            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID ) where RecipientID = @PID)";
-            
+            //string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID ) where RecipientID = @PID OR SenderID = @PID)";
+            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID)) and UserID != @PID";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
@@ -166,7 +166,7 @@ namespace PureLib.Services
         public List<User> GetChatUsers()
         {
             List<User> users = new List<User>();
-            string query = "select * from ChatList";
+            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID)) and UserID != @PID";
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -257,7 +257,7 @@ namespace PureLib.Services
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@PID", userid); 
                 SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+                while (reader.Read())   
                 {
                     u = ReadUserUsingReader(reader);
                 }
@@ -269,7 +269,20 @@ namespace PureLib.Services
 
         private User ReadUserUsingReader(SqlDataReader reader)
         {
-            return new User(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4), reader.GetString(5), reader.GetString(6), reader.GetString(7), reader.GetString(8), reader.GetString(9), (SubscriptionEnum)reader.GetInt32(10), (LevelsEnum)reader.GetInt32(11));
+            User u = new User();
+            u.UserID = reader.GetInt32(0); 
+            u.Name = reader.GetString(1);
+            u.UserName = reader.GetString(2); 
+            u.Password = reader.GetString(3);
+            u.PhoneNumber = reader.GetString(4);
+            u.Email = reader.GetString(5);
+            u.CardNumber = reader.GetString(6); 
+            u.CardCVC = reader.GetString(7);
+            u.CardExpMonth = reader.GetString(8);
+            u.CardExpYear = reader.GetString(9);
+            u.Subscription = reader.GetInt32(10);
+            u.Level = reader.GetInt32(11);
+            return u; 
         }
 
         public List<DaysEnum> ReadDays(int userid)

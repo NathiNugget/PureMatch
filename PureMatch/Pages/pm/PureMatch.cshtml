@@ -11,6 +11,14 @@
     <div class="row">
         <div class="col-2">
             @* This div is for chats with other prior matches who the user wrote messages with  *@
+            <h3 class="text-center border-bottom"></h3>
+            <form method="post" asp-page-handler="Chat">
+                @foreach (User c in Model.Chats)
+                {
+                    <button type="submit" asp-route-ownid="@user.UserID" asp-route-chatid="@c.UserID">@c.Name</button>
+                }
+            </form>
+            
         </div>
         <div class="col-8"></div>
         @* This div is for chat-content*@
