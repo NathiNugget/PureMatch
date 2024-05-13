@@ -7,10 +7,7 @@ namespace PureMatch.Pages.pm;
 
 public class SelectSubscription : PageModel
 {
-    [BindProperty]
-    [Required(ErrorMessage =  "Der skal vælges en medlemskab")]
     
-    public int SelectedSubscription { get; set; }
     
 
         public void OnGet()
@@ -18,8 +15,9 @@ public class SelectSubscription : PageModel
             // Ingen specifik handling krævet, når siden indlæses
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(int number)
         {
+            
             if (!ModelState.IsValid)
             {
                 // Hvis validering mislykkes, returneres den samme side med fejlmeddelelser
@@ -29,7 +27,7 @@ public class SelectSubscription : PageModel
 
             // Behandling af valgt abonnement (f.eks. gemt i database )
             // Her kan brugeren  videresendes  til næste side, "CreateAccount"
-            return RedirectToPage("./CreateAccount");
+            return RedirectToPage("/Index", new { number = number});
         }
     }
   

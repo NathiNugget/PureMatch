@@ -1,6 +1,6 @@
 @page
 @model PureMatch.Pages.pm.SelectSubscription
-
+@using PureLib.Model
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,19 +17,19 @@
 <form method="post">
     <div class="subscription-container">
         <div class="subscription">
-            <h2>Core</h2>
+            <h2>@SubscriptionEnum.Core</h2>
             <p>Træn i dit stamcenter</p>
             <p>Pris: 216 kr/måned</p>
             <button class="backgroundcolorbutton" asp-route-number="0" type="submit"><strong>Vælg Medlemskab</strong></button>
         </div>
         <div class="subscription">
-            <h2>Plus</h2>
+            <h2>@SubscriptionEnum.Plus</h2>
             <p>Træn i 32 Centre</p>
             <p>Pris: 229 kr/måned</p>
             <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Vælg Medlemskab</strong></button>
         </div>
         <div class="subscription">
-            <h2>Unlimited</h2>
+            <h2>@SubscriptionEnum.Unlimited</h2>
             <p>Træn i alle centre</p>
             <p>Pris: 299 kr/måned</p>
             <button class="backgroundcolorbutton" asp-route-number="2" type="submit"><strong>Vælg Medlemskab</strong></button>
