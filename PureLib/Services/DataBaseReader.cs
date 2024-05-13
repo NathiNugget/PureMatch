@@ -146,7 +146,7 @@ namespace PureLib.Services
         {
             List<User> users = new List<User>();
             //string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID ) where RecipientID = @PID OR SenderID = @PID)";
-            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID)) and UserID != @PID";
+            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu join PureMessage pm ON pu.UserID = pm.SenderID OR pu.UserID = pm.RecipientID)) and UserID != @PID";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
