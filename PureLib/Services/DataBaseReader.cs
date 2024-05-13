@@ -317,11 +317,11 @@ namespace PureLib.Services
             }
             if (reader.GetBoolean(6))
             {
-                days.Add(DaysEnum.Lørdag); 
+                days.Add(DaysEnum.LÃ¸rdag); 
             } 
             if (reader.GetBoolean(7))
             {
-                days.Add(DaysEnum.Søndag); 
+                days.Add(DaysEnum.SÃ¸ndag); 
             }
             return days; 
 
