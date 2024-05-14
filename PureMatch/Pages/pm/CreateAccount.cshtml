@@ -60,7 +60,7 @@
 
             <div>
                 <label asp-for="CardExpMonth">KortUdløbsmåned (maks 2 cifre):</label>
-                <input type="text" asp-for="CardExpMonth" class="form-control">
+                <input type="number" min="1" max="12" asp-for="CardExpMonth" class="form-control">
                 <span asp-validation-for="CardExpMonth" class="alert-danger"></span>
             </div>
 

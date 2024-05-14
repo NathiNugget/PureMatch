@@ -163,3 +163,8 @@ h1 {
 .text-blue {
     color: #00999D;
 }
+
+.image-chill {
+    height: 40vw;
+    padding-left: 15vw;
+}
