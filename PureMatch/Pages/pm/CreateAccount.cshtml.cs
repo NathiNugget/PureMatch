@@ -29,7 +29,7 @@ public class CreateAccount : PageModel
             return Page();
         }
         Repo.AddUser(new User(1, Name, UserName, Password, PhoneNumber, Email, CardNumber, CVC, CardExpMonth.ToString("##"), CardExpYear.ToString("##"), (SubscriptionEnum)SubNumber, LevelsEnum.Begynder));
-        return RedirectToPage("/Index");
+        return RedirectToPage("/checkmark/ProfileCreated");
     }
 
     

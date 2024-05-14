@@ -27,7 +27,7 @@ public class SelectSubscription : PageModel
 
             // Behandling af valgt abonnement (f.eks. gemt i database )
             // Her kan brugeren  videresendes  til næste side, "CreateAccount"
-            return RedirectToPage("/Index", new { number = number});
+            return RedirectToPage("./CreateAccount", new { subnumber = number});
         }
     }
   
