@@ -323,7 +323,7 @@ namespace PureLibTest
 
         //Level property
         [TestMethod]
-        [DataRow((int)LevelsEnum.Trænet)]
+        [DataRow((int)LevelsEnum.TrÃ¦net)]
         [DataRow((int)LevelsEnum.Professionel)]
         [DataRow((int)LevelsEnum.Begynder)]
         [DataRow(3)]
@@ -379,8 +379,8 @@ namespace PureLibTest
 
         //DaysEnum property
         [TestMethod]
-        [DataRow(DaysEnum.Søndag)]
-        [DataRow(DaysEnum.Lørdag)]
+        [DataRow(DaysEnum.SÃ¸ndag)]
+        [DataRow(DaysEnum.LÃ¸rdag)]
         [DataRow(0)]
         public void DaysEnumTest(DaysEnum day) {
             List<DaysEnum> days = new List<DaysEnum> { day };

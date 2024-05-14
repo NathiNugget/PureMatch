@@ -1,0 +1,83 @@
+@page
+@model PureMatch.Pages.pm.CreateAccount
+
+<h1 style="color: #00999D;"> INDTAST DINE OPLYSNINGER</h1>
+<div class="backgroundcolor">
+    <div class="container margin50topbot">
+        <form method="post" class="form-group margin50topbot">
+
+            <div>
+                <label asp-for="Name">Navn:</label>
+                <input type="text" asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="alert-danger"></span>
+            </div>
+
+
+
+            <div>
+                <label asp-for="UserName" for="Username">Brugernavn:</label>
+                <input type="text" asp-for="UserName" class="form-control">
+                <span asp-validation-for="UserName" class="alert-danger"></span>
+
+            </div>
+
+
+            <div>
+                <label asp-for="Password" for="Password">Adgangskode:</label>
+                <input type="password" asp-for="Password" class="form-control">
+                <span asp-validation-for="Password" class="alert-danger"></span>
+            </div>
+
+
+            <div>
+                <label asp-for="PhoneNumber" for="PhoneNumber">Telefonnummer:</label>
+                <input type="phone" asp-for="PhoneNumber" class="form-control">
+                <span asp-validation-for="PhoneNumber" class="alert-danger"></span>
+            </div>
+
+
+            <div>
+                <label asp-for="Email" for="Email">Email:</label>
+                <input type="email" asp-for="Email" class="form-control">
+                <span asp-validation-for="Email" class="alert-danger"></span>
+            </div>
+
+
+            <div>
+                <label asp-for="CardNumber">Kortnummer:</label>
+                <input type="text" asp-for="CardNumber" class="form-control">
+                <span asp-validation-for="CardNumber" class="alert-danger"></span>
+            </div>
+
+
+            <div>
+                <label asp-for="CVC">CVC nummer:</label>
+                <input type="text" asp-for="CVC" class="form-control">
+                <span asp-validation-for="CVC" class="alert-danger"></span>
+            </div>
+
+
+
+            <div>
+                <label asp-for="CardExpMonth">KortUdløbsmåned (maks 2 cifre):</label>
+                <input type="text" asp-for="CardExpMonth" class="form-control">
+                <span asp-validation-for="CardExpMonth" class="alert-danger"></span>
+            </div>
+
+
+
+            <div>
+                <label asp-for="CardExpYear">KortUdløbsår (maks 2 cifre):</label>
+                <input type="text" asp-for="CardExpYear" class="form-control">
+                <span asp-validation-for="CardExpYear" class="alert-danger"></span>
+            </div>
+
+            <div class="">
+                <button class="backgroundcolorbutton margin5bot" type="submit">OPRET</button>
+            </div>
+
+
+        </form>
+    </div>
+    
+</div>
