@@ -28,7 +28,7 @@ public class CreateAccount : PageModel
         {
             return Page();
         }
-        Repo.AddUser(new User(1, Name, UserName, Password, PhoneNumber, Email, CardNumber, CVC, CardExpMonth.ToString("##"), CardExpYear, (SubscriptionEnum)SubNumber, LevelsEnum.Begynder));
+        Repo.AddUser(new User(1, Name, UserName, Password, PhoneNumber, Email, CardNumber, CVC, CardExpMonth.ToString("##"), CardExpYear.ToString("##"), (SubscriptionEnum)SubNumber, LevelsEnum.Begynder));
         return RedirectToPage("/Index");
     }
 
@@ -60,8 +60,7 @@ public class CreateAccount : PageModel
     [Required(ErrorMessage = "Du skal skrive kortets måned for udløbsdato, mellem 1 og 12")]
     public int CardExpMonth { get; set; }
 
-[Required(ErrorMessage = "Du skal skrive kortets år for udløbsdato, 2 cifre tak")]
-[RegularExpression(ValidationRegex.CARDEXPYEARFILTER, ErrorMessage = "Du skal skrive 2 cifre")]
-public string CardExpYear { get; set; }
+    [Required(ErrorMessage = "Du skal skrive kortets år for udløbsdato, 2 cifre tak")]
+    public int CardExpYear { get; set; }
     
 }

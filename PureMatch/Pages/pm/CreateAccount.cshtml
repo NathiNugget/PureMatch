@@ -1,5 +1,6 @@
 @page
 @model PureMatch.Pages.pm.CreateAccount
+@using PureLib.Model
 
 <h1 style="color: #00999D;"> INDTAST DINE OPLYSNINGER</h1>
 <div class="backgroundcolor">
@@ -68,7 +69,7 @@
 
             <div>
                 <label asp-for="CardExpYear">KortUdløbsår (maks 2 cifre):</label>
-                <input type="text" asp-for="CardExpYear" class="form-control">
+                <input type="number" asp-for="CardExpYear" min="@ValidationRegex.YEARDIGITSMIN" max="@ValidationRegex.YEARDIGITSMAX" class="form-control">
                 <span asp-validation-for="CardExpYear" class="alert-danger"></span>
             </div>
 
