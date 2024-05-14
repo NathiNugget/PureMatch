@@ -28,7 +28,7 @@ public class CreateAccount : PageModel
         {
             return Page(); 
         }
-        return RedirectToPage("../");
+        return RedirectToPage("/Index");
     }
     
     public int SubNumber { get; set; }
