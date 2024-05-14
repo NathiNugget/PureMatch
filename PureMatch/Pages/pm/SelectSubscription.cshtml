@@ -1,0 +1,78 @@
+@page
+@model PureMatch.Pages.pm.SelectSubscription
+@using PureLib.Model
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Subscription</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 class="headers">Vælg Medlemskab</h1>
+
+    <form method="post">
+        <div class="container backgroundcolor">
+            <div class="subscription-container margin40 margin">
+
+                <div class="subscription backgroundcolorwhite margin50topbot">
+                    <h2>@SubscriptionEnum.Core</h2>
+                    <p>
+                        Træn i ét center<br />
+                        Hold kan tilvælges*<br />
+                        Fitness, styrke & cardio<br />
+                        Adgang til Cirkeltræning<br />
+                        Træn alle dage i hele åbningstiden<br />
+                        App & træningsprogrammer
+                    </p>
+                    <p>Pris: 216 kr/måned</p>
+                    <br /><br /><br />
+                    <br /><br />
+                    <button class="backgroundcolorbutton" asp-route-number="0" type="submit"><strong>Vælg Medlemskab</strong></button>
+                </div>
+                <div class="subscription backgroundcolorwhite margin50topbot">
+                    <h2>@SubscriptionEnum.Plus</h2>
+                    <p>
+                        Træn i 32 Centre<br />
+                        Træn i flere centre<br />
+                        Adgang til alle hold<br />
+                        Medbring ven<br />
+                        Book hold 4 uger før<br />
+                        Bodytracker<br />
+                        Pause (op til 30 dage): 0 kr<br />
+                        Fitness, styrke & cardio<br />
+                        Adgang til Cirkeltræning<br />
+                        Træn alle dage i hele åbningstiden<br />
+                        App & træningsprogrammer
+                    </p>
+                    <p>Pris: 229 kr/måned</p>
+                    <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Vælg Medlemskab</strong></button>
+                </div>
+                <div class="subscription backgroundcolorwhite margin50topbot">
+                    <h2>@SubscriptionEnum.Unlimited</h2>
+                    <p>Træn i alle centre<br />
+                        Træn i ALLE centre<br />
+                        Adgang til alle hold<br />
+                        Medbring ven<br />
+                        Book hold 4 uger før<br />
+                        Bodytracker<br />
+                        Pause (op til 30 dage): 0 kr<br />
+                        Fitness, styrke & cardio<br />
+                        Adgang til Cirkeltræning<br />
+                        Træn alle dage i hele åbningstiden<br />
+                        App & træningsprogrammer
+                    </p>
+                    <p>Pris: 299 kr/måned</p>
+                    <button class="backgroundcolorbutton" asp-route-number="2" type="submit"><strong>Vælg Medlemskab</strong></button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
+
+
