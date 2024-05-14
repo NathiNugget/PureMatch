@@ -12,7 +12,8 @@ namespace PureLib.Services
     public class DataBaseReader
     {
         private List<Message> _messages = new List<Message>();
-        public DataBaseReader() {
+        public DataBaseReader()
+        {
 
             List<User> matches = GetMatches(2);
             foreach (var item in matches)
@@ -25,7 +26,7 @@ namespace PureLib.Services
         public List<User> GetMatches(int userid)
         {
             List<User> users = new List<User>();
-            string query = 
+            string query =
                 "(select pu.UserID, pu.[Name], pu.UserName, pu.[Password], PhoneNumber, Email, CardNumber, CardCVC, CardExpMonth, CardExpYear, Subscription, [Level] from PureUser AS pu " +
                 "join PureDays pd on pd.UserID = pu.UserID " +
                 "join PureMuscleGroups pmg on pu.UserID = pmg.UserID " +
@@ -46,11 +47,12 @@ namespace PureLib.Services
                 "and pu.UserID not in (select UserID from PureUser " +
                 "where UserID in (select distinct UserID from (PureUser pu join PureMessage pm ON pu.UserID = pm.SenderID or pu.UserID = pm.RecipientID) " +
                 "where RecipientID = @PID or SenderID = @PID)) and pu.UserID != @PID)";
-                
-            using (SqlConnection connection = new SqlConnection(ConnectionString)) { 
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@PID", userid); 
+                cmd.Parameters.AddWithValue("@PID", userid);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
@@ -62,39 +64,41 @@ namespace PureLib.Services
 
         public List<MuscleGroupEnum> ReadMuscleGroups(int userid)
         {
-            List <MuscleGroupEnum> msgroups = new List<MuscleGroupEnum>();
+            List<MuscleGroupEnum> msgroups = new List<MuscleGroupEnum>();
             string query = "select * from PureMuscleGroups where UserID = @PID";
-            
-            using(SqlConnection connection = new SqlConnection(ConnectionString)) {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@PID", userid);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    foreach (MuscleGroupEnum group in ReadMuscleGroups(reader)) {
+                    foreach (MuscleGroupEnum group in ReadMuscleGroups(reader))
+                    {
                         msgroups.Add(group);
                     }
-                        
+
                 }
             }
-            return msgroups; 
+            return msgroups;
 
         }
 
         private List<MuscleGroupEnum> ReadMuscleGroups(SqlDataReader reader)
         {
-            List<MuscleGroupEnum> msgroups = new List<MuscleGroupEnum>(); 
+            List<MuscleGroupEnum> msgroups = new List<MuscleGroupEnum>();
             bool chest = reader.GetBoolean(1);
             bool back = reader.GetBoolean(2);
-            bool shoulders = reader.GetBoolean(3); 
+            bool shoulders = reader.GetBoolean(3);
             bool legs = reader.GetBoolean(4);
             bool biceps = reader.GetBoolean(5);
             bool triceps = reader.GetBoolean(6);
             bool core = reader.GetBoolean(7);
             if (chest)
             {
-                msgroups.Add(MuscleGroupEnum.Bryst); 
+                msgroups.Add(MuscleGroupEnum.Bryst);
 
             }
             if (back)
@@ -111,11 +115,11 @@ namespace PureLib.Services
             }
             if (biceps)
             {
-                msgroups.Add(MuscleGroupEnum.Biceps); 
+                msgroups.Add(MuscleGroupEnum.Biceps);
             }
             if (core)
             {
-                msgroups.Add(MuscleGroupEnum.Mave); 
+                msgroups.Add(MuscleGroupEnum.Mave);
             }
             return msgroups;
 
@@ -127,16 +131,16 @@ namespace PureLib.Services
         public List<Message> ReadAllMessagesFromDB()
         {
             List<Message> messages = new List<Message>();
-            string query = "select * from PureMessage"; 
+            string query = "select * from PureMessage";
 
-            using(SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                SqlDataReader reader = cmd.ExecuteReader(); 
+                SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    messages.Add(ReadMessage(reader)); 
+                    messages.Add(ReadMessage(reader));
                 }
             }
             return messages;
@@ -151,7 +155,7 @@ namespace PureLib.Services
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                
+
                 cmd.Parameters.AddWithValue("@PID", userid);
                 SqlDataReader r = cmd.ExecuteReader();
                 while (r.Read())
@@ -162,7 +166,7 @@ namespace PureLib.Services
             return users;
         }
 
-        
+
         public List<User> GetChatUsers()
         {
             List<User> users = new List<User>();
@@ -181,9 +185,9 @@ namespace PureLib.Services
             return users;
         }
 
-            private Message ReadMessage(SqlDataReader reader)
+        private Message ReadMessage(SqlDataReader reader)
         {
-            return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4)); 
+            return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4));
         }
 
         // ******************************************************************
@@ -229,6 +233,152 @@ namespace PureLib.Services
             return user;
         }
 
+        public int UpdateUser(User user)
+        {
+            string query = "update PureUser" +
+                "set Name = @PName, " +
+                "UserName = @PUserName, " +
+                "Password = @PPassword, " +
+                "PhoneNumber = @PPhoneNumber, " +
+                "Email = @PEmail, " +
+                "CardNumber = @PCardNumber, " +
+                "CardCVC = @CardCVC, " +
+                "CardExpMonth = @PCardExpMonth, " +
+                "CardExpYear = @PCardExpYear, " +
+                "Subscription = @PSubscription, " +
+                "[Level] = @PLevel " +
+                "where UserID = @PID";
+            int rowsaffected;
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                if (user != null)
+                {
+                    cmd.Parameters.AddWithValue("@PName", user.Name);
+                    cmd.Parameters.AddWithValue("@PUserName", user.UserName);
+                    cmd.Parameters.AddWithValue("@PPassword", user.Password);
+                    cmd.Parameters.AddWithValue("@PPhoneNumber", user.PhoneNumber);
+                    cmd.Parameters.AddWithValue("@PEmail", user.Email);
+                    cmd.Parameters.AddWithValue("@PCardNumber", user.CardNumber);
+                    cmd.Parameters.AddWithValue("@PCardCVC", user.CardCVC);
+                    cmd.Parameters.AddWithValue("@PCardExpMonth", user.CardExpMonth);
+                    cmd.Parameters.AddWithValue("@PCardExpYear", user.CardExpYear);
+                    cmd.Parameters.AddWithValue("@PSubscription", user.Subscription);
+                    cmd.Parameters.AddWithValue("@PLevel", user.Level);
+                    cmd.Parameters.AddWithValue("@PID", user.UserID);
+                }
+
+                rowsaffected = cmd.ExecuteNonQuery();
+                Console.WriteLine($"{rowsaffected} rows affected");
+            }
+
+
+            return rowsaffected;
+        }
+
+        public int SetMatching(int userid, List<MuscleGroupEnum> msgroups, List<DaysEnum> days, int level)
+        {
+            int rowsaffected = 0;
+
+            rowsaffected += SetMuscleGroups(userid, msgroups);
+            rowsaffected += SetDays(userid, days);
+            rowsaffected += SetLevel(userid, level);
+            return rowsaffected;
+        }
+
+        private int SetLevel(int userid, int level)
+        {
+            int rowsaffected = 0;
+            string query = "update PureUser " +
+                "set [Level] = @PLevel where UserID = @PID";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PID", userid);
+                cmd.Parameters.AddWithValue("@PLevel", level);
+                rowsaffected = cmd.ExecuteNonQuery();
+            }
+            return rowsaffected;
+
+        }
+
+        private int SetDays(int userid, List<DaysEnum> days)
+        {
+            int rowsaffected = 0;
+            if (days != null)
+            {
+                string query = $"insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
+                $" (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@PID", userid);
+                    cmd.Parameters.AddWithValue("@PMonday", days.Contains(DaysEnum.Mandag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PTuesday", days.Contains(DaysEnum.Tirsdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PWednesday", days.Contains(DaysEnum.Onsdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PThursday", days.Contains(DaysEnum.Torsdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PFriday", days.Contains(DaysEnum.Fredag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PSaturday", days.Contains(DaysEnum.Lørdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PSunday", days.Contains(DaysEnum.Søndag) ? 1 : 0);
+                    rowsaffected = cmd.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                string query = "delete from PureDays where UserID = @PID";
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@PID", userid);
+                    rowsaffected = cmd.ExecuteNonQuery();
+                }
+            }
+            
+            return rowsaffected;
+        }
+
+        private int SetMuscleGroups(int userid, List<MuscleGroupEnum> msgroups)
+        {
+            int rowsaffected = 0;
+            if (msgroups != null) // Insert record into table
+            {
+                string query = $"insert into PureMuscleGroups (UserID, Chest, Back, Shoulders, Legs, Biceps, Triceps, Core) values" +
+                $" (@PID, @PChest, @PBack, @PShoulders, @PLegs, @PBiceps, @PTriceps, @PCore)";
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@PID", userid);
+                    cmd.Parameters.AddWithValue("@PChest", msgroups.Contains(MuscleGroupEnum.Bryst) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PBack", msgroups.Contains(MuscleGroupEnum.Ryg) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PShoulders", msgroups.Contains(MuscleGroupEnum.Skulder) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PLegs", msgroups.Contains(MuscleGroupEnum.Ben) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PBiceps", msgroups.Contains(MuscleGroupEnum.Biceps) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PTriceps", msgroups.Contains(MuscleGroupEnum.Triceps) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PCore", msgroups.Contains(MuscleGroupEnum.Mave) ? 1 : 0);
+                    rowsaffected = cmd.ExecuteNonQuery();
+                }
+            }
+            else // Delete record from table
+            {
+                string query = "delete from PureMuscleGroups where UserID = @PID";
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@PID", userid);
+                    rowsaffected = cmd.ExecuteNonQuery();
+                }
+            }
+
+
+            return rowsaffected;
+        }
+
         public List<User> ReadAllUsersFromDB()
         {
             List<User> users = new List<User>();
@@ -255,34 +405,34 @@ namespace PureLib.Services
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@PID", userid); 
+                cmd.Parameters.AddWithValue("@PID", userid);
                 SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())   
+                while (reader.Read())
                 {
                     u = ReadUserUsingReader(reader);
                 }
 
             }
-            return u!; 
+            return u!;
 
         }
 
         private User ReadUserUsingReader(SqlDataReader reader)
         {
             User u = new User();
-            u.UserID = reader.GetInt32(0); 
+            u.UserID = reader.GetInt32(0);
             u.Name = reader.GetString(1);
-            u.UserName = reader.GetString(2); 
+            u.UserName = reader.GetString(2);
             u.Password = reader.GetString(3);
             u.PhoneNumber = reader.GetString(4);
             u.Email = reader.GetString(5);
-            u.CardNumber = reader.GetString(6); 
+            u.CardNumber = reader.GetString(6);
             u.CardCVC = reader.GetString(7);
             u.CardExpMonth = reader.GetString(8);
             u.CardExpYear = reader.GetString(9);
             u.Subscription = reader.GetInt32(10);
             u.Level = reader.GetInt32(11);
-            return u; 
+            return u;
         }
 
         public List<DaysEnum> ReadDays(int userid)
@@ -298,7 +448,7 @@ namespace PureLib.Services
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    days = ReadDaysUsingReader(reader); 
+                    days = ReadDaysUsingReader(reader);
                 }
 
             }
@@ -307,50 +457,50 @@ namespace PureLib.Services
 
         private List<DaysEnum> ReadDaysUsingReader(SqlDataReader reader)
         {
-            List<DaysEnum> days = new List<DaysEnum>(); 
+            List<DaysEnum> days = new List<DaysEnum>();
             if (reader.GetBoolean(1))
             {
-                days.Add(DaysEnum.Mandag); 
+                days.Add(DaysEnum.Mandag);
             }
             if (reader.GetBoolean(2))
             {
-                days.Add(DaysEnum.Tirsdag); 
+                days.Add(DaysEnum.Tirsdag);
             }
             if (reader.GetBoolean(3))
             {
-                days.Add(DaysEnum.Onsdag); 
+                days.Add(DaysEnum.Onsdag);
             }
             if (reader.GetBoolean(4))
             {
-                days.Add(DaysEnum.Torsdag); 
+                days.Add(DaysEnum.Torsdag);
             }
             if (reader.GetBoolean(5))
             {
-                days.Add(DaysEnum.Fredag); 
+                days.Add(DaysEnum.Fredag);
             }
             if (reader.GetBoolean(6))
             {
-                days.Add(DaysEnum.Lørdag); 
-            } 
+                days.Add(DaysEnum.Lørdag);
+            }
             if (reader.GetBoolean(7))
             {
-                days.Add(DaysEnum.Søndag); 
+                days.Add(DaysEnum.Søndag);
             }
-            return days; 
+            return days;
 
         }
 
         public int SendMessage(int ownid, int matchid, string messagecontent)
         {
-            int rowsaffected = 0; 
+            int rowsaffected = 0;
             string query = "insert into PureMessage (SenderID, RecipientID, MessageValue) values (@PID, @PMID, @PMC)";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@PID", ownid);
-                cmd.Parameters.AddWithValue ("@PMID", matchid);
-                cmd.Parameters.AddWithValue("@PMC", messagecontent); 
+                cmd.Parameters.AddWithValue("@PMID", matchid);
+                cmd.Parameters.AddWithValue("@PMC", messagecontent);
                 rowsaffected = cmd.ExecuteNonQuery();
             }
             return rowsaffected;
