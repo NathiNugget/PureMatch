@@ -251,9 +251,9 @@ namespace PureLib.Model
                     throw new ArgumentException("Du skal skrive 2 cifre på formen ## - f.eks. 25 for år 2025");
                 }
                 
-                if (int.Parse(value) < ValidationRegex.YEARDIGITS+1 || int.Parse(value) > ValidationRegex.YEARDIGITS+5)
+                if (int.Parse(value) < ValidationRegex.YEARDIGITSMIN || int.Parse(value) > ValidationRegex.YEARDIGITSMAX)
                 {
-                    throw new ArgumentException($"Du skal skrive et år mellem {ValidationRegex.YEARDIGITS+1} og {ValidationRegex.YEARDIGITS+5}");
+                    throw new ArgumentException($"Du skal skrive et år mellem {ValidationRegex.YEARDIGITSMIN} og {ValidationRegex.YEARDIGITSMAX}");
                 }
                 _cardexpyear = value;
             }

@@ -12,7 +12,8 @@ namespace PureLib.Model
     public static class ValidationRegex
     {
         private static DateTime CURRENTTIME = DateTime.Now;
-        public static int YEARDIGITS = int.Parse(CURRENTTIME.ToString("yy"));
+        public static int YEARDIGITSMIN = int.Parse(CURRENTTIME.AddYears(1).ToString("yy"));
+        public static int YEARDIGITSMAX = int.Parse(CURRENTTIME.AddYears(5).ToString("yy"));
         public const string PHONEFILTER = "^\\d{8}$";
         public const string MAILFILTER = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
         public const string CARDNUMBERFILTER = "^\\d{16}$";
