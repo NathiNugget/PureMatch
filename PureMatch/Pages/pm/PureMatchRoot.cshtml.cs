@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Model;
 using PureLib.Services;
+using System.Text.RegularExpressions;
 
 namespace PureMatch.Pages.pm;
 
@@ -36,13 +37,14 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPost()
     {
-
+        MuscleGroups = (List<bool>)MuscleGroups.Where(e => e == true); 
+        DaysList = (List<bool>)DaysList.Where(e => e == true);
 
         if (!ModelState.IsValid)
         {
             return Page();
         }
-
+        
         return Page();
     }
 
@@ -50,6 +52,8 @@ public class PureMatchRoot : PageModel
     public void OnPostReset(int userid)
     {
         Repo.SetMatching(userid, null, null, 0);
+        // User u = SessionHelper.Get<User>(, ;
+        // SessionHelper.Set<User>()
     }
 
     public IActionResult OnPostChangeCriteria(int someval)
