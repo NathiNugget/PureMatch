@@ -37,8 +37,7 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPost()
     {
-        MuscleGroups = (List<bool>)MuscleGroups.Where(e => e == true); 
-        DaysList = (List<bool>)DaysList.Where(e => e == true);
+        
 
         if (!ModelState.IsValid)
         {
@@ -49,15 +48,50 @@ public class PureMatchRoot : PageModel
     }
 
 
-    public void OnPostReset(int userid)
+    public IActionResult OnPostResetMatch()
     {
+        User u = null; 
+
+        if (!ModelState.IsValid)
+        {
+            return Page(); 
+        }
         Repo.SetMatching(userid, null, null, 0);
-        // User u = SessionHelper.Get<User>(, ;
-        // SessionHelper.Set<User>()
+        return RedirectToPage("/Index");
     }
 
-    public IActionResult OnPostChangeCriteria(int someval)
+    public IActionResult OnPostChangeCriteria(int userid)
     {
+        if (!ModelState.IsValid)
+        {
+            return Page(); 
+        }
+        // User u = SessionHelper.Get<User>(u, HttpContext);
+        // u.Level = SelectedLevel; 
+        // u.MuscleGroups = MuscleGroups; 
+        // u.Days = Days; 
+        // SessionHelper.Set<User>(u, HttpContext);
+        //MuscleGroups = (List<bool>)MuscleGroups.Where(e => e == true);
+        //DaysList = (List<bool>)DaysList.Where(e => e == true);
+        List<MuscleGroupEnum> groups = new List<MuscleGroupEnum>();
+        for (int i = 0; i < MuscleGroups.Count; i++)
+        {
+            if (MuscleGroups[i])
+            {
+                groups.Add((MuscleGroupEnum)i);
+            }
+        }
+
+        List<DaysEnum> days = new List<DaysEnum>();
+        for (int i = 0; i < Days.Count; i++)
+        {
+            if (DaysList[i])
+            {
+                days.Add((DaysEnum)i);
+            }
+        }
+
+        Repo.SetMatching(userid, groups, days, SelectedLevel); 
         return RedirectToPage("/Index");
     }
 
