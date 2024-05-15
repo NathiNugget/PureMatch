@@ -1,18 +1,22 @@
 @page
+@using PureLib.Model
 @model PureMatch.Pages.pm.PureMatchRoot
 
 @{
-
+    User u = Model.Repo.ReadUser(2);
 }
 <head>
     <title>PureGym - PureMatch</title>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
 
+
+@if (User == null) // Hvis ingen bruger er logget ind
+{
     <h1>
         PureMatch
     </h1>
+
     <h1><blockquote class="slogan">Find den perfekte træningspartner</blockquote></h1>
 
 
@@ -38,11 +42,79 @@
             </div>
         </div>
     </div>
+}
+else // Hvis en bruger er logget ind
+{
+
+    <h1 class="headers">PureMatch</h1>
+    <div>
+        <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Mine Matches</strong></button>
+        <form method="post" asp-page-handler="Reset">
+            <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Nulstil</strong></button>
+        </form>
+    </div>
+
+    <div class="container backgroundcolor">
+
+        <form method="post" asp-page-handler="ChangeCriteria">
+            <div class="subscription-container margin40 margin">
+
+                <div class="subscription backgroundcolorwhite margin50topbot">
+                    <h2>Muslekgruppe</h2>
+                    <p>
+                        <ul>
+                            @for (int i = 0; i < 7; i++)
+                            {
+                                <input type="checkbox" value="@Model.Groups[i]" asp-for="MuscleGroups[i]"/> @Model.Groups[i]
+                                <br />
+                            }
+
+                        </ul>
+                    </p>
+
+                </div>
+
+                <div class="subscription backgroundcolorwhite margin50topbot">
+                    <h2>Niveau</h2>
+                    <p>
+                        @for (int i = 0; i < 3; i++)
+                        {
+                            <input type="checkbox" value="@Model.Levels[i]" asp-for="LevelsList[i]"/> @Model.Levels[i]
+                            <br />  
+                        }
+                    </p>
+
+                </div>
+
+                <div class="subscription backgroundcolorwhite margin50topbot">
+                    <h2>Dag</h2>
+                    <p>
+                        <ul>
+                            @for (int i = 0; i < 7; i++)
+                            {
+                                <input type="checkbox" value="@Model.Days[i]" asp-for="DaysList[i]" /> @Model.Days[i]
+                                <br />
+                            }
+
+                        </ul>
+                    </p>
+
+                </div>
+
+            </div>
+            <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Match</strong></button>
+          
+        </form>
+    </div>
 
 
 
 
-</body>
+
+
+
+
+}
 
 
 

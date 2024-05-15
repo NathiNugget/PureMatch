@@ -89,6 +89,10 @@ h1 {
     background-color: #E9E9E9;
 }
 
+.backgroundcolorwhite {
+    background-color: white;
+}
+
 .backgroundcolorbutton {
     background-color: #FF6129;
     border: none;
@@ -168,3 +172,4 @@ h1 {
     height: 40vw;
     padding-left: 15vw;
 }
+
