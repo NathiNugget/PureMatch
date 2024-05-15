@@ -11,7 +11,7 @@ namespace PureMatch.Pages.Logins
     {
         public MyProfileModel(DataBaseReader repo)
         {
-            Repo = repo;
+            Repo = repo;    
         }
         public void OnGet()
         {

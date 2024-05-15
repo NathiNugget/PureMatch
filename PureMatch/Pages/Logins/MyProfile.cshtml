@@ -16,7 +16,7 @@
             </div>
 
             <div class ="container-main backgroundcolor">
-                <h2  class="slogan">MINE OPLYSNINGER</h2>
+                <h2  class="slogan">MINE OPLYSNINGER</h2>z
 
                 <div>
                     <label>Navn</label>
@@ -26,7 +26,7 @@
 
                 <div>
                     <label>Brugernavn</label>
-                    <input type="text" class="form-control" asp-for="UserName" value="@u.UserName">
+                    <input type="text" class="form-control" asp-for="UserName"  value="@u.UserName">
                     <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
 
@@ -68,7 +68,7 @@
 
                 <div>
                     <label>Kort Udløbsår</label>
-                    <input type="text" class="form-control" asp-for="CardExpireYear" value="@u.CardExpMonth">
+                    <input type="text" class="form-control" asp-for="CardExpireYear" value="@u.CardExpYear">
                     <span asp-validation-for="CardExpireYear" class="text-danger"></span>
                 </div>
 
@@ -78,7 +78,7 @@
                     <span asp-validation-for="Subscription" class="text-danger"></span>
                 </div>
 
-                <button type="submit">Redigér mine data</button>
+                <button class="backgroundcolorbutton" type="submit">Redigér mine data</button>
 
 
 
