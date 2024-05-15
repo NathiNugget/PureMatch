@@ -15,7 +15,7 @@ public class PureMatchRoot : PageModel
     }
     public void OnGet()
     {
-
+        
         Groups = Enum.GetValues(typeof(MuscleGroupEnum)).Cast<MuscleGroupEnum>().ToList();
         MuscleGroups = new List<bool>();
         for (int i = 0; i < Groups.Count; i++)
@@ -50,8 +50,9 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPostResetMatch()
     {
-        User u = null; 
-
+        User u = null;
+        u = SessionHelper.Get<User>(u, HttpContext); 
+        int userid = u.UserID;
         if (!ModelState.IsValid)
         {
             return Page(); 
@@ -60,19 +61,19 @@ public class PureMatchRoot : PageModel
         return RedirectToPage("/Index");
     }
 
-    public IActionResult OnPostChangeCriteria(int userid)
+    public IActionResult OnPostChangeCriteria()
     {
         if (!ModelState.IsValid)
         {
             return Page(); 
         }
-        // User u = SessionHelper.Get<User>(u, HttpContext);
-        // u.Level = SelectedLevel; 
-        // u.MuscleGroups = MuscleGroups; 
-        // u.Days = Days; 
-        // SessionHelper.Set<User>(u, HttpContext);
-        //MuscleGroups = (List<bool>)MuscleGroups.Where(e => e == true);
-        //DaysList = (List<bool>)DaysList.Where(e => e == true);
+        User u = null; 
+        u = SessionHelper.Get<User>(u, HttpContext);
+        u.Level = SelectedLevel;
+        u.MuscleGroups = Groups;
+        u.Days = Days;
+        SessionHelper.Set<User>(u, HttpContext);
+        int userid = u.UserID;
         List<MuscleGroupEnum> groups = new List<MuscleGroupEnum>();
         for (int i = 0; i < MuscleGroups.Count; i++)
         {
@@ -83,7 +84,7 @@ public class PureMatchRoot : PageModel
         }
 
         List<DaysEnum> days = new List<DaysEnum>();
-        for (int i = 0; i < Days.Count; i++)
+        for (int i = 0; i < DaysList.Count; i++)
         {
             if (DaysList[i])
             {

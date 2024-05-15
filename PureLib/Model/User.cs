@@ -80,6 +80,8 @@ namespace PureLib.Model
             CardExpYear = "25";
             Subscription = (int)SubscriptionEnum.Core;
             Level = (int)LevelsEnum.Begynder;
+            _days = new List<DaysEnum>();
+            _musclegroups = new List<MuscleGroupEnum>();
         }
 
         /// <summary>
