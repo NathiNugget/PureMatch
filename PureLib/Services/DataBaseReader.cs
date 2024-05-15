@@ -236,13 +236,13 @@ namespace PureLib.Services
         public int UpdateUser(User user)
         {
             string query = "update PureUser" +
-                "set Name = @PName, " +
+                " set Name = @PName, " +
                 "UserName = @PUserName, " +
                 "Password = @PPassword, " +
                 "PhoneNumber = @PPhoneNumber, " +
                 "Email = @PEmail, " +
                 "CardNumber = @PCardNumber, " +
-                "CardCVC = @CardCVC, " +
+                "CardCVC = @PCardCVC, " +
                 "CardExpMonth = @PCardExpMonth, " +
                 "CardExpYear = @PCardExpYear, " +
                 "Subscription = @PSubscription, " +

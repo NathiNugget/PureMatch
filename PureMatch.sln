@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureMatch", "PureMatch\Pure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureLib", "PureLib\PureLib.csproj", "{A70D78D7-4A28-4527-8DC1-BB20A33A7658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureLibTest", "PureLibTest\PureLibTest.csproj", "{7E4DEC8E-AC42-4E79-9704-E631668D4C80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureLibTest", "PureLibTest\PureLibTest.csproj", "{7E4DEC8E-AC42-4E79-9704-E631668D4C80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

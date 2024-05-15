@@ -7,60 +7,84 @@ using PureLib.Services;
 namespace PureMatch.Pages.Logins
 {
     [BindProperties]
-    public class MyProfileModel : PageModel
+    public class MyProfile : PageModel
     {
-        public MyProfileModel(DataBaseReader repo)
+        private User u;
+        public MyProfile(DataBaseReader repo)
         {
             Repo = repo;
         }
-        public void OnGet()
+        public void OnGet(int userid)
         {
-            
+            u = Repo.ReadUser(userid); //TODO: Change to session
+            NameNew = u.Name;
+            UserNameNew = u.UserName;
+            PasswordNew = u.Password;
+            EmailNew = u.Email;
+            PhoneNumberNew = u.PhoneNumber;
+            CardNumberNew = u.CardNumber;
+            CVCNew = u.CardCVC;
+            CardExpMonthNew = int.Parse(u.CardExpMonth);
+            CardExpYearNew = int.Parse(u.CardExpYear);
+
+
+
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPostUpdate()
         {
+            ModelState.Remove("Days");
+            ModelState.Remove("MuscleGroups");
             if (!ModelState.IsValid)
             {
                 return Page(); 
             }
-            return Page(); 
+            RedirectToPage("./ConfirmChanges", new { userid = u.UserID,
+                
+            }); 
+            
+
+
+
+
+            if (!ModelState.IsValid)
+            {
+                return Page(); 
+            }
+            return RedirectToPage("/Index"); 
         }
         
+        public User ProfileUser { get; 
+            set; }
         
         
-        
-        public User user { get; set; }
+
         [Required(ErrorMessage = "Du skal skrive dit fulde navn")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
-        public string Name { get; set; }
-        
-        [Required(ErrorMessage = "Du skal skrive et brugernavn")]
+        public string NameNew { get; set; }
+        [Required(ErrorMessage = "Du skal skrive et brugernvan")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 30 tegn")]
-        public string UserName { get; set; }
+        public string UserNameNew { get; set; }
         [Required(ErrorMessage = "Du skal skrive et kodeord")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
-        public string Password { get; set; }
-        
+        public string PasswordNew { get; set; }
         [Required(ErrorMessage = "Du skal skrive et telefonnummer på 8 tal")]
-        [RegularExpression(ValidationRegex.PHONEFILTER, ErrorMessage = "Du skal skrive 8 tal p� formen ########")]
-        public string PhoneNumber { get; set; }
-        [Required(ErrorMessage = "Du skal skrive en mail")]     
-        [RegularExpression(ValidationRegex.MAILFILTER, ErrorMessage = "Du skal skrive p� formen navn@dom�ne.tld")]
-        public string Email { get; set; }
-        
-        [Required(ErrorMessage = "Du skal skrive et kortnummer p� 16 cifre")]
+        [RegularExpression(ValidationRegex.PHONEFILTER, ErrorMessage = "Du skal skrive 8 tal på formen ########")]
+        public string PhoneNumberNew { get; set; }
+        [Required(ErrorMessage = "Du skal skrive en mail")]
+        [RegularExpression(ValidationRegex.MAILFILTER, ErrorMessage = "Du skal skrive på formen navn@domåne.tld")]
+        public string EmailNew { get; set; }
+        [Required(ErrorMessage = "Du skal skrive et kortnummer på 16 cifre")]
         [RegularExpression(ValidationRegex.CARDNUMBERFILTER, ErrorMessage = "Du skal skrive 16 cifre")]
-        public string CardNumber { get; set; }
+        public string CardNumberNew { get; set; }
         [Required(ErrorMessage = "Du skal skrive et CVC på 3 cifre")]
         [RegularExpression(ValidationRegex.CARDCVCFILTER, ErrorMessage = "Du skal skrive 3 cifre")]
-        public string CardCVC { get; set; }
-        [Required(ErrorMessage = "Du skal skrive kortets m�ned for udl�bsdato, mellem 1 og 12")]
-        
-        public string CardExpireMonth { get; set; }
-        [Required(ErrorMessage = "Du skal skrive kortets år for udl�bsdato, mellem 1 og 12")]
-        public string CardExpireYear { get; set; }
-        public string Subscription { get; set; }
+        public string CVCNew { get; set; }
+        [Required(ErrorMessage = "Du skal skrive kortets måned for udlåbsdato, mellem 1 og 12")]
+        public int CardExpMonthNew { get; set; }
+
+        [Required(ErrorMessage = "Du skal skrive kortets år for udlåbsdato, 2 cifre tak")]
+        public int CardExpYearNew { get; set; }
         public DataBaseReader Repo { get; set; }
     }
 }
