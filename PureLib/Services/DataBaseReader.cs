@@ -277,6 +277,26 @@ namespace PureLib.Services
             return rowsaffected;
         }
 
+        public User? ReadLogin(string username, string password)
+        {
+            User? user = null;
+            string query = "select * from PureUser where UserName = @PName AND Password = @PPassword"; 
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PName", username);
+                cmd.Parameters.AddWithValue("@PPassword", password);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    user = ReadUserUsingReader(reader);
+                }
+            }
+            return user;
+
+        }
+
         public int SetMatching(int userid, List<MuscleGroupEnum> msgroups, List<DaysEnum> days, int level)
         {
             int rowsaffected = 0;

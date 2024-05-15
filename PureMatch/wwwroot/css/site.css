@@ -33,8 +33,20 @@ body {
     margin-bottom: 5px;
 }
 
+.margin20bot {
+    margin-bottom: 20px;
+}
+
 .padding5bot {
     padding-bottom: 5px;
+}
+
+.padding5top {
+    padding-top: 5px;
+}
+
+.padding20top {
+    padding-top: 5px;
 }
 .margin50topbot {
     margin-top: 50px;
