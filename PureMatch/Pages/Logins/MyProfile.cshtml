@@ -1,4 +1,104 @@
 ﻿@page
+@using PureLib.Model
+@using PureLib.Services
 @model PureMatch.Pages.Logins.MyProfileModel
 @{
+    User u = Model.Repo.ReadUser(2); 
 }
+<h1 style="color:#00999D;">MIN PROFIL</h1>
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+
+
+            </div>
+
+            <div class ="container-main backgroundcolor">
+                <h2  class="slogan">MINE OPLYSNINGER</h2>
+
+                <div>
+                    <label>Navn</label>
+                    <input class="form-control" asp-for="Name" value="@u.Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>Brugernavn</label>
+                    <input type="text" class="form-control" asp-for="UserName" value="@u.UserName">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>Kodeord</label>
+                    <input type="text" class="form-control" asp-for="Password" value="@u.Password">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>telefonnummer</label>
+                    <input type="text" class="form-control" asp-for="PhoneNumber" value="@u.PhoneNumber">
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="text" class="form-control" type="text" asp-for="Email" value="@u.Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>Kortnummer</label>
+                    <input type="text" class="form-control" asp-for="CardNumber" value="@u.CardNumber">
+                    <span asp-validation-for="CardNumber" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>CVC</label>
+                    <input type="text" class="form-control" asp-for="CardCVC" value="@u.CardCVC">
+                    <span asp-validation-for="CardCVC" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label> Kort Udløbsmåned</label>
+                    <input type="text" class="form-control" asp-for="CardExpireMonth" value="@u.CardExpMonth">
+                    <span asp-validation-for="CardExpireMonth" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>Kort Udløbsår</label>
+                    <input type="text" class="form-control" asp-for="CardExpireYear" value="@u.CardExpMonth">
+                    <span asp-validation-for="CardExpireYear" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <label>Abonnement</label>
+                    <input type="text" class="form-control" asp-for="Subscription" value="@u.Subscription">
+                    <span asp-validation-for="Subscription" class="text-danger"></span>
+                </div>
+
+                <button type="submit">Redigér mine data</button>
+
+
+
+
+
+
+
+            </div>
+            <div class="col-2">
+
+            </div>
+
+        </div>
+
+
+
+
+
+        
+
+    </div>
+
+</form>
