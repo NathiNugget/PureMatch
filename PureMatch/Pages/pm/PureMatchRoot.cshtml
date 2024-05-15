@@ -60,16 +60,16 @@ else // Hvis en bruger er logget ind
             <div class="subscription-container margin40 margin">
 
                 <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2>Muslekgruppe</h2>
+                    <h2>Muskelgrupper</h2>
                     <p>
-                        <ul>
-                            @for (int i = 0; i < 7; i++)
+                        
+                            @for (int i = 0; i < Model.Groups.Count; i++)
                             {
-                                <input type="checkbox" value="@Model.Groups[i]" asp-for="MuscleGroups[i]"/> @Model.Groups[i]
-                                <br />
+                                <input type="checkbox" value="true" asp-for="MuscleGroups[i]"/> @Model.Groups[i]
+                                <br /> =>
                             }
 
-                        </ul>
+                        
                     </p>
 
                 </div>
@@ -77,9 +77,9 @@ else // Hvis en bruger er logget ind
                 <div class="subscription backgroundcolorwhite margin50topbot">
                     <h2>Niveau</h2>
                     <p>
-                        @for (int i = 0; i < 3; i++)
+                        @for (int i = 0; i < Model.Levels.Count; i++)
                         {
-                            <input type="checkbox" value="@Model.Levels[i]" asp-for="LevelsList[i]"/> @Model.Levels[i]
+                            <input type="radio" value="@i" asp-for="@Model.SelectedLevel"/> @Model.Levels[i]
                             <br />  
                         }
                     </p>
@@ -87,16 +87,16 @@ else // Hvis en bruger er logget ind
                 </div>
 
                 <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2>Dag</h2>
+                    <h2>Dage</h2>
                     <p>
-                        <ul>
-                            @for (int i = 0; i < 7; i++)
+                        
+                            @for (int i = 0; i < Model.Days.Count; i++)
                             {
-                                <input type="checkbox" value="@Model.Days[i]" asp-for="DaysList[i]" /> @Model.Days[i]
+                                <input type="checkbox" value="true" asp-for="@Model.DaysList[i]" /> @Model.Days[i]
                                 <br />
                             }
 
-                        </ul>
+                        
                     </p>
 
                 </div>

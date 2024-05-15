@@ -17,29 +17,39 @@ public class PureMatchRoot : PageModel
 
         Groups = Enum.GetValues(typeof(MuscleGroupEnum)).Cast<MuscleGroupEnum>().ToList();
         MuscleGroups = new List<bool>();
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < Groups.Count; i++)
         {
             MuscleGroups.Add(false);
         }
 
         Levels = Enum.GetValues(typeof(LevelsEnum)).Cast<LevelsEnum>().ToList();
-        List<bool> Levelslist = new List<bool>();
-        for (int i = 0; i < 3; i++)
-        {
-            Levelslist.Add(false);
-        }
+
 
         Days = Enum.GetValues(typeof(DaysEnum)).Cast<DaysEnum>().ToList();
-        List<bool> Dayslist = new List<bool>();
-        for (int i = 0; i < 7; i++)
+        List<bool> DaysList = new List<bool>();
+        for (int i = 0; i < Days.Count; i++)
         {
-            Levelslist.Add(false);
+            DaysList.Add(false);
         }
+
     }
+
+    public IActionResult OnPost()
+    {
+
+
+        if (!ModelState.IsValid)
+        {
+            return Page();
+        }
+
+        return Page();
+    }
+
 
     public void OnPostReset(int userid)
     {
-        Repo.SetMatching(userid, null, null, 0); 
+        Repo.SetMatching(userid, null, null, 0);
     }
 
     public IActionResult OnPostChangeCriteria(int someval)
@@ -53,9 +63,9 @@ public class PureMatchRoot : PageModel
 
 
     public DataBaseReader Repo { get; set; }
-    [BindProperty]
+    
     public List<bool> MuscleGroups { get; set; }
-    public List<bool> LevelsList { get; set; }
+    public int SelectedLevel { get; set; }
     public List<bool> DaysList { get; set; }
 
 
