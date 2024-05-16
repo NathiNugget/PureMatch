@@ -2,7 +2,16 @@
 @using PureLib.Model
 @model PureMatch.Pages.pm.UserPageModel
 @{
-    MuscleGroupEnum level = (MuscleGroupEnum)Model.MatchUser.Level;
+    User u = null!; 
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext); 
+    }
+    catch
+    {
+        
+    }
+
 }
 
 <head>
@@ -27,7 +36,7 @@
         }
         <br />
         <span>Niveau</span>
-        <p>→ @level</p>
+        <p>→ @Model.MatchUser.Level</p>
         <br />
         @if (Model.MatchUser.Days.Count == 1)
         {
@@ -52,7 +61,7 @@
                         <input type="text" class="form-control margin5top" asp-for="Message" placeholder="Skriv besked her" />
                     </div>
                     <div class="col-2">
-                        <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@Model.OUser.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
+                        <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@u.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
                         
                     </div>
                     <span asp-validation-for="Message" class="text-danger"></span>
