@@ -53,6 +53,11 @@ body {
     padding-top: 10px;
 }
 
+.padding50topbot {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
 .margin50topbot {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -242,3 +247,6 @@ h1 {
     text-align: end;
 }
 
+.container-small {
+    width: fit-content; 
+}

@@ -44,29 +44,34 @@
                     foreach(Message m in Model.Messages)
                     {
 
-                        if (m.Senderid == u.UserID)
+                        if (m.SenderID == u.UserID)
                         {
+                            matchuserid = m.RecipientID;
                             <div>
                                 <p class="MyMessages">@m.Messagevalue</p>
                             </div>
                         }
                         else
                         {
-                            matchuserid = m.Senderid; 
+                            matchuserid = m.SenderID; 
                             <div class="text-end">
                                 <p class="OtherMessages">@m.Messagevalue</p>
                             </div>
                         }
                     }
                     <form method="post" asp-page-handler="SendMessage">
-                        <div class="col-6">
-                            <input type="text" class="form-control" asp-for="MessageValue" placeholder="Skriv besked her" />
-                        </div>
-                        <div class="col-1">
-                            <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@u.UserID" asp-route-matchid="@matchuserid">Send besked</button>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" asp-for="MessageValue" placeholder="Skriv besked her" />
+                                <span asp-validation-for="MessageValue" class="text-danger"></span>
+                            </div>
+                            <div class="col-1">
+                                <button type="submit" class="backgroundcolorbutton" asp-page-handler="SendMessage" asp-route-ownid="@u.UserID" asp-route-chatid="@matchuserid">Send besked</button>
 
+                            </div>
                         </div>
-                        <span asp-validation-for="MessageValue" class="text-danger"></span>
+                        
+                        
                     </form>
                     
 

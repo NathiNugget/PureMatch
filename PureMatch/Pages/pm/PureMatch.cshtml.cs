@@ -32,11 +32,12 @@ namespace PureMatch.Pages.pm
              
         }
 
-        public void OnPostMessage(int chatid)
+        public IActionResult OnPostMessage(int chatid)
         {
+            ModelState.Remove("MessageValue");
             if (!ModelState.IsValid)
             {
-               
+                return Page();
             }
             User u = null!;
             u = SessionHelper.Get<User>(u, HttpContext);
@@ -47,6 +48,7 @@ namespace PureMatch.Pages.pm
                 Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
 
             }
+            return Page(); 
             
         }
 
@@ -56,14 +58,20 @@ namespace PureMatch.Pages.pm
 
         }
 
-        public IActionResult OnPostSendMessage(int ownid, int matchid)
+        public IActionResult OnPostSendMessage(int ownid, int chatid)
         {
+            
+            User u = null!;
+            u = SessionHelper.Get<User>(u, HttpContext);
+            Matches = _repo.GetMatches(u.UserID);
+            Chats = _repo.GetChatUsers(u.UserID);
+            Messages = _repo.ReadMessages(u.UserID, chatid);
             if (!ModelState.IsValid)
             {
-                return Page();
+                return RedirectToPage("./PureMatch", new { chatid = chatid });
             }
 
-            _repo.SendMessage(ownid, matchid, MessageValue);
+            _repo.SendMessage(ownid, chatid, MessageValue);
             return RedirectToPage("./PureMatch");
         }
 

@@ -18,7 +18,7 @@
 
 }
 <head>
-    <title>PureGym - PureMatch</title>
+    <title>PureGym - PureMatch choose your matching!</title>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 
@@ -58,74 +58,80 @@
 }
 else // Hvis en bruger er logget ind
 {
-
     <h1 class="headers">PureMatch</h1>
-    <div>
-        <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Mine Matches</strong></button>
-        @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
-        {
-            <form method="post" asp-page-handler="ResetMatch">
-                <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
-            </form>
-        }
+    @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
+    {
+        <div class="container-main container-small container centertext backgroundcolor">
+            <div class="padding50topbot">
+                <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matchess</a>
+                <form method="post" asp-page-handler="ResetMatch">
+                    <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
+                </form>
+            </div>
+            
+        </div>
         
-    </div>
+    }
+    else
 
-    <div class="container backgroundcolor">
+    {
+        <div class="container backgroundcolor">
 
-        <form method="post" asp-page-handler="ChangeCriteria">
-            <div class="subscription-container margin40 margin">
+            <form method="post" asp-page-handler="ChangeCriteria">
+                <div class="subscription-container margin40 margin">
 
-                <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2 class="bottomborder">Muskelgrupper</h2>
-                    <p>
-                        
+                    <div class="subscription backgroundcolorwhite margin50topbot">
+                        <h2 class="bottomborder">Muskelgrupper</h2>
+                        <p>
+
                             @for (int i = 0; i < Model.Groups.Count; i++)
                             {
-                                <input type="checkbox" value="true" asp-for="MuscleGroups[i]"/> @Model.Groups[i]
+                                <input type="checkbox" value="true" asp-for="MuscleGroups[i]" /> @Model.Groups[i]
                                 <br />
                             }
 
-                        
-                    </p>
 
-                </div>
+                        </p>
 
-                <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2 class ="bottomborder">Niveau</h2>
-                    <p>
-                        @for (int i = 0; i < Model.Levels.Count; i++)
-                        {
-                            <input type="radio" value="@i" asp-for="@Model.SelectedLevel"/> @Model.Levels[i]
-                            <br />  
-                        }
-                    </p>
+                    </div>
 
-                </div>
+                    <div class="subscription backgroundcolorwhite margin50topbot">
+                        <h2 class="bottomborder">Niveau</h2>
+                        <p>
+                            @for (int i = 0; i < Model.Levels.Count; i++)
+                            {
+                                <input type="radio" value="@i" asp-for="@Model.SelectedLevel" /> @Model.Levels[i]
+                                <br />
+                            }
+                        </p>
 
-                <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2 class="bottomborder">Dage</h2>
-                    <p>
-                        
+                    </div>
+
+                    <div class="subscription backgroundcolorwhite margin50topbot">
+                        <h2 class="bottomborder">Dage</h2>
+                        <p>
+
                             @for (int i = 0; i < Model.Days.Count; i++)
                             {
                                 <input type="checkbox" value="true" asp-for="@Model.DaysList[i]" /> @Model.Days[i]
                                 <br />
                             }
 
-                        
-                    </p>
+
+                        </p>
+
+                    </div>
 
                 </div>
+                <div class="text-center">
+                    <input type="submit" class="backgroundcolorbutton strong bottom-button" value="Match">
+                </div>
 
-            </div>
-            <div class="text-center">
-                <input type="submit" class="backgroundcolorbutton strong bottom-button" value="Match">
-            </div>
-           
-          
-        </form>
-    </div>
+
+            </form>
+        </div>
+    }
+    
 
 
 
