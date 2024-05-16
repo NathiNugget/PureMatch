@@ -309,24 +309,23 @@ namespace PureLib.Services
             int rowsaffected = 0;
             if (days != null) // If list is received
             {
-                if (days.Count > 0) // If list is non-empty
+
+                string query = "insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
+                " (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    string query = "insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
-                    " (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
-                    using (SqlConnection connection = new SqlConnection(ConnectionString))
-                    {
-                        connection.Open();
-                        SqlCommand cmd = new SqlCommand(query, connection);
-                        cmd.Parameters.AddWithValue("@PID", userid);
-                        cmd.Parameters.AddWithValue("@PMonday", days.Contains(DaysEnum.Mandag) ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@PTuesday", days.Contains(DaysEnum.Tirsdag) ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@PWednesday", days.Contains(DaysEnum.Onsdag) ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@PThursday", days.Contains(DaysEnum.Torsdag) ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@PFriday", days.Contains(DaysEnum.Fredag) ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@PSaturday", days.Contains(DaysEnum.Lørdag) ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@PSunday", days.Contains(DaysEnum.Søndag) ? 1 : 0);
-                        rowsaffected = cmd.ExecuteNonQuery();
-                    }
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@PID", userid);
+                    cmd.Parameters.AddWithValue("@PMonday", days.Contains(DaysEnum.Mandag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PTuesday", days.Contains(DaysEnum.Tirsdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PWednesday", days.Contains(DaysEnum.Onsdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PThursday", days.Contains(DaysEnum.Torsdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PFriday", days.Contains(DaysEnum.Fredag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PSaturday", days.Contains(DaysEnum.Lørdag) ? 1 : 0);
+                    cmd.Parameters.AddWithValue("@PSunday", days.Contains(DaysEnum.Søndag) ? 1 : 0);
+                    rowsaffected = cmd.ExecuteNonQuery();
+
                 }
 
             }
