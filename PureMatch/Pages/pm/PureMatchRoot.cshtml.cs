@@ -38,14 +38,14 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPostResetMatch()
     {
-        User u = null;
+        User u = null!;
         u = SessionHelper.Get<User>(u, HttpContext); 
         int userid = u.UserID;
         if (!ModelState.IsValid)
         {
             return Page(); 
         }
-        Repo.SetMatching(userid, null, null, 0);
+        Repo.SetMatching(userid, null!, null!, 0);
         return RedirectToPage("/Index");
     }
 
@@ -75,7 +75,7 @@ public class PureMatchRoot : PageModel
         {
             return Page(); 
         }
-        User u = null; 
+        User u = null!; 
         u = SessionHelper.Get<User>(u, HttpContext);
         u.Level = SelectedLevel;
         u.MuscleGroups = Groups;

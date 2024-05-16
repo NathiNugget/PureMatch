@@ -4,14 +4,14 @@
 @inject PureLib.Services.DataBaseLink db
 
 @{
-    User u = null;
+    User u = null!;
     try
     {
         u = SessionHelper.Get<User>(u, HttpContext);
         u.Days = db.ReadDays(u.UserID); 
         u.MuscleGroups = db.ReadMuscleGroups(u.UserID); 
     }
-    catch (Exception e)
+    catch
     {
 
     }
@@ -29,7 +29,7 @@
         PureMatch
     </h1>
 
-    <h1><blockquote class="slogan">Find den perfekte træningspartner</blockquote></h1>
+    <h1>Find den perfekte træningspartner</h1>
 
 
 
@@ -44,8 +44,9 @@
                         PureMatch er til dig der mangler en træningsmakker. Indtast dine oplysninger under din profil, klik på PureMatch og find din makker idag!
                         For at benytte PureMatch skal du være logget ind og have et aktivt medlemskab.
                     </p>
-                    <a asp-page="./SelectSubscription"><button class="backgroundcolorbutton" style="margin-right: 10px; border-radius: 5px;"><strong>Bliv medlem</strong></button></a>
-                    <a asp-page="../Logins/Login"><button class="backgroundcolorbutton" style="border-radius: 5px;"><strong>Log ind</strong></button></a>
+
+                    <a asp-page="./SelectSubscription" class="backgroundcolorbutton strong">Bliv medlem</a>
+                    <a asp-page="../Logins/Login" class="backgroundcolorbuttonblue strong">Log ind</a>
                 </div>
 
 
