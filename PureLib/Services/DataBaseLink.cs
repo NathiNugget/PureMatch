@@ -528,5 +528,29 @@ namespace PureLib.Services
             return rowsaffected;
 
         }
+
+        public List<Message> ReadMessages(int userID, int chatid)
+        {
+            List<Message> messages = new List<Message>();
+            string query = "select * from PureMessage where (SenderID = @PID and RecipientID = @CID) or (SenderID = @CID and RecipientID = @PID)";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PID", userID); 
+                cmd.Parameters.AddWithValue("@CID", chatid);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    messages.Add(ReadMessageUsingReader(reader));
+                }
+            }
+            return messages; 
+        }
+
+        private Message ReadMessageUsingReader(SqlDataReader reader)
+        {
+            return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4)); 
+        }
     }
 }
