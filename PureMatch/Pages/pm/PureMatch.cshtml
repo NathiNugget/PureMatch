@@ -16,25 +16,42 @@
             <form method="post" asp-page-handler="Chat">
                 @foreach (User c in Model.Chats)
                 {
-                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-route-ownid="@user.UserID" asp-route-chatid="@c.UserID">@c.Name</button><br />
+                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-route-ownid="@user.UserID" asp-route-chatid="@c.UserID">@c.Name</button>
+
+                    <br />
 
                 }
             </form>
-            
+
         </div>
-        <div class="col-8 container-main">
+        <div class="col-8 container-main container">
             @* This div is for chat-content*@
             <h3 class="text-center">PureMatch</h3>
             <div class="vline"></div>
-            <div class="align-content-end">
-                <p>Hello there</p>
+            <div class="align-end">
+                <p class="MyMessages">Hej det ser ud til at vi matcher</p>
             </div>
-            <div class="OtherMessages">Hva så</div>
+            <div>
+                <p class="OtherMessages">Jaa, super fedt. skal vi sige klokken 18:00</p>
+            </div>
+            <div class="align-end">
+                <p class="MyMessages">Hmm hvad siger du til 18:30</p>
+            </div>
+            <div>
+                <p class="OtherMessages">det lyder perfekt</p>
+            </div>
+            <div class="align-end">
+                <p class="MyMessages">super, så ses vi der!</p>
+            </div>
+            <div>
+                <p class="OtherMessages">Det gør vi :)</p>
+            </div>
+
         </div>
-        
+
         <div class="col-2 container-secondary">
             @* This div is for Matches *@
-            
+
             <h3 class="text-center">Matches</h3>
             <div class="vline"></div>
             <form method="post">
@@ -44,10 +61,10 @@
                 {
                     @foreach (User u in Model.Matches)
                     {
-                        
-                        
-                            <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
-                        
+
+
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
+
                     }
                 }
                 @if (Model.Matches.Any(u => u.Level != user.Level))
@@ -55,11 +72,11 @@
                     @foreach (User u in Model.Matches.Where(u => u.Level != user.Level))
                     {
 
-                        
-                            <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
-                        
+
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
+
                     }
-                    
+
                 }
             </form>
         </div>
