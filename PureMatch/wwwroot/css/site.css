@@ -121,7 +121,12 @@ h1 {
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
+    
 }
+
+    .backgroundcolorbutton:hover {
+        color: #00999D;
+    }
 
 .backgroundcolorbuttonblue {
     background-color: #00999D;
@@ -135,6 +140,10 @@ h1 {
     font-size: 16px;
     border-radius: 5px;
 }
+
+    .backgroundcolorbuttonblue:hover {
+        color: #FF6129; 
+    }
 
 
 

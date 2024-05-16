@@ -9,7 +9,6 @@ namespace PureMatch.Pages.pm;
 public class CreateAccount : PageModel
 {
     private DataBaseLink _repo;
-    private string _cardexpmonth;
 
     public CreateAccount(DataBaseLink repo)
     {
