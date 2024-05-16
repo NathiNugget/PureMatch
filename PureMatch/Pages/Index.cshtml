@@ -3,12 +3,12 @@
 @using PureLib.Model
 @{
     ViewData["Title"] = "PureGym - udlev dit potentiale!";
-    User u = null;
+    User u = null!;
     try
     {
         u = SessionHelper.Get<User>(u, HttpContext);
     }
-    catch (Exception e)
+    catch
     {
 
     }
