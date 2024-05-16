@@ -46,5 +46,10 @@ namespace PureMatch.Pages.Logins
             SessionHelper.Clear(u, HttpContext);
             return RedirectToPage("/Index");
         }
+
+        public IActionResult OnPostAbort()
+        {
+            return RedirectToPage("/Index");
+        }
     }
 }

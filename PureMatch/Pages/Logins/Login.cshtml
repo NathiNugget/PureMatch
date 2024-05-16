@@ -45,11 +45,15 @@ else // If user is logged in
     <div class="backgroundcolor">
         <h1>Log ud?</h1>
         <div class="container margin5top margin5top">
-            <div class="container-main margin40">
+            <div class="container-main margin40 justify-content-center">
+                <form method="post" asp-page-handler="Abort">
+                    <input type="submit" class="backgroundcolorbutton" value="Annullér"/>
+                </form>
                 <form method="post" asp-page-handler="Logout">
                     
-                    <button type="submit" class="backgroundcolorbuttonblue">Log ud</button>
+                    <input type="submit" class="backgroundcolorbuttonblue" value="Log ud" />
                 </form>
+                
             </div>
         </div>
 
