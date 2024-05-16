@@ -45,7 +45,7 @@
                         For at benytte PureMatch skal du være logget ind og have et aktivt medlemskab.
                     </p>
                     <a asp-page="./SelectSubscription"><button class="backgroundcolorbutton" style="margin-right: 10px; border-radius: 5px;"><strong>Bliv medlem</strong></button></a>
-                    <a href="../Login/LoginPage"><button class="backgroundcolorbutton" style="border-radius: 5px;"><strong>Log ind</strong></button></a>
+                    <a asp-page="../Logins/Login"><button class="backgroundcolorbutton" style="border-radius: 5px;"><strong>Log ind</strong></button></a>
                 </div>
 
 
@@ -64,7 +64,7 @@ else // Hvis en bruger er logget ind
         @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
         {
             <form method="post" asp-page-handler="ResetMatch">
-                <input type="submit" value="Nulstil min matching" />
+                <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
             </form>
         }
         
@@ -76,7 +76,7 @@ else // Hvis en bruger er logget ind
             <div class="subscription-container margin40 margin">
 
                 <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2>Muskelgrupper</h2>
+                    <h2 class="bottomborder">Muskelgrupper</h2>
                     <p>
                         
                             @for (int i = 0; i < Model.Groups.Count; i++)
@@ -91,7 +91,7 @@ else // Hvis en bruger er logget ind
                 </div>
 
                 <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2>Niveau</h2>
+                    <h2 class ="bottomborder">Niveau</h2>
                     <p>
                         @for (int i = 0; i < Model.Levels.Count; i++)
                         {
@@ -103,7 +103,7 @@ else // Hvis en bruger er logget ind
                 </div>
 
                 <div class="subscription backgroundcolorwhite margin50topbot">
-                    <h2>Dage</h2>
+                    <h2 class="bottomborder">Dage</h2>
                     <p>
                         
                             @for (int i = 0; i < Model.Days.Count; i++)
@@ -118,7 +118,10 @@ else // Hvis en bruger er logget ind
                 </div>
 
             </div>
-            <input type="submit" class="backgroundcolorbutton" value="Match">
+            <div class="text-center">
+                <input type="submit" class="backgroundcolorbutton strong bottom-button" value="Match">
+            </div>
+           
           
         </form>
     </div>

@@ -190,3 +190,15 @@ h1 {
     padding-left: 15vw;
 }
 
+.strong{
+    font-weight: bold; 
+}
+.bottom-button {
+    margin-bottom: 15px;
+}
+
+.bottomborder {
+    border-bottom: solid;
+}
+
+
