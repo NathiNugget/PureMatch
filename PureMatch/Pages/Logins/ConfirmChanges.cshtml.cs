@@ -45,6 +45,8 @@ namespace PureMatch.Pages.Logins
             return RedirectToPage("MyProfile", new { userid = _userid }); 
         }
 
+        
+
         public IActionResult OnPostConfirm()
         {
             User u = _repo.ReadUser(_userid); //TODO: Change to session
