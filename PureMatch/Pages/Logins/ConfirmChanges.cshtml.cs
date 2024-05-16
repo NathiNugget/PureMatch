@@ -2,65 +2,92 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Model;
 using PureLib.Services;
+using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
 namespace PureMatch.Pages.Logins
 {
+    [BindProperties]
     public class ConfirmChangesModel : PageModel
     {
-        private int _userid;
-        private string _name;
-        private string _username;
-        private string _password;
-        private string _email;
-        private string _phonenumber;
-        private string _cardnumber;
-        private string _cardexpmonth;
-        private string _cardexpyear;
-        private string _cardcvc;
-        private DataBaseReader _repo; 
+        
+        private DataBaseLink _repo;
 
-        public ConfirmChangesModel(DataBaseReader repo)
+        public ConfirmChangesModel(DataBaseLink repo)
         {
-            _repo = repo;
+            Repo = repo;
         }
 
-        public void OnGet(int userid, string name, string username, string password, string email, string phonenumber, string cardnumber, string cardexpmonth, string cardexpyear, string cardcvc)
+        public void OnGet(string name, string username, string password, string email, string phonenumber, string cardnumber, string cardexpmonth, string cardexpyear, string cardcvc)
         {
-            _userid = userid;
-            _name = name;
-            _username = username;
-            _password = password;
-            _email = email;
-            _phonenumber = phonenumber;
-            _cardnumber = cardnumber;
-            _cardexpmonth = cardexpmonth;
-            _cardcvc = cardcvc;
-            _cardexpyear = cardexpyear;
-            _cardcvc = cardcvc;
+            NameNew = name;
+            UsernameNew = username;
+            PasswordNew = password;
+            EmailNew = email;
+            PhoneNumberNew = phonenumber;
+            CardNumberNew = cardnumber;
+            CardExpMonthNew = cardexpmonth;
+            CardCVCNew = cardcvc;
+            CardExpYearNew = cardexpyear;
+            CardCVCNew = cardcvc;
         }
+
+        [Required()]
+        [BindProperty]
+        public string NameNew { get; set; }
+        [Required()]
+        public string UsernameNew { get; set; }
+        [Required()]
+        public string PasswordNew { get; set; }
+        [Required()]
+        public string EmailNew { get; set; }
+        [Required()]
+        public string PhoneNumberNew { get; set; }
+        [Required()]
+        public string CardNumberNew { get; set; }
+        [Required()]
+        public string CardExpMonthNew { get; set; }
+        [Required()]
+        public string CardExpYearNew { get; set; }
+        [Required()]
+        public string CardCVCNew { get; set; }
+        public DataBaseLink Repo { get => _repo; set => _repo = value; }
 
         public IActionResult OnPostAbort()
         {
-            return RedirectToPage("MyProfile", new { userid = _userid }); 
+            return RedirectToPage("MyProfile"); 
         }
 
         
 
-        public IActionResult OnPostConfirm()
+        public IActionResult OnPostConfirmAction(bool save)
         {
-            User u = _repo.ReadUser(_userid); //TODO: Change to session
-            u.Name = _name;
-            u.UserName = _username;
-            u.Password = _password;
-            u.Email = _email;
-            u.PhoneNumber = _phonenumber;
-            u.CardNumber = _cardnumber;
-            u.CardCVC = _cardcvc;
-            u.CardExpMonth = _cardexpmonth;
-            u.CardExpYear = _cardexpyear;
-            _repo.UpdateUser(u);
-            return RedirectToPage("/Index");
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            if (save)
+            {
+                User u = null;
+                u = SessionHelper.Get<User>(u, HttpContext);
+                u.Name = NameNew;
+                u.UserName = UsernameNew;
+                u.Password = PasswordNew;
+                u.Email = EmailNew;
+                u.PhoneNumber = PhoneNumberNew;
+                u.CardNumber = CardNumberNew;
+                u.CardCVC = CardCVCNew;
+                int expmonth = int.Parse(CardExpMonthNew);
+                int expyear = int.Parse(CardExpYearNew);
+                u.CardExpMonth = expmonth.ToString("0#");
+                u.CardExpYear = expyear.ToString("0#");
+                Repo.UpdateUser(u);
+                SessionHelper.Set<User>(u, HttpContext);
+                return RedirectToPage("/checkmark/ProfileChanged");
+            }
+            return RedirectToPage("MyProfile");
+            
+
         }
     }
 }

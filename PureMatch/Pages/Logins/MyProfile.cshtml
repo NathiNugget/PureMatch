@@ -3,72 +3,86 @@
 @using PureLib.Services
 @model PureMatch.Pages.Logins.MyProfile
 @{
-    Model.ProfileUser = Model.Repo.ReadUser(2);
-    SubscriptionEnum sub = (SubscriptionEnum) Model.ProfileUser.Subscription;
+    User u = null;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext);
+    }
+    catch (Exception e)
+    {
+
+    }
 }
-<h1 class="text-blue">MIN PROFIL</h1>
+@if (u != null)
+{
+    <h1 class="text-blue">MIN PROFIL</h1>
 
 
     <div class="container">
         <div class="row">
-            <div class="col-2">
+            <div class="col-3">
             </div>
 
-            <div class="container-main backgroundcolor">
-                <form method="post">
-                <div>
-                    <label class="form-label">Navn</label>
-                    <input type="text" asp-for="NameNew" class="form-control" />
-                    <span asp-validation-for="NameNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">Brugernavn</label>
-                    <input type="text" asp-for="UserNameNew" class="form-control" />
-                    <span asp-validation-for="UserNameNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label asp-for="PasswordNew" class="form-label"></label>
-                    <input type="password" asp-for="PasswordNew" class="form-control" />
-                    <span asp-validation-for="PasswordNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">Email</label>
-                    <input type="" asp-for="EmailNew" class="form-control" />
-                    <span asp-validation-for="EmailNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">Telefon-nummer</label>
-                    <input type="text" asp-for="PhoneNumberNew" class="form-control" />
-                    <span asp-validation-for="PhoneNumberNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">Kort-nummer</label>
-                    <input type="text" asp-for="CardNumberNew" class="form-control" />
-                    <span asp-validation-for="CardNumberNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">CVC</label>
-                    <input type="text" asp-for="CVCNew" class="form-control" />
-                    <span asp-validation-for="CVCNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">Kortets udløbsmåned</label>
-                    <input type="int" asp-for="CardExpMonthNew" min="1" max="12" class="form-control" />
-                    <span asp-validation-for="CardExpMonthNew" class="text-danger"></span>
-                </div>
-                <div>
-                    <label class="form-label">Kortets udløbsår</label>
-                    <input type="number" asp-for="CardExpYearNew" min="@ValidationRegex.YEARDIGITSMIN" max="@ValidationRegex.YEARDIGITSMAX" class="form-control" />
-                    <span asp-validation-for="CardExpYearNew" class="text-danger"></span>
-                </div>
-
-
-                <button type="submit">Redigér mine data</button>
+            <div class="container-main backgroundcolor col-6">
+                <form method="post" asp-page-handler="Update">
+                    <div>
+                        <label class="form-label">Navn</label>
+                        <input type="text" asp-for="NameNew" class="form-control" />
+                        <span asp-validation-for="NameNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Brugernavn</label>
+                        <input type="text" asp-for="UserNameNew" class="form-control" />
+                        <span asp-validation-for="UserNameNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label asp-for="PasswordNew" class="form-label"></label>
+                        <input type="password" asp-for="PasswordNew" class="form-control" />
+                        <span asp-validation-for="PasswordNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Email</label>
+                        <input type="" asp-for="EmailNew" class="form-control" />
+                        <span asp-validation-for="EmailNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Telefon-nummer</label>
+                        <input type="text" asp-for="PhoneNumberNew" class="form-control" />
+                        <span asp-validation-for="PhoneNumberNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Kort-nummer</label>
+                        <input type="text" asp-for="CardNumberNew" class="form-control" />
+                        <span asp-validation-for="CardNumberNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">CVC</label>
+                        <input type="text" asp-for="CVCNew" class="form-control" />
+                        <span asp-validation-for="CVCNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Kortets udløbsmåned</label>
+                        <input type="int" asp-for="CardExpMonthNew" min="1" max="12" class="form-control" />
+                        <span asp-validation-for="CardExpMonthNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Kortets udløbsår</label>
+                        <input type="number" asp-for="CardExpYearNew" min="@ValidationRegex.YEARDIGITSMIN" max="@ValidationRegex.YEARDIGITSMAX" class="form-control" />
+                        <span asp-validation-for="CardExpYearNew" class="text-danger"></span>
+                    </div>
+                    <div class="text-center padding10top">
+                        <button type="submit" formmethod="get" class="backgroundcolorbutton">Nulstil</button>
+                        <button type="submit" class="backgroundcolorbuttonblue">Redigér mine data</button>
+                    </div>
+                    
                 </form>
-                <button type="submit">Redigér mine data</button>
+                
+                
             </div>
-            <div class="col-2">
+            <div class="col-3">
             </div>
         </div>
     </div>
+}
+
 

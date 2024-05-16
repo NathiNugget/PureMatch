@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Model;
@@ -9,14 +10,14 @@ namespace PureMatch.Pages.Logins
     [BindProperties]
     public class MyProfile : PageModel
     {
-        private User u;
-        public MyProfile(DataBaseReader repo)
+        public MyProfile(DataBaseLink repo)
         {
             Repo = repo;
         }
-        public void OnGet(int userid)
+        public void OnGet()
         {
-            u = Repo.ReadUser(userid); //TODO: Change to session
+            User u = null;
+            u = SessionHelper.Get<User>(u, HttpContext); 
             NameNew = u.Name;
             UserNameNew = u.UserName;
             PasswordNew = u.Password;
@@ -39,23 +40,9 @@ namespace PureMatch.Pages.Logins
             {
                 return Page(); 
             }
-            RedirectToPage("./ConfirmChanges", new { userid = u.UserID,
-                
-            }); 
-            
-
-
-
-
-            if (!ModelState.IsValid)
-            {
-                return Page(); 
-            }
-            return RedirectToPage("/Index"); 
+            return RedirectToPage("./ConfirmChanges", new { name = NameNew, username = UserNameNew, password = PasswordNew, email = EmailNew, 
+                phonenumber = PhoneNumberNew, cardnumber = CardNumberNew, cardexpmonth = CardExpMonthNew, cardexpyear = CardExpYearNew, cardcvc = CVCNew });  
         }
-        
-        public User ProfileUser { get; 
-            set; }
         
         
 
@@ -85,6 +72,6 @@ namespace PureMatch.Pages.Logins
 
         [Required(ErrorMessage = "Du skal skrive kortets år for udlåbsdato, 2 cifre tak")]
         public int CardExpYearNew { get; set; }
-        public DataBaseReader Repo { get; set; }
+        public DataBaseLink Repo { get; set; }
     }
 }

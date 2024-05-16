@@ -1,10 +1,20 @@
 @page
 @using PureLib.Model
 @model PureMatch.Pages.pm.PureMatchRoot
+@inject PureLib.Services.DataBaseLink db
 
 @{
-    User u = Model.Repo.ReadUser(2);
-    SessionHelper.Set<User>(u, HttpContext);
+    User u = null;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext);
+        u.Days = db.ReadDays(u.UserID); 
+        u.MuscleGroups = db.ReadMuscleGroups(u.UserID); 
+    }
+    catch (Exception e)
+    {
+
+    }
 
 }
 <head>
@@ -13,7 +23,7 @@
 </head>
 
 
-@if (User == null) // Hvis ingen bruger er logget ind
+@if (u == null) // Hvis ingen bruger er logget ind
 {
     <h1>
         PureMatch
@@ -35,7 +45,7 @@
                         For at benytte PureMatch skal du være logget ind og have et aktivt medlemskab.
                     </p>
                     <a asp-page="./SelectSubscription"><button class="backgroundcolorbutton" style="margin-right: 10px; border-radius: 5px;"><strong>Bliv medlem</strong></button></a>
-                    <a href="../Login/LoginPage"><button class="backgroundcolorbutton" style="border-radius: 5px;"><strong>Log ind</strong></button></a>
+                    <a asp-page="../Logins/Login"><button class="backgroundcolorbutton" style="border-radius: 5px;"><strong>Log ind</strong></button></a>
                 </div>
 
 
@@ -50,10 +60,14 @@ else // Hvis en bruger er logget ind
 
     <h1 class="headers">PureMatch</h1>
     <div>
-        <button class="backgroundcolorbutton strong bottom-button" asp-route-number="1" type="submit">Mine Matches</button>
-        <form method="post" asp-page-handler="ResetMatch">
-           <input class="backgroundcolorbutton strong" type="submit" value="Nulstil min matching"/>
-        </form>
+        <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Mine Matches</strong></button>
+        @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
+        {
+            <form method="post" asp-page-handler="ResetMatch">
+                <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
+            </form>
+        }
+        
     </div>
 
     <div class="container backgroundcolor">

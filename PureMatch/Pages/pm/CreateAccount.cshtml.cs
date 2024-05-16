@@ -8,10 +8,10 @@ namespace PureMatch.Pages.pm;
 [BindProperties]
 public class CreateAccount : PageModel
 {
-    private DataBaseReader _repo;
+    private DataBaseLink _repo;
     private string _cardexpmonth;
 
-    public CreateAccount(DataBaseReader repo)
+    public CreateAccount(DataBaseLink repo)
     {
         Repo = repo;
     }
@@ -33,7 +33,7 @@ public class CreateAccount : PageModel
     }
 
     
-    private DataBaseReader Repo {  get { return _repo; } set { _repo = value; } }
+    private DataBaseLink Repo {  get { return _repo; } set { _repo = value; } }
 
     public int SubNumber { get; set; }
     [Required(ErrorMessage = "Du skal skrive dit fulde navn")]

@@ -9,8 +9,8 @@ namespace PureMatch.Pages.Logins
     [BindProperties]
     public class LoginModel : PageModel
     {
-        private DataBaseReader _repo; 
-        public LoginModel(DataBaseReader repo)
+        private DataBaseLink _repo; 
+        public LoginModel(DataBaseLink repo)
         {
             _repo = repo;
         }
@@ -34,7 +34,7 @@ namespace PureMatch.Pages.Logins
             if (_repo.ReadLogin(username, password) != null)
             {
                 User u = _repo.ReadLogin(username, password);
-                SessionHelper.Set(User, HttpContext); 
+                SessionHelper.Set(u, HttpContext); 
             }
             return RedirectToPage("/Index");
         }

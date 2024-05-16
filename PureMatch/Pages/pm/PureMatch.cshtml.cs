@@ -8,12 +8,12 @@ namespace PureMatch.Pages.pm
     [BindProperties]
     public class PureMatchModel : PageModel
     {
-        private readonly DataBaseReader _repo;
+        private readonly DataBaseLink _repo;
         private List<User> _matches;
         private List<User> _chats;
          
 
-        public PureMatchModel(DataBaseReader repo)
+        public PureMatchModel(DataBaseLink repo)
         {
             _repo = repo;
 
