@@ -4,7 +4,15 @@
 @inject PureLib.Services.DataBaseLink db;
 @{
     // TODO: Change to session-version
-    User user = db.ReadUser(2);
+    User u = null!;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext); 
+    }
+    catch
+    {
+        
+    }
 }
 
 <div class="container backgroundcolor">
@@ -16,7 +24,7 @@
             <form method="post" asp-page-handler="Chat">
                 @foreach (User c in Model.Chats)
                 {
-                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-route-ownid="@user.UserID" asp-route-chatid="@c.UserID">@c.Name</button>
+                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-route-ownid="@u.UserID" asp-route-chatid="@c.UserID">@c.Name</button>
 
                     <br />
 
@@ -57,23 +65,23 @@
             <form method="post">
 
 
-                @if (Model.Matches.Any(u => u.Level == user.Level))
+                @if (Model.Matches.Any(user => user.Level == u.Level))
                 {
-                    @foreach (User u in Model.Matches)
+                    @foreach (User user in Model.Matches)
                     {
 
 
-                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@u.Name</button>
 
                     }
                 }
-                @if (Model.Matches.Any(u => u.Level != user.Level))
+                @if (Model.Matches.Any(user => user.Level != u.Level))
                 {
-                    @foreach (User u in Model.Matches.Where(u => u.Level != user.Level))
+                    @foreach (User user in Model.Matches.Where(user => user.Level != u.Level))
                     {
 
 
-                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@u.UserID">@u.Name</button>
 
                     }
 
