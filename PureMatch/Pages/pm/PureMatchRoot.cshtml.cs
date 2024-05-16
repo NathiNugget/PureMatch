@@ -35,18 +35,6 @@ public class PureMatchRoot : PageModel
 
     }
 
-    public IActionResult OnPost()
-    {
-        
-
-        if (!ModelState.IsValid)
-        {
-            return Page();
-        }
-        
-        return Page();
-    }
-
 
     public IActionResult OnPostResetMatch()
     {
@@ -63,6 +51,26 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPostChangeCriteria()
     {
+        if (! (MuscleGroups.Contains(true) && DaysList.Contains(true)) )
+        {
+            Groups = Enum.GetValues(typeof(MuscleGroupEnum)).Cast<MuscleGroupEnum>().ToList();
+            MuscleGroups = new List<bool>();
+            for (int i = 0; i < Groups.Count; i++)
+            {
+                MuscleGroups.Add(false);
+            }
+
+            Levels = Enum.GetValues(typeof(LevelsEnum)).Cast<LevelsEnum>().ToList();
+
+
+            Days = Enum.GetValues(typeof(DaysEnum)).Cast<DaysEnum>().ToList();
+            List<bool> DaysList = new List<bool>();
+            for (int i = 0; i < Days.Count; i++)
+            {
+                DaysList.Add(false);
+            }
+            return Page();
+        }
         if (!ModelState.IsValid)
         {
             return Page(); 
