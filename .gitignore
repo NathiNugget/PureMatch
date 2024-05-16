@@ -398,3 +398,4 @@ Desktop.ini
 .DS_Store
 /PureLib/Services/Secret.cs
 /PureMatch/.config/dotnet-tools.json
+/.editorconfig

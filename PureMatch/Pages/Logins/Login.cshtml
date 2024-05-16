@@ -2,12 +2,12 @@
 @model PureMatch.Pages.Logins.LoginModel
 @using PureLib.Model
 @{
-    User u = null;
+    User u = null!;
     try
     {
         u = SessionHelper.Get<User>(u, HttpContext);
     }
-    catch (Exception e)
+    catch
     {
        
     }
