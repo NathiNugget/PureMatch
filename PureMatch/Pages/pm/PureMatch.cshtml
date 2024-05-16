@@ -21,10 +21,10 @@
             @* This div is for chats with other prior matches who the user wrote messages with  *@
             <h3 class="text-center ">Chats</h3>
             <div class="vline"></div>
-            <form method="post" asp-page-handler="Chat">
+            <form method="post" asp-page-handler="Message">
                 @foreach (User c in Model.Chats)
                 {
-                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-route-ownid="@u.UserID" asp-route-chatid="@c.UserID">@c.Name</button>
+                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-page-handler="Message" asp-route-chatid="@c.UserID">@c.Name</button>
 
                     <br />
 
@@ -36,24 +36,42 @@
             @* This div is for chat-content*@
             <h3 class="text-center">PureMatch</h3>
             <div class="vline"></div>
-            <div class="align-end">
-                <p class="MyMessages">Hej det ser ud til at vi matcher</p>
-            </div>
-            <div>
-                <p class="OtherMessages">Jaa, super fedt. skal vi sige klokken 18:00</p>
-            </div>
-            <div class="align-end">
-                <p class="MyMessages">Hmm hvad siger du til 18:30</p>
-            </div>
-            <div>
-                <p class="OtherMessages">det lyder perfekt</p>
-            </div>
-            <div class="align-end">
-                <p class="MyMessages">super, så ses vi der!</p>
-            </div>
-            <div>
-                <p class="OtherMessages">Det gør vi :)</p>
-            </div>
+            @if(Model.Messages != null)
+            {
+                if(Model.Messages.Count > 0)
+                {
+                    int matchuserid = 0; // Declared to fetch RecipientID 
+                    foreach(Message m in Model.Messages)
+                    {
+
+                        if (m.Senderid == u.UserID)
+                        {
+                            <div>
+                                <p class="MyMessages">@m.Messagevalue</p>
+                            </div>
+                        }
+                        else
+                        {
+                            matchuserid = m.Senderid; 
+                            <div class="text-end">
+                                <p class="OtherMessages">@m.Messagevalue</p>
+                            </div>
+                        }
+                    }
+                    <form method="post" asp-page-handler="SendMessage">
+                        <div class="col-6">
+                            <input type="text" class="form-control" asp-for="MessageValue" placeholder="Skriv besked her" />
+                        </div>
+                        <div class="col-1">
+                            <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@u.UserID" asp-route-matchid="@matchuserid">Send besked</button>
+
+                        </div>
+                        <span asp-validation-for="MessageValue" class="text-danger"></span>
+                    </form>
+                    
+
+                }
+            }
 
         </div>
 

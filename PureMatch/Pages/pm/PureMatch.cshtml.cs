@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.FileSystemGlobbing;
 using PureLib.Model;
 using PureLib.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace PureMatch.Pages.pm
 {
@@ -22,12 +24,30 @@ namespace PureMatch.Pages.pm
             u = SessionHelper.Get<User>(u, HttpContext);
             Matches = _repo.GetMatches(u.UserID);
             Chats = _repo.GetChatUsers(u.UserID);
-            if (chatid != 0)
+            if (chatid != 0 && chatid != null)
             {
                 Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
 
             }
              
+        }
+
+        public void OnPostMessage(int chatid)
+        {
+            if (!ModelState.IsValid)
+            {
+               
+            }
+            User u = null!;
+            u = SessionHelper.Get<User>(u, HttpContext);
+            Matches = _repo.GetMatches(u.UserID);
+            Chats = _repo.GetChatUsers(u.UserID);
+            if (chatid != 0)
+            {
+                Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
+
+            }
+            
         }
 
         public IActionResult OnPostUserPage(int ownid, int matchid)
@@ -36,14 +56,24 @@ namespace PureMatch.Pages.pm
 
         }
 
-        public IActionResult OnPostChat(int ownid, int chatid)
+        public IActionResult OnPostSendMessage(int ownid, int matchid)
         {
-            return RedirectToPage("./", new { chatid = chatid });
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            _repo.SendMessage(ownid, matchid, MessageValue);
+            return RedirectToPage("./PureMatch");
         }
+
+
 
         public List<User> Matches { get; set; }
         public List<User> Chats { get; set; }
         public List<Message> Messages { get; set; }
+        [Required (ErrorMessage = "Du ville da gerne sende en besked, ikke? :)")]
+        public string MessageValue { get; set; }
         
     }
 }
