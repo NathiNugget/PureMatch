@@ -1,7 +1,7 @@
 ﻿@page
 @model PureMatch.Pages.pm.PureMatchModel;
 @using PureLib.Model;
-@inject PureLib.Services.DataBaseReader db;
+@inject PureLib.Services.DataBaseLink db;
 @{
     // TODO: Change to session-version
     User user = db.ReadUser(2);

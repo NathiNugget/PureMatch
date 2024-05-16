@@ -46,8 +46,13 @@ body {
 }
 
 .padding20top {
-    padding-top: 5px;
+    padding-top: 20px;
 }
+
+.padding10top{
+    padding-top: 10px;
+}
+
 .margin50topbot {
     margin-top: 50px;
     margin-bottom: 50px;

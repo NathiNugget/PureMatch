@@ -9,17 +9,13 @@ using System.Threading.Tasks;
 
 namespace PureLib.Services
 {
-    public class DataBaseReader
+    public class DataBaseLink
     {
         private List<Message> _messages = new List<Message>();
-        public DataBaseReader()
+        public DataBaseLink()
         {
 
-            List<User> matches = GetMatches(2);
-            foreach (var item in matches)
-            {
-                Console.WriteLine(item);
-            }
+           
 
         }
 
@@ -75,7 +71,7 @@ namespace PureLib.Services
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    foreach (MuscleGroupEnum group in ReadMuscleGroups(reader))
+                    foreach (MuscleGroupEnum group in ReadMuscleGroupsUsingReader(reader))
                     {
                         msgroups.Add(group);
                     }
@@ -86,7 +82,7 @@ namespace PureLib.Services
 
         }
 
-        private List<MuscleGroupEnum> ReadMuscleGroups(SqlDataReader reader)
+        private List<MuscleGroupEnum> ReadMuscleGroupsUsingReader(SqlDataReader reader)
         {
             List<MuscleGroupEnum> msgroups = new List<MuscleGroupEnum>();
             bool chest = reader.GetBoolean(1);
@@ -145,6 +141,8 @@ namespace PureLib.Services
             }
             return messages;
         }
+
+        
 
         public List<User> GetChatUsers(int userid)
         {
@@ -402,6 +400,7 @@ namespace PureLib.Services
             return rowsaffected;
         }
 
+        
         public List<User> ReadAllUsersFromDB()
         {
             List<User> users = new List<User>();

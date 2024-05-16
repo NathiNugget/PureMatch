@@ -1,10 +1,20 @@
 @page
 @using PureLib.Model
 @model PureMatch.Pages.pm.PureMatchRoot
+@inject PureLib.Services.DataBaseLink db
 
 @{
-    User u = Model.Repo.ReadUser(2);
-    SessionHelper.Set<User>(u, HttpContext);
+    User u = null;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext);
+        u.Days = db.ReadDays(u.UserID); 
+        u.MuscleGroups = db.ReadMuscleGroups(u.UserID); 
+    }
+    catch (Exception e)
+    {
+
+    }
 
 }
 <head>
@@ -13,7 +23,7 @@
 </head>
 
 
-@if (User == null) // Hvis ingen bruger er logget ind
+@if (u == null) // Hvis ingen bruger er logget ind
 {
     <h1>
         PureMatch
@@ -51,9 +61,13 @@ else // Hvis en bruger er logget ind
     <h1 class="headers">PureMatch</h1>
     <div>
         <button class="backgroundcolorbutton" asp-route-number="1" type="submit"><strong>Mine Matches</strong></button>
-        <form method="post" asp-page-handler="ResetMatch">
-            <input type="submit" value="Nulstil min matching" />
-        </form>
+        @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
+        {
+            <form method="post" asp-page-handler="ResetMatch">
+                <input type="submit" value="Nulstil min matching" />
+            </form>
+        }
+        
     </div>
 
     <div class="container backgroundcolor">
