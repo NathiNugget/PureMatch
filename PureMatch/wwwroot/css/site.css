@@ -202,3 +202,24 @@ h1 {
 }
 
 
+.MyMessages{
+    text-align: right;
+}
+
+.OtherMessages{
+    margin-right: auto ;'
+    text-align: right;
+}
+
+.MyMessagesColor{
+    background-color: #FF6129;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
