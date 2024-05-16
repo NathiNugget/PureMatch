@@ -327,10 +327,11 @@ namespace PureLib.Services
         private int SetDays(int userid, List<DaysEnum> days)
         {
             int rowsaffected = 0;
-            if (days != null)
+            if (days != null) // If list is received
             {
-                string query = $"insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
-                $" (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
+
+                string query = "insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
+                " (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
@@ -344,9 +345,11 @@ namespace PureLib.Services
                     cmd.Parameters.AddWithValue("@PSaturday", days.Contains(DaysEnum.Lørdag) ? 1 : 0);
                     cmd.Parameters.AddWithValue("@PSunday", days.Contains(DaysEnum.Søndag) ? 1 : 0);
                     rowsaffected = cmd.ExecuteNonQuery();
+
                 }
+
             }
-            else
+            else // If empty;
             {
                 string query = "delete from PureDays where UserID = @PID";
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -357,7 +360,7 @@ namespace PureLib.Services
                     rowsaffected = cmd.ExecuteNonQuery();
                 }
             }
-            
+
             return rowsaffected;
         }
 
