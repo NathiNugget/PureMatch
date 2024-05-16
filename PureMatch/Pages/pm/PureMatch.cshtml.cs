@@ -9,8 +9,6 @@ namespace PureMatch.Pages.pm
     public class PureMatchModel : PageModel
     {
         private readonly DataBaseLink _repo;
-        private List<User> _matches;
-        private List<User> _chats;
          
 
         public PureMatchModel(DataBaseLink repo)
@@ -18,11 +16,18 @@ namespace PureMatch.Pages.pm
             _repo = repo;
 
         }
-        public void OnGet(int userid, int? chatid)
+        public void OnGet(int? chatid)
         {
-            Matches = _repo.GetMatches(userid);
-            Chats = _repo.GetChatUsers(userid);
+            User u = null!;
+            u = SessionHelper.Get<User>(u, HttpContext);
+            Matches = _repo.GetMatches(u.UserID);
+            Chats = _repo.GetChatUsers(u.UserID);
+            if (chatid != 0)
+            {
+                Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
 
+            }
+             
         }
 
         public IActionResult OnPostUserPage(int ownid, int matchid)
@@ -33,15 +38,12 @@ namespace PureMatch.Pages.pm
 
         public IActionResult OnPostChat(int ownid, int chatid)
         {
-            return RedirectToPage("./", new
-            {
-                ownid = ownid,
-                chatid = chatid
-            });
+            return RedirectToPage("./", new { chatid = chatid });
         }
 
-        public List<User> Matches { get => _matches; set { _matches = value; } }
-        public List<User> Chats { get => _chats; set { _chats = value; } }
+        public List<User> Matches { get; set; }
+        public List<User> Chats { get; set; }
+        public List<Message> Messages { get; set; }
         
     }
 }
