@@ -33,7 +33,7 @@ namespace PureMatch.Pages.Logins
             }
             if (_repo.ReadLogin(username, password) != null)
             {
-                User u = _repo.ReadLogin(username, password);
+                User u = _repo.ReadLogin(username, password)!;
                 SessionHelper.Set(u, HttpContext); 
             }
             return RedirectToPage("/Index");
@@ -42,7 +42,7 @@ namespace PureMatch.Pages.Logins
         public IActionResult OnPostLogout()
         {
             User u = null!;
-            SessionHelper.Get(u, HttpContext);
+            u = SessionHelper.Get(u, HttpContext);
             SessionHelper.Clear(u, HttpContext);
             return RedirectToPage("/Index");
         }

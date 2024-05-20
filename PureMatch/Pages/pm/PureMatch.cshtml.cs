@@ -72,7 +72,7 @@ namespace PureMatch.Pages.pm
             }
 
             _repo.SendMessage(ownid, chatid, MessageValue);
-            return RedirectToPage("./PureMatch");
+            return RedirectToPage("./PureMatch", new { chatid = chatid });
         }
 
 
