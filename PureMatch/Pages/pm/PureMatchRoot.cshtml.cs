@@ -70,11 +70,12 @@ public class PureMatchRoot : PageModel
             {
                 DaysList.Add(false);
             }
+            NotValidInput = "Du skal vælge mindst 1 muskelgruppe, 1 dag og et niveau!";
             return Page();
         }
         if (!ModelState.IsValid)
         {
-            NotValidInput = "Du skal vælge mindst 1 muskelgruppe, 1 dag og et niveau!";
+            
             return Page(); 
         }
         ModelState.Remove("NotValidInput");
