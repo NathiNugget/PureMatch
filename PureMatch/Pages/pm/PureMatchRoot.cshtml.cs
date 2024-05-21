@@ -46,7 +46,7 @@ public class PureMatchRoot : PageModel
             return Page(); 
         }
         Repo.SetMatching(userid, null!, null!, 0);
-        return RedirectToPage("/Index");
+        return RedirectToPage("/pm/PureMatchRoot");
     }
 
     public IActionResult OnPostChangeCriteria()
@@ -101,7 +101,7 @@ public class PureMatchRoot : PageModel
         }
 
         Repo.SetMatching(userid, groups, days, SelectedLevel); 
-        return RedirectToPage("/Index");
+        return RedirectToPage("/pm/PureMatch");
     }
 
     public List<MuscleGroupEnum> Groups { get; set; }
