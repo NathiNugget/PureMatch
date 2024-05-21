@@ -36,7 +36,7 @@
         }
         <br />
         <span>Niveau</span>
-        <p>→ @((LevelsEnum)Model.MatchUser.Level)</p>
+        <p>→ @Model.MatchUser.Level</p>
         <br />
         @if (Model.MatchUser.Days.Count == 1)
         {
@@ -61,7 +61,7 @@
                         <input type="text" class="form-control margin5top" asp-for="Message" placeholder="Skriv besked her" />
                     </div>
                     <div class="col-2">
-                        <button type="submit" class="backgroundcolorbutton" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
+                        <button type="submit" class="backgroundcolorbutton" asp-route-ownid="@u.UserID" asp-route-matchid="@Model.MatchUser.UserID">Send besked</button>
                         
                     </div>
                     <span asp-validation-for="Message" class="text-danger"></span>

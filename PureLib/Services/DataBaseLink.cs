@@ -165,7 +165,23 @@ namespace PureLib.Services
         }
 
 
-        
+        public List<User> GetChatUsers()
+        {
+            List<User> users = new List<User>();
+            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID)) and UserID != @PID";
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(@query, connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    users.Add(ReadUserUsingReader(reader));
+                }
+            }
+            return users;
+        }
 
         private Message ReadMessage(SqlDataReader reader)
         {

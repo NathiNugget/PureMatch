@@ -30,10 +30,8 @@ namespace PureMatch.Pages.pm
 
 
 
-        public IActionResult OnPost(int matchid)
+        public IActionResult OnPost(int ownid, int matchid)
         {
-            User u = null!;
-            u = SessionHelper.Get<User>(u, HttpContext); 
             MatchUser = _repo.ReadUser(matchid);
             MatchUser.Days = _repo.ReadDays(matchid);
             MatchUser.MuscleGroups = _repo.ReadMuscleGroups(matchid);
@@ -44,7 +42,7 @@ namespace PureMatch.Pages.pm
                 return Page(); 
             }
              
-            _repo.SendMessage(u.UserID, matchid, Message);
+            _repo.SendMessage(ownid, matchid, Message);
             return RedirectToPage("./PureMatch"); 
         }
 

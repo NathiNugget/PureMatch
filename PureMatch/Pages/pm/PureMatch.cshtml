@@ -47,24 +47,26 @@
                         if (m.SenderID == u.UserID)
                         {
                             matchuserid = m.RecipientID;
-                            <div class="text-end">
-                                <p class="OtherMessages">@m.Messagevalue</p>
+                            <div>
+                                <p class="MyMessages">@m.Messagevalue</p>
                             </div>
                         }
                         else
                         {
                             matchuserid = m.SenderID; 
-                                <p class="MyMessages">@m.Messagevalue</p>
+                            <div class="text-end">
+                                <p class="OtherMessages">@m.Messagevalue</p>
+                            </div>
                         }
                     }
                     <form method="post" asp-page-handler="SendMessage">
-                        <div class="row vline margin">
-                            <div class="col-11 margin10top">
+                        <div class="row">
+                            <div class="col-6">
                                 <input type="text" class="form-control" asp-for="MessageValue" placeholder="Skriv besked her" />
                                 <span asp-validation-for="MessageValue" class="text-danger"></span>
                             </div>
-                            <div class="col-1 margin5top">
-                                <button type="submit" class="btn btn-dark emphersize" asp-page-handler="SendMessage" asp-route-ownid="@u.UserID" asp-route-chatid="@matchuserid">&#8658;</button>
+                            <div class="col-1">
+                                <button type="submit" class="backgroundcolorbutton" asp-page-handler="SendMessage" asp-route-ownid="@u.UserID" asp-route-chatid="@matchuserid">Send besked</button>
 
                             </div>
                         </div>
@@ -92,7 +94,7 @@
                     {
 
 
-                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@u.Name</button>
 
                     }
                 }
@@ -102,7 +104,7 @@
                     {
 
 
-                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@u.UserID">@u.Name</button>
 
                     }
 
