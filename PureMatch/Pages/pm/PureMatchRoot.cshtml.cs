@@ -38,6 +38,7 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPostResetMatch()
     {
+        ModelState.Remove("NotValidInput"); 
         User u = null!;
         u = SessionHelper.Get<User>(u, HttpContext); 
         int userid = u.UserID;
@@ -73,8 +74,10 @@ public class PureMatchRoot : PageModel
         }
         if (!ModelState.IsValid)
         {
+            NotValidInput = "Du skal vælge mindst 1 muskelgruppe, 1 dag og et niveau!";
             return Page(); 
         }
+        ModelState.Remove("NotValidInput");
         User u = null!; 
         u = SessionHelper.Get<User>(u, HttpContext);
         u.Level = SelectedLevel;
@@ -114,6 +117,7 @@ public class PureMatchRoot : PageModel
     public List<bool> MuscleGroups { get; set; }
     public int SelectedLevel { get; set; }
     public List<bool> DaysList { get; set; }
+    public string NotValidInput { get; set; }
 
 
 }
