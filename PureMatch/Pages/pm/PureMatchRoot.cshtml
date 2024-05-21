@@ -59,11 +59,13 @@
 else // Hvis en bruger er logget ind
 {
     <h1 class="headers">PureMatch</h1>
+    
     @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
     {
+        
         <div class="container-main container-small container centertext backgroundcolor">
             <div class="padding50topbot">
-                <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matchess</a>
+                <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
                 <form method="post" asp-page-handler="ResetMatch">
                     <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
                 </form>
@@ -75,6 +77,7 @@ else // Hvis en bruger er logget ind
     else
 
     {
+        <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
         <div class="container backgroundcolor">
 
             <form method="post" asp-page-handler="ChangeCriteria">
