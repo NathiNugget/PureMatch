@@ -4,8 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
-builder.Services.AddSingleton(new DataBaseReader());
+builder.Services.AddSession();
+builder.Services.AddSingleton(new DataBaseLink());
+builder.Services.AddSession();
 
  
 var app = builder.Build();
@@ -20,7 +21,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();

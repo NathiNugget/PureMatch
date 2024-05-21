@@ -1,0 +1,64 @@
+﻿@page
+@model PureMatch.Pages.Logins.LoginModel
+@using PureLib.Model
+@{
+    User u = null!;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext);
+    }
+    catch
+    {
+       
+    }
+}
+
+@if (u == null) // If user is not logged in
+{
+    <div class="">
+        <h1>Login</h1>
+        <div class="container backgroundcolor padding5bot padding5top">
+            <div class="container-main margin40 margin20bot">
+                <form method="post" asp-page-handler="Login">
+                    <div>
+                        <label asp-for="UserName">Brugernavn</label>
+                        <input type="text" class="form-control" asp-for="UserName" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label asp-for="Password">Kodeord</label>
+                        <input type="text" class="form-control" asp-for="Password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="margin5top backgroundcolorbuttonblue">Log ind</button>
+                    <p class="text-danger">@Model.LoginFailed</p>
+                </form>
+            </div>
+        </div>
+        
+
+    </div>
+
+}
+
+else // If user is logged in
+{
+    <div class="backgroundcolor">
+        <h1>Log ud?</h1>
+        <div class="container margin5top margin5top">
+            <div class="container-main margin40 justify-content-center">
+                <form method="post" asp-page-handler="Abort">
+                    <input type="submit" class="backgroundcolorbutton" value="Annullér"/>
+                </form>
+                <form method="post" asp-page-handler="Logout">
+                    
+                    <input type="submit" class="backgroundcolorbuttonblue" value="Log ud" />
+                </form>
+                
+            </div>
+        </div>
+
+
+    </div>
+}
+

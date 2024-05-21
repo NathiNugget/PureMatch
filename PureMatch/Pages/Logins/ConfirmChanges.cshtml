@@ -1,0 +1,73 @@
+﻿@page
+@model PureMatch.Pages.Logins.ConfirmChangesModel
+@using PureLib.Model
+@{
+        
+}
+<div class="container justify-content-center">
+    <h1 class="text-blue">Gem ændringer?</h1>
+    <div class="row">
+        <div class="col-4">
+
+        </div>
+        
+        <div class="container-main padding5bot backgroundcolor text-center col-4">
+            
+            <form method="post" asp-page-handler="ConfirmAction">
+                <div class="visually-hidden">
+                    <div>
+                        <label class="form-label">Navn</label>
+                        <input type="text" asp-for="NameNew" class="form-control" />
+                        <span asp-validation-for="NameNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Brugernavn</label>
+                        <input type="text" asp-for="UsernameNew" class="form-control" />
+                        <span asp-validation-for="UsernameNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label asp-for="PasswordNew" class="form-label"></label>
+                        <input type="text" asp-for="PasswordNew" class="form-control" />
+                        <span asp-validation-for="PasswordNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Email</label>
+                        <input type="" asp-for="EmailNew" class="form-control" />
+                        <span asp-validation-for="EmailNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Telefon-nummer</label>
+                        <input type="text" asp-for="PhoneNumberNew" class="form-control" />
+                        <span asp-validation-for="PhoneNumberNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Kort-nummer</label>
+                        <input type="text" asp-for="CardNumberNew" class="form-control" />
+                        <span asp-validation-for="CardNumberNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">CVC</label>
+                        <input type="text" asp-for="CardCVCNew" class="form-control" />
+                        <span asp-validation-for="CardCVCNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Kortets udløbsmåned</label>
+                        <input type="int" asp-for="CardExpMonthNew" min="1" max="12" class="form-control" />
+                        <span asp-validation-for="CardExpMonthNew" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label class="form-label">Kortets udløbsår</label>
+                        <input type="number" asp-for="CardExpYearNew" min="@ValidationRegex.YEARDIGITSMIN" max="@ValidationRegex.YEARDIGITSMAX" class="form-control" />
+                        <span asp-validation-for="CardExpYearNew" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <button type="submit" asp-page-handler="ConfirmAction" asp-route-save="false" class="backgroundcolorbutton">Annullér</button>
+                <button type="submit" asp-page-handler="ConfirmAction" asp-route-save="true" class="backgroundcolorbuttonblue" />Gem mine ændringer</button>
+            </form>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>

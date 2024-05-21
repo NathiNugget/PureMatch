@@ -2,8 +2,16 @@
 @model IndexModel
 @using PureLib.Model
 @{
-    ViewData["Title"] = "Home page";
-    User u = null; 
+    ViewData["Title"] = "PureGym - udlev dit potentiale!";
+    User u = null!;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext);
+    }
+    catch
+    {
+
+    }
 }
 
 <h1>Puregym</h1>

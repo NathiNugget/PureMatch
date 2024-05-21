@@ -1,19 +1,35 @@
 @page
+@using PureLib.Model
 @model PureMatch.Pages.pm.PureMatchRoot
+@inject PureLib.Services.DataBaseLink db
 
 @{
+    User u = null!;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext);
+        u.Days = db.ReadDays(u.UserID); 
+        u.MuscleGroups = db.ReadMuscleGroups(u.UserID); 
+    }
+    catch
+    {
+
+    }
 
 }
 <head>
-    <title>PureGym - PureMatch</title>
+    <title>PureGym - PureMatch choose your matching!</title>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
 
+
+@if (u == null) // Hvis ingen bruger er logget ind
+{
     <h1>
         PureMatch
     </h1>
-    <h1><blockquote class="slogan">Find den perfekte træningspartner</blockquote></h1>
+
+    <h1>Find den perfekte træningspartner</h1>
 
 
 
@@ -28,8 +44,9 @@
                         PureMatch er til dig der mangler en træningsmakker. Indtast dine oplysninger under din profil, klik på PureMatch og find din makker idag!
                         For at benytte PureMatch skal du være logget ind og have et aktivt medlemskab.
                     </p>
-                    <a asp-page="./SelectSubscription"><button class="backgroundcolorbutton" style="margin-right: 10px; border-radius: 5px;"><strong>Bliv medlem</strong></button></a>
-                    <a href="../Login/LoginPage"><button class="backgroundcolorbutton" style="border-radius: 5px;"><strong>Log ind</strong></button></a>
+
+                    <a asp-page="./SelectSubscription" class="backgroundcolorbutton strong">Bliv medlem</a>
+                    <a asp-page="../Logins/Login" class="backgroundcolorbuttonblue strong">Log ind</a>
                 </div>
 
 
@@ -38,11 +55,96 @@
             </div>
         </div>
     </div>
+}
+else // Hvis en bruger er logget ind
+{
+    <h1 class="headers">PureMatch</h1>
+    
+    @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
+    {
+        
+        <div class="container-main container-small container centertext backgroundcolor">
+            <div class="padding50topbot">
+                <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
+                <form method="post" asp-page-handler="ResetMatch">
+                    <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
+                </form>
+            </div>
+            
+        </div>
+        
+    }
+    else
+
+    {
+        <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
+        <div class="container backgroundcolor">
+
+            <form method="post" asp-page-handler="ChangeCriteria">
+                <div class="subscription-container margin40 margin">
+
+                    <div class="subscription backgroundcolorwhite margin50topbot">
+                        <h2 class="bottomborder">Muskelgrupper</h2>
+                        <p>
+
+                            @for (int i = 0; i < Model.Groups.Count; i++)
+                            {
+                                <input type="checkbox" value="true" asp-for="MuscleGroups[i]" /> @Model.Groups[i]
+                                <br />
+                            }
+
+
+                        </p>
+
+                    </div>
+
+                    <div class="subscription backgroundcolorwhite margin50topbot">
+                        <h2 class="bottomborder">Niveau</h2>
+                        <p>
+                            @for (int i = 0; i < Model.Levels.Count; i++)
+                            {
+                                <input type="radio" value="@i" asp-for="@Model.SelectedLevel" /> @Model.Levels[i]
+                                <br />
+                            }
+                        </p>
+
+                    </div>
+
+                    <div class="subscription backgroundcolorwhite margin50topbot">
+                        <h2 class="bottomborder">Dage</h2>
+                        <p>
+
+                            @for (int i = 0; i < Model.Days.Count; i++)
+                            {
+                                <input type="checkbox" value="true" asp-for="@Model.DaysList[i]" /> @Model.Days[i]
+                                <br />
+                            }
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <p class="text-danger">@Model.NotValidInput</p>
+                    <input type="submit" class="backgroundcolorbutton strong bottom-button" value="Match">
+                </div>
+
+
+            </form>
+        </div>
+    }
+    
 
 
 
 
-</body>
+
+
+
+
+}
 
 
 

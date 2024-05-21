@@ -33,9 +33,39 @@ body {
     margin-bottom: 5px;
 }
 
+.margin20bot {
+    margin-bottom: 20px;
+}
+
+.margin20top {
+    margin-top: 20px;
+}
+
+.margin10top {
+    margin-top: 10px;
+}
+
 .padding5bot {
     padding-bottom: 5px;
 }
+
+.padding5top {
+    padding-top: 5px;
+}
+
+.padding20top {
+    padding-top: 20px;
+}
+
+.padding10top{
+    padding-top: 10px;
+}
+
+.padding50topbot {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
 .margin50topbot {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -89,6 +119,10 @@ h1 {
     background-color: #E9E9E9;
 }
 
+.backgroundcolorwhite {
+    background-color: white;
+}
+
 .backgroundcolorbutton {
     background-color: #FF6129;
     border: none;
@@ -100,7 +134,12 @@ h1 {
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
+    
 }
+
+    .backgroundcolorbutton:hover {
+        color: #00999D;
+    }
 
 .backgroundcolorbuttonblue {
     background-color: #00999D;
@@ -114,6 +153,10 @@ h1 {
     font-size: 16px;
     border-radius: 5px;
 }
+
+    .backgroundcolorbuttonblue:hover {
+        color: #FF6129; 
+    }
 
 
 
@@ -167,4 +210,51 @@ h1 {
 .image-chill {
     height: 40vw;
     padding-left: 15vw;
+}
+
+.strong{
+    font-weight: bold; 
+}
+.bottom-button {
+    margin-bottom: 15px;
+}
+
+.bottomborder {
+    border-bottom: solid;
+}
+
+
+
+
+.OtherMessages {
+    background-color: #00999D;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.MyMessages{
+    background-color: #FF6129;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.align-end {
+    text-align: end;
+}
+
+.container-small {
+    width: fit-content; 
 }

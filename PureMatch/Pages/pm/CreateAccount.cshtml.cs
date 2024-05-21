@@ -8,10 +8,9 @@ namespace PureMatch.Pages.pm;
 [BindProperties]
 public class CreateAccount : PageModel
 {
-    private DataBaseReader _repo;
-    private string _cardexpmonth;
+    private DataBaseLink _repo;
 
-    public CreateAccount(DataBaseReader repo)
+    public CreateAccount(DataBaseLink repo)
     {
         Repo = repo;
     }
@@ -33,7 +32,7 @@ public class CreateAccount : PageModel
     }
 
     
-    private DataBaseReader Repo {  get { return _repo; } set { _repo = value; } }
+    private DataBaseLink Repo {  get { return _repo; } set { _repo = value; } }
 
     public int SubNumber { get; set; }
     [Required(ErrorMessage = "Du skal skrive dit fulde navn")]
@@ -45,22 +44,22 @@ public class CreateAccount : PageModel
     [Required(ErrorMessage = "Du skal skrive et kodeord")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
     public string Password { get; set; }
-    [Required(ErrorMessage = "Du skal skrive et telefonnummer på 8 tal")]
-    [RegularExpression(ValidationRegex.PHONEFILTER, ErrorMessage = "Du skal skrive 8 tal på formen ########")]
+    [Required(ErrorMessage = "Du skal skrive et telefonnummer pÃ¥ 8 tal")]
+    [RegularExpression(ValidationRegex.PHONEFILTER, ErrorMessage = "Du skal skrive 8 tal pÃ¥ formen ########")]
     public string PhoneNumber { get; set; }
     [Required(ErrorMessage = "Du skal skrive en mail")]
-    [RegularExpression(ValidationRegex.MAILFILTER, ErrorMessage = "Du skal skrive på formen navn@domæne.tld")]
+    [RegularExpression(ValidationRegex.MAILFILTER, ErrorMessage = "Du skal skrive pÃ¥ formen navn@domÃ¦ne.tld")]
     public string Email { get; set; }
-    [Required(ErrorMessage = "Du skal skrive et kortnummer på 16 cifre")]
+    [Required(ErrorMessage = "Du skal skrive et kortnummer pÃ¥ 16 cifre")]
     [RegularExpression(ValidationRegex.CARDNUMBERFILTER, ErrorMessage = "Du skal skrive 16 cifre")]
     public string CardNumber { get; set; }
-    [Required(ErrorMessage = "Du skal skrive et CVC på 3 cifre")]
+    [Required(ErrorMessage = "Du skal skrive et CVC pÃ¥ 3 cifre")]
     [RegularExpression(ValidationRegex.CARDCVCFILTER, ErrorMessage = "Du skal skrive 3 cifre")]
     public string CVC { get; set; }
-    [Required(ErrorMessage = "Du skal skrive kortets måned for udløbsdato, mellem 1 og 12")]
+    [Required(ErrorMessage = "Du skal skrive kortets mÃ¥ned for udlÃ¸bsdato, mellem 1 og 12")]
     public int CardExpMonth { get; set; }
 
-    [Required(ErrorMessage = "Du skal skrive kortets år for udløbsdato, 2 cifre tak")]
+    [Required(ErrorMessage = "Du skal skrive kortets Ã¥r for udlÃ¸bsdato, 2 cifre tak")]
     public int CardExpYear { get; set; }
     
 }

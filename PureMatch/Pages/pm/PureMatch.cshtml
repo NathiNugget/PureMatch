@@ -1,10 +1,18 @@
 ﻿@page
 @model PureMatch.Pages.pm.PureMatchModel;
 @using PureLib.Model;
-@inject PureLib.Services.DataBaseReader db;
+@inject PureLib.Services.DataBaseLink db;
 @{
     // TODO: Change to session-version
-    User user = db.ReadUser(2);
+    User u = null!;
+    try
+    {
+        u = SessionHelper.Get<User>(u, HttpContext); 
+    }
+    catch
+    {
+        
+    }
 }
 
 <div class="container backgroundcolor">
@@ -13,49 +21,91 @@
             @* This div is for chats with other prior matches who the user wrote messages with  *@
             <h3 class="text-center ">Chats</h3>
             <div class="vline"></div>
-            <form method="post" asp-page-handler="Chat">
+            <form method="post" asp-page-handler="Message">
                 @foreach (User c in Model.Chats)
                 {
-                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-route-ownid="@user.UserID" asp-route-chatid="@c.UserID">@c.Name</button><br />
+                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-page-handler="Message" asp-route-chatid="@c.UserID">@c.Name</button>
+
+                    <br />
 
                 }
             </form>
-            
+
         </div>
-        <div class="col-8 container-main">
+        <div class="col-8 container-main container">
             @* This div is for chat-content*@
             <h3 class="text-center">PureMatch</h3>
             <div class="vline"></div>
+            @if(Model.Messages != null)
+            {
+                if(Model.Messages.Count > 0)
+                {
+                    int matchuserid = 0; // Declared to fetch RecipientID 
+                    foreach(Message m in Model.Messages)
+                    {
+
+                        if (m.SenderID == u.UserID)
+                        {
+                            matchuserid = m.RecipientID;
+                            <div class="text-end">
+                                <p class="OtherMessages">@m.Messagevalue</p>
+                            </div>
+                        }
+                        else
+                        {
+                            matchuserid = m.SenderID; 
+                                <p class="MyMessages">@m.Messagevalue</p>
+                        }
+                    }
+                    <form method="post" asp-page-handler="SendMessage">
+                        <div class="row vline margin">
+                            <div class="col-11 margin10top">
+                                <input type="text" class="form-control" asp-for="MessageValue" placeholder="Skriv besked her" />
+                                <span asp-validation-for="MessageValue" class="text-danger"></span>
+                            </div>
+                            <div class="col-1 margin5top">
+                                <button type="submit" class="btn btn-dark emphersize" asp-page-handler="SendMessage" asp-route-ownid="@u.UserID" asp-route-chatid="@matchuserid">&#8658;</button>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </form>
+                    
+
+                }
+            }
+
         </div>
-        
+
         <div class="col-2 container-secondary">
             @* This div is for Matches *@
-            
+
             <h3 class="text-center">Matches</h3>
             <div class="vline"></div>
             <form method="post">
 
 
-                @if (Model.Matches.Any(u => u.Level == user.Level))
+                @if (Model.Matches.Any(user => user.Level == u.Level))
                 {
-                    @foreach (User u in Model.Matches)
-                    {
-                        
-                        
-                            <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
-                        
-                    }
-                }
-                @if (Model.Matches.Any(u => u.Level != user.Level))
-                {
-                    @foreach (User u in Model.Matches.Where(u => u.Level != user.Level))
+                    @foreach (User user in Model.Matches)
                     {
 
-                        
-                            <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-ownid="@user.UserID" asp-route-matchid="@u.UserID">@u.Name</button>
-                        
+
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
+
                     }
-                    
+                }
+                @if (Model.Matches.Any(user => user.Level != u.Level))
+                {
+                    @foreach (User user in Model.Matches.Where(user => user.Level != u.Level))
+                    {
+
+
+                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
+
+                    }
+
                 }
             </form>
         </div>

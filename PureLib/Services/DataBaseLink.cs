@@ -9,17 +9,13 @@ using System.Threading.Tasks;
 
 namespace PureLib.Services
 {
-    public class DataBaseReader
+    public class DataBaseLink
     {
         private List<Message> _messages = new List<Message>();
-        public DataBaseReader()
+        public DataBaseLink()
         {
 
-            List<User> matches = GetMatches(2);
-            foreach (var item in matches)
-            {
-                Console.WriteLine(item);
-            }
+           
 
         }
 
@@ -75,7 +71,7 @@ namespace PureLib.Services
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    foreach (MuscleGroupEnum group in ReadMuscleGroups(reader))
+                    foreach (MuscleGroupEnum group in ReadMuscleGroupsUsingReader(reader))
                     {
                         msgroups.Add(group);
                     }
@@ -86,7 +82,7 @@ namespace PureLib.Services
 
         }
 
-        private List<MuscleGroupEnum> ReadMuscleGroups(SqlDataReader reader)
+        private List<MuscleGroupEnum> ReadMuscleGroupsUsingReader(SqlDataReader reader)
         {
             List<MuscleGroupEnum> msgroups = new List<MuscleGroupEnum>();
             bool chest = reader.GetBoolean(1);
@@ -146,6 +142,8 @@ namespace PureLib.Services
             return messages;
         }
 
+        
+
         public List<User> GetChatUsers(int userid)
         {
             List<User> users = new List<User>();
@@ -167,23 +165,7 @@ namespace PureLib.Services
         }
 
 
-        public List<User> GetChatUsers()
-        {
-            List<User> users = new List<User>();
-            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID)) and UserID != @PID";
-
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-                SqlCommand cmd = new SqlCommand(@query, connection);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    users.Add(ReadUserUsingReader(reader));
-                }
-            }
-            return users;
-        }
+        
 
         private Message ReadMessage(SqlDataReader reader)
         {
@@ -236,13 +218,13 @@ namespace PureLib.Services
         public int UpdateUser(User user)
         {
             string query = "update PureUser" +
-                "set Name = @PName, " +
+                " set Name = @PName, " +
                 "UserName = @PUserName, " +
                 "Password = @PPassword, " +
                 "PhoneNumber = @PPhoneNumber, " +
                 "Email = @PEmail, " +
                 "CardNumber = @PCardNumber, " +
-                "CardCVC = @CardCVC, " +
+                "CardCVC = @PCardCVC, " +
                 "CardExpMonth = @PCardExpMonth, " +
                 "CardExpYear = @PCardExpYear, " +
                 "Subscription = @PSubscription, " +
@@ -277,6 +259,26 @@ namespace PureLib.Services
             return rowsaffected;
         }
 
+        public User? ReadLogin(string username, string password)
+        {
+            User? user = null;
+            string query = "select * from PureUser where UserName = @PName AND Password = @PPassword"; 
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PName", username);
+                cmd.Parameters.AddWithValue("@PPassword", password);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    user = ReadUserUsingReader(reader);
+                }
+            }
+            return user;
+
+        }
+
         public int SetMatching(int userid, List<MuscleGroupEnum> msgroups, List<DaysEnum> days, int level)
         {
             int rowsaffected = 0;
@@ -307,10 +309,11 @@ namespace PureLib.Services
         private int SetDays(int userid, List<DaysEnum> days)
         {
             int rowsaffected = 0;
-            if (days != null)
+            if (days != null) // If list is received
             {
-                string query = $"insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
-                $" (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
+
+                string query = "insert into PureDays (UserID, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday) values" +
+                " (@PID, @PMonday, @PTuesday, @PWednesday, @PThursday, @PFriday, @PSaturday, @PSunday)";
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
@@ -324,9 +327,11 @@ namespace PureLib.Services
                     cmd.Parameters.AddWithValue("@PSaturday", days.Contains(DaysEnum.Lørdag) ? 1 : 0);
                     cmd.Parameters.AddWithValue("@PSunday", days.Contains(DaysEnum.Søndag) ? 1 : 0);
                     rowsaffected = cmd.ExecuteNonQuery();
+
                 }
+
             }
-            else
+            else // If empty;
             {
                 string query = "delete from PureDays where UserID = @PID";
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -337,7 +342,7 @@ namespace PureLib.Services
                     rowsaffected = cmd.ExecuteNonQuery();
                 }
             }
-            
+
             return rowsaffected;
         }
 
@@ -379,6 +384,7 @@ namespace PureLib.Services
             return rowsaffected;
         }
 
+        
         public List<User> ReadAllUsersFromDB()
         {
             List<User> users = new List<User>();
@@ -505,6 +511,30 @@ namespace PureLib.Services
             }
             return rowsaffected;
 
+        }
+
+        public List<Message> ReadMessages(int userID, int chatid)
+        {
+            List<Message> messages = new List<Message>();
+            string query = "select * from PureMessage where (SenderID = @PID and RecipientID = @CID) or (SenderID = @CID and RecipientID = @PID)";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PID", userID); 
+                cmd.Parameters.AddWithValue("@CID", chatid);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    messages.Add(ReadMessageUsingReader(reader));
+                }
+            }
+            return messages; 
+        }
+
+        private Message ReadMessageUsingReader(SqlDataReader reader)
+        {
+            return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4)); 
         }
     }
 }
