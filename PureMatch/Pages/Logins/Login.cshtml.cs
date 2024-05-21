@@ -19,6 +19,7 @@ namespace PureMatch.Pages.Logins
         public string UserName { get; set; }
         [Required(ErrorMessage = "Du skal skrive et kodeord")]
         public string Password { get; set; }
+        public string LoginFailed { get; set; }
 
 
         public void OnGet()
@@ -27,6 +28,7 @@ namespace PureMatch.Pages.Logins
 
         public IActionResult OnPostLogin(string username, string password)
         {
+            ModelState.Remove("LoginFailed");
             if (!ModelState.IsValid)
             {
                 return Page(); 
@@ -36,7 +38,13 @@ namespace PureMatch.Pages.Logins
                 User u = _repo.ReadLogin(username, password)!;
                 SessionHelper.Set(u, HttpContext); 
             }
+            else
+            {
+                LoginFailed = "Brugernavn eller kodeord forkert - prøv igen"; 
+                return Page();
+            }
             return RedirectToPage("/Index");
+            
         }
 
         public IActionResult OnPostLogout()
