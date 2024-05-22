@@ -7,11 +7,11 @@
     User u = null!;
     try
     {
-        u = SessionHelper.Get<User>(u, HttpContext); 
+        u = SessionHelper.Get<User>(u, HttpContext);
     }
     catch
     {
-        
+
     }
 }
 
@@ -36,26 +36,33 @@
             @* This div is for chat-content*@
             <h3 class="text-center">PureMatch</h3>
             <div class="vline"></div>
-            @if(Model.Messages != null)
+            @if (Model.Messages != null)
             {
-                if(Model.Messages.Count > 0)
+                if (Model.Messages.Count > 0)
                 {
-                    int matchuserid = 0; // Declared to fetch RecipientID 
-                    foreach(Message m in Model.Messages)
+                    int matchuserid = 0; // Declared to fetch RecipientID
+                    foreach (Message m in Model.Messages)
                     {
 
                         if (m.SenderID == u.UserID)
                         {
                             matchuserid = m.RecipientID;
                             <div class="text-end">
-                                <p class="OtherMessages">@m.Messagevalue</p>
+                                <div>
+                                    <img src="~/images/deletesymbol.png" class="deletelogo" />
+                                    <p class="OtherMessages">@m.Messagevalue</p>
+                                </div>
+                                
                             </div>
                         }
                         else
                         {
-                            matchuserid = m.SenderID; 
-                                <p class="MyMessages">@m.Messagevalue</p>
+                            matchuserid = m.SenderID;
+                            <div>
+                            <p class="MyMessages">@m.Messagevalue</p>
+                            </div>
                         }
+                       
                     }
                     <form method="post" asp-page-handler="SendMessage">
                         <div class="row vline margin">
@@ -68,10 +75,10 @@
 
                             </div>
                         </div>
-                        
-                        
+
+
                     </form>
-                    
+
 
                 }
             }
