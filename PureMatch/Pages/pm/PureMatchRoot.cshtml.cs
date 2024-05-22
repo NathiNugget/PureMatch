@@ -73,12 +73,13 @@ public class PureMatchRoot : PageModel
             NotValidInput = "Du skal vælge mindst 1 muskelgruppe, 1 dag og et niveau!";
             return Page();
         }
+        ModelState.Remove("NotValidInput");
         if (!ModelState.IsValid)
         {
             
             return Page(); 
         }
-        ModelState.Remove("NotValidInput");
+        
         User u = null!; 
         u = SessionHelper.Get<User>(u, HttpContext);
         u.Level = SelectedLevel;
