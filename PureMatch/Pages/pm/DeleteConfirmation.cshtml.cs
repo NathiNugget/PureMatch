@@ -32,8 +32,8 @@ namespace PureMatch.Pages.pm
                 _repo.DeleteMessage(MessageID);
                 return RedirectToPage("/pm/PureMatch", new {chatid = RecipientID});
             }
-            return Page();
-            
+            return RedirectToPage("/pm/PureMatch", new { chatid = RecipientID });
+
 
         }
         [Required]
