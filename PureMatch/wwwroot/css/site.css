@@ -258,3 +258,7 @@ h1 {
 .container-small {
     width: fit-content; 
 }
+
+.logo {
+    height: 60px;
+}
