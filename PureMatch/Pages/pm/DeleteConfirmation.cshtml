@@ -8,11 +8,17 @@
     <div class="container-main padding5bot backgroundcolor text-center col-4">
         <div>
             <div>
+                
                 <p class="OtherMessages">@Model.MessageContent</p>
 
                 <form method="post">
                     <input type="submit" value="Annullér" asp-route-delete="false" class="btn backgroundcolorbutton" />
                     <input type="submit" value="Slet" asp-route-delete="true" class="btn backgroundcolorbuttonblue" />
+                    <div class="visually-hidden">
+                            <input type="number" asp-for="@Model.MessageID" />
+                            <input type="text" asp-for="@Model.MessageContent" />
+                            <input type="number" asp-for="@Model.RecipientID" />
+                    </div>
                 </form>
             </div>
 
