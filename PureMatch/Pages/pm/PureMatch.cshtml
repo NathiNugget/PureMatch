@@ -49,20 +49,27 @@
                             matchuserid = m.RecipientID;
                             <div class="text-end">
                                 <div>
-                                    <img src="~/images/deletesymbol.png" class="deletelogo" />
+                                    <form method="post" class="d-inline-block">
+
+                                        <button asp-route-messageid="@m.MessageID" class="btn" asp-page-handler="Delete">
+                                            <img src="~/images/deletesymbol.png" class="deletelogo" />
+                                        </button>
+
+                                    </form>
+
                                     <p class="OtherMessages">@m.Messagevalue</p>
                                 </div>
-                                
+
                             </div>
                         }
                         else
                         {
                             matchuserid = m.SenderID;
                             <div>
-                            <p class="MyMessages">@m.Messagevalue</p>
+                                <p class="MyMessages">@m.Messagevalue</p>
                             </div>
                         }
-                       
+
                     }
                     <form method="post" asp-page-handler="SendMessage">
                         <div class="row vline margin">

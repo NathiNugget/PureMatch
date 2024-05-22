@@ -32,6 +32,16 @@ namespace PureMatch.Pages.pm
              
         }
 
+        public IActionResult OnPostDelete(int messageid)
+        {
+            ModelState.Remove("MessageValue"); 
+            if (!ModelState.IsValid)
+            {
+                return Page(); 
+            }
+            return RedirectToPage("/pm/DeleteConfirmation", new { messageid = messageid });
+        }
+
         public IActionResult OnPostMessage(int chatid)
         {
             ModelState.Remove("MessageValue");
