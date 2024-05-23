@@ -2,6 +2,7 @@ using PureLib.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -172,6 +173,42 @@ namespace PureLib.Services
             return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4));
         }
 
+        public Message GetMessage(int messageid)
+        {
+            string query = "select * from PureMessage where MessageID = @MID";
+            Message msg = null!;
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@MID", messageid); 
+                SqlDataReader reader = cmd.ExecuteReader(); 
+                while (reader.Read())
+                {
+                    msg = ReadMessageUsingReader(reader); 
+                }
+            }
+            return msg; 
+
+        }
+
+        public int DeleteMessage(int messageid)
+        {
+
+            string query = "delete  from PureMessage where MessageID = @MID";
+            int rowsaffected = 0; 
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@MID", messageid); 
+                rowsaffected = cmd.ExecuteNonQuery();
+            }
+            return rowsaffected;
+            
+
+        }
+
         // ******************************************************************
         /* 
          * 
@@ -183,10 +220,10 @@ namespace PureLib.Services
          * 
          * */
 
-        public User AddUser(User user)
+        public int AddUser(User user)
         {
 
-
+            int rowsaffected = 0; 
             string query = "insert into PureUser (Name, UserName, Password, PhoneNumber, Email, CardNumber, CardCVC, CardExpMonth, CardExpYear, Subscription, [Level]) values (@PName, @PUserName, @PPassword, @PPhoneNumber,@PEmail, @PCardNumber, @PCardCVC, @PCardExpMonth, @PCardExpYear, @PSubscription, @PLevel)";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -207,12 +244,12 @@ namespace PureLib.Services
                     cmd.Parameters.AddWithValue("@PLevel", user.Level);
                 }
 
-                int rowsaffected = cmd.ExecuteNonQuery();
+                rowsaffected = cmd.ExecuteNonQuery();
                 Console.WriteLine($"{rowsaffected} rows affected");
             }
 
 
-            return user;
+            return rowsaffected;
         }
 
         public int UpdateUser(User user)

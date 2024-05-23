@@ -262,3 +262,8 @@ h1 {
 .logo {
     height: 60px;
 }
+
+.deletelogo {
+    height: 30px;
+    padding-bottom: 5px;
+}
