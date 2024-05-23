@@ -20,7 +20,7 @@
         <div class="col-2 container-secondary">
             @* This div is for chats with other prior matches who the user wrote messages with  *@
             <h3 class="text-center ">Chats</h3>
-            <div class="vline"></div>
+            <div class="row vline"></div>
             <form method="post" asp-page-handler="Message">
                 @foreach (User c in Model.Chats)
                 {
@@ -35,7 +35,7 @@
         <div class="col-8 container-main container">
             @* This div is for chat-content*@
             <h3 class="text-center">PureMatch</h3>
-            <div class="vline"></div>
+            <div class="row vline"></div>
             @if (Model.Messages != null)
             {
                 if (Model.Messages.Count > 0)
@@ -96,7 +96,7 @@
             @* This div is for Matches *@
 
             <h3 class="text-center">Matches</h3>
-            <div class="vline"></div>
+            <div class="row vline"></div>
             <form method="post">
 
 

@@ -12,10 +12,10 @@ namespace PureLib.Model
     public class Message
     {
         #region instance fields
-        private int _messageid; 
+        private int _messageid;
         private int _senderid;
         private int _recipientid;
-        private DateTime _timesent; 
+        private DateTime _timesent;
         private string _messagevalue;
         #endregion
 
@@ -36,12 +36,76 @@ namespace PureLib.Model
             Messagevalue = messagevalue;
         }
 
+        public Message() : this(1, 1, 2, "hej", DateTime.Now) { }
+
         #region properties
-        public int MessageID { get => _messageid; set => _messageid = value; }
-        public int SenderID { get => _senderid; set => _senderid = value; }
-        public int RecipientID { get => _recipientid; set => _recipientid = value; }
-        public DateTime Timesent { get => _timesent; set => _timesent = value; }
-        public string Messagevalue { get => _messagevalue; set => _messagevalue = value; }
+        public int MessageID
+        {
+            get => _messageid;
+            set
+            {
+                if (value < 1)
+                {
+                    throw new ArgumentException($"Værdien af ID må ikke være under 0. Du angav: {value}");
+                }
+                _messageid = value;
+
+            }
+        }
+        public int SenderID
+        {
+            get => _senderid; set
+            {
+                
+                if (value < 1)
+                {
+                    throw new ArgumentException($"Værdien af AfsenderID må ikke være under 0. Du angav: {value}");
+                }
+                _senderid = value;
+            }
+        }
+
+        public int RecipientID
+        {
+            get => _recipientid;
+            set
+            {
+                
+                if (value < 1)
+                {
+                    throw new ArgumentException($"Værdien af ModtagerID må ikke være under 0. Du angav: {value}");
+                }
+                _recipientid = value;
+            }
+        }
+        public DateTime Timesent
+        {
+            get => _timesent;
+            set
+            {
+                if (value == DateTime.MinValue)
+                {
+                    throw new ArgumentNullException($"Værdien af Afsendertidpunkt må ikke være tom");
+                }
+                _timesent = value;
+            }
+        }
+        public string Messagevalue
+        {
+            get => _messagevalue; 
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException($"Værdien af beskedn må ikke være tom");
+                }
+                if (value.Length > ValidationRegex.MESSAGELENGTHMAX)
+                {
+                    throw new ArgumentException($"Længen af besked må max være 100 karakterer. Din besked var {value.Length} karakterer lang"); 
+                }
+                _messagevalue = value;
+            }
+        }
         #endregion
 
         /// <summary>
@@ -52,5 +116,7 @@ namespace PureLib.Model
         {
             return $"{{{nameof(MessageID)}={MessageID.ToString()}, {nameof(SenderID)}={SenderID.ToString()}, {nameof(RecipientID)}={RecipientID.ToString()}, {nameof(Timesent)}={Timesent.ToString()}, {nameof(Messagevalue)}={Messagevalue}}}";
         }
+
+        
     }
 }

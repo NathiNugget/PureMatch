@@ -20,5 +20,6 @@ namespace PureLib.Model
         public const string CARDCVCFILTER = "^\\d{3}$";
         public const string CARDEXPMONTHFILTER = "^\\d{2}$";
         public const string CARDEXPYEARFILTER = "^\\d{2}$";
+        public const int MESSAGELENGTHMAX = 100; 
     }
 }

@@ -78,7 +78,7 @@ namespace PureMatch.Pages.pm
             Messages = _repo.ReadMessages(u.UserID, chatid);
             if (!ModelState.IsValid)
             {
-                return RedirectToPage("./PureMatch", new { chatid = chatid });
+                return Page();
             }
 
             _repo.SendMessage(ownid, chatid, MessageValue);
@@ -91,6 +91,7 @@ namespace PureMatch.Pages.pm
         public List<User> Chats { get; set; }
         public List<Message> Messages { get; set; }
         [Required (ErrorMessage = "Du ville da gerne sende en besked, ikke? :)")]
+        [StringLength (100, MinimumLength = 1, ErrorMessage = "Du må skrive max 100")]
         public string MessageValue { get; set; }
         
     }
