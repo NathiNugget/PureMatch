@@ -31,6 +31,26 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-fill">
+                            <a class="nav-link "></a>
+                        </li>
+                        <li class="nav-fill">
+                            <a class="nav-link "></a>
+                        </li>
+                        <li class="nav-fill">
+                            <a class="nav-link "></a>
+                        </li>
+                        <li class="nav-fill">
+                            <a class="nav-link "></a>
+                        </li>
+                        <li class="nav-fill">
+                            <a class="nav-link "></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-page="/Index">Forside</a>
                         </li>
@@ -69,6 +89,17 @@
                             <a class="nav-link text-white" href="https://www.puregym.dk/find-center/byer">Find Byer</a>
                         </li>
                         
+
+                        @if(u != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-page="/Logins/MyProfile">Min profil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-page="/Logins/Login">Log ud</a>
+                            </li>
+                        }
+
                             
                     </ul>
                 </div>
