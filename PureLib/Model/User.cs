@@ -265,10 +265,6 @@ namespace PureLib.Model
             get => _level; 
             set
             {
-                if (string.IsNullOrEmpty(value.ToString()))
-                {
-                    throw new ArgumentNullException("Du skal angive et niveau for din konto");
-                }
                 if (value > Enum.GetValues(typeof(LevelsEnum)).Length)
                 {
                     throw new ArgumentException("Der er 3 niveauer i PureMatch, du kan max angive 0, 1 eller 2. 3 er reserveret værdi til når brugeren nulstiller level");
@@ -288,10 +284,6 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Null angive hvor List<MuscleGroupsEnum> var forventet");
                 }
-                if (value.GetType() != typeof(List<MuscleGroupEnum>))
-                {
-                    throw new ArgumentException($"Forventet input: {typeof(List<MuscleGroupEnum>)}. Angivet: {value.GetType()}");
-                }
                 _musclegroups = value;
             }
         }
@@ -303,10 +295,6 @@ namespace PureLib.Model
                 {
                     throw new ArgumentNullException("Null angivet hvor List<DaysEnum> var forventet");
                 }
-                if (value.GetType() != typeof(List<DaysEnum>))
-                {
-                    throw new ArgumentException($"Forventet input: {typeof(List<DaysEnum>)}. Angivet: {value.GetType()}");
-                }
                 _days = value;
             }
         }
@@ -315,10 +303,7 @@ namespace PureLib.Model
             get => _subscription; 
             set
             {
-                if (string.IsNullOrEmpty(value.ToString()))
-                {
-                    throw new ArgumentNullException("Null angivet hvor heltalsværdi var forventet");
-                }
+                
                 if (value < 0)
                 {
                     throw new ArgumentException("Værdi for abonnement må ikke være under 0.");

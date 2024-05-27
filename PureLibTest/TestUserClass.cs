@@ -1,12 +1,14 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PureLib.Model;
 using System.Data;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 using System.Net.Mail;
 
 namespace PureLibTest
 {
     [TestClass]
+    [ExcludeFromCodeCoverage]
     public class TestUserClass
     {
         private User u;
@@ -377,6 +379,8 @@ namespace PureLibTest
 
         }
 
+        
+
         //DaysEnum property
         [TestMethod]
         [DataRow(DaysEnum.Søndag)]
@@ -424,6 +428,14 @@ namespace PureLibTest
         public void SubscriptionNull(object o)
         {
             u.Subscription = (int) o;
+        }
+
+        //ToString() method
+        [TestMethod]
+        public void ToStringOfUser()
+        {
+            string ustring = u.ToString();
+            Assert.AreEqual(ustring, u.ToString());
         }
     }
 }

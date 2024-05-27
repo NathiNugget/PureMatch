@@ -149,7 +149,9 @@ namespace PureLib.Services
         {
             List<User> users = new List<User>();
             //string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu full join PureMessage pm ON pu.UserID = pm.SenderID ) where RecipientID = @PID OR SenderID = @PID)";
-            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu join PureMessage pm ON pu.UserID = pm.SenderID OR pu.UserID = pm.RecipientID)) and UserID != @PID";
+            string query = "select * from PureUser where UserID in (select distinct UserID from (PureUser pu join " +
+                "PureMessage pm on pu.UserID = pm.SenderID or pu.UserID = pm.RecipientID) where " +
+                "pm.RecipientID = @PID or pm.SenderID = @PID) and UserID != @PID";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
@@ -533,9 +535,10 @@ namespace PureLib.Services
 
         }
 
-        public int SendMessage(int ownid, int matchid, string messagecontent)
+        public (int rowsaffected, int maxid) SendMessage(int ownid, int matchid, string messagecontent)
         {
             int rowsaffected = 0;
+            int maxid = 0; 
             string query = "insert into PureMessage (SenderID, RecipientID, MessageValue) values (@PID, @PMID, @PMC)";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -545,9 +548,28 @@ namespace PureLib.Services
                 cmd.Parameters.AddWithValue("@PMID", matchid);
                 cmd.Parameters.AddWithValue("@PMC", messagecontent);
                 rowsaffected = cmd.ExecuteNonQuery();
+                 
             }
-            return rowsaffected;
 
+            maxid = FindMaxMessageID(); 
+            return (rowsaffected, maxid);
+
+        }
+
+        private int FindMaxMessageID()
+        {
+            string query = "select max(MessageID) from PureMessage";
+            using (SqlConnection connection = new SqlConnection(ConnectionString)) {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlDataReader reader = cmd.ExecuteReader();
+                int maxid = 0; 
+                while (reader.Read())
+                {
+                    maxid = reader.GetInt32(0); 
+                }
+                return maxid;
+            }
         }
 
         public List<Message> ReadMessages(int userID, int chatid)
