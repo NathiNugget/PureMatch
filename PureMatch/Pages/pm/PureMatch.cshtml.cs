@@ -18,10 +18,19 @@ namespace PureMatch.Pages.pm
             _repo = repo;
 
         }
-        public void OnGet(int? chatid)
+        public IActionResult OnGet(int? chatid)
         {
             User u = null!;
-            u = SessionHelper.Get<User>(u, HttpContext);
+            try
+            {
+                u = SessionHelper.Get<User>(u, HttpContext);
+                
+            }
+            catch
+            {
+                return RedirectToPage("/Index");
+            }
+            
             Matches = _repo.GetMatches(u.UserID);
             Chats = _repo.GetChatUsers(u.UserID);
             if (chatid != 0 && chatid != null)
@@ -29,7 +38,7 @@ namespace PureMatch.Pages.pm
                 Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
 
             }
-             
+            return Page(); 
         }
 
         public IActionResult OnPostDelete(int messageid)
