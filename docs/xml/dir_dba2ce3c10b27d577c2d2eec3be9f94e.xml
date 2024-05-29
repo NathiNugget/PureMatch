@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_dba2ce3c10b27d577c2d2eec3be9f94e" kind="dir">
+    <compoundname>PureMatch/obj/Debug/net8.0</compoundname>
+    <innerfile refid="_pure_match_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_debug_2net8_80_2_pure_match_8_assembly_info_8cs">PureMatch.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_debug_2net8_80_2_pure_match_8_global_usings_8g_8cs">PureMatch.GlobalUsings.g.cs</innerfile>
+    <innerfile refid="_debug_2net8_80_2_pure_match_8_razor_assembly_info_8cs">PureMatch.RazorAssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/obj/Debug/net8.0/"/>
+  </compounddef>
+</doxygen>

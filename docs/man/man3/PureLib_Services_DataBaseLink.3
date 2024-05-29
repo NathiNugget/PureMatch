@@ -1,0 +1,148 @@
+.TH "PureLib.Services.DataBaseLink" 3 "PureMatch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PureLib.Services.DataBaseLink
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDataBaseLink\fP ()"
+.br
+.ti -1c
+.RI "List< \fBUser\fP > \fBGetMatches\fP (int userid)"
+.br
+.ti -1c
+.RI "List< \fBMuscleGroupEnum\fP > \fBReadMuscleGroups\fP (int userid)"
+.br
+.ti -1c
+.RI "List< \fBMessage\fP > \fBReadAllMessagesFromDB\fP ()"
+.br
+.ti -1c
+.RI "List< \fBUser\fP > \fBGetChatUsers\fP (int userid)"
+.br
+.ti -1c
+.RI "\fBMessage\fP \fBGetMessage\fP (int messageid)"
+.br
+.ti -1c
+.RI "int \fBDeleteMessage\fP (int messageid)"
+.br
+.ti -1c
+.RI "int \fBAddUser\fP (\fBUser\fP user)"
+.br
+.ti -1c
+.RI "int \fBUpdateUser\fP (\fBUser\fP user)"
+.br
+.ti -1c
+.RI "\fBUser\fP? \fBReadLogin\fP (string username, string password)"
+.br
+.ti -1c
+.RI "int \fBSetMatching\fP (int userid, List< \fBMuscleGroupEnum\fP > msgroups, List< DaysEnum > days, int level)"
+.br
+.ti -1c
+.RI "List< \fBUser\fP > \fBReadAllUsersFromDB\fP ()"
+.br
+.ti -1c
+.RI "\fBUser\fP \fBReadUser\fP (int userid)"
+.br
+.ti -1c
+.RI "List< DaysEnum > \fBReadDays\fP (int userid)"
+.br
+.ti -1c
+.RI "int int maxid \fBSendMessage\fP (int ownid, int matchid, string messagecontent)"
+.br
+.ti -1c
+.RI "List< \fBMessage\fP > \fBReadMessages\fP (int userID, int chatid)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBrowsaffected\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB13\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PureLib\&.Services\&.DataBaseLink\&.DataBaseLink ()"
+
+.PP
+Definition at line \fB16\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int PureLib\&.Services\&.DataBaseLink\&.AddUser (\fBUser\fP user)"
+
+.PP
+Definition at line \fB225\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "int PureLib\&.Services\&.DataBaseLink\&.DeleteMessage (int messageid)"
+
+.PP
+Definition at line \fB197\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< \fBUser\fP > PureLib\&.Services\&.DataBaseLink\&.GetChatUsers (int userid)"
+
+.PP
+Definition at line \fB148\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< \fBUser\fP > PureLib\&.Services\&.DataBaseLink\&.GetMatches (int userid)"
+
+.PP
+Definition at line \fB23\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "\fBMessage\fP PureLib\&.Services\&.DataBaseLink\&.GetMessage (int messageid)"
+
+.PP
+Definition at line \fB178\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< \fBMessage\fP > PureLib\&.Services\&.DataBaseLink\&.ReadAllMessagesFromDB ()"
+
+.PP
+Definition at line \fB128\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< \fBUser\fP > PureLib\&.Services\&.DataBaseLink\&.ReadAllUsersFromDB ()"
+
+.PP
+Definition at line \fB427\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< DaysEnum > PureLib\&.Services\&.DataBaseLink\&.ReadDays (int userid)"
+
+.PP
+Definition at line \fB483\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "\fBUser\fP? PureLib\&.Services\&.DataBaseLink\&.ReadLogin (string username, string password)"
+
+.PP
+Definition at line \fB301\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< \fBMessage\fP > PureLib\&.Services\&.DataBaseLink\&.ReadMessages (int userID, int chatid)"
+
+.PP
+Definition at line \fB575\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "List< \fBMuscleGroupEnum\fP > PureLib\&.Services\&.DataBaseLink\&.ReadMuscleGroups (int userid)"
+
+.PP
+Definition at line \fB62\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "\fBUser\fP PureLib\&.Services\&.DataBaseLink\&.ReadUser (int userid)"
+
+.PP
+Definition at line \fB445\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "int int maxid PureLib\&.Services\&.DataBaseLink\&.SendMessage (int ownid, int matchid, string messagecontent)"
+
+.PP
+Definition at line \fB538\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "int PureLib\&.Services\&.DataBaseLink\&.SetMatching (int userid, List< \fBMuscleGroupEnum\fP > msgroups, List< DaysEnum > days, int level)"
+
+.PP
+Definition at line \fB321\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SS "int PureLib\&.Services\&.DataBaseLink\&.UpdateUser (\fBUser\fP user)"
+
+.PP
+Definition at line \fB257\fP of file \fBDataBaseLink\&.cs\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int PureLib\&.Services\&.DataBaseLink\&.rowsaffected"
+
+.PP
+Definition at line \fB538\fP of file \fBDataBaseLink\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PureMatch from the source code\&.

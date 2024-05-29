@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::pm::DeleteConfirmationModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1aa112a49ccbbdd56d5dc9a3ab03148480" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.pm.DeleteConfirmationModel._repo</definition>
+        <argsstring></argsstring>
+        <name>_repo</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel._repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="11" column="30" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a4dc1892c9923e6020b81366135ac07ec" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.DeleteConfirmationModel.MessageContent</definition>
+        <argsstring></argsstring>
+        <name>MessageContent</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel.MessageContent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="40" column="23" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a4fce1ca9e5d106ba1bf513dd5cd47ae8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.pm.DeleteConfirmationModel.MessageID</definition>
+        <argsstring></argsstring>
+        <name>MessageID</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel.MessageID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="42" column="20" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a5314e4d24b661af24336a516d681ec38" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.pm.DeleteConfirmationModel.RecipientID</definition>
+        <argsstring></argsstring>
+        <name>RecipientID</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel.RecipientID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="44" column="20" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1aed89c992c56370e9c83ec0f30843aac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.pm.DeleteConfirmationModel.DeleteConfirmationModel</definition>
+        <argsstring>(DataBaseLink repo)</argsstring>
+        <name>DeleteConfirmationModel</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel.DeleteConfirmationModel</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+          <declname>repo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="13" column="16" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a41602c86afaf1afe9944dacfdc16e2ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.pm.DeleteConfirmationModel.OnGet</definition>
+        <argsstring>(int messageid)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>messageid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="17" column="21" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a24b21b18ddfc0b7e086ae7a74ed267c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.pm.DeleteConfirmationModel.OnPost</definition>
+        <argsstring>(bool delete)</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>PureMatch.Pages.pm.DeleteConfirmationModel.OnPost</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>delete</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="24" column="30" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="24" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.DeleteConfirmationModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.DeleteConfirmationModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" line="9" column="11" bodyfile="PureMatch/Pages/pm/DeleteConfirmation.cshtml.cs" bodystart="10" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1aa112a49ccbbdd56d5dc9a3ab03148480" prot="private" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>_repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1aed89c992c56370e9c83ec0f30843aac2" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>DeleteConfirmationModel</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a4dc1892c9923e6020b81366135ac07ec" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>MessageContent</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a4fce1ca9e5d106ba1bf513dd5cd47ae8" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>MessageID</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a41602c86afaf1afe9944dacfdc16e2ad" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a24b21b18ddfc0b7e086ae7a74ed267c5" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>OnPost</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a5314e4d24b661af24336a516d681ec38" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::DeleteConfirmationModel</scope><name>RecipientID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

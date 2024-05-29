@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_a75756556c6b3cb31c81a4294c9754be" kind="dir">
+    <compoundname>PureLib</compoundname>
+    <innerdir refid="dir_c01773d51883ff6e850a0deca790b7ce">PureLib/Model</innerdir>
+    <innerdir refid="dir_a4dffd60af3d7a7e620f2cc91f793dce">PureLib/obj</innerdir>
+    <innerdir refid="dir_92ff355cca6c8e2657c5dd1fe9fa8534">PureLib/Services</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/"/>
+  </compounddef>
+</doxygen>

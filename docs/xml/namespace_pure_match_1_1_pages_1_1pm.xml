@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_pure_match_1_1_pages_1_1pm" kind="namespace" language="C#">
+    <compoundname>PureMatch::Pages::pm</compoundname>
+    <innerclass refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account" prot="public">PureMatch::Pages::pm::CreateAccount</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model" prot="public">PureMatch::Pages::pm::DeleteConfirmationModel</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model" prot="public">PureMatch::Pages::pm::PureMatchModel</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root" prot="public">PureMatch::Pages::pm::PureMatchRoot</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1pm_1_1_select_subscription" prot="public">PureMatch::Pages::pm::SelectSubscription</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model" prot="public">PureMatch::Pages::pm::UserPageModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

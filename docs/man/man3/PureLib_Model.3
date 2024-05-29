@@ -1,0 +1,79 @@
+.TH "PureLib.Model" 3 "PureMatch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PureLib.Model
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMessage\fP"
+.br
+.RI "This class represents a message a user can write to another user\&. "
+.ti -1c
+.RI "class \fBUser\fP"
+.br
+.RI "Class which represents a user in the system\&. The class has a constructor for when read from database as well as a default constructor for when one is needed\&. "
+.ti -1c
+.RI "class \fBValidationRegex\fP"
+.br
+.RI "This class contains Regex as well as some DateTime-formatting to ensure the user-inputs are valid\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBMuscleGroupEnum\fP { \fBBryst\fP, \fBRyg\fP, \fBSkulder\fP, \fBBen\fP, \fBBiceps\fP, \fBTriceps\fP, \fBMave\fP }"
+.br
+.RI "This enum contains the different muscle groups a user can choose to train\&. "
+.ti -1c
+.RI "enum \fBSubscriptionEnum\fP { \fBCore\fP, \fBPlus\fP, \fBUnlimited\fP }"
+.br
+.RI "This enum describes which subscriptions a user can have and choose upon account creation\&. "
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBPureLib\&.Model\&.MuscleGroupEnum\fP"
+
+.PP
+This enum contains the different muscle groups a user can choose to train\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIBryst \fP\fP
+.TP
+\fB\fIRyg \fP\fP
+.TP
+\fB\fISkulder \fP\fP
+.TP
+\fB\fIBen \fP\fP
+.TP
+\fB\fIBiceps \fP\fP
+.TP
+\fB\fITriceps \fP\fP
+.TP
+\fB\fIMave \fP\fP
+.PP
+Definition at line \fB6\fP of file \fBMuscleGroupEnum\&.cs\fP\&.
+.SS "enum \fBPureLib\&.Model\&.SubscriptionEnum\fP"
+
+.PP
+This enum describes which subscriptions a user can have and choose upon account creation\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fICore \fP\fP
+.TP
+\fB\fIPlus \fP\fP
+.TP
+\fB\fIUnlimited \fP\fP
+.PP
+Definition at line \fB12\fP of file \fBSubscriptionEnum\&.cs\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PureMatch from the source code\&.

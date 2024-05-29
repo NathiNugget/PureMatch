@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_session_helper" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::SessionHelper</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_pure_match_1_1_session_helper_1a7cf5ad1b2a9d734e9c952a0f1b655357" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PureMatch.SessionHelper.Set&lt; T &gt;</definition>
+        <argsstring>(T t, HttpContext context)</argsstring>
+        <name>Set&lt; T &gt;</name>
+        <qualifiedname>PureMatch.SessionHelper.Set&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>HttpContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/SessionHelper.cs" line="7" column="23" bodyfile="PureMatch/SessionHelper.cs" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_session_helper_1a30b53b5ca5298e2a70ec4e8f6bf4d5ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T PureMatch.SessionHelper.Get&lt; T &gt;</definition>
+        <argsstring>(T t, HttpContext context)</argsstring>
+        <name>Get&lt; T &gt;</name>
+        <qualifiedname>PureMatch.SessionHelper.Get&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>HttpContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/SessionHelper.cs" line="14" column="23" bodyfile="PureMatch/SessionHelper.cs" bodystart="14" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_session_helper_1ae70bb5d69a9aabb1c0120bc3a9e877cf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PureMatch.SessionHelper.Clear&lt; T &gt;</definition>
+        <argsstring>(T t, HttpContext context)</argsstring>
+        <name>Clear&lt; T &gt;</name>
+        <qualifiedname>PureMatch.SessionHelper.Clear&lt; T &gt;</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>HttpContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/SessionHelper.cs" line="25" column="23" bodyfile="PureMatch/SessionHelper.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/SessionHelper.cs" line="5" column="19" bodyfile="PureMatch/SessionHelper.cs" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_session_helper_1ae70bb5d69a9aabb1c0120bc3a9e877cf" prot="public" virt="non-virtual"><scope>PureMatch::SessionHelper</scope><name>Clear&lt; T &gt;</name></member>
+      <member refid="class_pure_match_1_1_session_helper_1a30b53b5ca5298e2a70ec4e8f6bf4d5ad" prot="public" virt="non-virtual"><scope>PureMatch::SessionHelper</scope><name>Get&lt; T &gt;</name></member>
+      <member refid="class_pure_match_1_1_session_helper_1a7cf5ad1b2a9d734e9c952a0f1b655357" prot="public" virt="non-virtual"><scope>PureMatch::SessionHelper</scope><name>Set&lt; T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

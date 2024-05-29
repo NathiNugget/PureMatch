@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_8d1af5881057a342b1865cb189b59a26" kind="dir">
+    <compoundname>PureLibTest/obj</compoundname>
+    <innerdir refid="dir_46a319dac92cc8b3440c3cd3724496d1">PureLibTest/obj/Debug</innerdir>
+    <innerdir refid="dir_b7971705e8a0f7bb12a37016a1860195">PureLibTest/obj/Release</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLibTest/obj/"/>
+  </compounddef>
+</doxygen>

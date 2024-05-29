@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::Logins::ConfirmChangesModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1ae8fe4b632cdd81f64d5fa582850927da" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.Logins.ConfirmChangesModel._repo</definition>
+        <argsstring></argsstring>
+        <name>_repo</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel._repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="14" column="30" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a150ed3354d884f9472d5376fe118f9b9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.NameNew</definition>
+        <argsstring></argsstring>
+        <name>NameNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.NameNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="37" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a6a1e208d24390b7f377ef2281311daaa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.UsernameNew</definition>
+        <argsstring></argsstring>
+        <name>UsernameNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.UsernameNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="39" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1abae9b3aedeae5f304d5cf201a04a7445" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.PasswordNew</definition>
+        <argsstring></argsstring>
+        <name>PasswordNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.PasswordNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="41" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1afb8a52f6beb77885b6708978b5f86614" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.EmailNew</definition>
+        <argsstring></argsstring>
+        <name>EmailNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.EmailNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="43" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aa7beefd72890beead4d87dbcbe434a43" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.PhoneNumberNew</definition>
+        <argsstring></argsstring>
+        <name>PhoneNumberNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.PhoneNumberNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="45" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a3d294da357eef3a525776aae458a59d7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.CardNumberNew</definition>
+        <argsstring></argsstring>
+        <name>CardNumberNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.CardNumberNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="47" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a54f5c462dfdf4dfe944c53ed2e63ee7b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.CardExpMonthNew</definition>
+        <argsstring></argsstring>
+        <name>CardExpMonthNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.CardExpMonthNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="49" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a141cbc906d640ef5dbce6ac4a96495fc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.CardExpYearNew</definition>
+        <argsstring></argsstring>
+        <name>CardExpYearNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.CardExpYearNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="51" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a4d2716cdbeaabc651b7b2673489396de" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.ConfirmChangesModel.CardCVCNew</definition>
+        <argsstring></argsstring>
+        <name>CardCVCNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.CardCVCNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="53" column="23" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a7b5c906cff468940c47ae16a3e25644e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.Logins.ConfirmChangesModel.Repo</definition>
+        <argsstring></argsstring>
+        <name>Repo</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.Repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="54" column="29" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="54" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1ad7ef89628744dac8078569b66ee90ca0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.Logins.ConfirmChangesModel.ConfirmChangesModel</definition>
+        <argsstring>(DataBaseLink repo)</argsstring>
+        <name>ConfirmChangesModel</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.ConfirmChangesModel</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+          <declname>repo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="16" column="16" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a52d28ad2f083eb25882054a225170033" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.Logins.ConfirmChangesModel.OnGet</definition>
+        <argsstring>(string name, string username, string password, string email, string phonenumber, string cardnumber, string cardexpmonth, string cardexpyear, string cardcvc)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.OnGet</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>phonenumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardnumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardexpmonth</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardexpyear</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardcvc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="21" column="21" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="21" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aa7a55d009af2d1fe71d1f651581599bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.Logins.ConfirmChangesModel.OnPostAbort</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostAbort</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.OnPostAbort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="56" column="30" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aefa1c6aff10fe5a060bbc24c852c1862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.Logins.ConfirmChangesModel.OnPostConfirmAction</definition>
+        <argsstring>(bool save)</argsstring>
+        <name>OnPostConfirmAction</name>
+        <qualifiedname>PureMatch.Pages.Logins.ConfirmChangesModel.OnPostConfirmAction</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="63" column="30" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="63" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.Logins.ConfirmChangesModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.Logins.ConfirmChangesModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="11" column="11" bodyfile="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" bodystart="12" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1ae8fe4b632cdd81f64d5fa582850927da" prot="private" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>_repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a4d2716cdbeaabc651b7b2673489396de" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>CardCVCNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a54f5c462dfdf4dfe944c53ed2e63ee7b" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>CardExpMonthNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a141cbc906d640ef5dbce6ac4a96495fc" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>CardExpYearNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a3d294da357eef3a525776aae458a59d7" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>CardNumberNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1ad7ef89628744dac8078569b66ee90ca0" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>ConfirmChangesModel</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1afb8a52f6beb77885b6708978b5f86614" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>EmailNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a150ed3354d884f9472d5376fe118f9b9" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>NameNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a52d28ad2f083eb25882054a225170033" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aa7a55d009af2d1fe71d1f651581599bb" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>OnPostAbort</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aefa1c6aff10fe5a060bbc24c852c1862" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>OnPostConfirmAction</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1abae9b3aedeae5f304d5cf201a04a7445" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>PasswordNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aa7beefd72890beead4d87dbcbe434a43" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>PhoneNumberNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a7b5c906cff468940c47ae16a3e25644e" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>Repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a6a1e208d24390b7f377ef2281311daaa" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::ConfirmChangesModel</scope><name>UsernameNew</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

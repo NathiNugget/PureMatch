@@ -1,0 +1,814 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_test_1_1_test_user_class" kind="class" language="C#" prot="public">
+    <compoundname>PureLibTest::TestUserClass</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_user_class_1a570387957dbe6ff4c0f4df4a28ca49dc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref></type>
+        <definition>User PureLibTest.TestUserClass.u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <qualifiedname>PureLibTest.TestUserClass.u</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="14" column="22" bodyfile="PureLibTest/TestUserClass.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a571aa71677092f938aac83ddb036836b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.BeforeEachTest</definition>
+        <argsstring>()</argsstring>
+        <name>BeforeEachTest</name>
+        <qualifiedname>PureLibTest.TestUserClass.BeforeEachTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="16" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1aa62d012beed06081ddb2f34d2ce9ac70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.Man</definition>
+        <argsstring>()</argsstring>
+        <name>Man</name>
+        <qualifiedname>PureLibTest.TestUserClass.Man</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="23" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a1394dbf3df8186465633b5b381d51dec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.AfterEachTest</definition>
+        <argsstring>()</argsstring>
+        <name>AfterEachTest</name>
+        <qualifiedname>PureLibTest.TestUserClass.AfterEachTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="30" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a11f7d836e4d7926a20d5cf1b5c782ab9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.UserID</definition>
+        <argsstring>(int id)</argsstring>
+        <name>UserID</name>
+        <qualifiedname>PureLibTest.TestUserClass.UserID</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="41" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a95d060aa3cb992c93de915a48e47cc68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.UserIDIllegal</definition>
+        <argsstring>(int id)</argsstring>
+        <name>UserIDIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.UserIDIllegal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="53" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1acdd7f54aed24531847f37614f34b6cf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.Name</definition>
+        <argsstring>(string name)</argsstring>
+        <name>Name</name>
+        <qualifiedname>PureLibTest.TestUserClass.Name</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="63" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a03e2b38a6fb11588ea60950926c9766e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.NameIllegal</definition>
+        <argsstring>(string name)</argsstring>
+        <name>NameIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.NameIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="73" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ad75fd3cd582d0d75f2d4be7f4a2ff3de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.UserName</definition>
+        <argsstring>(string name)</argsstring>
+        <name>UserName</name>
+        <qualifiedname>PureLibTest.TestUserClass.UserName</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="86" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="86" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a96812abd8d38d0fbd78b72c8a639b4e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.UserNameNull</definition>
+        <argsstring>(string name)</argsstring>
+        <name>UserNameNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.UserNameNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="96" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a597bef6cb9b4f048f25a2cb3616d9c85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.UserNameIllegal</definition>
+        <argsstring>(string name)</argsstring>
+        <name>UserNameIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.UserNameIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="105" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1acc8be7422295cc64fecf9bd90045d349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.Password</definition>
+        <argsstring>(string password)</argsstring>
+        <name>Password</name>
+        <qualifiedname>PureLibTest.TestUserClass.Password</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="114" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a4003fd2cd9acec4042434e6b1ed38f01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.PasswordIllegal</definition>
+        <argsstring>(string password)</argsstring>
+        <name>PasswordIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.PasswordIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="124" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ae7a3c6cfb1e0f0585506816fd531a54a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.PasswordNull</definition>
+        <argsstring>(string password)</argsstring>
+        <name>PasswordNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.PasswordNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="133" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a0e68a67c816d74b67791105a8352c297" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.PhoneNumber</definition>
+        <argsstring>(string number)</argsstring>
+        <name>PhoneNumber</name>
+        <qualifiedname>PureLibTest.TestUserClass.PhoneNumber</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="142" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="142" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a2fcb3aa44cdd63ce60baaa271a89a884" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.PhoneNumberNull</definition>
+        <argsstring>(string number)</argsstring>
+        <name>PhoneNumberNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.PhoneNumberNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="152" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1adf6a9a15e68ea8157a7999cd70018bba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.PhoneNumberIllegal</definition>
+        <argsstring>(string number)</argsstring>
+        <name>PhoneNumberIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.PhoneNumberIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="162" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1afb0ff332a13e47fb055da0c1165170b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.Email</definition>
+        <argsstring>(string email)</argsstring>
+        <name>Email</name>
+        <qualifiedname>PureLibTest.TestUserClass.Email</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="172" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a808321cdc11ce218ad9115ee2085e3dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.EmailNull</definition>
+        <argsstring>(string email)</argsstring>
+        <name>EmailNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.EmailNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="182" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1aab7031da53e3307ff6fef4b61034f74a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.EmailIllegal</definition>
+        <argsstring>(string email)</argsstring>
+        <name>EmailIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.EmailIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="194" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a00f273cfb71fc6d9b55454c65ae00e38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardNumber</definition>
+        <argsstring>(string cardnumber)</argsstring>
+        <name>CardNumber</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardNumber</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cardnumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="204" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="204" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a6d15de5dfbbfdf17b9cd1607b0665f0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardNumberIllegal</definition>
+        <argsstring>(string cardnumber)</argsstring>
+        <name>CardNumberIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardNumberIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cardnumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="214" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a218bceb81128c66d56e2c07187ca2cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardNumberNull</definition>
+        <argsstring>(string cardnumber)</argsstring>
+        <name>CardNumberNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardNumberNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cardnumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="224" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a4ed5aee4a82ee5d8c48a64c352928794" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardCVC</definition>
+        <argsstring>(string cvc)</argsstring>
+        <name>CardCVC</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardCVC</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cvc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="234" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="234" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a138098528ec8942c22a60c047c1759ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardCVCIllegal</definition>
+        <argsstring>(string cvc)</argsstring>
+        <name>CardCVCIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardCVCIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cvc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="246" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1acbff4ad198051235076b3f1eca9e4b82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardCVCNull</definition>
+        <argsstring>(string cvc)</argsstring>
+        <name>CardCVCNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardCVCNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cvc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="256" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a5bbe90fa351b971ea63264a824fc5e8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardExpMonth</definition>
+        <argsstring>(string expmonth)</argsstring>
+        <name>CardExpMonth</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardExpMonth</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>expmonth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="267" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="267" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ae68ad7c73a0e4c7edded61331d75428f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardExpMonthIllegal</definition>
+        <argsstring>(string expmonth)</argsstring>
+        <name>CardExpMonthIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardExpMonthIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>expmonth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="280" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a1064221c276d2671e5f65b9ed5738a42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardExpMonthNull</definition>
+        <argsstring>(string expmonth)</argsstring>
+        <name>CardExpMonthNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardExpMonthNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>expmonth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="289" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a04362430d046ba10ee281149b2f833ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardExpYear</definition>
+        <argsstring>(string expyear)</argsstring>
+        <name>CardExpYear</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardExpYear</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>expyear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="298" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a87a4c3b443ec19177051d3f428e8d74d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CardExpYearIllegal</definition>
+        <argsstring>(string cardexpyear)</argsstring>
+        <name>CardExpYearIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.CardExpYearIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>cardexpyear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="311" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ac739bfb664bf5c3ec2b239f7762268bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.CearExpYearNull</definition>
+        <argsstring>(string expyear)</argsstring>
+        <name>CearExpYearNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.CearExpYearNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>expyear</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="321" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a9cb32aeac6261c5135dfd43efae67d7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.EnumTest</definition>
+        <argsstring>(int level)</argsstring>
+        <name>EnumTest</name>
+        <qualifiedname>PureLibTest.TestUserClass.EnumTest</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="332" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="332" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ada3ad8345543d8ceee84d7e0f87ccaaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.EnumTestIllegal</definition>
+        <argsstring>(int level)</argsstring>
+        <name>EnumTestIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.EnumTestIllegal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="343" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="343" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a76868e9dff1323a0b82a2ef11429c3f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.EnumTestNull</definition>
+        <argsstring>(object o)</argsstring>
+        <name>EnumTestNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.EnumTestNull</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="351" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ac691d082dd3375577b4d09cd15ae6b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.MuscleGroupEnumTest</definition>
+        <argsstring>(MuscleGroupEnum msgroup)</argsstring>
+        <name>MuscleGroupEnumTest</name>
+        <qualifiedname>PureLibTest.TestUserClass.MuscleGroupEnumTest</qualifiedname>
+        <param>
+          <type><ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref></type>
+          <declname>msgroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="361" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="361" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a444216a6d7d078c011d63ab57f2d0782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.MusclegroupsEnumNull</definition>
+        <argsstring>(object o)</argsstring>
+        <name>MusclegroupsEnumNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.MusclegroupsEnumNull</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="373" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="373" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a127a4c0ee0c05e78759ceea1baaf215e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.DaysEnumTest</definition>
+        <argsstring>(DaysEnum day)</argsstring>
+        <name>DaysEnumTest</name>
+        <qualifiedname>PureLibTest.TestUserClass.DaysEnumTest</qualifiedname>
+        <param>
+          <type>DaysEnum</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="389" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="389" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1aff56849b8b8682babd1fe370beb361a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.DaysEnumNull</definition>
+        <argsstring>(object o)</argsstring>
+        <name>DaysEnumNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.DaysEnumNull</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="399" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="399" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1ae242c07552009af2b1698cbe4aad1b41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.Subscription</definition>
+        <argsstring>(int sub)</argsstring>
+        <name>Subscription</name>
+        <qualifiedname>PureLibTest.TestUserClass.Subscription</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="408" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="408" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a8ab83783bf40e045f51146898f77a887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.SubscriptionIllegal</definition>
+        <argsstring>(int sub)</argsstring>
+        <name>SubscriptionIllegal</name>
+        <qualifiedname>PureLibTest.TestUserClass.SubscriptionIllegal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="419" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a29af556824ffb1209ab52963cbf2617c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.SubscriptionNull</definition>
+        <argsstring>(object o)</argsstring>
+        <name>SubscriptionNull</name>
+        <qualifiedname>PureLibTest.TestUserClass.SubscriptionNull</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="428" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="428" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_user_class_1a3b0fe794d2d080c273927db729868343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestUserClass.ToStringOfUser</definition>
+        <argsstring>()</argsstring>
+        <name>ToStringOfUser</name>
+        <qualifiedname>PureLibTest.TestUserClass.ToStringOfUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestUserClass.cs" line="435" column="21" bodyfile="PureLibTest/TestUserClass.cs" bodystart="435" bodyend="439"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLibTest/TestUserClass.cs" line="12" column="11" bodyfile="PureLibTest/TestUserClass.cs" bodystart="13" bodyend="440"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a1394dbf3df8186465633b5b381d51dec" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>AfterEachTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a571aa71677092f938aac83ddb036836b" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>BeforeEachTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a4ed5aee4a82ee5d8c48a64c352928794" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardCVC</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a138098528ec8942c22a60c047c1759ca" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardCVCIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1acbff4ad198051235076b3f1eca9e4b82" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardCVCNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a5bbe90fa351b971ea63264a824fc5e8e" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardExpMonth</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ae68ad7c73a0e4c7edded61331d75428f" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardExpMonthIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a1064221c276d2671e5f65b9ed5738a42" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardExpMonthNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a04362430d046ba10ee281149b2f833ef" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardExpYear</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a87a4c3b443ec19177051d3f428e8d74d" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardExpYearIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a00f273cfb71fc6d9b55454c65ae00e38" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardNumber</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a6d15de5dfbbfdf17b9cd1607b0665f0c" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardNumberIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a218bceb81128c66d56e2c07187ca2cd3" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CardNumberNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ac739bfb664bf5c3ec2b239f7762268bc" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>CearExpYearNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1aff56849b8b8682babd1fe370beb361a9" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>DaysEnumNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a127a4c0ee0c05e78759ceea1baaf215e" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>DaysEnumTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1afb0ff332a13e47fb055da0c1165170b5" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>Email</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1aab7031da53e3307ff6fef4b61034f74a" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>EmailIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a808321cdc11ce218ad9115ee2085e3dd" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>EmailNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a9cb32aeac6261c5135dfd43efae67d7d" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>EnumTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ada3ad8345543d8ceee84d7e0f87ccaaa" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>EnumTestIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a76868e9dff1323a0b82a2ef11429c3f3" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>EnumTestNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1aa62d012beed06081ddb2f34d2ce9ac70" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>Man</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ac691d082dd3375577b4d09cd15ae6b18" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>MuscleGroupEnumTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a444216a6d7d078c011d63ab57f2d0782" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>MusclegroupsEnumNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1acdd7f54aed24531847f37614f34b6cf1" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>Name</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a03e2b38a6fb11588ea60950926c9766e" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>NameIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1acc8be7422295cc64fecf9bd90045d349" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>Password</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a4003fd2cd9acec4042434e6b1ed38f01" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>PasswordIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ae7a3c6cfb1e0f0585506816fd531a54a" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>PasswordNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a0e68a67c816d74b67791105a8352c297" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>PhoneNumber</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1adf6a9a15e68ea8157a7999cd70018bba" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>PhoneNumberIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a2fcb3aa44cdd63ce60baaa271a89a884" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>PhoneNumberNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ae242c07552009af2b1698cbe4aad1b41" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>Subscription</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a8ab83783bf40e045f51146898f77a887" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>SubscriptionIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a29af556824ffb1209ab52963cbf2617c" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>SubscriptionNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a3b0fe794d2d080c273927db729868343" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>ToStringOfUser</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a570387957dbe6ff4c0f4df4a28ca49dc" prot="private" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>u</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a11f7d836e4d7926a20d5cf1b5c782ab9" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>UserID</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a95d060aa3cb992c93de915a48e47cc68" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>UserIDIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1ad75fd3cd582d0d75f2d4be7f4a2ff3de" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>UserName</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a597bef6cb9b4f048f25a2cb3616d9c85" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>UserNameIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_user_class_1a96812abd8d38d0fbd78b72c8a639b4e2" prot="public" virt="non-virtual"><scope>PureLibTest::TestUserClass</scope><name>UserNameNull</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

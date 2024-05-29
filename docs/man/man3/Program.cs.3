@@ -1,0 +1,94 @@
+.TH "PureMatch/Program.cs" 3 "PureMatch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PureMatch/Program.cs
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "builder\&.Services\&. \fBAddRazorPages\fP ()"
+.br
+.ti -1c
+.RI "builder\&.Services\&. \fBAddSession\fP ()"
+.br
+.ti -1c
+.RI "builder\&.Services\&. \fBAddSingleton\fP (new \fBDataBaseLink\fP())"
+.br
+.ti -1c
+.RI "\fBif\fP (!app\&.Environment\&.IsDevelopment())"
+.br
+.ti -1c
+.RI "app\&. \fBUseHttpsRedirection\fP ()"
+.br
+.ti -1c
+.RI "app\&. \fBUseStaticFiles\fP ()"
+.br
+.ti -1c
+.RI "app\&. \fBUseSession\fP ()"
+.br
+.ti -1c
+.RI "app\&. \fBUseRouting\fP ()"
+.br
+.ti -1c
+.RI "app\&. \fBUseAuthorization\fP ()"
+.br
+.ti -1c
+.RI "app\&. \fBMapRazorPages\fP ()"
+.br
+.ti -1c
+.RI "app\&. \fBRun\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "var \fBbuilder\fP = WebApplication\&.CreateBuilder(args)"
+.br
+.ti -1c
+.RI "var \fBapp\fP = builder\&.Build()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "builder\&.Services\&. AddRazorPages ()"
+
+.SS "\fBbuilder\fP Services AddSession ()"
+
+.SS "builder\&.Services\&. AddSingleton (new  DataBaseLink())"
+
+.SS "if (! app::Environment::IsDevelopment())"
+
+.PP
+Definition at line \fB15\fP of file \fBProgram\&.cs\fP\&.
+.SS "app\&. MapRazorPages ()"
+
+.SS "app\&. Run ()"
+
+.SS "app\&. UseAuthorization ()"
+
+.SS "app\&. UseHttpsRedirection ()"
+
+.SS "app\&. UseRouting ()"
+
+.SS "app\&. UseSession ()"
+
+.SS "app\&. UseStaticFiles ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "var app = builder\&.Build()"
+
+.PP
+Definition at line \fB12\fP of file \fBProgram\&.cs\fP\&.
+.SS "var builder = WebApplication\&.CreateBuilder(args)"
+
+.PP
+Definition at line \fB3\fP of file \fBProgram\&.cs\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PureMatch from the source code\&.

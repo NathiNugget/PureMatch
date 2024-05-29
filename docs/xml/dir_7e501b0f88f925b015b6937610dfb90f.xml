@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_7e501b0f88f925b015b6937610dfb90f" kind="dir">
+    <compoundname>PureMatch</compoundname>
+    <innerdir refid="dir_e9cd45ec09a9deaa906fbe472b72b78b">PureMatch/obj</innerdir>
+    <innerdir refid="dir_e0e554958b61b76f22360445d3a4f6fa">PureMatch/Pages</innerdir>
+    <innerdir refid="dir_e3505fde1502045f2f92450e9c08b021">PureMatch/wwwroot</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_session_helper_8cs">SessionHelper.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/"/>
+  </compounddef>
+</doxygen>

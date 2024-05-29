@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_pure_match_1_1_pages_1_1checkmark" kind="namespace" language="C#">
+    <compoundname>PureMatch::Pages::checkmark</compoundname>
+    <innerclass refid="class_pure_match_1_1_pages_1_1checkmark_1_1_profile_changed_model" prot="public">PureMatch::Pages::checkmark::ProfileChangedModel</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1checkmark_1_1_profile_created_model" prot="public">PureMatch::Pages::checkmark::ProfileCreatedModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/Pages/checkmark/ProfileChanged.cshtml.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

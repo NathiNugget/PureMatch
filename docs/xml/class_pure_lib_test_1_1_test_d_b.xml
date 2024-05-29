@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_test_1_1_test_d_b" kind="class" language="C#" prot="public">
+    <compoundname>PureLibTest::TestDB</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_d_b_1acd976bceb87266e56bcaf69545df3e61" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLibTest.TestDB._usersInDB</definition>
+        <argsstring></argsstring>
+        <name>_usersInDB</name>
+        <qualifiedname>PureLibTest.TestDB._usersInDB</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="18" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_d_b_1a5cb630cac4b4366da3745cd2aaa297c8" prot="private" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int PureLibTest.TestDB._messagesInDB</definition>
+        <argsstring></argsstring>
+        <name>_messagesInDB</name>
+        <qualifiedname>PureLibTest.TestDB._messagesInDB</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="19" column="30" bodyfile="PureLibTest/TestDB.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_d_b_1a334aea01ee1b616c59236e3878fd2f84" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>readonly DataBaseLink PureLibTest.TestDB.db</definition>
+        <argsstring></argsstring>
+        <name>db</name>
+        <qualifiedname>PureLibTest.TestDB.db</qualifiedname>
+        <initializer>= new <ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="20" column="39" bodyfile="PureLibTest/TestDB.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_d_b_1aa638abd10e0a157dc9e42d13652d49a0" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+        <definition>List&lt;MuscleGroupEnum&gt; PureLibTest.TestDB._msgroups</definition>
+        <argsstring></argsstring>
+        <name>_msgroups</name>
+        <qualifiedname>PureLibTest.TestDB._msgroups</qualifiedname>
+        <initializer>= new List&lt;<ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref>&gt; { MuscleGroupEnum.Bryst }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="21" column="29" bodyfile="PureLibTest/TestDB.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_d_b_1af0c094d6b14224b9b9e5c35b91a08c6e" prot="private" static="yes" mutable="no">
+        <type>List&lt; DaysEnum &gt;</type>
+        <definition>List&lt;DaysEnum&gt; PureLibTest.TestDB._days</definition>
+        <argsstring></argsstring>
+        <name>_days</name>
+        <qualifiedname>PureLibTest.TestDB._days</qualifiedname>
+        <initializer>= new List&lt;DaysEnum&gt;() { DaysEnum.Tirsdag }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="22" column="29" bodyfile="PureLibTest/TestDB.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1affa24325e5cb2284e4d678aebf4fd675" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureLibTest.TestDB.TestDB</definition>
+        <argsstring>()</argsstring>
+        <name>TestDB</name>
+        <qualifiedname>PureLibTest.TestDB.TestDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="25" column="16" bodyfile="PureLibTest/TestDB.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1a950537be182d50010c2232d95d17636a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.UsersInDB</definition>
+        <argsstring>()</argsstring>
+        <name>UsersInDB</name>
+        <qualifiedname>PureLibTest.TestDB.UsersInDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="31" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1ae4841296cd076dfaa75612ded5a3a8b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.MessagesInDB</definition>
+        <argsstring>()</argsstring>
+        <name>MessagesInDB</name>
+        <qualifiedname>PureLibTest.TestDB.MessagesInDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="38" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1a3df03c7916ecddd26072275677576ae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.SetUserMatching</definition>
+        <argsstring>()</argsstring>
+        <name>SetUserMatching</name>
+        <qualifiedname>PureLibTest.TestDB.SetUserMatching</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="45" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1af55a023e90ac4d9ef162206645a95624" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.SendAndDelete</definition>
+        <argsstring>()</argsstring>
+        <name>SendAndDelete</name>
+        <qualifiedname>PureLibTest.TestDB.SendAndDelete</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="56" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1aa5af6bc5dee5cea129e16058988bd9ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.ReadMSGroupsAndDays</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMSGroupsAndDays</name>
+        <qualifiedname>PureLibTest.TestDB.ReadMSGroupsAndDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="66" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1ab65adfcab3a6d65c7f1387359aef7edb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.GetChatUsers</definition>
+        <argsstring>()</argsstring>
+        <name>GetChatUsers</name>
+        <qualifiedname>PureLibTest.TestDB.GetChatUsers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="76" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1a22a39c97453c2b84834ccf763ad63148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.GetMatches</definition>
+        <argsstring>()</argsstring>
+        <name>GetMatches</name>
+        <qualifiedname>PureLibTest.TestDB.GetMatches</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="83" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1ab066ef97d65dc404d267b8508c52b442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>PureLibTest.TestDB.Update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="90" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1acf053c8a21c403161f899cc6321d73f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.CreateUser</definition>
+        <argsstring>()</argsstring>
+        <name>CreateUser</name>
+        <qualifiedname>PureLibTest.TestDB.CreateUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="99" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1af00d3b9721ce46cd62b049d5ffddbda8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.GetMessges</definition>
+        <argsstring>()</argsstring>
+        <name>GetMessges</name>
+        <qualifiedname>PureLibTest.TestDB.GetMessges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="106" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="106" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_d_b_1accb8cc1b9a2a1d0b7f475e9fdaddde15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestDB.ReadLogin</definition>
+        <argsstring>()</argsstring>
+        <name>ReadLogin</name>
+        <qualifiedname>PureLibTest.TestDB.ReadLogin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestDB.cs" line="115" column="21" bodyfile="PureLibTest/TestDB.cs" bodystart="115" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLibTest/TestDB.cs" line="16" column="11" bodyfile="PureLibTest/TestDB.cs" bodystart="17" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1af0c094d6b14224b9b9e5c35b91a08c6e" prot="private" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>_days</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1a5cb630cac4b4366da3745cd2aaa297c8" prot="private" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>_messagesInDB</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1aa638abd10e0a157dc9e42d13652d49a0" prot="private" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>_msgroups</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1acd976bceb87266e56bcaf69545df3e61" prot="private" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>_usersInDB</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1acf053c8a21c403161f899cc6321d73f6" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>CreateUser</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1a334aea01ee1b616c59236e3878fd2f84" prot="private" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>db</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1ab65adfcab3a6d65c7f1387359aef7edb" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>GetChatUsers</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1a22a39c97453c2b84834ccf763ad63148" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>GetMatches</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1af00d3b9721ce46cd62b049d5ffddbda8" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>GetMessges</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1ae4841296cd076dfaa75612ded5a3a8b7" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>MessagesInDB</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1accb8cc1b9a2a1d0b7f475e9fdaddde15" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>ReadLogin</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1aa5af6bc5dee5cea129e16058988bd9ca" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>ReadMSGroupsAndDays</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1af55a023e90ac4d9ef162206645a95624" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>SendAndDelete</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1a3df03c7916ecddd26072275677576ae2" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>SetUserMatching</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1affa24325e5cb2284e4d678aebf4fd675" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>TestDB</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1ab066ef97d65dc404d267b8508c52b442" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>Update</name></member>
+      <member refid="class_pure_lib_test_1_1_test_d_b_1a950537be182d50010c2232d95d17636a" prot="public" virt="non-virtual"><scope>PureLibTest::TestDB</scope><name>UsersInDB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

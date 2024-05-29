@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_16add7df7254e2784377d4fa1a7ad08d" kind="dir">
+    <compoundname>PureMatch/wwwroot/lib</compoundname>
+    <innerdir refid="dir_18ea25db260b2c86cab5d862b1e0a7b4">PureMatch/wwwroot/lib/jquery-validation</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/wwwroot/lib/"/>
+  </compounddef>
+</doxygen>

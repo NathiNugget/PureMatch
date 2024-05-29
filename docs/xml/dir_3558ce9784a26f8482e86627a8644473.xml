@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_3558ce9784a26f8482e86627a8644473" kind="dir">
+    <compoundname>PureMatch/obj/Release/net8.0/win-x86/PubTmp</compoundname>
+    <innerdir refid="dir_ba66db403937c39a178804ebfcc23703">PureMatch/obj/Release/net8.0/win-x86/PubTmp/Out</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/obj/Release/net8.0/win-x86/PubTmp/"/>
+  </compounddef>
+</doxygen>

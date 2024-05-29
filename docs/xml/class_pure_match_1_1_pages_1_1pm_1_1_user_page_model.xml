@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::pm::UserPageModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1ac64d1362455f4f1e421c9d2ca56ade0d" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>readonly DataBaseLink PureMatch.Pages.pm.UserPageModel._repo</definition>
+        <argsstring></argsstring>
+        <name>_repo</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel._repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="12" column="39" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a6e446943c0def177dbac39b485d1f7a9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref>?</type>
+        <definition>User? PureMatch.Pages.pm.UserPageModel._matchuser</definition>
+        <argsstring></argsstring>
+        <name>_matchuser</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel._matchuser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="13" column="22" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a3d58e2fc62e32198a0d3506be6a0ccac" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref></type>
+        <definition>User PureMatch.Pages.pm.UserPageModel.MatchUser</definition>
+        <argsstring></argsstring>
+        <name>MatchUser</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel.MatchUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="19" column="21" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1ac2775fb417a7cc743d58423adb652323" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.UserPageModel.Message</definition>
+        <argsstring></argsstring>
+        <name>Message</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel.Message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="22" column="23" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a2b68f3b11a6b80bc7284515496dd95da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.pm.UserPageModel.UserPageModel</definition>
+        <argsstring>(DataBaseLink repo)</argsstring>
+        <name>UserPageModel</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel.UserPageModel</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+          <declname>repo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="15" column="16" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a41d238add360fee2d99906893e45842d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.pm.UserPageModel.OnGet</definition>
+        <argsstring>(int mid)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>mid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="24" column="21" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a8664571ea42ef701cbb48b2dbfc771f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.pm.UserPageModel.OnPost</definition>
+        <argsstring>(int matchid)</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>PureMatch.Pages.pm.UserPageModel.OnPost</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>matchid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="33" column="30" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="33" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.UserPageModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.UserPageModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/pm/UserPage.cshtml.cs" line="10" column="11" bodyfile="PureMatch/Pages/pm/UserPage.cshtml.cs" bodystart="11" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a6e446943c0def177dbac39b485d1f7a9" prot="private" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>_matchuser</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1ac64d1362455f4f1e421c9d2ca56ade0d" prot="private" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>_repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a3d58e2fc62e32198a0d3506be6a0ccac" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>MatchUser</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1ac2775fb417a7cc743d58423adb652323" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>Message</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a41d238add360fee2d99906893e45842d" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a8664571ea42ef701cbb48b2dbfc771f2" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>OnPost</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a2b68f3b11a6b80bc7284515496dd95da" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::UserPageModel</scope><name>UserPageModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

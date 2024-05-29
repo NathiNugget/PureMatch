@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_pure_match_1_1_pages_1_1_logins" kind="namespace" language="C#">
+    <compoundname>PureMatch::Pages::Logins</compoundname>
+    <innerclass refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model" prot="public">PureMatch::Pages::Logins::ConfirmChangesModel</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model" prot="public">PureMatch::Pages::Logins::LoginModel</innerclass>
+    <innerclass refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile" prot="public">PureMatch::Pages::Logins::MyProfile</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/Pages/Logins/ConfirmChanges.cshtml.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::Logins::MyProfile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a1cc806101f4b8e2359ccf6b7a6cbc18b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.NameNew</definition>
+        <argsstring></argsstring>
+        <name>NameNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.NameNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="51" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a2935a4c5d85f0678b4e0ac1033a51cef" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.UserNameNew</definition>
+        <argsstring></argsstring>
+        <name>UserNameNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.UserNameNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="54" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a55f05e77c2c9ecd58b183780e9ce72db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.PasswordNew</definition>
+        <argsstring></argsstring>
+        <name>PasswordNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.PasswordNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="57" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a021306583a1d52854df4d560b9855552" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.PhoneNumberNew</definition>
+        <argsstring></argsstring>
+        <name>PhoneNumberNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.PhoneNumberNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="60" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a4cb0bbdbdc5b0d080fab87b56cfff001" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.EmailNew</definition>
+        <argsstring></argsstring>
+        <name>EmailNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.EmailNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="63" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a3856f72554e2592a703f8442dc6a3b25" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.CardNumberNew</definition>
+        <argsstring></argsstring>
+        <name>CardNumberNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.CardNumberNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="66" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a9645463844b10c2e11c0fbc2f1d7c4de" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.Logins.MyProfile.CVCNew</definition>
+        <argsstring></argsstring>
+        <name>CVCNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.CVCNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="69" column="23" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ab5e3bf9dc06c97b23de3fdda985f8a37" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.Logins.MyProfile.CardExpMonthNew</definition>
+        <argsstring></argsstring>
+        <name>CardExpMonthNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.CardExpMonthNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="71" column="20" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a6f2b464eb1d841a4a0c00638a997f3b1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.Logins.MyProfile.CardExpYearNew</definition>
+        <argsstring></argsstring>
+        <name>CardExpYearNew</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.CardExpYearNew</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="74" column="20" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ae4fccfa10feed4f6df66d407a783d1e5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.Logins.MyProfile.Repo</definition>
+        <argsstring></argsstring>
+        <name>Repo</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.Repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="75" column="29" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="75" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1aafece45e83dc4b3a31e84e600ff227dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.Logins.MyProfile.MyProfile</definition>
+        <argsstring>(DataBaseLink repo)</argsstring>
+        <name>MyProfile</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.MyProfile</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+          <declname>repo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="13" column="16" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1afc0867a41cad099248100cb0976b3958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.Logins.MyProfile.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="17" column="21" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="17" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ac80c9b865bce5327fdbcdf872a75ca64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.Logins.MyProfile.OnPostUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostUpdate</name>
+        <qualifiedname>PureMatch.Pages.Logins.MyProfile.OnPostUpdate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="35" column="30" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="35" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.Logins.MyProfile</label>
+        <link refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.Logins.MyProfile</label>
+        <link refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/Logins/MyProfile.cshtml.cs" line="11" column="11" bodyfile="PureMatch/Pages/Logins/MyProfile.cshtml.cs" bodystart="12" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ab5e3bf9dc06c97b23de3fdda985f8a37" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>CardExpMonthNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a6f2b464eb1d841a4a0c00638a997f3b1" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>CardExpYearNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a3856f72554e2592a703f8442dc6a3b25" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>CardNumberNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a9645463844b10c2e11c0fbc2f1d7c4de" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>CVCNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a4cb0bbdbdc5b0d080fab87b56cfff001" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>EmailNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1aafece45e83dc4b3a31e84e600ff227dd" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>MyProfile</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a1cc806101f4b8e2359ccf6b7a6cbc18b" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>NameNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1afc0867a41cad099248100cb0976b3958" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ac80c9b865bce5327fdbcdf872a75ca64" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>OnPostUpdate</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a55f05e77c2c9ecd58b183780e9ce72db" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>PasswordNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a021306583a1d52854df4d560b9855552" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>PhoneNumberNew</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ae4fccfa10feed4f6df66d407a783d1e5" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>Repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a2935a4c5d85f0678b4e0ac1033a51cef" prot="public" virt="non-virtual"><scope>PureMatch::Pages::Logins::MyProfile</scope><name>UserNameNew</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

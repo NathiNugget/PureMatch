@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_a9a851bdd45da6679dfade84dbd45848" kind="dir">
+    <compoundname>PureMatch/Pages/checkmark</compoundname>
+    <innerfile refid="_profile_changed_8cshtml_8cs">ProfileChanged.cshtml.cs</innerfile>
+    <innerfile refid="_profile_created_8cshtml_8cs">ProfileCreated.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureMatch/Pages/checkmark/"/>
+  </compounddef>
+</doxygen>

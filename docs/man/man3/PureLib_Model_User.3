@@ -1,0 +1,199 @@
+.TH "PureLib.Model.User" 3 "PureMatch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PureLib.Model.User \- Class which represents a user in the system\&. The class has a constructor for when read from database as well as a default constructor for when one is needed\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUser\fP (int userid, string name, string username, string password, string phonenumber, string email, string cardnumber, string cardcvc, string cardexpmonth, string expyear, \fBSubscriptionEnum\fP subscription, LevelsEnum level)"
+.br
+.RI "Constructor using paramters\&. Parameters are passed to the properties which confirm values are valid\&. "
+.ti -1c
+.RI "\fBUser\fP ()"
+.br
+.RI "Default constructor for when the full constructor is not needed\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Override of generic ToString from object\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBUserID\fP\fR [get, set]\fP"
+.br
+.RI "The properties all follow limitations of the database design\&. A number of properties make use of a Regex or DateTime shown in \fBValidationRegex\&.cs\fP\&. "
+.ti -1c
+.RI "string \fBName\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBUserName\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBPassword\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBPhoneNumber\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBEmail\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBCardNumber\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBCardCVC\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBCardExpMonth\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBCardExpYear\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBLevel\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "List< \fBMuscleGroupEnum\fP > \fBMuscleGroups\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "List< DaysEnum > \fBDays\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBSubscription\fP\fR [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class which represents a user in the system\&. The class has a constructor for when read from database as well as a default constructor for when one is needed\&. 
+.PP
+Definition at line \fB14\fP of file \fBUser\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PureLib\&.Model\&.User\&.User (int userid, string name, string username, string password, string phonenumber, string email, string cardnumber, string cardcvc, string cardexpmonth, string expyear, \fBSubscriptionEnum\fP subscription, LevelsEnum level)"
+
+.PP
+Constructor using paramters\&. Parameters are passed to the properties which confirm values are valid\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuserid\fP ID for the user\&. Usually one is provided from the database, but when not instantiating from the database, just use 1
+.br
+\fIname\fP Name for the user\&. This is the name shown to other users\&. Full name of the user is expected in this field
+.br
+\fIusername\fP Username is used for login and not shown to other users
+.br
+\fIpassword\fP Password is used for login and not shown to other users
+.br
+\fIphonenumber\fP Phonenumber is only shown on 'my profile' page\&. Expected value is 8 digits
+.br
+\fIemail\fP Email is only shown on 'my profile' page\&. Expected form is of usual email-form
+.br
+\fIcardnumber\fP Cardnumber is only used for profile-creation\&. Expected value is a string with 16 digits
+.br
+\fIcardcvc\fP CVC is only used for profile-creation\&. Expected value is a string with 3 digits
+.br
+\fIcardexpmonth\fP Expiration date is only used for profile-creation\&. Expected value is a string with 2 digits
+.br
+\fIexpyear\fP Expiration year is only used for profile-creation\&. Expected value is a string with 2 digits
+.br
+\fIsubscription\fP Subscription is either an integer value or an enumeration of type SubscriptionsEnum\&. Expected values are within the enum
+.br
+\fIlevel\fP Level is which level the user currently has\&. The value is expected to be within enum values while 3 is reserved for when the user is not in matching-mode
+.RE
+.PP
+
+.PP
+Definition at line \fB48\fP of file \fBUser\&.cs\fP\&.
+.SS "PureLib\&.Model\&.User\&.User ()"
+
+.PP
+Default constructor for when the full constructor is not needed\&. 
+.PP
+Definition at line \fB69\fP of file \fBUser\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override string PureLib\&.Model\&.User\&.ToString ()"
+
+.PP
+Override of generic ToString from object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+string representation of current user-instance
+.RE
+.PP
+
+.PP
+Definition at line \fB324\fP of file \fBUser\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "string PureLib\&.Model\&.User\&.CardCVC\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB209\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.CardExpMonth\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB224\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.CardExpYear\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB243\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.CardNumber\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB191\fP of file \fBUser\&.cs\fP\&.
+.SS "List<DaysEnum> PureLib\&.Model\&.User\&.Days\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB290\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.Email\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB176\fP of file \fBUser\&.cs\fP\&.
+.SS "int PureLib\&.Model\&.User\&.Level\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB263\fP of file \fBUser\&.cs\fP\&.
+.SS "List<\fBMuscleGroupEnum\fP> PureLib\&.Model\&.User\&.MuscleGroups\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB279\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.Name\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB102\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.Password\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB141\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.PhoneNumber\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB160\fP of file \fBUser\&.cs\fP\&.
+.SS "int PureLib\&.Model\&.User\&.Subscription\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB301\fP of file \fBUser\&.cs\fP\&.
+.SS "int PureLib\&.Model\&.User\&.UserID\fR [get]\fP, \fR [set]\fP"
+
+.PP
+The properties all follow limitations of the database design\&. A number of properties make use of a Regex or DateTime shown in \fBValidationRegex\&.cs\fP\&. 
+.PP
+Definition at line \fB91\fP of file \fBUser\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.User\&.UserName\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB122\fP of file \fBUser\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PureMatch from the source code\&.

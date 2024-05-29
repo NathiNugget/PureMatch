@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_1_1_model_1_1_validation_regex" kind="class" language="C#" prot="public">
+    <compoundname>PureLib::Model::ValidationRegex</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1ad914f275065b6079a37be84c37cd7bb8" prot="private" static="yes" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime PureLib.Model.ValidationRegex.CURRENTTIME</definition>
+        <argsstring></argsstring>
+        <name>CURRENTTIME</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.CURRENTTIME</qualifiedname>
+        <initializer>= DateTime.Now</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="14" column="33" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1a424f1c54e3bf9c20260b9a9dedc29736" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.ValidationRegex.YEARDIGITSMIN</definition>
+        <argsstring></argsstring>
+        <name>YEARDIGITSMIN</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.YEARDIGITSMIN</qualifiedname>
+        <initializer>= int.Parse(CURRENTTIME.AddYears(1).ToString(&quot;yy&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="15" column="27" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1af3e70342d3196698fe2be1bb135a69d6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.ValidationRegex.YEARDIGITSMAX</definition>
+        <argsstring></argsstring>
+        <name>YEARDIGITSMAX</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.YEARDIGITSMAX</qualifiedname>
+        <initializer>= int.Parse(CURRENTTIME.AddYears(5).ToString(&quot;yy&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="16" column="27" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1af1b207a5e9cb8c2bafe974a3cd54abbd" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string PureLib.Model.ValidationRegex.PHONEFILTER</definition>
+        <argsstring></argsstring>
+        <name>PHONEFILTER</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.PHONEFILTER</qualifiedname>
+        <initializer>= &quot;^\\d{8}$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="17" column="29" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1a83c4eda89cfd1fc9f9e444591432d365" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string PureLib.Model.ValidationRegex.MAILFILTER</definition>
+        <argsstring></argsstring>
+        <name>MAILFILTER</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.MAILFILTER</qualifiedname>
+        <initializer>= &quot;^[\\w-]+(\\.[\\w-]+)*@([\\w-]+\\.)+[\\w-]{2,4}$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="18" column="29" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1a9699400c06f7791edf2e28e3073d64a8" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string PureLib.Model.ValidationRegex.CARDNUMBERFILTER</definition>
+        <argsstring></argsstring>
+        <name>CARDNUMBERFILTER</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.CARDNUMBERFILTER</qualifiedname>
+        <initializer>= &quot;^\\d{16}$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="19" column="29" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1a1a34ed574923764ec968f0e7b4d2810a" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string PureLib.Model.ValidationRegex.CARDCVCFILTER</definition>
+        <argsstring></argsstring>
+        <name>CARDCVCFILTER</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.CARDCVCFILTER</qualifiedname>
+        <initializer>= &quot;^\\d{3}$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="20" column="29" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1a8fe548c61e26a0ae972fb55e360ab9df" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string PureLib.Model.ValidationRegex.CARDEXPMONTHFILTER</definition>
+        <argsstring></argsstring>
+        <name>CARDEXPMONTHFILTER</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.CARDEXPMONTHFILTER</qualifiedname>
+        <initializer>= &quot;^\\d{2}$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="21" column="29" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1afa5c4c099ae078375fe0f7ee12de6c41" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string PureLib.Model.ValidationRegex.CARDEXPYEARFILTER</definition>
+        <argsstring></argsstring>
+        <name>CARDEXPYEARFILTER</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.CARDEXPYEARFILTER</qualifiedname>
+        <initializer>= &quot;^\\d{2}$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="22" column="29" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_validation_regex_1add15e9067527a8bd29d253c8a169c4ca" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int PureLib.Model.ValidationRegex.MESSAGELENGTHMAX</definition>
+        <argsstring></argsstring>
+        <name>MESSAGELENGTHMAX</name>
+        <qualifiedname>PureLib.Model.ValidationRegex.MESSAGELENGTHMAX</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/ValidationRegex.cs" line="23" column="26" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class contains Regex as well as some DateTime-formatting to ensure the user-inputs are valid. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Model/ValidationRegex.cs" line="12" column="19" bodyfile="PureLib/Model/ValidationRegex.cs" bodystart="13" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a1a34ed574923764ec968f0e7b4d2810a" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>CARDCVCFILTER</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a8fe548c61e26a0ae972fb55e360ab9df" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>CARDEXPMONTHFILTER</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1afa5c4c099ae078375fe0f7ee12de6c41" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>CARDEXPYEARFILTER</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a9699400c06f7791edf2e28e3073d64a8" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>CARDNUMBERFILTER</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1ad914f275065b6079a37be84c37cd7bb8" prot="private" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>CURRENTTIME</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a83c4eda89cfd1fc9f9e444591432d365" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>MAILFILTER</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1add15e9067527a8bd29d253c8a169c4ca" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>MESSAGELENGTHMAX</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1af1b207a5e9cb8c2bafe974a3cd54abbd" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>PHONEFILTER</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1af3e70342d3196698fe2be1bb135a69d6" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>YEARDIGITSMAX</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a424f1c54e3bf9c20260b9a9dedc29736" prot="public" virt="non-virtual"><scope>PureLib::Model::ValidationRegex</scope><name>YEARDIGITSMIN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

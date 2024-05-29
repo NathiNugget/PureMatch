@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_1_1_services_1_1_data_base_link" kind="class" language="C#" prot="public">
+    <compoundname>PureLib::Services::DataBaseLink</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_lib_1_1_services_1_1_data_base_link_1aa9cf224e9b7613550fb90ba90b7997b6" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref> &gt;</type>
+        <definition>List&lt;Message&gt; PureLib.Services.DataBaseLink._messages</definition>
+        <argsstring></argsstring>
+        <name>_messages</name>
+        <qualifiedname>PureLib.Services.DataBaseLink._messages</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="15" column="22" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_services_1_1_data_base_link_1aa0fb9765ff5865c845681b4a3506d2fb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Services.DataBaseLink.ConnectionString</definition>
+        <argsstring></argsstring>
+        <name>ConnectionString</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ConnectionString</qualifiedname>
+        <initializer>= Secret.ConnectionString</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="126" column="24" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="126" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_pure_lib_1_1_services_1_1_data_base_link_1ab212506aac277ca7eea261e558904c8c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.rowsaffected</definition>
+        <argsstring></argsstring>
+        <name>rowsaffected</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.rowsaffected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="538" column="20" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="538" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1afebdb98f7fb514f14ef505ad00a06540" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureLib.Services.DataBaseLink.DataBaseLink</definition>
+        <argsstring>()</argsstring>
+        <name>DataBaseLink</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.DataBaseLink</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="16" column="16" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1ae37e9654658ca495bd0c31aa741d2ff9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>List&lt; User &gt; PureLib.Services.DataBaseLink.GetMatches</definition>
+        <argsstring>(int userid)</argsstring>
+        <name>GetMatches</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.GetMatches</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="23" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="23" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1ae5b74b70300c8dffbd35ccf6a051953c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+        <definition>List&lt; MuscleGroupEnum &gt; PureLib.Services.DataBaseLink.ReadMuscleGroups</definition>
+        <argsstring>(int userid)</argsstring>
+        <name>ReadMuscleGroups</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadMuscleGroups</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="62" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="62" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a2c086ea71e0ec3bdea28a86bbe588260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref> &gt;</type>
+        <definition>List&lt; Message &gt; PureLib.Services.DataBaseLink.ReadAllMessagesFromDB</definition>
+        <argsstring>()</argsstring>
+        <name>ReadAllMessagesFromDB</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadAllMessagesFromDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="128" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="128" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a4ed5c45faec66eb5f52ff5d57757f801" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>List&lt; User &gt; PureLib.Services.DataBaseLink.GetChatUsers</definition>
+        <argsstring>(int userid)</argsstring>
+        <name>GetChatUsers</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.GetChatUsers</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="148" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="148" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1ab2cd39765bdf11c1366f5962eda3880e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message PureLib.Services.DataBaseLink.GetMessage</definition>
+        <argsstring>(int messageid)</argsstring>
+        <name>GetMessage</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.GetMessage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>messageid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="178" column="24" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="178" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1aa55733466041507fdabe1b0dd28a72f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.DeleteMessage</definition>
+        <argsstring>(int messageid)</argsstring>
+        <name>DeleteMessage</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.DeleteMessage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>messageid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="197" column="20" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="197" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a37180bbd5d0540722180473f3096abbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.AddUser</definition>
+        <argsstring>(User user)</argsstring>
+        <name>AddUser</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.AddUser</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="225" column="20" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="225" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1ab7744861cf41c659259a9dbc3655d370" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.UpdateUser</definition>
+        <argsstring>(User user)</argsstring>
+        <name>UpdateUser</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.UpdateUser</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="257" column="20" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="257" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a2198049d960a0e2431894f2e9f2ca85f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref>?</type>
+        <definition>User? PureLib.Services.DataBaseLink.ReadLogin</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>ReadLogin</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadLogin</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="301" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="301" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a7ad4f2daf583c6ff2da0cb4ad5f3958c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.SetMatching</definition>
+        <argsstring>(int userid, List&lt; MuscleGroupEnum &gt; msgroups, List&lt; DaysEnum &gt; days, int level)</argsstring>
+        <name>SetMatching</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.SetMatching</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+          <declname>msgroups</declname>
+        </param>
+        <param>
+          <type>List&lt; DaysEnum &gt;</type>
+          <declname>days</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="321" column="20" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="321" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a2132a3975ff7870575d2b2b0dd7a17f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>List&lt; User &gt; PureLib.Services.DataBaseLink.ReadAllUsersFromDB</definition>
+        <argsstring>()</argsstring>
+        <name>ReadAllUsersFromDB</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadAllUsersFromDB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="427" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="427" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1afba6fe0dd3cfc360f70ce9b700e0370c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref></type>
+        <definition>User PureLib.Services.DataBaseLink.ReadUser</definition>
+        <argsstring>(int userid)</argsstring>
+        <name>ReadUser</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadUser</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="445" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="445" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1af11d05bfb5d73591e115977822f499b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; DaysEnum &gt;</type>
+        <definition>List&lt; DaysEnum &gt; PureLib.Services.DataBaseLink.ReadDays</definition>
+        <argsstring>(int userid)</argsstring>
+        <name>ReadDays</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadDays</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="483" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="483" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1aef15f6a3dea4a2a7f774fee06ce2178d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int int maxid</type>
+        <definition>int int maxid PureLib.Services.DataBaseLink.SendMessage</definition>
+        <argsstring>(int ownid, int matchid, string messagecontent)</argsstring>
+        <name>SendMessage</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.SendMessage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ownid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>matchid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>messagecontent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="538" column="43" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="538" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a6cb93025dfa0d9df6aa28768944ca2de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref> &gt;</type>
+        <definition>List&lt; Message &gt; PureLib.Services.DataBaseLink.ReadMessages</definition>
+        <argsstring>(int userID, int chatid)</argsstring>
+        <name>ReadMessages</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadMessages</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chatid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="575" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="575" bodyend="592"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1aeed255eaf5b24335381f069f745aabe9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+        <definition>List&lt; MuscleGroupEnum &gt; PureLib.Services.DataBaseLink.ReadMuscleGroupsUsingReader</definition>
+        <argsstring>(SqlDataReader reader)</argsstring>
+        <name>ReadMuscleGroupsUsingReader</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadMuscleGroupsUsingReader</qualifiedname>
+        <param>
+          <type>SqlDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="86" column="22" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="86" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1ad267017694489d13ca51eec6f3bfb1e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message PureLib.Services.DataBaseLink.ReadMessage</definition>
+        <argsstring>(SqlDataReader reader)</argsstring>
+        <name>ReadMessage</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadMessage</qualifiedname>
+        <param>
+          <type>SqlDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="173" column="25" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a3f13db27639e2ecd9cc6f07c04637f9a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.SetLevel</definition>
+        <argsstring>(int userid, int level)</argsstring>
+        <name>SetLevel</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.SetLevel</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="331" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="331" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1aafb321f0e09b07c2a17e54783e3ff06a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.SetDays</definition>
+        <argsstring>(int userid, List&lt; DaysEnum &gt; days)</argsstring>
+        <name>SetDays</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.SetDays</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>List&lt; DaysEnum &gt;</type>
+          <declname>days</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="348" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="348" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a745e278d18319286753486671653c9e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.SetMuscleGroups</definition>
+        <argsstring>(int userid, List&lt; MuscleGroupEnum &gt; msgroups)</argsstring>
+        <name>SetMuscleGroups</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.SetMuscleGroups</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+          <declname>msgroups</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="388" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="388" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1a79e9ff85e1015fa433ef4648ed078abb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_user" kindref="compound">User</ref></type>
+        <definition>User PureLib.Services.DataBaseLink.ReadUserUsingReader</definition>
+        <argsstring>(SqlDataReader reader)</argsstring>
+        <name>ReadUserUsingReader</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadUserUsingReader</qualifiedname>
+        <param>
+          <type>SqlDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="465" column="22" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="465" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1ad98ade27347b8ff87bd72191dfde457b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; DaysEnum &gt;</type>
+        <definition>List&lt; DaysEnum &gt; PureLib.Services.DataBaseLink.ReadDaysUsingReader</definition>
+        <argsstring>(SqlDataReader reader)</argsstring>
+        <name>ReadDaysUsingReader</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadDaysUsingReader</qualifiedname>
+        <param>
+          <type>SqlDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="503" column="22" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="503" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1afef165e4f62267792436f6d16c8c5397" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int PureLib.Services.DataBaseLink.FindMaxMessageID</definition>
+        <argsstring>()</argsstring>
+        <name>FindMaxMessageID</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.FindMaxMessageID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="559" column="21" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="559" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_services_1_1_data_base_link_1af80e516068ab30029459b71aa4479685" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message PureLib.Services.DataBaseLink.ReadMessageUsingReader</definition>
+        <argsstring>(SqlDataReader reader)</argsstring>
+        <name>ReadMessageUsingReader</name>
+        <qualifiedname>PureLib.Services.DataBaseLink.ReadMessageUsingReader</qualifiedname>
+        <param>
+          <type>SqlDataReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Services/DataBaseLink.cs" line="594" column="25" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="594" bodyend="597"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Services/DataBaseLink.cs" line="13" column="11" bodyfile="PureLib/Services/DataBaseLink.cs" bodystart="14" bodyend="598"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aa9cf224e9b7613550fb90ba90b7997b6" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>_messages</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a37180bbd5d0540722180473f3096abbd" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>AddUser</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aa0fb9765ff5865c845681b4a3506d2fb" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ConnectionString</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1afebdb98f7fb514f14ef505ad00a06540" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>DataBaseLink</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aa55733466041507fdabe1b0dd28a72f8" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>DeleteMessage</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1afef165e4f62267792436f6d16c8c5397" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>FindMaxMessageID</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a4ed5c45faec66eb5f52ff5d57757f801" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>GetChatUsers</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ae37e9654658ca495bd0c31aa741d2ff9" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>GetMatches</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ab2cd39765bdf11c1366f5962eda3880e" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>GetMessage</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a2c086ea71e0ec3bdea28a86bbe588260" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadAllMessagesFromDB</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a2132a3975ff7870575d2b2b0dd7a17f6" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadAllUsersFromDB</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1af11d05bfb5d73591e115977822f499b8" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadDays</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ad98ade27347b8ff87bd72191dfde457b" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadDaysUsingReader</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a2198049d960a0e2431894f2e9f2ca85f" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadLogin</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ad267017694489d13ca51eec6f3bfb1e7" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadMessage</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a6cb93025dfa0d9df6aa28768944ca2de" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadMessages</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1af80e516068ab30029459b71aa4479685" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadMessageUsingReader</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ae5b74b70300c8dffbd35ccf6a051953c" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadMuscleGroups</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aeed255eaf5b24335381f069f745aabe9" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadMuscleGroupsUsingReader</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1afba6fe0dd3cfc360f70ce9b700e0370c" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadUser</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a79e9ff85e1015fa433ef4648ed078abb" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>ReadUserUsingReader</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ab212506aac277ca7eea261e558904c8c" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>rowsaffected</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aef15f6a3dea4a2a7f774fee06ce2178d" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>SendMessage</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aafb321f0e09b07c2a17e54783e3ff06a" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>SetDays</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a3f13db27639e2ecd9cc6f07c04637f9a" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>SetLevel</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a7ad4f2daf583c6ff2da0cb4ad5f3958c" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>SetMatching</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a745e278d18319286753486671653c9e3" prot="private" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>SetMuscleGroups</name></member>
+      <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ab7744861cf41c659259a9dbc3655d370" prot="public" virt="non-virtual"><scope>PureLib::Services::DataBaseLink</scope><name>UpdateUser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

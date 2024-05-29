@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::pm::PureMatchRoot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1ae32a25e4e9b5f68d0cd572e15d781012" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+        <definition>List&lt;MuscleGroupEnum&gt; PureMatch.Pages.pm.PureMatchRoot.Groups</definition>
+        <argsstring></argsstring>
+        <name>Groups</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.Groups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="112" column="17" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a5f4265bbaecac0345444706037588ee3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; LevelsEnum &gt;</type>
+        <definition>List&lt;LevelsEnum&gt; PureMatch.Pages.pm.PureMatchRoot.Levels</definition>
+        <argsstring></argsstring>
+        <name>Levels</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.Levels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="113" column="17" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a342008f7bff47a60dafa08acc45db927" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; DaysEnum &gt;</type>
+        <definition>List&lt;DaysEnum&gt; PureMatch.Pages.pm.PureMatchRoot.Days</definition>
+        <argsstring></argsstring>
+        <name>Days</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.Days</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="114" column="17" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1af2db9f521204f592c28f85d670c3d459" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.pm.PureMatchRoot.Repo</definition>
+        <argsstring></argsstring>
+        <name>Repo</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.Repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="117" column="25" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a2fa7cb52f7ae963ec66341a405980387" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; bool &gt;</type>
+        <definition>List&lt;bool&gt; PureMatch.Pages.pm.PureMatchRoot.MuscleGroups</definition>
+        <argsstring></argsstring>
+        <name>MuscleGroups</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.MuscleGroups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="119" column="17" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a67eefefa2b88306271bdcf918ace0719" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.pm.PureMatchRoot.SelectedLevel</definition>
+        <argsstring></argsstring>
+        <name>SelectedLevel</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.SelectedLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="120" column="16" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a09771a6ad7fb0d2118035fa8a919db95" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; bool &gt;</type>
+        <definition>List&lt;bool&gt; PureMatch.Pages.pm.PureMatchRoot.DaysList</definition>
+        <argsstring></argsstring>
+        <name>DaysList</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.DaysList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="121" column="17" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a71daa1c3bb78f7ea81f5f98185876b37" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.PureMatchRoot.NotValidInput</definition>
+        <argsstring></argsstring>
+        <name>NotValidInput</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.NotValidInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="122" column="19" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="122" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a24e9813028e05b8a850eca7c5d6d8996" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.pm.PureMatchRoot.PureMatchRoot</definition>
+        <argsstring>(DataBaseLink repo)</argsstring>
+        <name>PureMatchRoot</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.PureMatchRoot</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+          <declname>repo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="12" column="12" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a9d6a42ed5ac6196e24adcced128b05b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.pm.PureMatchRoot.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="16" column="17" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="16" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a0c70439a72696e87a1f8c31bda74a07b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.pm.PureMatchRoot.OnPostResetMatch</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostResetMatch</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.OnPostResetMatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="39" column="26" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1adee44746f5035f173e704216a225d8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.pm.PureMatchRoot.OnPostChangeCriteria</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostChangeCriteria</name>
+        <qualifiedname>PureMatch.Pages.pm.PureMatchRoot.OnPostChangeCriteria</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="53" column="26" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="53" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.PureMatchRoot</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.PureMatchRoot</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" line="10" column="7" bodyfile="PureMatch/Pages/pm/PureMatchRoot.cshtml.cs" bodystart="11" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a342008f7bff47a60dafa08acc45db927" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>Days</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a09771a6ad7fb0d2118035fa8a919db95" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>DaysList</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1ae32a25e4e9b5f68d0cd572e15d781012" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>Groups</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a5f4265bbaecac0345444706037588ee3" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>Levels</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a2fa7cb52f7ae963ec66341a405980387" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>MuscleGroups</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a71daa1c3bb78f7ea81f5f98185876b37" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>NotValidInput</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a9d6a42ed5ac6196e24adcced128b05b4" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1adee44746f5035f173e704216a225d8fc" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>OnPostChangeCriteria</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a0c70439a72696e87a1f8c31bda74a07b" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>OnPostResetMatch</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a24e9813028e05b8a850eca7c5d6d8996" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>PureMatchRoot</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1af2db9f521204f592c28f85d670c3d459" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>Repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a67eefefa2b88306271bdcf918ace0719" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::PureMatchRoot</scope><name>SelectedLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_test_1_1_test_message" kind="class" language="C#" prot="public">
+    <compoundname>PureLibTest::TestMessage</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_message_1a8b368150ddbfc45959ac0cf57accc4fa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message PureLibTest.TestMessage.msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <qualifiedname>PureLibTest.TestMessage.msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="15" column="25" bodyfile="PureLibTest/TestMessage.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_test_1_1_test_message_1a92ca732c6213a5c1b5288c6b4297318a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message PureLibTest.TestMessage.msgnormalctor</definition>
+        <argsstring></argsstring>
+        <name>msgnormalctor</name>
+        <qualifiedname>PureLibTest.TestMessage.msgnormalctor</qualifiedname>
+        <initializer>= new <ref refid="class_pure_lib_1_1_model_1_1_message" kindref="compound">Message</ref>(1, 1, 2, &quot;Hej&quot;, DateTime.Now)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="16" column="25" bodyfile="PureLibTest/TestMessage.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a25e2bd9833ce8cd7a3e52b708c640100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.BeforeEachTest</definition>
+        <argsstring>()</argsstring>
+        <name>BeforeEachTest</name>
+        <qualifiedname>PureLibTest.TestMessage.BeforeEachTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="18" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a90417f3a62a9e37f931f7605397c22ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.AfterEachTest</definition>
+        <argsstring>()</argsstring>
+        <name>AfterEachTest</name>
+        <qualifiedname>PureLibTest.TestMessage.AfterEachTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="24" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a4f31725efc31b05d1d9e82942132d5fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.IDProperty</definition>
+        <argsstring>(int id)</argsstring>
+        <name>IDProperty</name>
+        <qualifiedname>PureLibTest.TestMessage.IDProperty</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="34" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1acd51f3f269ccf6a97997814c95030378" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.IDPropertyIlleagl</definition>
+        <argsstring>(int id)</argsstring>
+        <name>IDPropertyIlleagl</name>
+        <qualifiedname>PureLibTest.TestMessage.IDPropertyIlleagl</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="47" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a12f3b7fb17bd11a63348bfd1ed00d410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.SenderIDProperty</definition>
+        <argsstring>(int id)</argsstring>
+        <name>SenderIDProperty</name>
+        <qualifiedname>PureLibTest.TestMessage.SenderIDProperty</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="57" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a459e926f539215c93e4962efebe90ced" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.SenderIDIllegal</definition>
+        <argsstring>(int id)</argsstring>
+        <name>SenderIDIllegal</name>
+        <qualifiedname>PureLibTest.TestMessage.SenderIDIllegal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="68" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1ab1bc034115bf3cd237e48b782e7875e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.RecipientID</definition>
+        <argsstring>(int id)</argsstring>
+        <name>RecipientID</name>
+        <qualifiedname>PureLibTest.TestMessage.RecipientID</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="77" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1ae6ba716c0b757d81f9a61fdfb5871f28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.RecipientIDIllegal</definition>
+        <argsstring>(int id)</argsstring>
+        <name>RecipientIDIllegal</name>
+        <qualifiedname>PureLibTest.TestMessage.RecipientIDIllegal</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="87" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1ad3519a395a18f92f8282946ed6d173ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.MessageProperty</definition>
+        <argsstring>(string message)</argsstring>
+        <name>MessageProperty</name>
+        <qualifiedname>PureLibTest.TestMessage.MessageProperty</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="97" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1ac19ab628ab1c7221438c5f31b91ce3ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.MessagePropertyIllegal</definition>
+        <argsstring>(string message)</argsstring>
+        <name>MessagePropertyIllegal</name>
+        <qualifiedname>PureLibTest.TestMessage.MessagePropertyIllegal</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="106" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a59f752e2e56c89d625f6c69b69dfa0de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.MessagePropertyNull</definition>
+        <argsstring>(string message)</argsstring>
+        <name>MessagePropertyNull</name>
+        <qualifiedname>PureLibTest.TestMessage.MessagePropertyNull</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="115" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1ab78be58bd32121d7146cf20fc0f3281d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.DateTimeProperty</definition>
+        <argsstring>()</argsstring>
+        <name>DateTimeProperty</name>
+        <qualifiedname>PureLibTest.TestMessage.DateTimeProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="122" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="122" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1a1670e9bbbadbc6f106c8721b217df4c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.DateTimePropertyNull</definition>
+        <argsstring>(DateTime dt)</argsstring>
+        <name>DateTimePropertyNull</name>
+        <qualifiedname>PureLibTest.TestMessage.DateTimePropertyNull</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="133" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_test_1_1_test_message_1ac322530a78ce4c6a78a205c1567bc1dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureLibTest.TestMessage.TryToString</definition>
+        <argsstring>()</argsstring>
+        <name>TryToString</name>
+        <qualifiedname>PureLibTest.TestMessage.TryToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLibTest/TestMessage.cs" line="140" column="21" bodyfile="PureLibTest/TestMessage.cs" bodystart="140" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLibTest/TestMessage.cs" line="13" column="11" bodyfile="PureLibTest/TestMessage.cs" bodystart="14" bodyend="145"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_test_1_1_test_message_1a90417f3a62a9e37f931f7605397c22ce" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>AfterEachTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a25e2bd9833ce8cd7a3e52b708c640100" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>BeforeEachTest</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1ab78be58bd32121d7146cf20fc0f3281d" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>DateTimeProperty</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a1670e9bbbadbc6f106c8721b217df4c9" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>DateTimePropertyNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a4f31725efc31b05d1d9e82942132d5fa" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>IDProperty</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1acd51f3f269ccf6a97997814c95030378" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>IDPropertyIlleagl</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1ad3519a395a18f92f8282946ed6d173ac" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>MessageProperty</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1ac19ab628ab1c7221438c5f31b91ce3ab" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>MessagePropertyIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a59f752e2e56c89d625f6c69b69dfa0de" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>MessagePropertyNull</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a8b368150ddbfc45959ac0cf57accc4fa" prot="private" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>msg</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a92ca732c6213a5c1b5288c6b4297318a" prot="private" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>msgnormalctor</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1ab1bc034115bf3cd237e48b782e7875e6" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>RecipientID</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1ae6ba716c0b757d81f9a61fdfb5871f28" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>RecipientIDIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a459e926f539215c93e4962efebe90ced" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>SenderIDIllegal</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1a12f3b7fb17bd11a63348bfd1ed00d410" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>SenderIDProperty</name></member>
+      <member refid="class_pure_lib_test_1_1_test_message_1ac322530a78ce4c6a78a205c1567bc1dd" prot="public" virt="non-virtual"><scope>PureLibTest::TestMessage</scope><name>TryToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

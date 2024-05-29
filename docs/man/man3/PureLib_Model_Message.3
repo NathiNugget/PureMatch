@@ -1,0 +1,113 @@
+.TH "PureLib.Model.Message" 3 "PureMatch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PureLib.Model.Message \- This class represents a message a user can write to another user\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMessage\fP (int messageid, int senderid, int recipientid, string messagevalue, DateTime timesent)"
+.br
+.RI "This constructor uses parameters which are validated using the properties of the class before the object finally is instantiated\&. "
+.ti -1c
+.RI "\fBMessage\fP ()"
+.br
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBMessageID\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBSenderID\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBRecipientID\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "DateTime \fBTimesent\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBMessagevalue\fP\fR [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class represents a message a user can write to another user\&. 
+.PP
+Definition at line \fB12\fP of file \fBMessage\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PureLib\&.Model\&.Message\&.Message (int messageid, int senderid, int recipientid, string messagevalue, DateTime timesent)"
+
+.PP
+This constructor uses parameters which are validated using the properties of the class before the object finally is instantiated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImessageid\fP ID for a given message
+.br
+\fIsenderid\fP ID of the user sending the message
+.br
+\fIrecipientid\fP ID of the user receiving the message
+.br
+\fImessagevalue\fP Content of the message the user sends to the other user
+.br
+\fItimesent\fP Time at which the message was sent\&. DateTime is expected
+.RE
+.PP
+
+.PP
+Definition at line \fB30\fP of file \fBMessage\&.cs\fP\&.
+.SS "PureLib\&.Model\&.Message\&.Message ()"
+
+.PP
+Definition at line \fB39\fP of file \fBMessage\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override string PureLib\&.Model\&.Message\&.ToString ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line \fB115\fP of file \fBMessage\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "int PureLib\&.Model\&.Message\&.MessageID\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB42\fP of file \fBMessage\&.cs\fP\&.
+.SS "string PureLib\&.Model\&.Message\&.Messagevalue\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB93\fP of file \fBMessage\&.cs\fP\&.
+.SS "int PureLib\&.Model\&.Message\&.RecipientID\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB68\fP of file \fBMessage\&.cs\fP\&.
+.SS "int PureLib\&.Model\&.Message\&.SenderID\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB55\fP of file \fBMessage\&.cs\fP\&.
+.SS "DateTime PureLib\&.Model\&.Message\&.Timesent\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB81\fP of file \fBMessage\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PureMatch from the source code\&.

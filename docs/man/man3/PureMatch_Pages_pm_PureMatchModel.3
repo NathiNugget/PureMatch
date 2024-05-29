@@ -1,0 +1,101 @@
+.TH "PureMatch.Pages.pm.PureMatchModel" 3 "PureMatch" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PureMatch.Pages.pm.PureMatchModel
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits PageModel\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPureMatchModel\fP (\fBDataBaseLink\fP repo)"
+.br
+.ti -1c
+.RI "IActionResult \fBOnGet\fP (int? chatid)"
+.br
+.ti -1c
+.RI "IActionResult \fBOnPostDelete\fP (int messageid)"
+.br
+.ti -1c
+.RI "IActionResult \fBOnPostMessage\fP (int chatid)"
+.br
+.ti -1c
+.RI "IActionResult \fBOnPostUserPage\fP (int ownid, int matchid)"
+.br
+.ti -1c
+.RI "IActionResult \fBOnPostSendMessage\fP (int ownid, int chatid)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBUser\fP > \fBMatches\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "List< \fBUser\fP > \fBChats\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "List< \fBMessage\fP > \fBMessages\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBMessageValue\fP\fR [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB11\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PureMatch\&.Pages\&.pm\&.PureMatchModel\&.PureMatchModel (\fBDataBaseLink\fP repo)"
+
+.PP
+Definition at line \fB16\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "IActionResult PureMatch\&.Pages\&.pm\&.PureMatchModel\&.OnGet (int? chatid)"
+
+.PP
+Definition at line \fB21\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "IActionResult PureMatch\&.Pages\&.pm\&.PureMatchModel\&.OnPostDelete (int messageid)"
+
+.PP
+Definition at line \fB44\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "IActionResult PureMatch\&.Pages\&.pm\&.PureMatchModel\&.OnPostMessage (int chatid)"
+
+.PP
+Definition at line \fB54\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "IActionResult PureMatch\&.Pages\&.pm\&.PureMatchModel\&.OnPostSendMessage (int ownid, int chatid)"
+
+.PP
+Definition at line \fB80\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "IActionResult PureMatch\&.Pages\&.pm\&.PureMatchModel\&.OnPostUserPage (int ownid, int matchid)"
+
+.PP
+Definition at line \fB74\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "List<\fBUser\fP> PureMatch\&.Pages\&.pm\&.PureMatchModel\&.Chats\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB100\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "List<\fBUser\fP> PureMatch\&.Pages\&.pm\&.PureMatchModel\&.Matches\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB99\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "List<\fBMessage\fP> PureMatch\&.Pages\&.pm\&.PureMatchModel\&.Messages\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB101\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+.SS "string PureMatch\&.Pages\&.pm\&.PureMatchModel\&.MessageValue\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Definition at line \fB104\fP of file \fBPureMatch\&.cshtml\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PureMatch from the source code\&.

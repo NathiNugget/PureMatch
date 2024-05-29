@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_c01773d51883ff6e850a0deca790b7ce" kind="dir">
+    <compoundname>PureLib/Model</compoundname>
+    <innerfile refid="_days_enum_8cs">DaysEnum.cs</innerfile>
+    <innerfile refid="_levels_enum_8cs">LevelsEnum.cs</innerfile>
+    <innerfile refid="_message_8cs">Message.cs</innerfile>
+    <innerfile refid="_muscle_group_enum_8cs">MuscleGroupEnum.cs</innerfile>
+    <innerfile refid="_subscription_enum_8cs">SubscriptionEnum.cs</innerfile>
+    <innerfile refid="_user_8cs">User.cs</innerfile>
+    <innerfile refid="_validation_regex_8cs">ValidationRegex.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Model/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_1_1_model_1_1_message" kind="class" language="C#" prot="public">
+    <compoundname>PureLib::Model::Message</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_message_1a4908dac5dafa624be695ea9a8a27807d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.Message._messageid</definition>
+        <argsstring></argsstring>
+        <name>_messageid</name>
+        <qualifiedname>PureLib.Model.Message._messageid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="15" column="21" bodyfile="PureLib/Model/Message.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_message_1a792cf99a75a9171504319e8f43ac83d6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.Message._senderid</definition>
+        <argsstring></argsstring>
+        <name>_senderid</name>
+        <qualifiedname>PureLib.Model.Message._senderid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="16" column="21" bodyfile="PureLib/Model/Message.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_message_1a5d74e6bcc0f169c18135981161ea2d31" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.Message._recipientid</definition>
+        <argsstring></argsstring>
+        <name>_recipientid</name>
+        <qualifiedname>PureLib.Model.Message._recipientid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="17" column="21" bodyfile="PureLib/Model/Message.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_message_1ab9f80329ebb0925cee5d7cbd7336f7aa" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime PureLib.Model.Message._timesent</definition>
+        <argsstring></argsstring>
+        <name>_timesent</name>
+        <qualifiedname>PureLib.Model.Message._timesent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="18" column="26" bodyfile="PureLib/Model/Message.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_message_1a596cdf440270f21f3136ca7787fb571f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.Message._messagevalue</definition>
+        <argsstring></argsstring>
+        <name>_messagevalue</name>
+        <qualifiedname>PureLib.Model.Message._messagevalue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="19" column="24" bodyfile="PureLib/Model/Message.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_message_1a775fe01ffd235eaff56b7c2cd25ab53c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.Message.MessageID</definition>
+        <argsstring></argsstring>
+        <name>MessageID</name>
+        <qualifiedname>PureLib.Model.Message.MessageID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="42" column="20" bodyfile="PureLib/Model/Message.cs" bodystart="43" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_message_1ac31a7fededae2c6df72f66a5663ada39" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.Message.SenderID</definition>
+        <argsstring></argsstring>
+        <name>SenderID</name>
+        <qualifiedname>PureLib.Model.Message.SenderID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="55" column="20" bodyfile="PureLib/Model/Message.cs" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_message_1a85bc0b3ff11ff28d796271659bc2a14e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.Message.RecipientID</definition>
+        <argsstring></argsstring>
+        <name>RecipientID</name>
+        <qualifiedname>PureLib.Model.Message.RecipientID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="68" column="20" bodyfile="PureLib/Model/Message.cs" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_message_1a1185dad930e66c0ff13d50aa862be1f6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime PureLib.Model.Message.Timesent</definition>
+        <argsstring></argsstring>
+        <name>Timesent</name>
+        <qualifiedname>PureLib.Model.Message.Timesent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="81" column="25" bodyfile="PureLib/Model/Message.cs" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_message_1afd0911e4135a3f8e98b407703982cb4b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.Message.Messagevalue</definition>
+        <argsstring></argsstring>
+        <name>Messagevalue</name>
+        <qualifiedname>PureLib.Model.Message.Messagevalue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="93" column="23" bodyfile="PureLib/Model/Message.cs" bodystart="94" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_lib_1_1_model_1_1_message_1aae315537d7a738ab9b5e8e2ccf21fcf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureLib.Model.Message.Message</definition>
+        <argsstring>(int messageid, int senderid, int recipientid, string messagevalue, DateTime timesent)</argsstring>
+        <name>Message</name>
+        <qualifiedname>PureLib.Model.Message.Message</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>messageid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>senderid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>recipientid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>messagevalue</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>timesent</declname>
+        </param>
+        <briefdescription>
+<para>This constructor uses parameters which are validated using the properties of the class before the object finally is instantiated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>messageid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID for a given message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>senderid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user sending the message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recipientid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the user receiving the message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>messagevalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Content of the message the user sends to the other user</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timesent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time at which the message was sent. DateTime is expected</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="30" column="16" bodyfile="PureLib/Model/Message.cs" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_model_1_1_message_1a038255851b3ad03557446d6fb91b1aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureLib.Model.Message.Message</definition>
+        <argsstring>()</argsstring>
+        <name>Message</name>
+        <qualifiedname>PureLib.Model.Message.Message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="39" column="16" bodyfile="PureLib/Model/Message.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_model_1_1_message_1a5ced4b8b0ecda4ee86d09a8e5bc42354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string PureLib.Model.Message.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>PureLib.Model.Message.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/Message.cs" line="115" column="32" bodyfile="PureLib/Model/Message.cs" bodystart="115" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class represents a message a user can write to another user. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Model/Message.cs" line="12" column="11" bodyfile="PureLib/Model/Message.cs" bodystart="13" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a4908dac5dafa624be695ea9a8a27807d" prot="private" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>_messageid</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a596cdf440270f21f3136ca7787fb571f" prot="private" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>_messagevalue</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a5d74e6bcc0f169c18135981161ea2d31" prot="private" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>_recipientid</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a792cf99a75a9171504319e8f43ac83d6" prot="private" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>_senderid</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1ab9f80329ebb0925cee5d7cbd7336f7aa" prot="private" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>_timesent</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1aae315537d7a738ab9b5e8e2ccf21fcf5" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>Message</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a038255851b3ad03557446d6fb91b1aff" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>Message</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a775fe01ffd235eaff56b7c2cd25ab53c" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>MessageID</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1afd0911e4135a3f8e98b407703982cb4b" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>Messagevalue</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a85bc0b3ff11ff28d796271659bc2a14e" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>RecipientID</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1ac31a7fededae2c6df72f66a5663ada39" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>SenderID</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a1185dad930e66c0ff13d50aa862be1f6" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>Timesent</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_message_1a5ced4b8b0ecda4ee86d09a8e5bc42354" prot="public" virt="non-virtual"><scope>PureLib::Model::Message</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

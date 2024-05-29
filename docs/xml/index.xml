@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model" kind="class"><name>PureMatch::Pages::Logins::ConfirmChangesModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1ae8fe4b632cdd81f64d5fa582850927da" kind="variable"><name>_repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a150ed3354d884f9472d5376fe118f9b9" kind="property"><name>NameNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a6a1e208d24390b7f377ef2281311daaa" kind="property"><name>UsernameNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1abae9b3aedeae5f304d5cf201a04a7445" kind="property"><name>PasswordNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1afb8a52f6beb77885b6708978b5f86614" kind="property"><name>EmailNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aa7beefd72890beead4d87dbcbe434a43" kind="property"><name>PhoneNumberNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a3d294da357eef3a525776aae458a59d7" kind="property"><name>CardNumberNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a54f5c462dfdf4dfe944c53ed2e63ee7b" kind="property"><name>CardExpMonthNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a141cbc906d640ef5dbce6ac4a96495fc" kind="property"><name>CardExpYearNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a4d2716cdbeaabc651b7b2673489396de" kind="property"><name>CardCVCNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a7b5c906cff468940c47ae16a3e25644e" kind="property"><name>Repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1ad7ef89628744dac8078569b66ee90ca0" kind="function"><name>ConfirmChangesModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1a52d28ad2f083eb25882054a225170033" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aa7a55d009af2d1fe71d1f651581599bb" kind="function"><name>OnPostAbort</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_confirm_changes_model_1aefa1c6aff10fe5a060bbc24c852c1862" kind="function"><name>OnPostConfirmAction</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account" kind="class"><name>PureMatch::Pages::pm::CreateAccount</name>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ac2cc5bb88564e5c793b6e9f8a46389a5" kind="variable"><name>_repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ae3b7dc2e28c2ebb78434287eaeeeccfd" kind="property"><name>Repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a272b43a751931487c5288166dfadb5c7" kind="property"><name>SubNumber</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1af95af81e0058cfb2bce07e14d29cf82e" kind="property"><name>Name</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a1f1f50ff2bb76185e13eacb5ec6d7828" kind="property"><name>UserName</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1aa322c65252c21015af111c118499721d" kind="property"><name>Password</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a2a7e977ca99d12d3e1d7698a3090b3dd" kind="property"><name>PhoneNumber</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1af74ebdf50237c56bcd7917d24b593419" kind="property"><name>Email</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afdd35102da7eaa0dda69e87972ee1750" kind="property"><name>CardNumber</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a998912f688361ee757b1cdd8b59056fb" kind="property"><name>CVC</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afabb25616478841d743cddd786051afc" kind="property"><name>CardExpMonth</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a3603e9bf6df81616edc2d974100b8f7b" kind="property"><name>CardExpYear</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afdbca33697e169d78b7c0ca961a8ee80" kind="function"><name>CreateAccount</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1aecd0c14f18bb6e85ced80c1f8244d6ff" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ae591fa8f561cdb522f3e2800c4de3fe3" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_pure_lib_1_1_services_1_1_data_base_link" kind="class"><name>PureLib::Services::DataBaseLink</name>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aa9cf224e9b7613550fb90ba90b7997b6" kind="variable"><name>_messages</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aa0fb9765ff5865c845681b4a3506d2fb" kind="variable"><name>ConnectionString</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ab212506aac277ca7eea261e558904c8c" kind="variable"><name>rowsaffected</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1afebdb98f7fb514f14ef505ad00a06540" kind="function"><name>DataBaseLink</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ae37e9654658ca495bd0c31aa741d2ff9" kind="function"><name>GetMatches</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ae5b74b70300c8dffbd35ccf6a051953c" kind="function"><name>ReadMuscleGroups</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a2c086ea71e0ec3bdea28a86bbe588260" kind="function"><name>ReadAllMessagesFromDB</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a4ed5c45faec66eb5f52ff5d57757f801" kind="function"><name>GetChatUsers</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ab2cd39765bdf11c1366f5962eda3880e" kind="function"><name>GetMessage</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aa55733466041507fdabe1b0dd28a72f8" kind="function"><name>DeleteMessage</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a37180bbd5d0540722180473f3096abbd" kind="function"><name>AddUser</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ab7744861cf41c659259a9dbc3655d370" kind="function"><name>UpdateUser</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a2198049d960a0e2431894f2e9f2ca85f" kind="function"><name>ReadLogin</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a7ad4f2daf583c6ff2da0cb4ad5f3958c" kind="function"><name>SetMatching</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a2132a3975ff7870575d2b2b0dd7a17f6" kind="function"><name>ReadAllUsersFromDB</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1afba6fe0dd3cfc360f70ce9b700e0370c" kind="function"><name>ReadUser</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1af11d05bfb5d73591e115977822f499b8" kind="function"><name>ReadDays</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aef15f6a3dea4a2a7f774fee06ce2178d" kind="function"><name>SendMessage</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a6cb93025dfa0d9df6aa28768944ca2de" kind="function"><name>ReadMessages</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aeed255eaf5b24335381f069f745aabe9" kind="function"><name>ReadMuscleGroupsUsingReader</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ad267017694489d13ca51eec6f3bfb1e7" kind="function"><name>ReadMessage</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a3f13db27639e2ecd9cc6f07c04637f9a" kind="function"><name>SetLevel</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1aafb321f0e09b07c2a17e54783e3ff06a" kind="function"><name>SetDays</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a745e278d18319286753486671653c9e3" kind="function"><name>SetMuscleGroups</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1a79e9ff85e1015fa433ef4648ed078abb" kind="function"><name>ReadUserUsingReader</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1ad98ade27347b8ff87bd72191dfde457b" kind="function"><name>ReadDaysUsingReader</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1afef165e4f62267792436f6d16c8c5397" kind="function"><name>FindMaxMessageID</name></member>
+    <member refid="class_pure_lib_1_1_services_1_1_data_base_link_1af80e516068ab30029459b71aa4479685" kind="function"><name>ReadMessageUsingReader</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model" kind="class"><name>PureMatch::Pages::pm::DeleteConfirmationModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1aa112a49ccbbdd56d5dc9a3ab03148480" kind="variable"><name>_repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a4dc1892c9923e6020b81366135ac07ec" kind="property"><name>MessageContent</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a4fce1ca9e5d106ba1bf513dd5cd47ae8" kind="property"><name>MessageID</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a5314e4d24b661af24336a516d681ec38" kind="property"><name>RecipientID</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1aed89c992c56370e9c83ec0f30843aac2" kind="function"><name>DeleteConfirmationModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a41602c86afaf1afe9944dacfdc16e2ad" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_delete_confirmation_model_1a24b21b18ddfc0b7e086ae7a74ed267c5" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1_error_model" kind="class"><name>PureMatch::Pages::ErrorModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1_error_model_1a4b0e26c9acf36ca4780007934df42a68" kind="property"><name>RequestId</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_error_model_1a9b3eaef6f1679004e88bf53b71e8a30c" kind="property"><name>ShowRequestId</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_error_model_1a782f0174f18ca57bcdab575cf6668235" kind="variable"><name>_logger</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_error_model_1ae9483cd0340b232719b3025367c9c728" kind="function"><name>ErrorModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_error_model_1ad06b354f6b1aea8abd8664bcf211af82" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1_index_model" kind="class"><name>PureMatch::Pages::IndexModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1_index_model_1ae855182e9988d5da37655e213939f469" kind="variable"><name>_logger</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_index_model_1a407c4a1be984f81828f4bf81d9858597" kind="function"><name>IndexModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_index_model_1ab3fcac8b73bdc557501727bf80511f27" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model" kind="class"><name>PureMatch::Pages::Logins::LoginModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1a8fc4763d74b5df18d3a96b25f47ac296" kind="variable"><name>_repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1a88c92c2984c5286934a5629dc96fcb22" kind="property"><name>UserName</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1a9ad854739213e02ed7aebf86a502710a" kind="property"><name>Password</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1abb66d43cb497c953cbfe9d0ec6a3eff4" kind="property"><name>LoginFailed</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1a2bf1de8e58b135933a65e580ce33aadf" kind="function"><name>LoginModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1a2526cbf84e5bc38854c724330b13a0bd" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1acf6d51b18177688c847e3321b43c99c6" kind="function"><name>OnPostLogin</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1af63952884e440e92a19b486d17639e3e" kind="function"><name>OnPostLogout</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_login_model_1ad3efcc3f1fe11c76c798340b0f98bc3d" kind="function"><name>OnPostAbort</name></member>
+  </compound>
+  <compound refid="class_pure_lib_1_1_model_1_1_message" kind="class"><name>PureLib::Model::Message</name>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a4908dac5dafa624be695ea9a8a27807d" kind="variable"><name>_messageid</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a792cf99a75a9171504319e8f43ac83d6" kind="variable"><name>_senderid</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a5d74e6bcc0f169c18135981161ea2d31" kind="variable"><name>_recipientid</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1ab9f80329ebb0925cee5d7cbd7336f7aa" kind="variable"><name>_timesent</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a596cdf440270f21f3136ca7787fb571f" kind="variable"><name>_messagevalue</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a775fe01ffd235eaff56b7c2cd25ab53c" kind="property"><name>MessageID</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1ac31a7fededae2c6df72f66a5663ada39" kind="property"><name>SenderID</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a85bc0b3ff11ff28d796271659bc2a14e" kind="property"><name>RecipientID</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a1185dad930e66c0ff13d50aa862be1f6" kind="property"><name>Timesent</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1afd0911e4135a3f8e98b407703982cb4b" kind="property"><name>Messagevalue</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1aae315537d7a738ab9b5e8e2ccf21fcf5" kind="function"><name>Message</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a038255851b3ad03557446d6fb91b1aff" kind="function"><name>Message</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_message_1a5ced4b8b0ecda4ee86d09a8e5bc42354" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile" kind="class"><name>PureMatch::Pages::Logins::MyProfile</name>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a1cc806101f4b8e2359ccf6b7a6cbc18b" kind="property"><name>NameNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a2935a4c5d85f0678b4e0ac1033a51cef" kind="property"><name>UserNameNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a55f05e77c2c9ecd58b183780e9ce72db" kind="property"><name>PasswordNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a021306583a1d52854df4d560b9855552" kind="property"><name>PhoneNumberNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a4cb0bbdbdc5b0d080fab87b56cfff001" kind="property"><name>EmailNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a3856f72554e2592a703f8442dc6a3b25" kind="property"><name>CardNumberNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a9645463844b10c2e11c0fbc2f1d7c4de" kind="property"><name>CVCNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ab5e3bf9dc06c97b23de3fdda985f8a37" kind="property"><name>CardExpMonthNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1a6f2b464eb1d841a4a0c00638a997f3b1" kind="property"><name>CardExpYearNew</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ae4fccfa10feed4f6df66d407a783d1e5" kind="property"><name>Repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1aafece45e83dc4b3a31e84e600ff227dd" kind="function"><name>MyProfile</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1afc0867a41cad099248100cb0976b3958" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_logins_1_1_my_profile_1ac80c9b865bce5327fdbcdf872a75ca64" kind="function"><name>OnPostUpdate</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1_privacy_model" kind="class"><name>PureMatch::Pages::PrivacyModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1_privacy_model_1af4955f742b403573eed3613218531c2c" kind="variable"><name>_logger</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_privacy_model_1a6e22f947bd2f043245ccfb50208f5a02" kind="function"><name>PrivacyModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1_privacy_model_1af1c2d99635506a12138f69d8a498f741" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1checkmark_1_1_profile_changed_model" kind="class"><name>PureMatch::Pages::checkmark::ProfileChangedModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1checkmark_1_1_profile_changed_model_1a313399003c12cfad7d858484c595dd4f" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1checkmark_1_1_profile_created_model" kind="class"><name>PureMatch::Pages::checkmark::ProfileCreatedModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1checkmark_1_1_profile_created_model_1a1bcee48a9ed3078abfd70e7ab3fcc5cf" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model" kind="class"><name>PureMatch::Pages::pm::PureMatchModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a9c01c623e1f4add774e1b54fb03800b7" kind="variable"><name>_repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a61c2bf9ab70694b9617c7f2ac39baf32" kind="property"><name>Matches</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a5ec6df826470069ea8ff667832f225e1" kind="property"><name>Chats</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a5317df345e8af3bdf821f83cb0773e40" kind="property"><name>Messages</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a969dd468fd170f8859227b9b69f63ec9" kind="property"><name>MessageValue</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1ad79f038b64aba7616cf58b9417aeb325" kind="function"><name>PureMatchModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1acf4768a2d23cd51870fc024a17828ea0" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a1b6c8c54dc21066a2fdeabf7ad9bc31b" kind="function"><name>OnPostDelete</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a6d5c6a1e34f903bc1cb35d06df553a25" kind="function"><name>OnPostMessage</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1a0fbf48aaaa4893e37a521943471b284c" kind="function"><name>OnPostUserPage</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_model_1aaac9098d3f20968a9046060f4d3ebea0" kind="function"><name>OnPostSendMessage</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root" kind="class"><name>PureMatch::Pages::pm::PureMatchRoot</name>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1ae32a25e4e9b5f68d0cd572e15d781012" kind="property"><name>Groups</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a5f4265bbaecac0345444706037588ee3" kind="property"><name>Levels</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a342008f7bff47a60dafa08acc45db927" kind="property"><name>Days</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1af2db9f521204f592c28f85d670c3d459" kind="property"><name>Repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a2fa7cb52f7ae963ec66341a405980387" kind="property"><name>MuscleGroups</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a67eefefa2b88306271bdcf918ace0719" kind="property"><name>SelectedLevel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a09771a6ad7fb0d2118035fa8a919db95" kind="property"><name>DaysList</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a71daa1c3bb78f7ea81f5f98185876b37" kind="property"><name>NotValidInput</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a24e9813028e05b8a850eca7c5d6d8996" kind="function"><name>PureMatchRoot</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a9d6a42ed5ac6196e24adcced128b05b4" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1a0c70439a72696e87a1f8c31bda74a07b" kind="function"><name>OnPostResetMatch</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_pure_match_root_1adee44746f5035f173e704216a225d8fc" kind="function"><name>OnPostChangeCriteria</name></member>
+  </compound>
+  <compound refid="class_pure_lib_1_1_services_1_1_secret" kind="class"><name>PureLib::Services::Secret</name>
+    <member refid="class_pure_lib_1_1_services_1_1_secret_1ad22617c8c51a854ac6b3f952e2d1ca2b" kind="variable"><name>ConnectionString</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1pm_1_1_select_subscription" kind="class"><name>PureMatch::Pages::pm::SelectSubscription</name>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_select_subscription_1a6c292fdf8217984bfb672e36e4d834ec" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_select_subscription_1afa2d77408aea84b99febf99db95bd6a1" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_session_helper" kind="class"><name>PureMatch::SessionHelper</name>
+    <member refid="class_pure_match_1_1_session_helper_1a7cf5ad1b2a9d734e9c952a0f1b655357" kind="function"><name>Set&lt; T &gt;</name></member>
+    <member refid="class_pure_match_1_1_session_helper_1a30b53b5ca5298e2a70ec4e8f6bf4d5ad" kind="function"><name>Get&lt; T &gt;</name></member>
+    <member refid="class_pure_match_1_1_session_helper_1ae70bb5d69a9aabb1c0120bc3a9e877cf" kind="function"><name>Clear&lt; T &gt;</name></member>
+  </compound>
+  <compound refid="class_pure_lib_test_1_1_test_d_b" kind="class"><name>PureLibTest::TestDB</name>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1acd976bceb87266e56bcaf69545df3e61" kind="variable"><name>_usersInDB</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1a5cb630cac4b4366da3745cd2aaa297c8" kind="variable"><name>_messagesInDB</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1a334aea01ee1b616c59236e3878fd2f84" kind="variable"><name>db</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1aa638abd10e0a157dc9e42d13652d49a0" kind="variable"><name>_msgroups</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1af0c094d6b14224b9b9e5c35b91a08c6e" kind="variable"><name>_days</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1affa24325e5cb2284e4d678aebf4fd675" kind="function"><name>TestDB</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1a950537be182d50010c2232d95d17636a" kind="function"><name>UsersInDB</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1ae4841296cd076dfaa75612ded5a3a8b7" kind="function"><name>MessagesInDB</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1a3df03c7916ecddd26072275677576ae2" kind="function"><name>SetUserMatching</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1af55a023e90ac4d9ef162206645a95624" kind="function"><name>SendAndDelete</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1aa5af6bc5dee5cea129e16058988bd9ca" kind="function"><name>ReadMSGroupsAndDays</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1ab65adfcab3a6d65c7f1387359aef7edb" kind="function"><name>GetChatUsers</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1a22a39c97453c2b84834ccf763ad63148" kind="function"><name>GetMatches</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1ab066ef97d65dc404d267b8508c52b442" kind="function"><name>Update</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1acf053c8a21c403161f899cc6321d73f6" kind="function"><name>CreateUser</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1af00d3b9721ce46cd62b049d5ffddbda8" kind="function"><name>GetMessges</name></member>
+    <member refid="class_pure_lib_test_1_1_test_d_b_1accb8cc1b9a2a1d0b7f475e9fdaddde15" kind="function"><name>ReadLogin</name></member>
+  </compound>
+  <compound refid="class_pure_lib_test_1_1_test_message" kind="class"><name>PureLibTest::TestMessage</name>
+    <member refid="class_pure_lib_test_1_1_test_message_1a8b368150ddbfc45959ac0cf57accc4fa" kind="variable"><name>msg</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a92ca732c6213a5c1b5288c6b4297318a" kind="variable"><name>msgnormalctor</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a25e2bd9833ce8cd7a3e52b708c640100" kind="function"><name>BeforeEachTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a90417f3a62a9e37f931f7605397c22ce" kind="function"><name>AfterEachTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a4f31725efc31b05d1d9e82942132d5fa" kind="function"><name>IDProperty</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1acd51f3f269ccf6a97997814c95030378" kind="function"><name>IDPropertyIlleagl</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a12f3b7fb17bd11a63348bfd1ed00d410" kind="function"><name>SenderIDProperty</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a459e926f539215c93e4962efebe90ced" kind="function"><name>SenderIDIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1ab1bc034115bf3cd237e48b782e7875e6" kind="function"><name>RecipientID</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1ae6ba716c0b757d81f9a61fdfb5871f28" kind="function"><name>RecipientIDIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1ad3519a395a18f92f8282946ed6d173ac" kind="function"><name>MessageProperty</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1ac19ab628ab1c7221438c5f31b91ce3ab" kind="function"><name>MessagePropertyIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a59f752e2e56c89d625f6c69b69dfa0de" kind="function"><name>MessagePropertyNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1ab78be58bd32121d7146cf20fc0f3281d" kind="function"><name>DateTimeProperty</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1a1670e9bbbadbc6f106c8721b217df4c9" kind="function"><name>DateTimePropertyNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_message_1ac322530a78ce4c6a78a205c1567bc1dd" kind="function"><name>TryToString</name></member>
+  </compound>
+  <compound refid="class_pure_lib_test_1_1_test_user_class" kind="class"><name>PureLibTest::TestUserClass</name>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a570387957dbe6ff4c0f4df4a28ca49dc" kind="variable"><name>u</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a571aa71677092f938aac83ddb036836b" kind="function"><name>BeforeEachTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1aa62d012beed06081ddb2f34d2ce9ac70" kind="function"><name>Man</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a1394dbf3df8186465633b5b381d51dec" kind="function"><name>AfterEachTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a11f7d836e4d7926a20d5cf1b5c782ab9" kind="function"><name>UserID</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a95d060aa3cb992c93de915a48e47cc68" kind="function"><name>UserIDIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1acdd7f54aed24531847f37614f34b6cf1" kind="function"><name>Name</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a03e2b38a6fb11588ea60950926c9766e" kind="function"><name>NameIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ad75fd3cd582d0d75f2d4be7f4a2ff3de" kind="function"><name>UserName</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a96812abd8d38d0fbd78b72c8a639b4e2" kind="function"><name>UserNameNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a597bef6cb9b4f048f25a2cb3616d9c85" kind="function"><name>UserNameIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1acc8be7422295cc64fecf9bd90045d349" kind="function"><name>Password</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a4003fd2cd9acec4042434e6b1ed38f01" kind="function"><name>PasswordIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ae7a3c6cfb1e0f0585506816fd531a54a" kind="function"><name>PasswordNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a0e68a67c816d74b67791105a8352c297" kind="function"><name>PhoneNumber</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a2fcb3aa44cdd63ce60baaa271a89a884" kind="function"><name>PhoneNumberNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1adf6a9a15e68ea8157a7999cd70018bba" kind="function"><name>PhoneNumberIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1afb0ff332a13e47fb055da0c1165170b5" kind="function"><name>Email</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a808321cdc11ce218ad9115ee2085e3dd" kind="function"><name>EmailNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1aab7031da53e3307ff6fef4b61034f74a" kind="function"><name>EmailIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a00f273cfb71fc6d9b55454c65ae00e38" kind="function"><name>CardNumber</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a6d15de5dfbbfdf17b9cd1607b0665f0c" kind="function"><name>CardNumberIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a218bceb81128c66d56e2c07187ca2cd3" kind="function"><name>CardNumberNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a4ed5aee4a82ee5d8c48a64c352928794" kind="function"><name>CardCVC</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a138098528ec8942c22a60c047c1759ca" kind="function"><name>CardCVCIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1acbff4ad198051235076b3f1eca9e4b82" kind="function"><name>CardCVCNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a5bbe90fa351b971ea63264a824fc5e8e" kind="function"><name>CardExpMonth</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ae68ad7c73a0e4c7edded61331d75428f" kind="function"><name>CardExpMonthIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a1064221c276d2671e5f65b9ed5738a42" kind="function"><name>CardExpMonthNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a04362430d046ba10ee281149b2f833ef" kind="function"><name>CardExpYear</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a87a4c3b443ec19177051d3f428e8d74d" kind="function"><name>CardExpYearIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ac739bfb664bf5c3ec2b239f7762268bc" kind="function"><name>CearExpYearNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a9cb32aeac6261c5135dfd43efae67d7d" kind="function"><name>EnumTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ada3ad8345543d8ceee84d7e0f87ccaaa" kind="function"><name>EnumTestIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a76868e9dff1323a0b82a2ef11429c3f3" kind="function"><name>EnumTestNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ac691d082dd3375577b4d09cd15ae6b18" kind="function"><name>MuscleGroupEnumTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a444216a6d7d078c011d63ab57f2d0782" kind="function"><name>MusclegroupsEnumNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a127a4c0ee0c05e78759ceea1baaf215e" kind="function"><name>DaysEnumTest</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1aff56849b8b8682babd1fe370beb361a9" kind="function"><name>DaysEnumNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1ae242c07552009af2b1698cbe4aad1b41" kind="function"><name>Subscription</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a8ab83783bf40e045f51146898f77a887" kind="function"><name>SubscriptionIllegal</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a29af556824ffb1209ab52963cbf2617c" kind="function"><name>SubscriptionNull</name></member>
+    <member refid="class_pure_lib_test_1_1_test_user_class_1a3b0fe794d2d080c273927db729868343" kind="function"><name>ToStringOfUser</name></member>
+  </compound>
+  <compound refid="class_pure_lib_1_1_model_1_1_user" kind="class"><name>PureLib::Model::User</name>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a4f8d164a2cc6ee98e23bd52988c7d2f9" kind="variable"><name>_userid</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1af6634f0da8118f8a41d3934574a246b2" kind="variable"><name>_name</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a05e0f8b3486ff361b3076970164df02e" kind="variable"><name>_username</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a215f3148f4755a3b3ab4c61a71bf3cd3" kind="variable"><name>_password</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a61e76ccba891567b7bbe5c43f632bb01" kind="variable"><name>_phonenumber</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1af1bd295aafede261e239165595fb3db7" kind="variable"><name>_email</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a9a207a71aa6fd84a1d96f327d5504e38" kind="variable"><name>_cardnumber</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a2bf1435301293f837b531bf93c79afa3" kind="variable"><name>_cardcvc</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a6a0ed750381206d536e7b1445b87bf0c" kind="variable"><name>_cardexpmonth</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1afebafc702ff602379c418b8999133ed1" kind="variable"><name>_cardexpyear</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a3af07b79422cd65135209fdd47f2d2de" kind="variable"><name>_level</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1aa010e268771e0ebaa76b085db19746f5" kind="variable"><name>_musclegroups</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1aebceeeb3506a0a9f3800ed70fbbcfc88" kind="variable"><name>_days</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1ad304c804dd2c7d6d934a271cbf543352" kind="variable"><name>_subscription</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a48f3cf88281eaac20d5b14d2645d9b75" kind="property"><name>UserID</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1acd30f88f6b80ae116497fc60b2d3a853" kind="property"><name>Name</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1aa5d19e1c73ec15fd85c82cdb1843ee19" kind="property"><name>UserName</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a703ff8529a9fdfbe233bef94e4af1196" kind="property"><name>Password</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1aa17574840cfa2e1eb4154f0877744ede" kind="property"><name>PhoneNumber</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a1986bf1b0d07b9abe044eec5422bb616" kind="property"><name>Email</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1afdcae2e2f94b3a19758b4d99238db5e6" kind="property"><name>CardNumber</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a98df16f7231fc27cce5cd17074f6f6e1" kind="property"><name>CardCVC</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1aa932020f22bdfbec1213b3799e7867d1" kind="property"><name>CardExpMonth</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a762be0ac8a33080b80f3e9a090f5b748" kind="property"><name>CardExpYear</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a2cee6822656a171ecae7282fe4eeeb75" kind="property"><name>Level</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a0416afe8665948d0ab53c492a0e9acc1" kind="property"><name>MuscleGroups</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a209b6c23bed4dc167cf69a91a59ac727" kind="property"><name>Days</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a2cc36ea9692bab38e4499e173326ff59" kind="property"><name>Subscription</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1a3f2a78c20480f4a339cf7b3ad4eb9c6c" kind="function"><name>User</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1ae217aa5196f4b0c0f2cfed68c27b7e90" kind="function"><name>User</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_user_1ac3bc7fcad998c1262e8b426219c6dbc8" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model" kind="class"><name>PureMatch::Pages::pm::UserPageModel</name>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1ac64d1362455f4f1e421c9d2ca56ade0d" kind="variable"><name>_repo</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a6e446943c0def177dbac39b485d1f7a9" kind="variable"><name>_matchuser</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a3d58e2fc62e32198a0d3506be6a0ccac" kind="property"><name>MatchUser</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1ac2775fb417a7cc743d58423adb652323" kind="property"><name>Message</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a2b68f3b11a6b80bc7284515496dd95da" kind="function"><name>UserPageModel</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a41d238add360fee2d99906893e45842d" kind="function"><name>OnGet</name></member>
+    <member refid="class_pure_match_1_1_pages_1_1pm_1_1_user_page_model_1a8664571ea42ef701cbb48b2dbfc771f2" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_pure_lib_1_1_model_1_1_validation_regex" kind="class"><name>PureLib::Model::ValidationRegex</name>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1ad914f275065b6079a37be84c37cd7bb8" kind="variable"><name>CURRENTTIME</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a424f1c54e3bf9c20260b9a9dedc29736" kind="variable"><name>YEARDIGITSMIN</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1af3e70342d3196698fe2be1bb135a69d6" kind="variable"><name>YEARDIGITSMAX</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1af1b207a5e9cb8c2bafe974a3cd54abbd" kind="variable"><name>PHONEFILTER</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a83c4eda89cfd1fc9f9e444591432d365" kind="variable"><name>MAILFILTER</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a9699400c06f7791edf2e28e3073d64a8" kind="variable"><name>CARDNUMBERFILTER</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a1a34ed574923764ec968f0e7b4d2810a" kind="variable"><name>CARDCVCFILTER</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1a8fe548c61e26a0ae972fb55e360ab9df" kind="variable"><name>CARDEXPMONTHFILTER</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1afa5c4c099ae078375fe0f7ee12de6c41" kind="variable"><name>CARDEXPYEARFILTER</name></member>
+    <member refid="class_pure_lib_1_1_model_1_1_validation_regex_1add15e9067527a8bd29d253c8a169c4ca" kind="variable"><name>MESSAGELENGTHMAX</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_visual_studio_1_1_test_tools_1_1_unit_testing" kind="namespace"><name>global::Microsoft::VisualStudio::TestTools::UnitTesting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_identity" kind="namespace"><name>Microsoft::AspNetCore::Identity</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc" kind="namespace"><name>Microsoft::AspNetCore::Mvc</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc_1_1_razor_pages" kind="namespace"><name>Microsoft::AspNetCore::Mvc::RazorPages</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_extensions_1_1_file_system_globbing" kind="namespace"><name>Microsoft::Extensions::FileSystemGlobbing</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_visual_studio_1_1_test_tools_1_1_unit_testing" kind="namespace"><name>Microsoft::VisualStudio::TestTools::UnitTesting</name>
+  </compound>
+  <compound refid="namespace_pure_lib" kind="namespace"><name>PureLib</name>
+  </compound>
+  <compound refid="namespace_pure_lib_1_1_model" kind="namespace"><name>PureLib::Model</name>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kind="enum"><name>MuscleGroupEnum</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3a5c3c5e540786532c71ec09a94919e092" kind="enumvalue"><name>Bryst</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3aa512b45a5bd8b491381049e58ff722a7" kind="enumvalue"><name>Ryg</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3a0a809193c51e797a86e7488c07dc2eba" kind="enumvalue"><name>Skulder</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3a092f2ba9f39fbc2876e64d12cd662f72" kind="enumvalue"><name>Ben</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3ac8ecac87a76436aae2821c6860757bd4" kind="enumvalue"><name>Biceps</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3adbb49ab205aaef1dc08caabcba35b8e1" kind="enumvalue"><name>Triceps</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3ac20bc86fb049336ab505afbb40f6f0e9" kind="enumvalue"><name>Mave</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eb" kind="enum"><name>SubscriptionEnum</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eba83168e6cb289d732cc78427b51f93153" kind="enumvalue"><name>Core</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eba32ba78fe43257d3e7f88e3935a8ea0d4" kind="enumvalue"><name>Plus</name></member>
+    <member refid="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eba545f6c2f382c04810103b3e5e6f7d841" kind="enumvalue"><name>Unlimited</name></member>
+  </compound>
+  <compound refid="namespace_pure_lib_1_1_services" kind="namespace"><name>PureLib::Services</name>
+  </compound>
+  <compound refid="namespace_pure_lib_test" kind="namespace"><name>PureLibTest</name>
+  </compound>
+  <compound refid="namespace_pure_match" kind="namespace"><name>PureMatch</name>
+  </compound>
+  <compound refid="namespace_pure_match_1_1_pages" kind="namespace"><name>PureMatch::Pages</name>
+  </compound>
+  <compound refid="namespace_pure_match_1_1_pages_1_1checkmark" kind="namespace"><name>PureMatch::Pages::checkmark</name>
+  </compound>
+  <compound refid="namespace_pure_match_1_1_pages_1_1_logins" kind="namespace"><name>PureMatch::Pages::Logins</name>
+  </compound>
+  <compound refid="namespace_pure_match_1_1_pages_1_1pm" kind="namespace"><name>PureMatch::Pages::pm</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations" kind="namespace"><name>System::ComponentModel::DataAnnotations</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_sql_client" kind="namespace"><name>System::Data::SqlClient</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics_1_1_code_analysis" kind="namespace"><name>System::Diagnostics::CodeAnalysis</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq_1_1_expressions" kind="namespace"><name>System::Linq::Expressions</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net_1_1_mail" kind="namespace"><name>System::Net::Mail</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography_1_1_x509_certificates" kind="namespace"><name>System::Security::Cryptography::X509Certificates</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_regular_expressions" kind="namespace"><name>System::Text::RegularExpressions</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_linq" kind="namespace"><name>System::Xml::Linq</name>
+  </compound>
+  <compound refid="_days_enum_8cs" kind="file"><name>DaysEnum.cs</name>
+    <member refid="_days_enum_8cs_1a8685a6be95f8a0462bce3f7c2eaab1aa" kind="property"><name>Model</name></member>
+  </compound>
+  <compound refid="_levels_enum_8cs" kind="file"><name>LevelsEnum.cs</name>
+    <member refid="_levels_enum_8cs_1a8685a6be95f8a0462bce3f7c2eaab1aa" kind="property"><name>Model</name></member>
+  </compound>
+  <compound refid="_message_8cs" kind="file"><name>Message.cs</name>
+  </compound>
+  <compound refid="_muscle_group_enum_8cs" kind="file"><name>MuscleGroupEnum.cs</name>
+  </compound>
+  <compound refid="_subscription_enum_8cs" kind="file"><name>SubscriptionEnum.cs</name>
+  </compound>
+  <compound refid="_user_8cs" kind="file"><name>User.cs</name>
+  </compound>
+  <compound refid="_validation_regex_8cs" kind="file"><name>ValidationRegex.cs</name>
+  </compound>
+  <compound refid="_pure_lib_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_lib_2obj_2_release_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_lib_test_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_lib_test_2obj_2_release_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_lib_tests_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_match_2obj_2_debug_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_match_2obj_2_release_2net8_80_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_pure_match_2obj_2_release_2net8_80_2win-x86_2_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_lib_8_assembly_info_8cs" kind="file"><name>PureLib.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_lib_8_assembly_info_8cs" kind="file"><name>PureLib.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_lib_8_global_usings_8g_8cs" kind="file"><name>PureLib.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_lib_8_global_usings_8g_8cs" kind="file"><name>PureLib.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_data_base_link_8cs" kind="file"><name>DataBaseLink.cs</name>
+  </compound>
+  <compound refid="_secret_8cs" kind="file"><name>Secret.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_lib_test_8_assembly_info_8cs" kind="file"><name>PureLibTest.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_lib_test_8_assembly_info_8cs" kind="file"><name>PureLibTest.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_lib_test_8_global_usings_8g_8cs" kind="file"><name>PureLibTest.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_lib_test_8_global_usings_8g_8cs" kind="file"><name>PureLibTest.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_test_d_b_8cs" kind="file"><name>TestDB.cs</name>
+  </compound>
+  <compound refid="_test_message_8cs" kind="file"><name>TestMessage.cs</name>
+  </compound>
+  <compound refid="_test_user_class_8cs" kind="file"><name>TestUserClass.cs</name>
+  </compound>
+  <compound refid="_pure_lib_tests_8_assembly_info_8cs" kind="file"><name>PureLibTests.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_pure_lib_tests_8_global_usings_8g_8cs" kind="file"><name>PureLibTests.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_match_8_assembly_info_8cs" kind="file"><name>PureMatch.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_match_8_assembly_info_8cs" kind="file"><name>PureMatch.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2win-x86_2_pure_match_8_assembly_info_8cs" kind="file"><name>PureMatch.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_match_8_global_usings_8g_8cs" kind="file"><name>PureMatch.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_match_8_global_usings_8g_8cs" kind="file"><name>PureMatch.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2win-x86_2_pure_match_8_global_usings_8g_8cs" kind="file"><name>PureMatch.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_debug_2net8_80_2_pure_match_8_razor_assembly_info_8cs" kind="file"><name>PureMatch.RazorAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2_pure_match_8_razor_assembly_info_8cs" kind="file"><name>PureMatch.RazorAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net8_80_2win-x86_2_pure_match_8_razor_assembly_info_8cs" kind="file"><name>PureMatch.RazorAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="obj_2_release_2net8_80_2win-x86_2_pub_tmp_2_out_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e_8md" kind="file"><name>LICENSE.md</name>
+  </compound>
+  <compound refid="wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e_8md" kind="file"><name>LICENSE.md</name>
+  </compound>
+  <compound refid="_profile_changed_8cshtml_8cs" kind="file"><name>ProfileChanged.cshtml.cs</name>
+  </compound>
+  <compound refid="_profile_created_8cshtml_8cs" kind="file"><name>ProfileCreated.cshtml.cs</name>
+  </compound>
+  <compound refid="_error_8cshtml_8cs" kind="file"><name>Error.cshtml.cs</name>
+  </compound>
+  <compound refid="_index_8cshtml_8cs" kind="file"><name>Index.cshtml.cs</name>
+  </compound>
+  <compound refid="_confirm_changes_8cshtml_8cs" kind="file"><name>ConfirmChanges.cshtml.cs</name>
+  </compound>
+  <compound refid="_login_8cshtml_8cs" kind="file"><name>Login.cshtml.cs</name>
+  </compound>
+  <compound refid="_my_profile_8cshtml_8cs" kind="file"><name>MyProfile.cshtml.cs</name>
+  </compound>
+  <compound refid="_create_account_8cshtml_8cs" kind="file"><name>CreateAccount.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_confirmation_8cshtml_8cs" kind="file"><name>DeleteConfirmation.cshtml.cs</name>
+  </compound>
+  <compound refid="_pure_match_8cshtml_8cs" kind="file"><name>PureMatch.cshtml.cs</name>
+  </compound>
+  <compound refid="_pure_match_root_8cshtml_8cs" kind="file"><name>PureMatchRoot.cshtml.cs</name>
+  </compound>
+  <compound refid="_select_subscription_8cshtml_8cs" kind="file"><name>SelectSubscription.cshtml.cs</name>
+  </compound>
+  <compound refid="_user_page_8cshtml_8cs" kind="file"><name>UserPage.cshtml.cs</name>
+  </compound>
+  <compound refid="_privacy_8cshtml_8cs" kind="file"><name>Privacy.cshtml.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_program_8cs_1a50ac3cc59e3f8d9e5c1a2734bd14b7f5" kind="function"><name>AddRazorPages</name></member>
+    <member refid="_program_8cs_1a9a78bf007063bf2fa7f856785156dc26" kind="function"><name>AddSession</name></member>
+    <member refid="_program_8cs_1addc024fa4841f0259b130260b4da4d2a" kind="function"><name>AddSingleton</name></member>
+    <member refid="_program_8cs_1af2d0c02efe3fbc2d94e5b6e316777c4d" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" kind="function"><name>UseHttpsRedirection</name></member>
+    <member refid="_program_8cs_1a906a3ce545279a7a73941f1d7b64d7cf" kind="function"><name>UseStaticFiles</name></member>
+    <member refid="_program_8cs_1a5c33896bff93d8072abd01914b8370f8" kind="function"><name>UseSession</name></member>
+    <member refid="_program_8cs_1a94c810d266751293a2d511a720a5625f" kind="function"><name>UseRouting</name></member>
+    <member refid="_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" kind="function"><name>UseAuthorization</name></member>
+    <member refid="_program_8cs_1aea1890390376604d4d91e0bdb76602a3" kind="function"><name>MapRazorPages</name></member>
+    <member refid="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="_session_helper_8cs" kind="file"><name>SessionHelper.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__pure_match_2obj_2_release_2net8_80_2win-x86_2_pub_tmp_2_out_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e" kind="page"><name>md__pure_match_2obj_2_release_2net8_80_2win-x86_2_pub_tmp_2_out_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e</name>
+  </compound>
+  <compound refid="md__pure_match_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e" kind="page"><name>md__pure_match_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md__r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_a9a851bdd45da6679dfade84dbd45848" kind="dir"><name>PureMatch/Pages/checkmark</name>
+  </compound>
+  <compound refid="dir_55b788f88b040741fe85b03bc5fbc8cb" kind="dir"><name>PureLib/obj/Debug</name>
+  </compound>
+  <compound refid="dir_46a319dac92cc8b3440c3cd3724496d1" kind="dir"><name>PureLibTest/obj/Debug</name>
+  </compound>
+  <compound refid="dir_e46f7936f831a5699878ba7189e90903" kind="dir"><name>PureLibTests/obj/Debug</name>
+  </compound>
+  <compound refid="dir_148af777850f423d55b9073e97e21a4e" kind="dir"><name>PureMatch/obj/Debug</name>
+  </compound>
+  <compound refid="dir_288ec5942f94bc909cb10cd88c00b2cb" kind="dir"><name>PureMatch/obj/Release/net8.0/win-x86/PubTmp/Out/wwwroot/lib/jquery-validation</name>
+  </compound>
+  <compound refid="dir_18ea25db260b2c86cab5d862b1e0a7b4" kind="dir"><name>PureMatch/wwwroot/lib/jquery-validation</name>
+  </compound>
+  <compound refid="dir_e113d6a6241cd57cb4aed7fead2037d3" kind="dir"><name>PureMatch/obj/Release/net8.0/win-x86/PubTmp/Out/wwwroot/lib</name>
+  </compound>
+  <compound refid="dir_16add7df7254e2784377d4fa1a7ad08d" kind="dir"><name>PureMatch/wwwroot/lib</name>
+  </compound>
+  <compound refid="dir_bfe5d9995f6bbc2055223d9e41418eaf" kind="dir"><name>PureMatch/Pages/Logins</name>
+  </compound>
+  <compound refid="dir_c01773d51883ff6e850a0deca790b7ce" kind="dir"><name>PureLib/Model</name>
+  </compound>
+  <compound refid="dir_55f08c9d9e77315898bf632ebf439fe4" kind="dir"><name>PureLib/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_2b1ca28504d275dc3bda54d353046d6e" kind="dir"><name>PureLib/obj/Release/net8.0</name>
+  </compound>
+  <compound refid="dir_7fdc20378eaf65cc6a9c198fa6fb3e2d" kind="dir"><name>PureLibTest/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_44dc72faae73f6b73c0a6ea8cf9fe467" kind="dir"><name>PureLibTest/obj/Release/net8.0</name>
+  </compound>
+  <compound refid="dir_0bcafb4e0037fd43d1ef11b7dee2e5ac" kind="dir"><name>PureLibTests/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_dba2ce3c10b27d577c2d2eec3be9f94e" kind="dir"><name>PureMatch/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_8383a8df2657af46ca79d58cff9971f5" kind="dir"><name>PureMatch/obj/Release/net8.0</name>
+  </compound>
+  <compound refid="dir_a4dffd60af3d7a7e620f2cc91f793dce" kind="dir"><name>PureLib/obj</name>
+  </compound>
+  <compound refid="dir_8d1af5881057a342b1865cb189b59a26" kind="dir"><name>PureLibTest/obj</name>
+  </compound>
+  <compound refid="dir_99f5af655df48cc1de2f37eff19318f5" kind="dir"><name>PureLibTests/obj</name>
+  </compound>
+  <compound refid="dir_e9cd45ec09a9deaa906fbe472b72b78b" kind="dir"><name>PureMatch/obj</name>
+  </compound>
+  <compound refid="dir_ba66db403937c39a178804ebfcc23703" kind="dir"><name>PureMatch/obj/Release/net8.0/win-x86/PubTmp/Out</name>
+  </compound>
+  <compound refid="dir_e0e554958b61b76f22360445d3a4f6fa" kind="dir"><name>PureMatch/Pages</name>
+  </compound>
+  <compound refid="dir_b5f32e51e0ed635a0f9c5a3548ad4314" kind="dir"><name>PureMatch/Pages/pm</name>
+  </compound>
+  <compound refid="dir_3558ce9784a26f8482e86627a8644473" kind="dir"><name>PureMatch/obj/Release/net8.0/win-x86/PubTmp</name>
+  </compound>
+  <compound refid="dir_a75756556c6b3cb31c81a4294c9754be" kind="dir"><name>PureLib</name>
+  </compound>
+  <compound refid="dir_60987f270d754e6f24c3ee0b46c12655" kind="dir"><name>PureLibTest</name>
+  </compound>
+  <compound refid="dir_f260ed8267a0f5048d0dde85be4c9fa6" kind="dir"><name>PureLibTests</name>
+  </compound>
+  <compound refid="dir_7e501b0f88f925b015b6937610dfb90f" kind="dir"><name>PureMatch</name>
+  </compound>
+  <compound refid="dir_a2b5d9b984143bb1bd4a3b215c5ef34c" kind="dir"><name>PureLib/obj/Release</name>
+  </compound>
+  <compound refid="dir_b7971705e8a0f7bb12a37016a1860195" kind="dir"><name>PureLibTest/obj/Release</name>
+  </compound>
+  <compound refid="dir_ebefb98d1381b21748288a7d96f4d74a" kind="dir"><name>PureMatch/obj/Release</name>
+  </compound>
+  <compound refid="dir_92ff355cca6c8e2657c5dd1fe9fa8534" kind="dir"><name>PureLib/Services</name>
+  </compound>
+  <compound refid="dir_dc275c9227d62c78d9a57450760afc3a" kind="dir"><name>PureMatch/obj/Release/net8.0/win-x86</name>
+  </compound>
+  <compound refid="dir_2e5db4e3531181e52c9bdff2afd9fcad" kind="dir"><name>PureMatch/obj/Release/net8.0/win-x86/PubTmp/Out/wwwroot</name>
+  </compound>
+  <compound refid="dir_e3505fde1502045f2f92450e9c08b021" kind="dir"><name>PureMatch/wwwroot</name>
+  </compound>
+</doxygenindex>

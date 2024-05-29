@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_pure_lib_test" kind="namespace" language="C#">
+    <compoundname>PureLibTest</compoundname>
+    <innerclass refid="class_pure_lib_test_1_1_test_d_b" prot="public">PureLibTest::TestDB</innerclass>
+    <innerclass refid="class_pure_lib_test_1_1_test_message" prot="public">PureLibTest::TestMessage</innerclass>
+    <innerclass refid="class_pure_lib_test_1_1_test_user_class" prot="public">PureLibTest::TestUserClass</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLibTest/TestDB.cs" line="12" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_92ff355cca6c8e2657c5dd1fe9fa8534" kind="dir">
+    <compoundname>PureLib/Services</compoundname>
+    <innerfile refid="_data_base_link_8cs">DataBaseLink.cs</innerfile>
+    <innerfile refid="_secret_8cs">Secret.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Services/"/>
+  </compounddef>
+</doxygen>

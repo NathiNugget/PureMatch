@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1_privacy_model" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::PrivacyModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1_privacy_model_1af4955f742b403573eed3613218531c2c" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_pure_match_1_1_pages_1_1_privacy_model" kindref="compound">PrivacyModel</ref> &gt;</type>
+        <definition>readonly ILogger&lt;PrivacyModel&gt; PureMatch.Pages.PrivacyModel._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>PureMatch.Pages.PrivacyModel._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Privacy.cshtml.cs" line="8" column="34" bodyfile="PureMatch/Pages/Privacy.cshtml.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_privacy_model_1a6e22f947bd2f043245ccfb50208f5a02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.PrivacyModel.PrivacyModel</definition>
+        <argsstring>(ILogger&lt; PrivacyModel &gt; logger)</argsstring>
+        <name>PrivacyModel</name>
+        <qualifiedname>PureMatch.Pages.PrivacyModel.PrivacyModel</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_pure_match_1_1_pages_1_1_privacy_model" kindref="compound">PrivacyModel</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Privacy.cshtml.cs" line="10" column="16" bodyfile="PureMatch/Pages/Privacy.cshtml.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_privacy_model_1af1c2d99635506a12138f69d8a498f741" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.PrivacyModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.PrivacyModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Privacy.cshtml.cs" line="15" column="21" bodyfile="PureMatch/Pages/Privacy.cshtml.cs" bodystart="15" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.PrivacyModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1_privacy_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.PrivacyModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1_privacy_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/Privacy.cshtml.cs" line="6" column="11" bodyfile="PureMatch/Pages/Privacy.cshtml.cs" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1_privacy_model_1af4955f742b403573eed3613218531c2c" prot="private" virt="non-virtual"><scope>PureMatch::Pages::PrivacyModel</scope><name>_logger</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_privacy_model_1af1c2d99635506a12138f69d8a498f741" prot="public" virt="non-virtual"><scope>PureMatch::Pages::PrivacyModel</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_privacy_model_1a6e22f947bd2f043245ccfb50208f5a02" prot="public" virt="non-virtual"><scope>PureMatch::Pages::PrivacyModel</scope><name>PrivacyModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

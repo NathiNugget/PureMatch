@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_pure_lib_1_1_model" kind="namespace" language="C#">
+    <compoundname>PureLib::Model</compoundname>
+    <innerclass refid="class_pure_lib_1_1_model_1_1_message" prot="public">PureLib::Model::Message</innerclass>
+    <innerclass refid="class_pure_lib_1_1_model_1_1_user" prot="public">PureLib::Model::User</innerclass>
+    <innerclass refid="class_pure_lib_1_1_model_1_1_validation_regex" prot="public">PureLib::Model::ValidationRegex</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MuscleGroupEnum</name>
+        <qualifiedname>PureLib.Model.MuscleGroupEnum</qualifiedname>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3a5c3c5e540786532c71ec09a94919e092" prot="public">
+          <name>Bryst</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3aa512b45a5bd8b491381049e58ff722a7" prot="public">
+          <name>Ryg</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3a0a809193c51e797a86e7488c07dc2eba" prot="public">
+          <name>Skulder</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3a092f2ba9f39fbc2876e64d12cd662f72" prot="public">
+          <name>Ben</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3ac8ecac87a76436aae2821c6860757bd4" prot="public">
+          <name>Biceps</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3adbb49ab205aaef1dc08caabcba35b8e1" prot="public">
+          <name>Triceps</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3ac20bc86fb049336ab505afbb40f6f0e9" prot="public">
+          <name>Mave</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This enum contains the different muscle groups a user can choose to train. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/MuscleGroupEnum.cs" line="6" column="11" bodyfile="PureLib/Model/MuscleGroupEnum.cs" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eb" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SubscriptionEnum</name>
+        <qualifiedname>PureLib.Model.SubscriptionEnum</qualifiedname>
+        <enumvalue id="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eba83168e6cb289d732cc78427b51f93153" prot="public">
+          <name>Core</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eba32ba78fe43257d3e7f88e3935a8ea0d4" prot="public">
+          <name>Plus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eba545f6c2f382c04810103b3e5e6f7d841" prot="public">
+          <name>Unlimited</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This enum describes which subscriptions a user can have and choose upon account creation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/SubscriptionEnum.cs" line="12" column="11" bodyfile="PureLib/Model/SubscriptionEnum.cs" bodystart="13" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Model/Message.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

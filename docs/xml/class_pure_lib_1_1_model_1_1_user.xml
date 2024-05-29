@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_lib_1_1_model_1_1_user" kind="class" language="C#" prot="public">
+    <compoundname>PureLib::Model::User</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a4f8d164a2cc6ee98e23bd52988c7d2f9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.User._userid</definition>
+        <argsstring></argsstring>
+        <name>_userid</name>
+        <qualifiedname>PureLib.Model.User._userid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="17" column="21" bodyfile="PureLib/Model/User.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1af6634f0da8118f8a41d3934574a246b2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>PureLib.Model.User._name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="18" column="24" bodyfile="PureLib/Model/User.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a05e0f8b3486ff361b3076970164df02e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._username</definition>
+        <argsstring></argsstring>
+        <name>_username</name>
+        <qualifiedname>PureLib.Model.User._username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="19" column="24" bodyfile="PureLib/Model/User.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a215f3148f4755a3b3ab4c61a71bf3cd3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._password</definition>
+        <argsstring></argsstring>
+        <name>_password</name>
+        <qualifiedname>PureLib.Model.User._password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="20" column="24" bodyfile="PureLib/Model/User.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a61e76ccba891567b7bbe5c43f632bb01" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._phonenumber</definition>
+        <argsstring></argsstring>
+        <name>_phonenumber</name>
+        <qualifiedname>PureLib.Model.User._phonenumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="21" column="24" bodyfile="PureLib/Model/User.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1af1bd295aafede261e239165595fb3db7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._email</definition>
+        <argsstring></argsstring>
+        <name>_email</name>
+        <qualifiedname>PureLib.Model.User._email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="22" column="24" bodyfile="PureLib/Model/User.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a9a207a71aa6fd84a1d96f327d5504e38" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._cardnumber</definition>
+        <argsstring></argsstring>
+        <name>_cardnumber</name>
+        <qualifiedname>PureLib.Model.User._cardnumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="23" column="24" bodyfile="PureLib/Model/User.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a2bf1435301293f837b531bf93c79afa3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._cardcvc</definition>
+        <argsstring></argsstring>
+        <name>_cardcvc</name>
+        <qualifiedname>PureLib.Model.User._cardcvc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="24" column="24" bodyfile="PureLib/Model/User.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a6a0ed750381206d536e7b1445b87bf0c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._cardexpmonth</definition>
+        <argsstring></argsstring>
+        <name>_cardexpmonth</name>
+        <qualifiedname>PureLib.Model.User._cardexpmonth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="25" column="24" bodyfile="PureLib/Model/User.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1afebafc702ff602379c418b8999133ed1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User._cardexpyear</definition>
+        <argsstring></argsstring>
+        <name>_cardexpyear</name>
+        <qualifiedname>PureLib.Model.User._cardexpyear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="26" column="24" bodyfile="PureLib/Model/User.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1a3af07b79422cd65135209fdd47f2d2de" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.User._level</definition>
+        <argsstring></argsstring>
+        <name>_level</name>
+        <qualifiedname>PureLib.Model.User._level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="27" column="21" bodyfile="PureLib/Model/User.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1aa010e268771e0ebaa76b085db19746f5" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+        <definition>List&lt;MuscleGroupEnum&gt; PureLib.Model.User._musclegroups</definition>
+        <argsstring></argsstring>
+        <name>_musclegroups</name>
+        <qualifiedname>PureLib.Model.User._musclegroups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="28" column="22" bodyfile="PureLib/Model/User.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1aebceeeb3506a0a9f3800ed70fbbcfc88" prot="private" static="no" mutable="no">
+        <type>List&lt; DaysEnum &gt;</type>
+        <definition>List&lt;DaysEnum&gt; PureLib.Model.User._days</definition>
+        <argsstring></argsstring>
+        <name>_days</name>
+        <qualifiedname>PureLib.Model.User._days</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="29" column="22" bodyfile="PureLib/Model/User.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_pure_lib_1_1_model_1_1_user_1ad304c804dd2c7d6d934a271cbf543352" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.User._subscription</definition>
+        <argsstring></argsstring>
+        <name>_subscription</name>
+        <qualifiedname>PureLib.Model.User._subscription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="30" column="21" bodyfile="PureLib/Model/User.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a48f3cf88281eaac20d5b14d2645d9b75" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.User.UserID</definition>
+        <argsstring></argsstring>
+        <name>UserID</name>
+        <qualifiedname>PureLib.Model.User.UserID</qualifiedname>
+        <briefdescription>
+<para>The properties all follow limitations of the database design. A number of properties make use of a Regex or DateTime shown in <ref refid="_validation_regex_8cs" kindref="compound">ValidationRegex.cs</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="91" column="20" bodyfile="PureLib/Model/User.cs" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1acd30f88f6b80ae116497fc60b2d3a853" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>PureLib.Model.User.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="102" column="23" bodyfile="PureLib/Model/User.cs" bodystart="103" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1aa5d19e1c73ec15fd85c82cdb1843ee19" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <qualifiedname>PureLib.Model.User.UserName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="122" column="23" bodyfile="PureLib/Model/User.cs" bodystart="123" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a703ff8529a9fdfbe233bef94e4af1196" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>PureLib.Model.User.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="141" column="23" bodyfile="PureLib/Model/User.cs" bodystart="142" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1aa17574840cfa2e1eb4154f0877744ede" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.PhoneNumber</definition>
+        <argsstring></argsstring>
+        <name>PhoneNumber</name>
+        <qualifiedname>PureLib.Model.User.PhoneNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="160" column="23" bodyfile="PureLib/Model/User.cs" bodystart="161" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a1986bf1b0d07b9abe044eec5422bb616" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>PureLib.Model.User.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="176" column="23" bodyfile="PureLib/Model/User.cs" bodystart="177" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1afdcae2e2f94b3a19758b4d99238db5e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.CardNumber</definition>
+        <argsstring></argsstring>
+        <name>CardNumber</name>
+        <qualifiedname>PureLib.Model.User.CardNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="191" column="23" bodyfile="PureLib/Model/User.cs" bodystart="192" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a98df16f7231fc27cce5cd17074f6f6e1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.CardCVC</definition>
+        <argsstring></argsstring>
+        <name>CardCVC</name>
+        <qualifiedname>PureLib.Model.User.CardCVC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="209" column="23" bodyfile="PureLib/Model/User.cs" bodystart="210" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1aa932020f22bdfbec1213b3799e7867d1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.CardExpMonth</definition>
+        <argsstring></argsstring>
+        <name>CardExpMonth</name>
+        <qualifiedname>PureLib.Model.User.CardExpMonth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="224" column="23" bodyfile="PureLib/Model/User.cs" bodystart="225" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a762be0ac8a33080b80f3e9a090f5b748" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureLib.Model.User.CardExpYear</definition>
+        <argsstring></argsstring>
+        <name>CardExpYear</name>
+        <qualifiedname>PureLib.Model.User.CardExpYear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="243" column="23" bodyfile="PureLib/Model/User.cs" bodystart="244" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a2cee6822656a171ecae7282fe4eeeb75" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.User.Level</definition>
+        <argsstring></argsstring>
+        <name>Level</name>
+        <qualifiedname>PureLib.Model.User.Level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="263" column="20" bodyfile="PureLib/Model/User.cs" bodystart="264" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a0416afe8665948d0ab53c492a0e9acc1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="namespace_pure_lib_1_1_model_1a5a5232a3eb811247c96a906a298348a3" kindref="member">MuscleGroupEnum</ref> &gt;</type>
+        <definition>List&lt;MuscleGroupEnum&gt; PureLib.Model.User.MuscleGroups</definition>
+        <argsstring></argsstring>
+        <name>MuscleGroups</name>
+        <qualifiedname>PureLib.Model.User.MuscleGroups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="279" column="21" bodyfile="PureLib/Model/User.cs" bodystart="280" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a209b6c23bed4dc167cf69a91a59ac727" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; DaysEnum &gt;</type>
+        <definition>List&lt;DaysEnum&gt; PureLib.Model.User.Days</definition>
+        <argsstring></argsstring>
+        <name>Days</name>
+        <qualifiedname>PureLib.Model.User.Days</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="290" column="21" bodyfile="PureLib/Model/User.cs" bodystart="291" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_lib_1_1_model_1_1_user_1a2cc36ea9692bab38e4499e173326ff59" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureLib.Model.User.Subscription</definition>
+        <argsstring></argsstring>
+        <name>Subscription</name>
+        <qualifiedname>PureLib.Model.User.Subscription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="301" column="20" bodyfile="PureLib/Model/User.cs" bodystart="302" bodyend="317"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_lib_1_1_model_1_1_user_1a3f2a78c20480f4a339cf7b3ad4eb9c6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureLib.Model.User.User</definition>
+        <argsstring>(int userid, string name, string username, string password, string phonenumber, string email, string cardnumber, string cardcvc, string cardexpmonth, string expyear, SubscriptionEnum subscription, LevelsEnum level)</argsstring>
+        <name>User</name>
+        <qualifiedname>PureLib.Model.User.User</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>phonenumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardnumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardcvc</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cardexpmonth</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>expyear</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_pure_lib_1_1_model_1aa220862fbd80b85aa0e6f9974bc428eb" kindref="member">SubscriptionEnum</ref></type>
+          <declname>subscription</declname>
+        </param>
+        <param>
+          <type>LevelsEnum</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Constructor using paramters. Parameters are passed to the properties which confirm values are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID for the user. Usually one is provided from the database, but when not instantiating from the database, just use 1</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name for the user. This is the name shown to other users. Full name of the user is expected in this field</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Username is used for login and not shown to other users</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password is used for login and not shown to other users</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>phonenumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Phonenumber is only shown on &quot;my profile&quot; page. Expected value is 8 digits</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Email is only shown on &quot;my profile&quot; page. Expected form is of usual email-form</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cardnumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cardnumber is only used for profile-creation. Expected value is a string with 16 digits</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cardcvc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CVC is only used for profile-creation. Expected value is a string with 3 digits</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cardexpmonth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expiration date is only used for profile-creation. Expected value is a string with 2 digits</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expyear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expiration year is only used for profile-creation. Expected value is a string with 2 digits</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subscription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subscription is either an integer value or an enumeration of type SubscriptionsEnum. Expected values are within the enum</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level is which level the user currently has. The value is expected to be within enum values while 3 is reserved for when the user is not in matching-mode</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="48" column="16" bodyfile="PureLib/Model/User.cs" bodystart="48" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_model_1_1_user_1ae217aa5196f4b0c0f2cfed68c27b7e90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureLib.Model.User.User</definition>
+        <argsstring>()</argsstring>
+        <name>User</name>
+        <qualifiedname>PureLib.Model.User.User</qualifiedname>
+        <briefdescription>
+<para>Default constructor for when the full constructor is not needed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="69" column="16" bodyfile="PureLib/Model/User.cs" bodystart="69" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_lib_1_1_model_1_1_user_1ac3bc7fcad998c1262e8b426219c6dbc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string PureLib.Model.User.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>PureLib.Model.User.ToString</qualifiedname>
+        <briefdescription>
+<para>Override of generic ToString from object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string representation of current user-instance</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureLib/Model/User.cs" line="324" column="32" bodyfile="PureLib/Model/User.cs" bodystart="324" bodyend="327"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class which represents a user in the system. The class has a constructor for when read from database as well as a default constructor for when one is needed. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="PureLib/Model/User.cs" line="14" column="11" bodyfile="PureLib/Model/User.cs" bodystart="15" bodyend="328"/>
+    <listofallmembers>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a2bf1435301293f837b531bf93c79afa3" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_cardcvc</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a6a0ed750381206d536e7b1445b87bf0c" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_cardexpmonth</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1afebafc702ff602379c418b8999133ed1" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_cardexpyear</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a9a207a71aa6fd84a1d96f327d5504e38" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_cardnumber</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1aebceeeb3506a0a9f3800ed70fbbcfc88" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_days</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1af1bd295aafede261e239165595fb3db7" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_email</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a3af07b79422cd65135209fdd47f2d2de" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_level</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1aa010e268771e0ebaa76b085db19746f5" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_musclegroups</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1af6634f0da8118f8a41d3934574a246b2" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_name</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a215f3148f4755a3b3ab4c61a71bf3cd3" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_password</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a61e76ccba891567b7bbe5c43f632bb01" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_phonenumber</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1ad304c804dd2c7d6d934a271cbf543352" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_subscription</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a4f8d164a2cc6ee98e23bd52988c7d2f9" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_userid</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a05e0f8b3486ff361b3076970164df02e" prot="private" virt="non-virtual"><scope>PureLib::Model::User</scope><name>_username</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a98df16f7231fc27cce5cd17074f6f6e1" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>CardCVC</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1aa932020f22bdfbec1213b3799e7867d1" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>CardExpMonth</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a762be0ac8a33080b80f3e9a090f5b748" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>CardExpYear</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1afdcae2e2f94b3a19758b4d99238db5e6" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>CardNumber</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a209b6c23bed4dc167cf69a91a59ac727" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>Days</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a1986bf1b0d07b9abe044eec5422bb616" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>Email</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a2cee6822656a171ecae7282fe4eeeb75" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>Level</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a0416afe8665948d0ab53c492a0e9acc1" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>MuscleGroups</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1acd30f88f6b80ae116497fc60b2d3a853" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>Name</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a703ff8529a9fdfbe233bef94e4af1196" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>Password</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1aa17574840cfa2e1eb4154f0877744ede" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>PhoneNumber</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a2cc36ea9692bab38e4499e173326ff59" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>Subscription</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1ac3bc7fcad998c1262e8b426219c6dbc8" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>ToString</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a3f2a78c20480f4a339cf7b3ad4eb9c6c" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>User</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1ae217aa5196f4b0c0f2cfed68c27b7e90" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>User</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1a48f3cf88281eaac20d5b14d2645d9b75" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>UserID</name></member>
+      <member refid="class_pure_lib_1_1_model_1_1_user_1aa5d19e1c73ec15fd85c82cdb1843ee19" prot="public" virt="non-virtual"><scope>PureLib::Model::User</scope><name>UserName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

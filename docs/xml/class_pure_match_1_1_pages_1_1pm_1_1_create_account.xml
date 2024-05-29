@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1pm_1_1_create_account" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::pm::CreateAccount</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ac2cc5bb88564e5c793b6e9f8a46389a5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.pm.CreateAccount._repo</definition>
+        <argsstring></argsstring>
+        <name>_repo</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount._repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="11" column="26" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ae3b7dc2e28c2ebb78434287eaeeeccfd" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+        <definition>DataBaseLink PureMatch.Pages.pm.CreateAccount.Repo</definition>
+        <argsstring></argsstring>
+        <name>Repo</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.Repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="35" column="26" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a272b43a751931487c5288166dfadb5c7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.pm.CreateAccount.SubNumber</definition>
+        <argsstring></argsstring>
+        <name>SubNumber</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.SubNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="37" column="16" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1af95af81e0058cfb2bce07e14d29cf82e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="40" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a1f1f50ff2bb76185e13eacb5ec6d7828" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.UserName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="43" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1aa322c65252c21015af111c118499721d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="46" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a2a7e977ca99d12d3e1d7698a3090b3dd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.PhoneNumber</definition>
+        <argsstring></argsstring>
+        <name>PhoneNumber</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.PhoneNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="49" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1af74ebdf50237c56bcd7917d24b593419" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="52" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afdd35102da7eaa0dda69e87972ee1750" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.CardNumber</definition>
+        <argsstring></argsstring>
+        <name>CardNumber</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.CardNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="55" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a998912f688361ee757b1cdd8b59056fb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string PureMatch.Pages.pm.CreateAccount.CVC</definition>
+        <argsstring></argsstring>
+        <name>CVC</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.CVC</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="58" column="19" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afabb25616478841d743cddd786051afc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.pm.CreateAccount.CardExpMonth</definition>
+        <argsstring></argsstring>
+        <name>CardExpMonth</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.CardExpMonth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="60" column="16" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a3603e9bf6df81616edc2d974100b8f7b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int PureMatch.Pages.pm.CreateAccount.CardExpYear</definition>
+        <argsstring></argsstring>
+        <name>CardExpYear</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.CardExpYear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="63" column="16" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="63" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afdbca33697e169d78b7c0ca961a8ee80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.pm.CreateAccount.CreateAccount</definition>
+        <argsstring>(DataBaseLink repo)</argsstring>
+        <name>CreateAccount</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.CreateAccount</qualifiedname>
+        <param>
+          <type><ref refid="class_pure_lib_1_1_services_1_1_data_base_link" kindref="compound">DataBaseLink</ref></type>
+          <declname>repo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="13" column="12" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1aecd0c14f18bb6e85ced80c1f8244d6ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.pm.CreateAccount.OnGet</definition>
+        <argsstring>(int subumber)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>subumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="17" column="17" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ae591fa8f561cdb522f3e2800c4de3fe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult PureMatch.Pages.pm.CreateAccount.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>PureMatch.Pages.pm.CreateAccount.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="23" column="26" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="23" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.CreateAccount</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.pm.CreateAccount</label>
+        <link refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/pm/CreateAccount.cshtml.cs" line="9" column="7" bodyfile="PureMatch/Pages/pm/CreateAccount.cshtml.cs" bodystart="10" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ac2cc5bb88564e5c793b6e9f8a46389a5" prot="private" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>_repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afabb25616478841d743cddd786051afc" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>CardExpMonth</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a3603e9bf6df81616edc2d974100b8f7b" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>CardExpYear</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afdd35102da7eaa0dda69e87972ee1750" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>CardNumber</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1afdbca33697e169d78b7c0ca961a8ee80" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>CreateAccount</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a998912f688361ee757b1cdd8b59056fb" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>CVC</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1af74ebdf50237c56bcd7917d24b593419" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>Email</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1af95af81e0058cfb2bce07e14d29cf82e" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>Name</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1aecd0c14f18bb6e85ced80c1f8244d6ff" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>OnGet</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ae591fa8f561cdb522f3e2800c4de3fe3" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>OnPost</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1aa322c65252c21015af111c118499721d" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>Password</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a2a7e977ca99d12d3e1d7698a3090b3dd" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>PhoneNumber</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1ae3b7dc2e28c2ebb78434287eaeeeccfd" prot="private" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>Repo</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a272b43a751931487c5288166dfadb5c7" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>SubNumber</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1pm_1_1_create_account_1a1f1f50ff2bb76185e13eacb5ec6d7828" prot="public" virt="non-virtual"><scope>PureMatch::Pages::pm::CreateAccount</scope><name>UserName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

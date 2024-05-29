@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_pure_match_1_1_pages_1_1_index_model" kind="class" language="C#" prot="public">
+    <compoundname>PureMatch::Pages::IndexModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pure_match_1_1_pages_1_1_index_model_1ae855182e9988d5da37655e213939f469" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_pure_match_1_1_pages_1_1_index_model" kindref="compound">IndexModel</ref> &gt;</type>
+        <definition>readonly ILogger&lt;IndexModel&gt; PureMatch.Pages.IndexModel._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>PureMatch.Pages.IndexModel._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Index.cshtml.cs" line="8" column="34" bodyfile="PureMatch/Pages/Index.cshtml.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_index_model_1a407c4a1be984f81828f4bf81d9858597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PureMatch.Pages.IndexModel.IndexModel</definition>
+        <argsstring>(ILogger&lt; IndexModel &gt; logger)</argsstring>
+        <name>IndexModel</name>
+        <qualifiedname>PureMatch.Pages.IndexModel.IndexModel</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_pure_match_1_1_pages_1_1_index_model" kindref="compound">IndexModel</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Index.cshtml.cs" line="10" column="16" bodyfile="PureMatch/Pages/Index.cshtml.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pure_match_1_1_pages_1_1_index_model_1ab3fcac8b73bdc557501727bf80511f27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PureMatch.Pages.IndexModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>PureMatch.Pages.IndexModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PureMatch/Pages/Index.cshtml.cs" line="15" column="21" bodyfile="PureMatch/Pages/Index.cshtml.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.IndexModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1_index_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>PureMatch.Pages.IndexModel</label>
+        <link refid="class_pure_match_1_1_pages_1_1_index_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="PureMatch/Pages/Index.cshtml.cs" line="6" column="11" bodyfile="PureMatch/Pages/Index.cshtml.cs" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_pure_match_1_1_pages_1_1_index_model_1ae855182e9988d5da37655e213939f469" prot="private" virt="non-virtual"><scope>PureMatch::Pages::IndexModel</scope><name>_logger</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_index_model_1a407c4a1be984f81828f4bf81d9858597" prot="public" virt="non-virtual"><scope>PureMatch::Pages::IndexModel</scope><name>IndexModel</name></member>
+      <member refid="class_pure_match_1_1_pages_1_1_index_model_1ab3fcac8b73bdc557501727bf80511f27" prot="public" virt="non-virtual"><scope>PureMatch::Pages::IndexModel</scope><name>OnGet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
