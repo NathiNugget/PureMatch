@@ -101,21 +101,25 @@
 
                 @if (Model.Matches.Any(user => user.Level == u.Level))
                 {
+                    <h3>Samme niveau</h3>
+                    <div class="vline"></div>
                     @foreach (User user in Model.Matches.Where(user => user.Level == u.Level))
                     {
 
 
-                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
+                        <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button><br />
 
                     }
                 }
                 @if (Model.Matches.Any(user => user.Level != u.Level))
                 {
+                    <h3>Forskelligt niveau</h3>
+                    <div class="vline"></div>
                     @foreach (User user in Model.Matches.Where(user => user.Level != u.Level))
                     {
 
 
-                        <button class="backgroundcolorbutton" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
+                        <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button><br />
 
                     }
 
