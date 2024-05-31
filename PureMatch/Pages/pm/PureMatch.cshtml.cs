@@ -20,8 +20,16 @@ namespace PureMatch.Pages.pm
         }
         public void OnGet(int? chatid)
         {
-         
-            
+
+            User u = null!; 
+            try
+            {
+                u = SessionHelper.Get<User>(u, HttpContext); 
+            }
+            catch
+            {
+
+            }
             Matches = _repo.GetMatches(u.UserID);
             Chats = _repo.GetChatUsers(u.UserID);
             if (chatid != 0 && chatid != null)
