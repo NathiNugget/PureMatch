@@ -101,7 +101,7 @@
 
                 @if (Model.Matches.Any(user => user.Level == u.Level))
                 {
-                    @foreach (User user in Model.Matches)
+                    @foreach (User user in Model.Matches.Where(user => user.Level == u.Level))
                     {
 
 
