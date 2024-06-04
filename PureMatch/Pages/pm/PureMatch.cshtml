@@ -105,9 +105,22 @@
                     <div class="vline"></div>
                     @foreach (User user in Model.Matches.Where(user => user.Level == u.Level))
                     {
+                        string shortname = ""; 
+                        if(user.Name.Length > 17)
+                        {
+                            shortname = user.Name.Substring(0,17);
+                            <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@shortname</button>
 
+                            <br />
+                        }
+                        else
+                        {
+                            <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
 
-                        <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button><br />
+                            <br />
+                        }
+
+                        
 
                     }
                 }
@@ -117,10 +130,20 @@
                     <div class="vline"></div>
                     @foreach (User user in Model.Matches.Where(user => user.Level != u.Level))
                     {
+                        string shortname = "";
+                        if (user.Name.Length > 17)
+                        {
+                            shortname = user.Name.Substring(0, 17);
+                            <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@shortname...</button>
 
+                            <br />
+                        }
+                        else
+                        {
+                            <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button>
 
-                        <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@user.Name</button><br />
-
+                            <br />
+                        }
                     }
 
                 }
