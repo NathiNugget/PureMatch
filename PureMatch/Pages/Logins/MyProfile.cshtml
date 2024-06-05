@@ -27,46 +27,89 @@
                 <form method="post" asp-page-handler="Update">
                     <div>
                         <label class="form-label">Navn</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dette navn vises for andre brugere. Du kan skrive et nyt</span>
+                        </div>
                         <input type="text" asp-for="NameNew" class="form-control" />
                         <span asp-validation-for="NameNew" class="text-danger"></span>
+                        
+                        
+
                     </div>
                     <div>
                         <label class="form-label">Brugernavn</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dette bruges til login. Du kan skrive et nyt</span>
+                        </div>
                         <input type="text" asp-for="UserNameNew" class="form-control" />
                         <span asp-validation-for="UserNameNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label asp-for="PasswordNew" class="form-label"></label>
-                        <input type="password" asp-for="PasswordNew" class="form-control" />
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dette bruges til login. Du kan skrive et nyt</span>
+                        </div>
+                        <input type="password" asp-for="PasswordNew" id="inputField" class="form-control" />
+                        <div class="infotip">
+                            <img src="~/images/eye.png" class="infoimg infotip" id="eyeIcon" onclick="myFunction()" />
+                            <span class="infotiptext" id="passmessage">Vis adgangskode</span>
+                        </div>
                         <span asp-validation-for="PasswordNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label class="form-label">Email</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Denne bruges til at sende dig mails. Du kan skrive en ny</span>
+                        </div>
                         <input type="" asp-for="EmailNew" class="form-control" />
                         <span asp-validation-for="EmailNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label class="form-label">Telefon-nummer</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dette nummer bruges til at sende dig SMSer. Du kan skrive et nyt</span>
+                        </div>
                         <input type="text" asp-for="PhoneNumberNew" class="form-control" />
                         <span asp-validation-for="PhoneNumberNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label class="form-label">Kort-nummer</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dette skal bruges for at holde din konto aktiv. Du kan tilføje et nyt</span>
+                        </div>
                         <input type="text" asp-for="CardNumberNew" class="form-control" />
                         <span asp-validation-for="CardNumberNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label class="form-label">CVC</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dette er de tre cifre for dit kort. Skriv et nyt hvis du tilføjer nyt kort</span>
+                        </div>
                         <input type="text" asp-for="CVCNew" class="form-control" />
                         <span asp-validation-for="CVCNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label class="form-label">Kortets udløbsmåned</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Udløbsmåned for dit kort. Skriv et opdaret hvis du ændret til et nyt kort</span>
+                        </div>
                         <input type="int" asp-for="CardExpMonthNew" min="1" max="12" class="form-control" />
                         <span asp-validation-for="CardExpMonthNew" class="text-danger"></span>
                     </div>
                     <div>
                         <label class="form-label">Kortets udløbsår</label>
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Udløbsår for dit kort. Husk at opdatere, hvis du ændrer til et nyt kort</span>
+                        </div>
                         <input type="number" asp-for="CardExpYearNew" min="@ValidationRegex.YEARDIGITSMIN" max="@ValidationRegex.YEARDIGITSMAX" class="form-control" />
                         <span asp-validation-for="CardExpYearNew" class="text-danger"></span>
                     </div>

@@ -41,7 +41,7 @@
             <div class="col-8 backgroundcolor">
                 <div class="margin40">
                     <p class="emphersize centertext ">
-                        PureMatch er til dig der mangler en træningsmakker. Indtast dine oplysninger under din profil, klik på PureMatch og find din makker idag!
+                        PureMatch er til dig der mangler en træningsmakker. Indtast dine oplysninger på denne side når du er logget ind, klik på 'Find Matches' og find din makker idag!
                         For at benytte PureMatch skal du være logget ind og have et aktivt medlemskab.
                     </p>
 
@@ -65,9 +65,17 @@ else // Hvis en bruger er logget ind
         
         <div class="container-main container-small container centertext backgroundcolor">
             <div class="padding50topbot">
-                <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
+                <div class="infotip">
+                    <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
+                    <span class="infotiptext">Se dine matches</span>
+                </div>
+                
                 <form method="post" asp-page-handler="ResetMatch">
-                    <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
+                    
+                    <div class="infotip">
+                        <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
+                        <span class="infotiptext">Nulstil kriterier og vælg nye</span>
+                    </div>
                 </form>
             </div>
             
@@ -84,7 +92,13 @@ else // Hvis en bruger er logget ind
                 <div class="subscription-container margin40 margin">
 
                     <div class="subscription backgroundcolorwhite margin50topbot">
-                        <h2 class="bottomborder">Muskelgrupper</h2>
+                        <div class="bottomborder infotip">
+                            <h2 class="d-inline">Muskelgrupper</h2><img src="~/images/infowide.png" class="infoimg padding5bot" />
+                            <span class="infotiptext">Vælg mindst en muskelgruppe du skal træne</span>
+                        </div>
+                        
+                        
+                        
                         <p>
 
                             @for (int i = 0; i < Model.Groups.Count; i++)
@@ -99,7 +113,10 @@ else // Hvis en bruger er logget ind
                     </div>
 
                     <div class="subscription backgroundcolorwhite margin50topbot">
-                        <h2 class="bottomborder">Niveau</h2>
+                        <div class="bottomborder infotip">
+                            <h2 class="d-inline">Niveau</h2><img src="~/images/infowide.png" class="infoimg padding5bot" />
+                            <span class="infotiptext">Vælg dit træningsniveau. Du kan stadig matche med folk med andre niveauer</span>
+                        </div>
                         <p>
                             @for (int i = 0; i < Model.Levels.Count; i++)
                             {
@@ -111,7 +128,11 @@ else // Hvis en bruger er logget ind
                     </div>
 
                     <div class="subscription backgroundcolorwhite margin50topbot">
-                        <h2 class="bottomborder">Dage</h2>
+                        
+                        <div class="bottomborder infotip">
+                            <h2 class="d-inline">Niveau</h2><img src="~/images/infowide.png" class="infoimg padding5bot" />
+                            <span class="infotiptext">Vælg de dage du kan træne. Du skal vælge mindst en dag</span>
+                        </div>
                         <p>
 
                             @for (int i = 0; i < Model.Days.Count; i++)

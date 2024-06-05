@@ -9,50 +9,43 @@
     }
     catch
     {
-       
+
     }
 }
+
 
 @if (u == null) // If user is not logged in
 {
     <div class="">
         <h1>Login</h1>
-        <div class="container backgroundcolor padding5bot padding5top">
-            <div class="container-main margin40 margin20bot">
+        <div class="container">
+            <div class="container-main backgroundcolor">
                 <form method="post" asp-page-handler="Login">
                     <div>
                         <label asp-for="UserName">Brugernavn</label>
-                        <input type="text" class="form-control" asp-for="UserName" />
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dit brugernavn du skrev ved registrering af din konto</span>
+                        </div>
+                        <input type="text" class="form-control" asp-for="UserName" autocomplete="on"/>
                         <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
                     <div>
                         <label asp-for="Password">Kodeord</label>
-                        <input type="password" class="form-control" asp-for="Password" />
+                        <div class="infotip d-inline">
+                            <img src="~/images/infowide.png" class="infoimg" />
+                            <span class="infotiptext">Dit kodeord til din konto</span>
+                        </div>
+                        <input type="password" id="inputField" class="form-control" asp-for="Password" autocomplete="on"/> 
+                        <div class="infotip">
+                            <img src="~/images/eye.png" class="infoimg infotip" id="eyeIcon" onclick="myFunction()" />
+                            <span class="infotiptext" id="passmessage" >Vis adgangskode</span>
+                        </div>
+                        
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                     <button type="submit" class="margin5top backgroundcolorbuttonblue">Log ind</button>
-                    <p class="text-danger">@Model.LoginFailed</p>
-                </form>
-            </div>
-        </div>
-        
-
-    </div>
-
-}
-
-else // If user is logged in
-{
-    <div class="backgroundcolor">
-        <h1>Log ud?</h1>
-        <div class="container margin5top margin5top">
-            <div class="container-main margin40 justify-content-center">
-                <form method="post" asp-page-handler="Abort">
-                    <input type="submit" class="backgroundcolorbutton" value="Annullér"/>
-                </form>
-                <form method="post" asp-page-handler="Logout">
-                    
-                    <input type="submit" class="backgroundcolorbuttonblue" value="Log ud" />
+                    <p class="text-danger">@Model.LoginFailed</p> 
                 </form>
                 
             </div>
@@ -60,5 +53,38 @@ else // If user is logged in
 
 
     </div>
+
+}
+
+else // If user is logged in
+{
+    <h1>Log ud?</h1>
+    <div class="row">
+        <div class="col-5">
+
+        </div>
+        <div class=" container-main col-auto backgroundcolor  margin40 ">
+            <form method="post" asp-page-handler="Abort" class="margin5bot">
+                <input type="submit" class="backgroundcolorbutton" value="Annullér" />
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Du føres til forsiden</span>
+                </div>
+            </form>
+            <form method="post" asp-page-handler="Logout">
+                <input type="submit" class="backgroundcolorbuttonblue" value="Log ud" />
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Dit brugernavn du skrev ved registrering af din konto</span>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-5">
+
+        </div>
+    </div>
+    
+
 }
 
