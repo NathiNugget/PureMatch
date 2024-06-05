@@ -399,3 +399,4 @@ Desktop.ini
 /PureLib/Services/Secret.cs
 /PureMatch/.config/dotnet-tools.json
 /.editorconfig
+/PureMatch/Properties/launchSettings.json
