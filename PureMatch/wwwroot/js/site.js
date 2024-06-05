@@ -22,3 +22,13 @@ function myFunction() {
 
   
 }
+
+function mySubmit() {
+    var pwdObj = document.getElementById('inputField');
+    var hashObj = new jsSHA("SHA-512", "TEXT", { numRounds: 5 });
+    hashObj.update(pwdObj.value);
+    var hash = hashObj.getHash("HEX");
+    pwdObj.value = hash;
+    console.log(pwdObj.value.substring(0, 50));
+}
+

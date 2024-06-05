@@ -13,7 +13,6 @@
     }
 }
 
-
 @if (u == null) // If user is not logged in
 {
     <div class="">
@@ -47,6 +46,9 @@
                     <button type="submit" class="margin5top backgroundcolorbuttonblue">Log ind</button>
                     <p class="text-danger">@Model.LoginFailed</p> 
                 </form>
+              @*   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script> // ignore until feature branch
+
+                <button type="button" onclick="mySubmit()">Hash password</button> *@
                 
             </div>
         </div>
