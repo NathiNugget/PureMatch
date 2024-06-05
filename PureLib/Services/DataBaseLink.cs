@@ -462,6 +462,23 @@ namespace PureLib.Services
 
         }
 
+        public bool IsAvailableUserName(string username) {
+            bool existsnt = true;
+            string query = "select * from PureUser where UserName = @PName";
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@PName", username);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read()) // If any records exist, set boolean to false 
+                {
+                    existsnt = false;
+                }
+            }
+            return existsnt;
+        }
+
         private User ReadUserUsingReader(SqlDataReader reader)
         {
             User u = new User();

@@ -2,34 +2,32 @@
 @using PureLib.Model
 @model PureMatch.Pages.pm.PureMatchRoot
 @inject PureLib.Services.DataBaseLink db
-
 @{
+    ViewData["Title"] = "PureMatch - vælg kriterier, nulstil eller se dine matches";
     User u = null!;
     try
     {
         u = SessionHelper.Get<User>(u, HttpContext);
-        u.Days = db.ReadDays(u.UserID); 
-        u.MuscleGroups = db.ReadMuscleGroups(u.UserID); 
+        u.Days = db.ReadDays(u.UserID);
+        u.MuscleGroups = db.ReadMuscleGroups(u.UserID);
     }
+
     catch
     {
 
     }
 
 }
-<head>
-    <title>PureGym - PureMatch choose your matching!</title>
-    <link rel="stylesheet" href="~/css/site.css" />
-</head>
 
 
 @if (u == null) // Hvis ingen bruger er logget ind
 {
-    <h1>
-        PureMatch
+    <h1 class="text-blue">
+        PureMatch <br />
+
     </h1>
 
-    <h1>Find den perfekte træningspartner</h1>
+
 
 
 
@@ -38,10 +36,10 @@
             <div class="col-2">
             </div>
 
-            <div class="col-8 backgroundcolor">
-                <div class="margin40">
-                    <p class="emphersize centertext ">
-                        PureMatch er til dig der mangler en træningsmakker. Indtast dine oplysninger på denne side når du er logget ind, klik på 'Find Matches' og find din makker idag!
+            <div class="col-8 backgroundcolor container-secondary ">
+                <div class="padding20">
+                    <p class="emphersize">
+                        PureMatch er til dig der mangler en træningsmakker.<br />Indtast dine oplysninger på denne side når du er logget ind, klik på 'Find Matches' og find din makker idag!
                         For at benytte PureMatch skal du være logget ind og have et aktivt medlemskab.
                     </p>
 
@@ -59,46 +57,46 @@
 else // Hvis en bruger er logget ind
 {
     <h1 class="headers">PureMatch</h1>
-    
+
     @if (u.Days.Count > 0 && u.MuscleGroups.Count > 0)
     {
-        
+
         <div class="container-main container-small container centertext backgroundcolor">
             <div class="padding50topbot">
                 <div class="infotip">
                     <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
                     <span class="infotiptext">Se dine matches</span>
                 </div>
-                
+
                 <form method="post" asp-page-handler="ResetMatch">
-                    
+
                     <div class="infotip">
                         <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
                         <span class="infotiptext">Nulstil kriterier og vælg nye</span>
                     </div>
                 </form>
             </div>
-            
+
         </div>
-        
+
     }
     else
 
     {
         <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
-        <div class="container backgroundcolor">
+        <div class="container backgroundcolor round">
 
             <form method="post" asp-page-handler="ChangeCriteria">
                 <div class="subscription-container margin40 margin">
 
                     <div class="subscription backgroundcolorwhite margin50topbot">
                         <div class="bottomborder infotip">
-                            <h2 class="d-inline">Muskelgrupper</h2><img src="~/images/infowide.png" class="infoimg padding5bot" />
+                            <h2 class="d-inline">Muskelgrupper</h2><img src="~/images/infowide.png" class="infoimg margin5bot" />
                             <span class="infotiptext">Vælg mindst en muskelgruppe du skal træne</span>
                         </div>
-                        
-                        
-                        
+
+
+
                         <p>
 
                             @for (int i = 0; i < Model.Groups.Count; i++)
@@ -114,7 +112,7 @@ else // Hvis en bruger er logget ind
 
                     <div class="subscription backgroundcolorwhite margin50topbot">
                         <div class="bottomborder infotip">
-                            <h2 class="d-inline">Niveau</h2><img src="~/images/infowide.png" class="infoimg padding5bot" />
+                            <h2 class="d-inline">Niveau</h2><img src="~/images/infowide.png" class="infoimg margin5bot" />
                             <span class="infotiptext">Vælg dit træningsniveau. Du kan stadig matche med folk med andre niveauer</span>
                         </div>
                         <p>
@@ -128,9 +126,9 @@ else // Hvis en bruger er logget ind
                     </div>
 
                     <div class="subscription backgroundcolorwhite margin50topbot">
-                        
+
                         <div class="bottomborder infotip">
-                            <h2 class="d-inline">Niveau</h2><img src="~/images/infowide.png" class="infoimg padding5bot" />
+                            <h2 class="d-inline">Niveau</h2><img src="~/images/infowide.png" class="infoimg margin5bot" />
                             <span class="infotiptext">Vælg de dage du kan træne. Du skal vælge mindst en dag</span>
                         </div>
                         <p>
@@ -156,7 +154,7 @@ else // Hvis en bruger er logget ind
             </form>
         </div>
     }
-    
+
 
 
 

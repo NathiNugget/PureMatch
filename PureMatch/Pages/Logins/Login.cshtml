@@ -18,39 +18,48 @@
     <div class="">
         <h1>Login</h1>
         <div class="container">
-            <div class="container-main backgroundcolor">
-                <form method="post" asp-page-handler="Login">
-                    <div>
-                        <label asp-for="UserName">Brugernavn</label>
-                        <div class="infotip d-inline">
-                            <img src="~/images/infowide.png" class="infoimg" />
-                            <span class="infotiptext">Dit brugernavn du skrev ved registrering af din konto</span>
+            <div class="row">
+                <div class="col-5">
+                </div>
+
+                <div class="container-main backgroundcolor col-2">
+                    <form method="post" asp-page-handler="Login">
+                        <div>
+                            <label asp-for="UserName">Brugernavn</label>
+                            <div class="infotip d-inline">
+                                <img src="~/images/infowide.png" class="infoimg" />
+                                <span class="infotiptext">Dit brugernavn du skrev ved registrering af din konto</span>
+                            </div>
+                            <input type="text" class="form-control" asp-for="UserName" autocomplete="on" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
                         </div>
-                        <input type="text" class="form-control" asp-for="UserName" autocomplete="on"/>
-                        <span asp-validation-for="UserName" class="text-danger"></span>
-                    </div>
-                    <div>
-                        <label asp-for="Password">Kodeord</label>
-                        <div class="infotip d-inline">
-                            <img src="~/images/infowide.png" class="infoimg" />
-                            <span class="infotiptext">Dit kodeord til din konto</span>
+                        <div>
+                            <label asp-for="Password">Kodeord</label>
+                            <div class="infotip d-inline">
+                                <img src="~/images/infowide.png" class="infoimg" />
+                                <span class="infotiptext">Dit kodeord til din konto</span>
+                            </div>
+                            <input type="password" id="inputField" class="form-control" asp-for="Password" autocomplete="on" />
+                            <div class="infotip">
+                                <img src="~/images/eye.png" class="infoimg infotip" id="eyeIcon" onclick="myFunction()" />
+                                <span class="infotiptext" id="passmessage">Vis adgangskode</span>
+                            </div>
+
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
-                        <input type="password" id="inputField" class="form-control" asp-for="Password" autocomplete="on"/> 
-                        <div class="infotip">
-                            <img src="~/images/eye.png" class="infoimg infotip" id="eyeIcon" onclick="myFunction()" />
-                            <span class="infotiptext" id="passmessage" >Vis adgangskode</span>
-                        </div>
-                        
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-                    <button type="submit" class="margin5top backgroundcolorbuttonblue">Log ind</button>
-                    <p class="text-danger">@Model.LoginFailed</p> 
-                </form>
-              @*   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script> // ignore until feature branch
+                        <button type="submit" class="margin5top backgroundcolorbuttonblue">Log ind</button>
+                        <p class="text-danger">@Model.LoginFailed</p>
+                    </form>
+                    @*   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script> // ignore until feature branch
 
                 <button type="button" onclick="mySubmit()">Hash password</button> *@
-                
+
+                </div>
+
+                <div class="col-5">
+                </div>
             </div>
+            
         </div>
 
 

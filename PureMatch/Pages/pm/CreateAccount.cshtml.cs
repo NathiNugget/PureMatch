@@ -14,15 +14,29 @@ public class CreateAccount : PageModel
     {
         Repo = repo;
     }
-    public void OnGet(int subumber)
+    public IActionResult OnGet(int subumber)
     {
         SubNumber = subumber;
+        User u = null!; 
+        try
+        {
+            u = SessionHelper.Get(u, HttpContext); 
+        }
+        catch
+        {
+            return Page(); 
+        }
+        return RedirectToPage("/Index");
         
     }
 
     public IActionResult OnPost()
     {
-        
+        if (!_repo.IsAvailableUserName(UserName))
+        {
+            return Page();
+        }
+        ModelState.Remove("UserNameTaken");
         if (!ModelState.IsValid)
         {
             return Page();
@@ -42,6 +56,8 @@ public class CreateAccount : PageModel
     [Required(ErrorMessage = "Du skal skrive et brugernvan")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 30 tegn")]
     public string UserName { get; set; }
+    [Required(ErrorMessage = "Brugernavn allerede taget. Forsør med et andet")]
+    public string UserNameTaken { get; set; }
     [Required(ErrorMessage = "Du skal skrive et kodeord")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
     public string Password { get; set; }

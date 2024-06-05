@@ -2,13 +2,17 @@
 @model PureMatch.Pages.pm.CreateAccount
 @using PureLib.Model
 
-<h1 style="color: #00999D;"> INDTAST DINE OPLYSNINGER</h1>
-<div class="backgroundcolor">
-    <div class="container margin50topbot">
-        <form method="post" class="form-group margin50topbot">
+<h1 class="text-blue">Opret konto</h1>
+<div class="container backgroundcolor round ">
+    <div class="padding20">
+        <form method="post">
 
             <div>
-                <label asp-for="Name">Navn:</label>
+                <label asp-for="Name">Navn</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Dette navn vises for andre brugere</span>
+                </div>
                 <input type="text" asp-for="Name" class="form-control">
                 <span asp-validation-for="Name" class="alert-danger"></span>
             </div>
@@ -16,51 +20,81 @@
 
 
             <div>
-                <label asp-for="UserName" for="Username">Brugernavn:</label>
+                <label asp-for="UserName" for="Username">Brugernavn</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Dette benyttes til login og vises ikke til andre brugere</span>
+                </div>
                 <input type="text" asp-for="UserName" class="form-control">
                 <span asp-validation-for="UserName" class="alert-danger"></span>
-
+                <span asp-validation-for="UserNameTaken" class="alert-danger"></span>
+                
+                
             </div>
 
 
             <div>
-                <label asp-for="Password" for="Password">Adgangskode:</label>
+                <label asp-for="Password" for="Password">Adgangskode</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Dette benyttes til login</span>
+                </div>
                 <input type="password" asp-for="Password" class="form-control">
                 <span asp-validation-for="Password" class="alert-danger"></span>
             </div>
 
 
             <div>
-                <label asp-for="PhoneNumber" for="PhoneNumber">Telefonnummer:</label>
+                <label asp-for="PhoneNumber" for="PhoneNumber">Telefonnummer</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Dette benyttes til kontakt og vises ikke til andre brugere</span>
+                </div>
                 <input type="phone" asp-for="PhoneNumber" class="form-control">
                 <span asp-validation-for="PhoneNumber" class="alert-danger"></span>
             </div>
 
 
             <div>
-                <label asp-for="Email">Email:</label>
+                <label asp-for="Email">Email</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Dette benyttes til kontakt og vises ikke for andre brugere</span>
+                </div>
                 <input type="email" asp-for="Email" class="form-control">
                 <span asp-validation-for="Email" class="alert-danger"></span>
             </div>
 
 
             <div>
-                <label asp-for="CardNumber">Kortnummer:</label>
+                <label asp-for="CardNumber">Kortnummer</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">De 16 cifre på dit kort.<br />Dette benyttes for at aktivere dit abonnement</span>
+                </div>
                 <input type="text" asp-for="CardNumber" class="form-control">
                 <span asp-validation-for="CardNumber" class="alert-danger"></span>
             </div>
 
 
             <div>
-                <label asp-for="CVC">CVC nummer:</label>
+                <label asp-for="CVC">CVC nummer</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">De tre cifre på dit kort. Dette benyttes til at verificere dit kort</span>
+                </div>
                 <input type="text" asp-for="CVC" class="form-control">
-                <span asp-validation-for="CVC" class="Text-danger"></span>  
+                <span asp-validation-for="CVC" class="alert-danger"></span>  
             </div>
 
 
 
             <div>
-                <label asp-for="CardExpMonth">KortUdløbsmåned (maks 2 cifre):</label>
+                <label asp-for="CardExpMonth">Kortets Udløbsmåned (maks 2 cifre)</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Udløbsmåned for dit kort. Dette benyttes til at verificere dit kort</span>
+                </div>
                 <input type="number" min="1" max="12" asp-for="CardExpMonth" class="form-control">
                 <span asp-validation-for="CardExpMonth" class="alert-danger"></span>
             </div>
@@ -68,13 +102,17 @@
 
 
             <div>
-                <label asp-for="CardExpYear">KortUdløbsår (maks 2 cifre):</label>
+                <label asp-for="CardExpYear">KortUdløbsår (maks 2 cifre)</label>
+                <div class="infotip d-inline">
+                    <img src="~/images/infowide.png" class="infoimg" />
+                    <span class="infotiptext">Udløbsår for dit kort. Dette benyttes til at verficere dit kort</span>
+                </div>
                 <input type="number" asp-for="CardExpYear" min="@ValidationRegex.YEARDIGITSMIN" max="@ValidationRegex.YEARDIGITSMAX" class="form-control">
                 <span asp-validation-for="CardExpYear" class="alert-danger"></span>
             </div>
 
             <div class="">
-                <button class="backgroundcolorbutton margin5bot" type="submit">OPRET</button>
+                <button class="backgroundcolorbutton margin5bot" type="submit">Opret konto</button>
             </div>
 
 

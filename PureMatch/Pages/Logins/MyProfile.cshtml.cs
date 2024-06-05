@@ -10,14 +10,24 @@ namespace PureMatch.Pages.Logins
     [BindProperties]
     public class MyProfile : PageModel
     {
+        
         public MyProfile(DataBaseLink repo)
         {
             Repo = repo;
         }
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            User u = null;
-            u = SessionHelper.Get<User>(u, HttpContext); 
+            User u = null!;
+            try
+            {
+                u = SessionHelper.Get<User>(u, HttpContext);
+            }
+            catch
+            {
+                return RedirectToPage("/Logins/Login"); 
+            }
+            
+            
             NameNew = u.Name;
             UserNameNew = u.UserName;
             PasswordNew = u.Password;
@@ -27,15 +37,30 @@ namespace PureMatch.Pages.Logins
             CVCNew = u.CardCVC;
             CardExpMonthNew = int.Parse(u.CardExpMonth);
             CardExpYearNew = int.Parse(u.CardExpYear);
-
+            return Page();
 
 
         }
 
         public IActionResult OnPostUpdate()
         {
+            User u = null!;
+            try
+            {
+                u = SessionHelper.Get<User>(u, HttpContext);
+            }
+            catch
+            {
+                return RedirectToPage("/Logins/Login");
+            }
             ModelState.Remove("Days");
             ModelState.Remove("MuscleGroups");
+            if (!Repo.IsAvailableUserName(UserNameNew) && UserNameNew != u.UserName)
+            {
+                 return Page();
+            }
+            ModelState.Remove("UserNameTaken"); 
+            
             if (!ModelState.IsValid)
             {
                 return Page(); 
@@ -52,6 +77,9 @@ namespace PureMatch.Pages.Logins
         [Required(ErrorMessage = "Du skal skrive et brugernvan")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 30 tegn")]
         public string UserNameNew { get; set; }
+        [Required(ErrorMessage = "Brugernavn allerede taget. Prøv et andet")]
+        public string UserNameTaken { get; set; }
+
         [Required(ErrorMessage = "Du skal skrive et kodeord")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
         public string PasswordNew { get; set; }
@@ -72,6 +100,7 @@ namespace PureMatch.Pages.Logins
 
         [Required(ErrorMessage = "Du skal skrive kortets år for udlåbsdato, 2 cifre tak")]
         public int CardExpYearNew { get; set; }
+        
         public DataBaseLink Repo { get; set; }
     }
 }

@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PureLib.Model;
 
 namespace PureMatch.Pages.pm;
 
@@ -10,9 +11,19 @@ public class SelectSubscription : PageModel
     
     
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            // Ingen specifik handling krævet, når siden indlæses
+        User u = null!; 
+        try
+        {
+            u = SessionHelper.Get<User>(u, HttpContext); 
+        }
+        catch (Exception ex)
+        {
+            return Page(); 
+        }
+        return RedirectToPage("/Index");
+            
         }
 
         public IActionResult OnPost(int number)

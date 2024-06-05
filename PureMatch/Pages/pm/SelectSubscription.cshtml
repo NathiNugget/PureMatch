@@ -1,6 +1,9 @@
 @page
 @model PureMatch.Pages.pm.SelectSubscription
 @using PureLib.Model
+@{
+    ViewData["Title"] = "Vælg abonnement";
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +15,10 @@
     </style>
 </head>
 <body>
-    <h1 class="headers">Vælg Medlemskab</h1>
+    <h1 class="text-blue">Vælg Medlemskab</h1>
 
     <form method="post">
-        <div class="container backgroundcolor">
+        <div class="container backgroundcolor round">
             <div class="subscription-container margin40 margin">
 
                 <div class="subscription backgroundcolorwhite margin50topbot">
