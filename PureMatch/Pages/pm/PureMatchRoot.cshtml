@@ -63,17 +63,12 @@ else // Hvis en bruger er logget ind
 
         <div class="container-main container-small container centertext backgroundcolor">
             <div class="padding50topbot">
-                <div class="infotip">
-                    <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
-                    <span class="infotiptext">Se dine matches</span>
-                </div>
+                <a class="backgroundcolorbuttonblue strong" asp-page="PureMatch" type="submit">Mine Matches</a>
+
 
                 <form method="post" asp-page-handler="ResetMatch">
 
-                    <div class="infotip">
-                        <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
-                        <span class="infotiptext">Nulstil kriterier og vælg nye</span>
-                    </div>
+                    <input type="submit" class="backgroundcolorbutton margin5top strong" value="Nulstil min matching" />
                 </form>
             </div>
 
