@@ -301,7 +301,16 @@ h1 {
     margin-left: 2px;
     transition: 
         ease-in 0.2s;
+        
         opacity: 100%;
+}
+
+.infotip:not(:hover) .infotiptext {
+    visibility: hidden;
+    padding: 5px;
+    margin-left: 2px;
+    transition: ease-out 0.5s;
+    opacity: 0% ;
 }
 
 .infoskew {

@@ -6,7 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSession();
 builder.Services.AddSingleton(new DataBaseLink());
-builder.Services.AddSession();
 
  
 var app = builder.Build();

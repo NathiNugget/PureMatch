@@ -56,7 +56,7 @@ public class CreateAccount : PageModel
     [Required(ErrorMessage = "Du skal skrive et brugernvan")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 30 tegn")]
     public string UserName { get; set; }
-    [Required(ErrorMessage = "Brugernavn allerede taget. Forsør med et andet")]
+    [Required(ErrorMessage = "Brugernavn allerede taget. Forsøg med et andet")]
     public string UserNameTaken { get; set; }
     [Required(ErrorMessage = "Du skal skrive et kodeord")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
