@@ -2,14 +2,16 @@
 @model PureMatch.Pages.pm.DeleteConfirmationModel
 @{
 }
+<h1 class="text-blue">Bekræft sletning af besked</h1>
 <div class="row"> 
     <div class="col-4">
     </div>
+    
     <div class="container-main padding5bot backgroundcolor text-center col-4">
         <div>
             <div>
                 
-                <p class="OtherMessages">@Model.MessageContent</p>
+                <p class="backgroundcolorbuttonblack">@Model.MessageContent</p>
 
                 <form method="post">
                     <input type="submit" value="Annullér" asp-route-delete="false" class="btn backgroundcolorbutton" />

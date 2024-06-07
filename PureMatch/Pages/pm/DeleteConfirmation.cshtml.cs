@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PureMatch.Pages.pm
 {
+    
     [BindProperties]
     public class DeleteConfirmationModel : PageModel
     {
