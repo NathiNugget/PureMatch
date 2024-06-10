@@ -9,7 +9,7 @@ namespace PureMatch.Pages.Logins
     [BindProperties]
     public class LoginModel : PageModel
     {
-        private IDB _repo; 
+        private readonly IDB _repo; 
         public LoginModel(IDB repo)
         {
             _repo = repo;

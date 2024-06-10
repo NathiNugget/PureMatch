@@ -10,10 +10,11 @@ namespace PureMatch.Pages.Logins
     [BindProperties]
     public class MyProfile : PageModel
     {
+        private readonly IDB _repo; 
         
         public MyProfile(IDB repo)
         {
-            Repo = repo;
+            _repo = repo;
         }
         public IActionResult OnGet()
         {
@@ -55,7 +56,7 @@ namespace PureMatch.Pages.Logins
             }
             ModelState.Remove("Days");
             ModelState.Remove("MuscleGroups");
-            if (!Repo.IsAvailableUserName(UserNameNew) && UserNameNew != u.UserName)
+            if (!_repo.IsAvailableUserName(UserNameNew) && UserNameNew != u.UserName)
             {
                  return Page();
             }
@@ -101,6 +102,5 @@ namespace PureMatch.Pages.Logins
         [Required(ErrorMessage = "Du skal skrive kortets år for udlåbsdato, 2 cifre tak")]
         public int CardExpYearNew { get; set; }
         
-        public IDB Repo { get; set; }
     }
 }

@@ -11,11 +11,11 @@ namespace PureMatch.Pages.Logins
     public class ConfirmChangesModel : PageModel
     {
         
-        private IDB _repo;
+        private readonly IDB _repo;
 
         public ConfirmChangesModel(IDB repo)
         {
-            Repo = repo;
+            _repo = repo;
         }
 
         public void OnGet(string name, string username, string password, string email, string phonenumber, string cardnumber, string cardexpmonth, string cardexpyear, string cardcvc)
@@ -51,7 +51,7 @@ namespace PureMatch.Pages.Logins
         public string CardExpYearNew { get; set; }
         [Required()]
         public string CardCVCNew { get; set; }
-        public IDB Repo { get => _repo; set => _repo = value; }
+        
 
         public IActionResult OnPostAbort()
         {
@@ -81,7 +81,7 @@ namespace PureMatch.Pages.Logins
                 int expyear = int.Parse(CardExpYearNew);
                 u.CardExpMonth = expmonth.ToString("0#");
                 u.CardExpYear = expyear.ToString("0#");
-                Repo.UpdateUser(u);
+                _repo.UpdateUser(u);
                 SessionHelper.Set<User>(u, HttpContext);
                 return RedirectToPage("/checkmark/ProfileChanged");
             }

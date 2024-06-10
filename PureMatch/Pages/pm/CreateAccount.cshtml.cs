@@ -8,11 +8,11 @@ namespace PureMatch.Pages.pm;
 [BindProperties]
 public class CreateAccount : PageModel
 {
-    private IDB _repo;
+    private readonly IDB _repo;
 
     public CreateAccount(IDB repo)
     {
-        Repo = repo;
+        _repo = repo;
     }
     public IActionResult OnGet(int subumber)
     {
@@ -42,12 +42,9 @@ public class CreateAccount : PageModel
             return Page();
         }
 
-        Repo.AddUser(new User(1, Name, UserName, Password, PhoneNumber, Email, CardNumber, CVC, CardExpMonth.ToString("0#"), CardExpYear.ToString("##"), (SubscriptionEnum)SubNumber, LevelsEnum.Begynder));
+        _repo.AddUser(new User(1, Name, UserName, Password, PhoneNumber, Email, CardNumber, CVC, CardExpMonth.ToString("0#"), CardExpYear.ToString("##"), (SubscriptionEnum)SubNumber, LevelsEnum.Begynder));
         return RedirectToPage("/checkmark/ProfileCreated");
     }
-
-    
-    private IDB Repo {  get { return _repo; } set { _repo = value; } }
 
     public int SubNumber { get; set; }
     [Required(ErrorMessage = "Du skal skrive dit fulde navn")]

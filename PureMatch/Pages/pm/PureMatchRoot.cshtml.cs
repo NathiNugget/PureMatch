@@ -9,9 +9,11 @@ namespace PureMatch.Pages.pm;
 [BindProperties]
 public class PureMatchRoot : PageModel
 {
+    private readonly IDB _repo;
+
     public PureMatchRoot(IDB repo)
     {
-        Repo = repo;
+        _repo = repo;
     }
     public void OnGet()
     {
@@ -46,7 +48,7 @@ public class PureMatchRoot : PageModel
         {
             return Page(); 
         }
-        Repo.SetMatching(userid, null!, null!, 0);
+        _repo.SetMatching(userid, null!, null!, 0);
         return RedirectToPage("/pm/PureMatchRoot");
     }
 
@@ -105,16 +107,13 @@ public class PureMatchRoot : PageModel
             }
         }
 
-        Repo.SetMatching(userid, groups, days, SelectedLevel); 
+        _repo.SetMatching(userid, groups, days, SelectedLevel); 
         return RedirectToPage("/pm/PureMatch");
     }
 
     public List<MuscleGroupEnum> Groups { get; set; }
     public List<LevelsEnum> Levels { get; set; }
     public List<DaysEnum> Days { get; set; }
-
-
-    public IDB Repo { get; set; }
     
     public List<bool> MuscleGroups { get; set; }
     public int SelectedLevel { get; set; }
