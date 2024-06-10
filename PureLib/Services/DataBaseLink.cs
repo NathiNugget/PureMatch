@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace PureLib.Services
 {
-    public class DataBaseLink
+    public class DataBaseLink : IDB
     {
         private List<Message> _messages = new List<Message>();
         public DataBaseLink()
         {
 
-           
+
 
         }
 
@@ -116,7 +116,7 @@ namespace PureLib.Services
             }
             if (triceps)
             {
-                msgroups.Add(MuscleGroupEnum.Triceps); 
+                msgroups.Add(MuscleGroupEnum.Triceps);
             }
             if (core)
             {
@@ -147,7 +147,7 @@ namespace PureLib.Services
             return messages;
         }
 
-        
+
 
         public List<User> GetChatUsers(int userid)
         {
@@ -172,7 +172,7 @@ namespace PureLib.Services
         }
 
 
-        
+
 
         private Message ReadMessage(SqlDataReader reader)
         {
@@ -187,14 +187,14 @@ namespace PureLib.Services
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@MID", messageid); 
-                SqlDataReader reader = cmd.ExecuteReader(); 
+                cmd.Parameters.AddWithValue("@MID", messageid);
+                SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    msg = ReadMessageUsingReader(reader); 
+                    msg = ReadMessageUsingReader(reader);
                 }
             }
-            return msg; 
+            return msg;
 
         }
 
@@ -202,16 +202,16 @@ namespace PureLib.Services
         {
 
             string query = "delete  from PureMessage where MessageID = @MID";
-            int rowsaffected = 0; 
+            int rowsaffected = 0;
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@MID", messageid); 
+                cmd.Parameters.AddWithValue("@MID", messageid);
                 rowsaffected = cmd.ExecuteNonQuery();
             }
             return rowsaffected;
-            
+
 
         }
 
@@ -229,7 +229,7 @@ namespace PureLib.Services
         public int AddUser(User user)
         {
 
-            int rowsaffected = 0; 
+            int rowsaffected = 0;
             string query = "insert into PureUser (Name, UserName, Password, PhoneNumber, Email, CardNumber, CardCVC, CardExpMonth, CardExpYear, Subscription, [Level]) values (@PName, @PUserName, @PPassword, @PPhoneNumber,@PEmail, @PCardNumber, @PCardCVC, @PCardExpMonth, @PCardExpYear, @PSubscription, @PLevel)";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -305,7 +305,7 @@ namespace PureLib.Services
         public User? ReadLogin(string username, string password)
         {
             User? user = null;
-            string query = "select * from PureUser where UserName = @PName AND Password = @PPassword"; 
+            string query = "select * from PureUser where UserName = @PName AND Password = @PPassword";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
@@ -427,7 +427,7 @@ namespace PureLib.Services
             return rowsaffected;
         }
 
-        
+
         public List<User> ReadAllUsersFromDB()
         {
             List<User> users = new List<User>();
@@ -466,7 +466,8 @@ namespace PureLib.Services
 
         }
 
-        public bool IsAvailableUserName(string username) {
+        public bool IsAvailableUserName(string username)
+        {
             bool existsnt = true;
             string query = "select * from PureUser where UserName = @PName";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -559,7 +560,7 @@ namespace PureLib.Services
         public (int rowsaffected, int maxid) SendMessage(int ownid, int matchid, string messagecontent)
         {
             int rowsaffected = 0;
-            int maxid = 0; 
+            int maxid = 0;
             string query = "insert into PureMessage (SenderID, RecipientID, MessageValue) values (@PID, @PMID, @PMC)";
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -569,10 +570,10 @@ namespace PureLib.Services
                 cmd.Parameters.AddWithValue("@PMID", matchid);
                 cmd.Parameters.AddWithValue("@PMC", messagecontent);
                 rowsaffected = cmd.ExecuteNonQuery();
-                 
+
             }
 
-            maxid = FindMaxMessageID(); 
+            maxid = FindMaxMessageID();
             return (rowsaffected, maxid);
 
         }
@@ -580,14 +581,15 @@ namespace PureLib.Services
         private int FindMaxMessageID()
         {
             string query = "select max(MessageID) from PureMessage";
-            using (SqlConnection connection = new SqlConnection(ConnectionString)) {
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
                 SqlDataReader reader = cmd.ExecuteReader();
-                int maxid = 0; 
+                int maxid = 0;
                 while (reader.Read())
                 {
-                    maxid = reader.GetInt32(0); 
+                    maxid = reader.GetInt32(0);
                 }
                 return maxid;
             }
@@ -601,7 +603,7 @@ namespace PureLib.Services
             {
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@PID", userID); 
+                cmd.Parameters.AddWithValue("@PID", userID);
                 cmd.Parameters.AddWithValue("@CID", chatid);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -609,12 +611,12 @@ namespace PureLib.Services
                     messages.Add(ReadMessageUsingReader(reader));
                 }
             }
-            return messages; 
+            return messages;
         }
 
         private Message ReadMessageUsingReader(SqlDataReader reader)
         {
-            return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4)); 
+            return new Message(reader.GetInt32(0), reader.GetInt32(1), reader.GetInt32(2), reader.GetString(3), reader.GetDateTime(4));
         }
     }
 }

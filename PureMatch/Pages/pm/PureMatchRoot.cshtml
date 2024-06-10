@@ -1,7 +1,7 @@
 @page
 @using PureLib.Model
 @model PureMatch.Pages.pm.PureMatchRoot
-@inject PureLib.Services.DataBaseLink db
+@inject PureLib.Services.IDB db
 @{
     ViewData["Title"] = "PureMatch - vælg kriterier, nulstil eller se dine matches";
     User u = null!;

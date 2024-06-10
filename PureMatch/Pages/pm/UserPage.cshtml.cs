@@ -9,10 +9,10 @@ namespace PureMatch.Pages.pm
     [BindProperties]
     public class UserPageModel : PageModel
     {
-        private readonly DataBaseLink _repo;
+        private readonly IDB _repo;
         private User? _matchuser; 
 
-        public UserPageModel(DataBaseLink repo) { 
+        public UserPageModel(IDB repo) { 
             _repo = repo; 
         }
        

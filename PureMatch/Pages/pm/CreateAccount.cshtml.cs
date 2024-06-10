@@ -8,9 +8,9 @@ namespace PureMatch.Pages.pm;
 [BindProperties]
 public class CreateAccount : PageModel
 {
-    private DataBaseLink _repo;
+    private IDB _repo;
 
-    public CreateAccount(DataBaseLink repo)
+    public CreateAccount(IDB repo)
     {
         Repo = repo;
     }
@@ -47,7 +47,7 @@ public class CreateAccount : PageModel
     }
 
     
-    private DataBaseLink Repo {  get { return _repo; } set { _repo = value; } }
+    private IDB Repo {  get { return _repo; } set { _repo = value; } }
 
     public int SubNumber { get; set; }
     [Required(ErrorMessage = "Du skal skrive dit fulde navn")]

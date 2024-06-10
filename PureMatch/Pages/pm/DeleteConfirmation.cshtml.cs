@@ -9,9 +9,9 @@ namespace PureMatch.Pages.pm
     [BindProperties]
     public class DeleteConfirmationModel : PageModel
     {
-        private DataBaseLink _repo;
+        private IDB _repo;
 
-        public DeleteConfirmationModel(DataBaseLink repo)
+        public DeleteConfirmationModel(IDB repo)
         {
             _repo = repo;
         }

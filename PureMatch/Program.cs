@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSession();
-builder.Services.AddSingleton(new DataBaseLink());
+builder.Services.AddSingleton<IDB>(new DataBaseLink());
 
  
 var app = builder.Build();

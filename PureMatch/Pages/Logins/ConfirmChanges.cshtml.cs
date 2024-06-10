@@ -11,9 +11,9 @@ namespace PureMatch.Pages.Logins
     public class ConfirmChangesModel : PageModel
     {
         
-        private DataBaseLink _repo;
+        private IDB _repo;
 
-        public ConfirmChangesModel(DataBaseLink repo)
+        public ConfirmChangesModel(IDB repo)
         {
             Repo = repo;
         }
@@ -51,7 +51,7 @@ namespace PureMatch.Pages.Logins
         public string CardExpYearNew { get; set; }
         [Required()]
         public string CardCVCNew { get; set; }
-        public DataBaseLink Repo { get => _repo; set => _repo = value; }
+        public IDB Repo { get => _repo; set => _repo = value; }
 
         public IActionResult OnPostAbort()
         {

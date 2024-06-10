@@ -9,7 +9,7 @@ namespace PureMatch.Pages.pm;
 [BindProperties]
 public class PureMatchRoot : PageModel
 {
-    public PureMatchRoot(DataBaseLink repo)
+    public PureMatchRoot(IDB repo)
     {
         Repo = repo;
     }
@@ -114,7 +114,7 @@ public class PureMatchRoot : PageModel
     public List<DaysEnum> Days { get; set; }
 
 
-    public DataBaseLink Repo { get; set; }
+    public IDB Repo { get; set; }
     
     public List<bool> MuscleGroups { get; set; }
     public int SelectedLevel { get; set; }

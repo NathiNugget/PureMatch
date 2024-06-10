@@ -11,7 +11,7 @@ namespace PureMatch.Pages.Logins
     public class MyProfile : PageModel
     {
         
-        public MyProfile(DataBaseLink repo)
+        public MyProfile(IDB repo)
         {
             Repo = repo;
         }
@@ -101,6 +101,6 @@ namespace PureMatch.Pages.Logins
         [Required(ErrorMessage = "Du skal skrive kortets år for udlåbsdato, 2 cifre tak")]
         public int CardExpYearNew { get; set; }
         
-        public DataBaseLink Repo { get; set; }
+        public IDB Repo { get; set; }
     }
 }
