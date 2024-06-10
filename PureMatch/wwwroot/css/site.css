@@ -338,3 +338,12 @@ h1 {
     border-radius: 6px; 
 }
 
+.smol {
+    font-size: 10px; 
+    font-style: italic;
+}
+
+p {
+    margin: 0px; 
+    padding: 0px; 
+}

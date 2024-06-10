@@ -70,6 +70,7 @@
                                     </form>
 
                                     <p class="OtherMessages">@m.Messagevalue</p>
+                                    <p class="smol">Sendt @m.Timesent</p>
                                 </div>
 
                             </div>
@@ -79,6 +80,8 @@
                             matchuserid = m.SenderID;
                             <div>
                                 <p class="MyMessages">@m.Messagevalue</p>
+                                <p class="smol">Modtaget @m.Timesent</p>
+                                
                             </div>
                         }
 
@@ -114,7 +117,7 @@
 
                 @if (Model.Matches.Any(user => user.Level == u.Level))
                 {
-                    <h3>Samme niveau</h3>
+                    <h4>Samme niveau</h4>
                     <div class="vline"></div>
                     @foreach (User user in Model.Matches.Where(user => user.Level == u.Level))
                     {
@@ -139,7 +142,7 @@
                 }
                 @if (Model.Matches.Any(user => user.Level != u.Level))
                 {
-                    <h3>Forskelligt niveau</h3>
+                    <h4>Forskelligt niveau</h4>
                     <div class="vline"></div>
                     @foreach (User user in Model.Matches.Where(user => user.Level != u.Level))
                     {
