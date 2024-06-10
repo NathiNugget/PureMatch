@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Model;
 using PureLib.Services;
-using System.Text.RegularExpressions;
 
 namespace PureMatch.Pages.pm;
 
@@ -17,7 +16,7 @@ public class PureMatchRoot : PageModel
     }
     public void OnGet()
     {
-        
+
         Groups = Enum.GetValues(typeof(MuscleGroupEnum)).Cast<MuscleGroupEnum>().ToList();
         MuscleGroups = new List<bool>();
         for (int i = 0; i < Groups.Count; i++)
@@ -40,13 +39,13 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPostResetMatch()
     {
-        ModelState.Remove("NotValidInput"); 
+        ModelState.Remove("NotValidInput");
         User u = null!;
-        u = SessionHelper.Get<User>(u, HttpContext); 
+        u = SessionHelper.Get<User>(u, HttpContext);
         int userid = u.UserID;
         if (!ModelState.IsValid)
         {
-            return Page(); 
+            return Page();
         }
         _repo.SetMatching(userid, null!, null!, 0);
         return RedirectToPage("/pm/PureMatchRoot");
@@ -54,7 +53,7 @@ public class PureMatchRoot : PageModel
 
     public IActionResult OnPostChangeCriteria()
     {
-        if (! (MuscleGroups.Contains(true) && DaysList.Contains(true)) )
+        if (!(MuscleGroups.Contains(true) && DaysList.Contains(true)))
         {
             Groups = Enum.GetValues(typeof(MuscleGroupEnum)).Cast<MuscleGroupEnum>().ToList();
             MuscleGroups = new List<bool>();
@@ -78,11 +77,11 @@ public class PureMatchRoot : PageModel
         ModelState.Remove("NotValidInput");
         if (!ModelState.IsValid)
         {
-            
-            return Page(); 
+
+            return Page();
         }
-        
-        User u = null!; 
+
+        User u = null!;
         u = SessionHelper.Get<User>(u, HttpContext);
         u.Level = SelectedLevel;
         u.MuscleGroups = Groups;
@@ -107,14 +106,14 @@ public class PureMatchRoot : PageModel
             }
         }
 
-        _repo.SetMatching(userid, groups, days, SelectedLevel); 
+        _repo.SetMatching(userid, groups, days, SelectedLevel);
         return RedirectToPage("/pm/PureMatch");
     }
 
     public List<MuscleGroupEnum> Groups { get; set; }
     public List<LevelsEnum> Levels { get; set; }
     public List<DaysEnum> Days { get; set; }
-    
+
     public List<bool> MuscleGroups { get; set; }
     public int SelectedLevel { get; set; }
     public List<bool> DaysList { get; set; }

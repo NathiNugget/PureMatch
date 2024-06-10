@@ -10,14 +10,15 @@ namespace PureMatch.Pages.pm
     public class UserPageModel : PageModel
     {
         private readonly IDB _repo;
-        private User? _matchuser; 
+        private User? _matchuser;
 
-        public UserPageModel(IDB repo) { 
-            _repo = repo; 
+        public UserPageModel(IDB repo)
+        {
+            _repo = repo;
         }
-       
+
         public User MatchUser { get { return _matchuser!; } set { _matchuser = value; } }
-        [Required (ErrorMessage = "Du skal skrive en besked!")]
+        [Required(ErrorMessage = "Du skal skrive en besked!")]
         [StringLength(100, MinimumLength = 1, ErrorMessage = "Besked skal være mindst 2 tegn lang")]
         public string Message { get; set; }
 
@@ -25,7 +26,7 @@ namespace PureMatch.Pages.pm
         {
             _matchuser = _repo.ReadUser(mid);
             _matchuser.Days = _repo.ReadDays(mid);
-            _matchuser.MuscleGroups = _repo.ReadMuscleGroups(mid); 
+            _matchuser.MuscleGroups = _repo.ReadMuscleGroups(mid);
         }
 
 
@@ -33,19 +34,20 @@ namespace PureMatch.Pages.pm
         public IActionResult OnPost(int matchid)
         {
             User u = null!;
-            u = SessionHelper.Get<User>(u, HttpContext); 
+            u = SessionHelper.Get<User>(u, HttpContext);
             MatchUser = _repo.ReadUser(matchid);
             MatchUser.Days = _repo.ReadDays(matchid);
             MatchUser.MuscleGroups = _repo.ReadMuscleGroups(matchid);
             ModelState.Remove("Days");
-            ModelState.Remove("MuscleGroups"); 
-            if (!ModelState.IsValid){
-                
-                return Page(); 
+            ModelState.Remove("MuscleGroups");
+            if (!ModelState.IsValid)
+            {
+
+                return Page();
             }
-             
+
             _repo.SendMessage(u.UserID, matchid, Message);
-            return RedirectToPage("./PureMatch"); 
+            return RedirectToPage("./PureMatch");
         }
 
 

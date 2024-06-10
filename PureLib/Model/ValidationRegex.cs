@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace PureLib.Model
 {
     /// <summary>
@@ -20,6 +14,6 @@ namespace PureLib.Model
         public const string CARDCVCFILTER = "^\\d{3}$";
         public const string CARDEXPMONTHFILTER = "^\\d{2}$";
         public const string CARDEXPYEARFILTER = "^\\d{2}$";
-        public const int MESSAGELENGTHMAX = 100; 
+        public const int MESSAGELENGTHMAX = 100;
     }
 }

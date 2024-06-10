@@ -17,17 +17,17 @@ public class CreateAccount : PageModel
     public IActionResult OnGet(int subumber)
     {
         SubNumber = subumber;
-        User u = null!; 
+        User u = null!;
         try
         {
-            u = SessionHelper.Get(u, HttpContext); 
+            u = SessionHelper.Get(u, HttpContext);
         }
         catch
         {
-            return Page(); 
+            return Page();
         }
         return RedirectToPage("/Index");
-        
+
     }
 
     public IActionResult OnPost()
@@ -75,5 +75,5 @@ public class CreateAccount : PageModel
 
     [Required(ErrorMessage = "Du skal skrive kortets år for udløbsdato, 2 cifre tak")]
     public int CardExpYear { get; set; }
-    
+
 }

@@ -322,7 +322,7 @@ h1 {
     visibility: hidden;
     padding: 5px;
     margin-left: 2px;
-    transition: ease-out 0.5s;
+    transition: ease-out 0.8s;
     opacity: 0% ;
 }
 

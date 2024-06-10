@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace PureLib.Model
 {
     /// <summary>
@@ -11,7 +5,7 @@ namespace PureLib.Model
     /// </summary>
     public enum SubscriptionEnum
     {
-        Core, 
+        Core,
         Plus,
         Unlimited
 

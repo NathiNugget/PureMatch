@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace PureLib.Model
 {
@@ -190,14 +185,14 @@ namespace PureLib.Model
         }
         public string CardNumber
         {
-            get => _cardnumber; 
+            get => _cardnumber;
             set
             {
                 if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentNullException($"Kort-nummer skal være på formen: 16 cifre eller 16#");
                 }
-                
+
                 if (!new Regex(ValidationRegex.CARDNUMBERFILTER).IsMatch(value))
                 {
                     throw new ArgumentException($"Kort-nummer skal være 16 cifre. Du skrev: {value}");
@@ -252,7 +247,7 @@ namespace PureLib.Model
                 {
                     throw new ArgumentException("Du skal skrive 2 cifre på formen ## - f.eks. 25 for år 2025");
                 }
-                
+
                 if (int.Parse(value) < ValidationRegex.YEARDIGITSMIN || int.Parse(value) > ValidationRegex.YEARDIGITSMAX)
                 {
                     throw new ArgumentException($"Du skal skrive et år mellem {ValidationRegex.YEARDIGITSMIN} og {ValidationRegex.YEARDIGITSMAX}");
@@ -262,7 +257,7 @@ namespace PureLib.Model
         }
         public int Level
         {
-            get => _level; 
+            get => _level;
             set
             {
                 if (value > Enum.GetValues(typeof(LevelsEnum)).Length)
@@ -300,10 +295,10 @@ namespace PureLib.Model
         }
         public int Subscription
         {
-            get => _subscription; 
+            get => _subscription;
             set
             {
-                
+
                 if (value < 0)
                 {
                     throw new ArgumentException("Værdi for abonnement må ikke være under 0.");

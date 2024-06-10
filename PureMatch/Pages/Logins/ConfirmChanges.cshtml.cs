@@ -3,14 +3,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Model;
 using PureLib.Services;
 using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
 
 namespace PureMatch.Pages.Logins
 {
     [BindProperties]
     public class ConfirmChangesModel : PageModel
     {
-        
+
         private readonly IDB _repo;
 
         public ConfirmChangesModel(IDB repo)
@@ -51,14 +50,14 @@ namespace PureMatch.Pages.Logins
         public string CardExpYearNew { get; set; }
         [Required()]
         public string CardCVCNew { get; set; }
-        
+
 
         public IActionResult OnPostAbort()
         {
-            return RedirectToPage("MyProfile"); 
+            return RedirectToPage("MyProfile");
         }
 
-        
+
 
         public IActionResult OnPostConfirmAction(bool save)
         {
@@ -86,7 +85,7 @@ namespace PureMatch.Pages.Logins
                 return RedirectToPage("/checkmark/ProfileChanged");
             }
             return RedirectToPage("MyProfile");
-            
+
 
         }
     }

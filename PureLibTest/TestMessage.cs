@@ -1,10 +1,5 @@
 ﻿using PureLib.Model;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PureLibTest
 {
@@ -37,7 +32,7 @@ namespace PureLibTest
             Assert.AreEqual(id, msg.MessageID);
         }
 
-        
+
 
         //ID property illegal values
         [TestMethod]
@@ -88,7 +83,7 @@ namespace PureLibTest
         {
             Assert.ThrowsException<ArgumentException>(() => msg.RecipientID = id);
         }
-   
+
 
         //Message property
         [TestMethod]
@@ -114,7 +109,7 @@ namespace PureLibTest
         [DataRow(null)]
         public void MessagePropertyNull(string message)
         {
-            Assert.ThrowsException<ArgumentNullException>(() => msg.Messagevalue = message); 
+            Assert.ThrowsException<ArgumentNullException>(() => msg.Messagevalue = message);
         }
 
         //Message DateTime property

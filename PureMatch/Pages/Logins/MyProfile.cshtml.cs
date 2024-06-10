@@ -1,17 +1,16 @@
-using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PureLib.Model;
 using PureLib.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace PureMatch.Pages.Logins
 {
     [BindProperties]
     public class MyProfile : PageModel
     {
-        private readonly IDB _repo; 
-        
+        private readonly IDB _repo;
+
         public MyProfile(IDB repo)
         {
             _repo = repo;
@@ -25,10 +24,10 @@ namespace PureMatch.Pages.Logins
             }
             catch
             {
-                return RedirectToPage("/Logins/Login"); 
+                return RedirectToPage("/Logins/Login");
             }
-            
-            
+
+
             NameNew = u.Name;
             UserNameNew = u.UserName;
             PasswordNew = u.Password;
@@ -58,19 +57,29 @@ namespace PureMatch.Pages.Logins
             ModelState.Remove("MuscleGroups");
             if (!_repo.IsAvailableUserName(UserNameNew) && UserNameNew != u.UserName)
             {
-                 return Page();
+                return Page();
             }
-            ModelState.Remove("UserNameTaken"); 
-            
+            ModelState.Remove("UserNameTaken");
+
             if (!ModelState.IsValid)
             {
-                return Page(); 
+                return Page();
             }
-            return RedirectToPage("./ConfirmChanges", new { name = NameNew, username = UserNameNew, password = PasswordNew, email = EmailNew, 
-                phonenumber = PhoneNumberNew, cardnumber = CardNumberNew, cardexpmonth = CardExpMonthNew, cardexpyear = CardExpYearNew, cardcvc = CVCNew });  
+            return RedirectToPage("./ConfirmChanges", new
+            {
+                name = NameNew,
+                username = UserNameNew,
+                password = PasswordNew,
+                email = EmailNew,
+                phonenumber = PhoneNumberNew,
+                cardnumber = CardNumberNew,
+                cardexpmonth = CardExpMonthNew,
+                cardexpyear = CardExpYearNew,
+                cardcvc = CVCNew
+            });
         }
-        
-        
+
+
 
         [Required(ErrorMessage = "Du skal skrive dit fulde navn")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Du skal skrive mindst 3 tegn og maks 50 tegn")]
@@ -101,6 +110,6 @@ namespace PureMatch.Pages.Logins
 
         [Required(ErrorMessage = "Du skal skrive kortets år for udlåbsdato, 2 cifre tak")]
         public int CardExpYearNew { get; set; }
-        
+
     }
 }

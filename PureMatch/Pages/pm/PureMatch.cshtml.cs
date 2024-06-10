@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.FileSystemGlobbing;
 using PureLib.Model;
 using PureLib.Services;
 using System.ComponentModel.DataAnnotations;
@@ -11,7 +10,7 @@ namespace PureMatch.Pages.pm
     public class PureMatchModel : PageModel
     {
         private readonly IDB _repo;
-         
+
 
         public PureMatchModel(IDB repo)
         {
@@ -21,10 +20,10 @@ namespace PureMatch.Pages.pm
         public void OnGet(int? chatid)
         {
 
-            User u = null!; 
+            User u = null!;
             try
             {
-                u = SessionHelper.Get<User>(u, HttpContext); 
+                u = SessionHelper.Get<User>(u, HttpContext);
             }
             catch
             {
@@ -37,15 +36,15 @@ namespace PureMatch.Pages.pm
                 Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
 
             }
-            
+
         }
 
         public IActionResult OnPostDelete(int messageid)
         {
-            ModelState.Remove("MessageValue"); 
+            ModelState.Remove("MessageValue");
             if (!ModelState.IsValid)
             {
-                return Page(); 
+                return Page();
             }
             return RedirectToPage("/pm/DeleteConfirmation", new { messageid = messageid });
         }
@@ -66,8 +65,8 @@ namespace PureMatch.Pages.pm
                 Messages = _repo.ReadMessages(u.UserID, (int)chatid!);
 
             }
-            return Page(); 
-            
+            return Page();
+
         }
 
         public IActionResult OnPostUserPage(int ownid, int matchid)
@@ -78,7 +77,7 @@ namespace PureMatch.Pages.pm
 
         public IActionResult OnPostSendMessage(int ownid, int chatid)
         {
-            
+
             User u = null!;
             u = SessionHelper.Get<User>(u, HttpContext);
             Matches = _repo.GetMatches(u.UserID);
@@ -98,9 +97,9 @@ namespace PureMatch.Pages.pm
         public List<User> Matches { get; set; }
         public List<User> Chats { get; set; }
         public List<Message> Messages { get; set; }
-        [Required (ErrorMessage = "Du ville da gerne sende en besked, ikke? :)")]
-        [StringLength (100, MinimumLength = 1, ErrorMessage = "Du må skrive max 100")]
+        [Required(ErrorMessage = "Du ville da gerne sende en besked, ikke? :)")]
+        [StringLength(100, MinimumLength = 1, ErrorMessage = "Du må skrive max 100")]
         public string MessageValue { get; set; }
-        
+
     }
 }

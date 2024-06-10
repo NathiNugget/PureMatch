@@ -9,7 +9,7 @@ namespace PureMatch.Pages.Logins
     [BindProperties]
     public class LoginModel : PageModel
     {
-        private readonly IDB _repo; 
+        private readonly IDB _repo;
         public LoginModel(IDB repo)
         {
             _repo = repo;
@@ -31,20 +31,20 @@ namespace PureMatch.Pages.Logins
             ModelState.Remove("LoginFailed");
             if (!ModelState.IsValid)
             {
-                return Page(); 
+                return Page();
             }
             if (_repo.ReadLogin(username, password) != null)
             {
                 User u = _repo.ReadLogin(username, password)!;
-                SessionHelper.Set(u, HttpContext); 
+                SessionHelper.Set(u, HttpContext);
             }
             else
             {
-                LoginFailed = "Brugernavn eller kodeord forkert - prøv igen"; 
+                LoginFailed = "Brugernavn eller kodeord forkert - prøv igen";
                 return Page();
             }
             return RedirectToPage("/Index");
-            
+
         }
 
         public IActionResult OnPostLogout()

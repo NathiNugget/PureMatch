@@ -24,7 +24,7 @@ namespace PureMatch
 
         public static void Clear<T>(T t, HttpContext context)
         {
-            context.Session.Remove(nameof(  t));
+            context.Session.Remove(nameof(t));
         }
     }
 }

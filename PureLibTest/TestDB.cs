@@ -1,13 +1,6 @@
 using PureLib.Model;
 using PureLib.Services;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PureLibTest
 {
@@ -16,13 +9,14 @@ namespace PureLibTest
     public class TestDB
     {
         private int _usersInDB = 0;
-        private readonly int _messagesInDB = 0; 
+        private readonly int _messagesInDB = 0;
         private readonly DataBaseLink db = new DataBaseLink();
         private static List<MuscleGroupEnum> _msgroups = new List<MuscleGroupEnum> { MuscleGroupEnum.Bryst };
-        private static List<DaysEnum> _days = new List<DaysEnum>() { DaysEnum.Tirsdag }; 
+        private static List<DaysEnum> _days = new List<DaysEnum>() { DaysEnum.Tirsdag };
 
 
-        public TestDB() {
+        public TestDB()
+        {
             _usersInDB = db.ReadAllUsersFromDB().Count;
             _messagesInDB = db.ReadAllMessagesFromDB().Count;
         }
@@ -48,16 +42,16 @@ namespace PureLibTest
             Assert.AreEqual(3, rowsaffected);
             rowsaffected = db.SetMatching(2, _msgroups, _days, 1);
             Assert.AreEqual(3, rowsaffected);
-            
+
         }
 
         [TestMethod]
         //send and delete
         public void SendAndDelete()
         {
-            (int rowsaffected, int maxid) = db.SendMessage(1, 2, "Hej"); 
+            (int rowsaffected, int maxid) = db.SendMessage(1, 2, "Hej");
             Assert.AreEqual(1, rowsaffected);
-            rowsaffected = db.DeleteMessage(maxid); 
+            rowsaffected = db.DeleteMessage(maxid);
             Assert.AreEqual(1, rowsaffected);
         }
 
@@ -82,7 +76,7 @@ namespace PureLibTest
         [TestMethod]
         public void GetMatches()
         {
-            int matches = db.GetMatches(2).Count; 
+            int matches = db.GetMatches(2).Count;
             Assert.AreEqual(1, matches);
         }
 
@@ -90,7 +84,7 @@ namespace PureLibTest
         public void Update()
         {
             User user = db.ReadUser(2);
-            user.Password = "Hej123"; 
+            user.Password = "Hej123";
             int rowsaffected = db.UpdateUser(user);
             Assert.AreEqual(1, rowsaffected);
         }
@@ -98,7 +92,7 @@ namespace PureLibTest
         [TestMethod]
         public void CreateUser()
         {
-            int rowsaffected = db.AddUser(new User()); 
+            int rowsaffected = db.AddUser(new User());
             Assert.AreEqual(1, rowsaffected);
         }
 
@@ -114,7 +108,7 @@ namespace PureLibTest
         [TestMethod]
         public void ReadLogin()
         {
-            User u = db.ReadLogin("AbdiA", "AbdiA123")!; 
+            User u = db.ReadLogin("AbdiA", "AbdiA123")!;
             Assert.IsNotNull(u);
         }
 

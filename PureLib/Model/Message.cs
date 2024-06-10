@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace PureLib.Model
 {
     /// <summary>
@@ -56,7 +50,7 @@ namespace PureLib.Model
         {
             get => _senderid; set
             {
-                
+
                 if (value < 1)
                 {
                     throw new ArgumentException($"Værdien af AfsenderID må ikke være under 0. Du angav: {value}");
@@ -70,7 +64,7 @@ namespace PureLib.Model
             get => _recipientid;
             set
             {
-                
+
                 if (value < 1)
                 {
                     throw new ArgumentException($"Værdien af ModtagerID må ikke være under 0. Du angav: {value}");
@@ -92,7 +86,7 @@ namespace PureLib.Model
         }
         public string Messagevalue
         {
-            get => _messagevalue; 
+            get => _messagevalue;
             set
             {
                 if (string.IsNullOrEmpty(value))
@@ -101,7 +95,7 @@ namespace PureLib.Model
                 }
                 if (value.Length > ValidationRegex.MESSAGELENGTHMAX)
                 {
-                    throw new ArgumentException($"Længen af besked må max være 100 karakterer. Din besked var {value.Length} karakterer lang"); 
+                    throw new ArgumentException($"Længen af besked må max være 100 karakterer. Din besked var {value.Length} karakterer lang");
                 }
                 _messagevalue = value;
             }
@@ -117,6 +111,6 @@ namespace PureLib.Model
             return $"{{{nameof(MessageID)}={MessageID.ToString()}, {nameof(SenderID)}={SenderID.ToString()}, {nameof(RecipientID)}={RecipientID.ToString()}, {nameof(Timesent)}={Timesent.ToString()}, {nameof(Messagevalue)}={Messagevalue}}}";
         }
 
-        
+
     }
 }

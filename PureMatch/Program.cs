@@ -7,7 +7,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddSession();
 builder.Services.AddSingleton<IDB>(new DataBaseLink());
 
- 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

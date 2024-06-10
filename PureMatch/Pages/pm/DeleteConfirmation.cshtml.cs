@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PureMatch.Pages.pm
 {
-    
+
     [BindProperties]
     public class DeleteConfirmationModel : PageModel
     {
@@ -18,20 +18,21 @@ namespace PureMatch.Pages.pm
         public void OnGet(int messageid)
         {
             MessageContent = _repo.GetMessage(messageid).Messagevalue;
-        
+
             MessageID = messageid;
             RecipientID = _repo.GetMessage(messageid).RecipientID;
         }
         public IActionResult OnPost(bool delete)
         {
             MessageContent = _repo.GetMessage(MessageID).Messagevalue;
-            if (!ModelState.IsValid) { 
+            if (!ModelState.IsValid)
+            {
                 return Page();
             }
             if (delete)
             {
                 _repo.DeleteMessage(MessageID);
-                return RedirectToPage("/pm/PureMatch", new {chatid = RecipientID});
+                return RedirectToPage("/pm/PureMatch", new { chatid = RecipientID });
             }
             return RedirectToPage("/pm/PureMatch", new { chatid = RecipientID });
 
@@ -40,8 +41,8 @@ namespace PureMatch.Pages.pm
         [Required]
         public string MessageContent { get; set; }
         [Required]
-        public int MessageID {  get; set; }
+        public int MessageID { get; set; }
         [Required]
-        public int RecipientID { get; set;}
+        public int RecipientID { get; set; }
     }
 }

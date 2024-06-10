@@ -1,9 +1,6 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PureLib.Model;
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq.Expressions;
-using System.Net.Mail;
 
 namespace PureLibTest
 {
@@ -72,7 +69,7 @@ namespace PureLibTest
         [DataRow("TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteT")]
         public void NameIllegal(string name)
         {
-            
+
             Assert.ThrowsException<ArgumentException>(() => u.Name = name);
             Assert.ThrowsException<ArgumentNullException>(() => u.Name = null!);
             Assert.ThrowsException<ArgumentNullException>(() => u.Name = "");
@@ -283,7 +280,8 @@ namespace PureLibTest
         }
 
         //CardExpMonth proterty null/empty values
-        [TestMethod][ExpectedException(typeof(ArgumentNullException))]
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         [DataRow("")]
         [DataRow(null)]
         public void CardExpMonthNull(string expmonth)
@@ -295,7 +293,8 @@ namespace PureLibTest
         [TestMethod]
         [DataRow("25")]
         [DataRow("29")]
-        public void CardExpYear(string expyear) {
+        public void CardExpYear(string expyear)
+        {
             u.CardExpYear = expyear;
             Assert.AreEqual(expyear, u.CardExpYear);
         }
@@ -379,14 +378,15 @@ namespace PureLibTest
 
         }
 
-        
+
 
         //DaysEnum property
         [TestMethod]
         [DataRow(DaysEnum.Søndag)]
         [DataRow(DaysEnum.Lørdag)]
         [DataRow(0)]
-        public void DaysEnumTest(DaysEnum day) {
+        public void DaysEnumTest(DaysEnum day)
+        {
             List<DaysEnum> days = new List<DaysEnum> { day };
             u.Days = days;
             Assert.AreEqual(days, u.Days);
@@ -396,7 +396,8 @@ namespace PureLibTest
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         [DataRow(null)]
-        public void DaysEnumNull(object o) {
+        public void DaysEnumNull(object o)
+        {
             u.Days = (List<DaysEnum>)o;
         }
 
@@ -427,7 +428,7 @@ namespace PureLibTest
         [DataRow(null)]
         public void SubscriptionNull(object o)
         {
-            u.Subscription = (int) o;
+            u.Subscription = (int)o;
         }
 
         //ToString() method
