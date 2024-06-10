@@ -114,6 +114,10 @@ namespace PureLib.Services
             {
                 msgroups.Add(MuscleGroupEnum.Biceps);
             }
+            if (triceps)
+            {
+                msgroups.Add(MuscleGroupEnum.Triceps); 
+            }
             if (core)
             {
                 msgroups.Add(MuscleGroupEnum.Mave);

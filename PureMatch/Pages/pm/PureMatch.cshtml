@@ -23,9 +23,22 @@
             <form method="post" asp-page-handler="Message">
                 @foreach (User c in Model.Chats)
                 {
-                    <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-page-handler="Message" asp-route-chatid="@c.UserID">@c.Name</button>
+                    string shortname = "";
+                    if (c.Name.Length > 17)
+                    {
+                        shortname = c.Name.Substring(0, 17);
+                        <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-page-handler="Message" asp-route-chatid="@c.UserID">@shortname...</button>
 
-                    <br />
+                        <br />
+
+                    }
+                    else
+                    {
+                        <button type="submit" class="backgroundcolorbuttonblue margin5bot" asp-page-handler="Message" asp-route-chatid="@c.UserID">@c.Name</button>
+
+                        <br />
+                    }
+
 
                 }
             </form>
@@ -109,7 +122,7 @@
                         if(user.Name.Length > 17)
                         {
                             shortname = user.Name.Substring(0,17);
-                            <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@shortname</button>
+                            <button class="backgroundcolorbutton margin5bot" type="submit" asp-page-handler="UserPage" asp-route-matchid="@user.UserID">@shortname...</button>
 
                             <br />
                         }
